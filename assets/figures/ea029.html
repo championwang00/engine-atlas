@@ -1,0 +1,231 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>涡轮增压</title><style>html,body{margin:0;background:#d9d9d6}#fig{display:block;width:100%;max-width:1100px;margin:0 auto;touch-action:none;cursor:grab}</style></head><body><svg id="fig" viewBox="0 0 720 440" role="img" aria-label="涡轮增压等轴测动画图，可拖动旋转"></svg><script>
+// mini iso solid renderer (orthographic, per-part painter order, 4-tone shading)
+const W = 720, H = 440;
+const PAL = {
+  steel: ['#f4f4f1', '#d8d8d3', '#b6b6b0', '#8e8e89'],
+  hot: ['#f0dccb', '#dbb79d', '#bd9175', '#8f6751'],
+  cool: ['#e8eef2', '#c9d5de', '#a5b5c1', '#7b8c99'],
+  dark: ['#8c8c88', '#70706c', '#585854', '#42423f'],
+  acc: ['#f3e6b4', '#e0c97c', '#c3a755', '#917b3b'],
+  red: ['#f0c9bd', '#d99a87', '#bb7461', '#8c5143'],
+};
+const FLOW = { ex: '#c2491f', in: '#2a66ad', el: '#c79a12', mech: '#4a4a46' };
+const sub = (a, b) => [a[0] - b[0], a[1] - b[1], a[2] - b[2]];
+const add = (a, b) => [a[0] + b[0], a[1] + b[1], a[2] + b[2]];
+const mul = (a, s) => [a[0] * s, a[1] * s, a[2] * s];
+const dot = (a, b) => a[0] * b[0] + a[1] * b[1] + a[2] * b[2];
+const cross = (a, b) => [a[1] * b[2] - a[2] * b[1], a[2] * b[0] - a[0] * b[2], a[0] * b[1] - a[1] * b[0]];
+const norm = (a) => { const l = Math.hypot(...a) || 1; return [a[0] / l, a[1] / l, a[2] / l]; };
+const lerp3 = (a, b, t) => [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t, a[2] + (b[2] - a[2]) * t];
+function frameAlong(o, w) { w = norm(w); const ref = Math.abs(w[2]) < 0.9 ? [0, 0, 1] : [1, 0, 0]; const u = norm(cross(ref, w)); const v = cross(w, u); return { o, u, v, w }; }
+const AX = { x: [1, 0, 0], y: [0, 1, 0], z: [0, 0, 1] };
+function circle(r, n = 18, a0 = 0) { const p = []; for (let i = 0; i < n; i++) { const a = a0 + i / n * Math.PI * 2; p.push([r * Math.cos(a), r * Math.sin(a)]); } return p; }
+function rect(w, h, cx = 0, cy = 0) { return [[cx - w / 2, cy - h / 2], [cx + w / 2, cy - h / 2], [cx + w / 2, cy + h / 2], [cx - w / 2, cy + h / 2]]; }
+function lobes(r0, r1, k, a0 = 0, n = 48) { const p = []; for (let i = 0; i < n; i++) { const a = i / n * Math.PI * 2; const r = r0 + (r1 - r0) * Math.pow(Math.abs(Math.cos(k * (a - a0) / 2)), 1.6); p.push([r * Math.cos(a), r * Math.sin(a)]); } return p; }
+function gear(r, teeth, depth, a0 = 0) { const p = []; const n = teeth * 4; for (let i = 0; i < n; i++) { const a = a0 + i / n * Math.PI * 2; const rr = (i % 4 < 2) ? r : r - depth; p.push([rr * Math.cos(a), rr * Math.sin(a)]); } return p; }
+const area = (p) => { let s = 0; for (let i = 0; i < p.length; i++) { const a = p[i], b = p[(i + 1) % p.length]; s += a[0] * b[1] - b[0] * a[1]; } return s; };
+const ccw = (p) => (area(p) < 0 ? p.slice().reverse() : p);
+
+let PARTS = [], LABELS = [];
+let CAM = { az: -50, el: 28 }, K = 1, C0 = [0, 0, 0], V, RV, UV, LIGHT;
+function setCam() {
+  const a = CAM.az * Math.PI / 180, e = CAM.el * Math.PI / 180;
+  V = [Math.cos(e) * Math.cos(a), Math.cos(e) * Math.sin(a), Math.sin(e)];
+  RV = [-Math.sin(a), Math.cos(a), 0]; UV = cross(V, RV);
+  LIGHT = norm(add(add(mul(UV, 0.8), mul(RV, -0.45)), mul(V, 0.5)));
+}
+const proj = (p) => { const q = sub(p, C0); return [W / 2 + K * dot(q, RV), H / 2 + 22 - K * dot(q, UV)]; };
+const depth = (p) => dot(p, V);
+// prism: profile in (u,v), frame {o,u,v,w}, extruded w from 0..L
+function prism(prof, F, L, o = {}) {
+  prof = ccw(prof);
+  const at = (q, t) => add(add(add(F.o, mul(F.u, q[0])), mul(F.v, q[1])), mul(F.w, t));
+  const b = prof.map((q) => at(q, 0)), t = prof.map((q) => at(q, L));
+  const faces = [];
+  for (let i = 0; i < prof.length; i++) { const j = (i + 1) % prof.length; faces.push([b[i], b[j], t[j], t[i]]); }
+  if (o.caps !== false) { faces.push(t.slice()); faces.push(b.slice().reverse()); }
+  PARTS.push({ faces, c: at([0, 0], L / 2), tone: o.tone || 'steel', bias: o.bias || 0, sm: prof.length > 12, open: o.open, edge: o.edge });
+}
+function annulus(rIn, rOut, F, L, o = {}) {
+  const n = o.n || 28, at = (r, a, t) => add(add(add(F.o, mul(F.u, r * Math.cos(a))), mul(F.v, r * Math.sin(a))), mul(F.w, t));
+  const faces = [];
+  for (let i = 0; i < n; i++) {
+    const a0 = i / n * Math.PI * 2, a1 = (i + 1) / n * Math.PI * 2;
+    faces.push([at(rOut, a0, 0), at(rOut, a1, 0), at(rOut, a1, L), at(rOut, a0, L)]);
+    faces.push([at(rIn, a1, 0), at(rIn, a0, 0), at(rIn, a0, L), at(rIn, a1, L)]);
+    faces.push([at(rIn, a0, L), at(rOut, a0, L), at(rOut, a1, L), at(rIn, a1, L)]);
+    faces.push([at(rOut, a0, 0), at(rIn, a0, 0), at(rIn, a1, 0), at(rOut, a1, 0)]);
+  }
+  PARTS.push({ faces, c: at(0, 0, L / 2), tone: o.tone || 'steel', bias: o.bias || 0, sm: true, multi: true });
+}
+function box(x0, y0, z0, x1, y1, z1, o = {}) { prism(rect(x1 - x0, y1 - y0, (x0 + x1) / 2, (y0 + y1) / 2), { o: [0, 0, z0], u: AX.x, v: AX.y, w: AX.z }, z1 - z0, o); }
+function cyl(p, axis, r, L, o = {}) { prism(o.prof || circle(r, o.n || 20, o.rot || 0), frameAlong(p, axis), L, o); }
+function tube(pts, r, o = {}) {
+  for (let i = 0; i < pts.length - 1; i++) {
+    const a = pts[i], b = pts[i + 1], d = sub(b, a), len = Math.hypot(...d), segs = Math.max(1, Math.ceil(len / (o.seg || 18)));
+    for (let s = 0; s < segs; s++) cyl(lerp3(a, b, s / segs), d, r, len / segs + 0.01, { tone: o.tone, n: 14, bias: o.bias });
+    if (i > 0) cyl(sub(a, mul(norm(d), 1.5)), d, r * 1.18, 3, { tone: o.tone, n: 14 });
+  }
+}
+function pathPts(pts) { const seg = []; let L = 0; for (let i = 0; i < pts.length - 1; i++) { const l = Math.hypot(...sub(pts[i + 1], pts[i])); seg.push(l); L += l; } return { pts, seg, L }; }
+function along(P, s) { s = ((s % P.L) + P.L) % P.L; for (let i = 0; i < P.seg.length; i++) { if (s <= P.seg[i]) return lerp3(P.pts[i], P.pts[i + 1], s / P.seg[i]); s -= P.seg[i]; } return P.pts[P.pts.length - 1]; }
+// flow dots riding on a pipe (radius r); offset toward viewer so they sit on the visible skin
+function flow(pts, r, t, { color = FLOW.in, gap = 14, speed = 40, size = 2.1, on = 1 } = {}) {
+  if (on <= 0.02) return; const P = pathPts(pts); const n = Math.floor(P.L / gap);
+  for (let i = 0; i < n; i++) { const p = along(P, i * gap + t * speed); PARTS.push({ dot: add(p, mul(V, r * 0.9)), c: p, bias: r + 9, color, size: size * Math.min(1, on + 0.2), op: Math.min(1, on) }); }
+}
+function label(p, text, dx, dy) { LABELS.push({ p, text, dx, dy }); }
+function shade(n) { const d = dot(n, LIGHT); return d > 0.62 ? 0 : d > 0.28 ? 1 : d > -0.05 ? 2 : 3; }
+function newell(f) { let n = [0, 0, 0]; for (let i = 0; i < f.length; i++) { const a = f[i], b = f[(i + 1) % f.length]; n[0] += (a[1] - b[1]) * (a[2] + b[2]); n[1] += (a[2] - b[2]) * (a[0] + b[0]); n[2] += (a[0] - b[0]) * (a[1] + b[1]); } return norm(n); }
+function render(svg) {
+  setCam();
+  const items = PARTS.map((p) => ({ p, k: depth(p.c) + p.bias }));
+  items.sort((a, b) => a.k - b.k);
+  const out = [];
+  for (const { p } of items) {
+    if (p.dot) { const s = proj(p.dot); out.push(`<circle cx="${s[0].toFixed(1)}" cy="${s[1].toFixed(1)}" r="${p.size}" fill="${p.color}" opacity="${p.op.toFixed(2)}"/>`); continue; }
+    const pal = PAL[p.tone] || PAL.steel; const fs = [];
+    for (const f of p.faces) { const n = newell(f); if (dot(n, V) <= 1e-4) continue; fs.push({ f, n, d: f.reduce((s, q) => s + depth(q), 0) / f.length }); }
+    if (p.multi || p.sm) fs.sort((a, b) => a.d - b.d);
+    for (const { f, n } of fs) {
+      const pts = f.map(proj).map((q) => q[0].toFixed(1) + ',' + q[1].toFixed(1)).join(' ');
+      const big = f.length > 4; const tn = shade(n);
+      out.push(`<polygon points="${pts}" fill="${pal[tn]}" stroke="${big || !p.sm ? '#262624' : pal[Math.min(3, tn + 1)]}" stroke-width="${big || !p.sm ? 0.7 : 0.45}" stroke-linejoin="round"/>`);
+    }
+  }
+  const dc = depth(C0);
+  for (const l of LABELS) {
+    if (depth(l.p) < dc - 18) continue;
+    const s = proj(l.p), tx = s[0] + l.dx, ty = s[1] + l.dy;
+    out.push(`<g class="lab"><circle cx="${s[0].toFixed(1)}" cy="${s[1].toFixed(1)}" r="1.6" fill="#1d1d1b"/><path d="M${s[0].toFixed(1)},${s[1].toFixed(1)} L${tx.toFixed(1)},${ty.toFixed(1)} h${l.dx < 0 ? -6 : 6}" stroke="#1d1d1b" stroke-width=".6" fill="none"/><text x="${(tx + (l.dx < 0 ? -9 : 9)).toFixed(1)}" y="${(ty + 3.5).toFixed(1)}" text-anchor="${l.dx < 0 ? 'end' : 'start'}" font-size="10.5" font-family="ui-sans-serif,system-ui,'PingFang SC',sans-serif" fill="#1d1d1b" paint-order="stroke" stroke="#d9d9d6" stroke-width="3">${l.text}</text></g>`);
+  }
+  return out.join('');
+}
+// ---- shared inline-4 engine body (x = crank axis, exhaust side y<0, intake side y>0) ----
+function engineI4(o = {}) {
+  const h = o.tall ? 12 : 0, hot = o.hotHead ? 'hot' : 'steel';
+  box(-58, -22, -26, 58, 22, 0, { tone: 'dark' });            // sump
+  box(-64, -34, 0, 64, 34, 64 + h);                           // block
+  box(-62, -32, 64 + h, 62, 32, 82 + h);                      // head
+  box(-56, -24, 82 + h, 56, 24, 92 + h, { tone: 'cool' });    // cam cover
+  for (let i = 0; i < 4; i++) cyl([-36 + i * 24, 0, 92 + h], AX.z, 4, 4, { tone: 'dark', n: 10 }); // plug wells
+  for (const x of [-46, 0, 46]) box(x - 6, -36, 8, x + 6, -34, 56 + h, { tone: 'steel' }); // ribs
+  cyl([-64, 0, 18], [-1, 0, 0], 15, 7, { n: 24, tone: 'dark' });            // crank pulley
+  cyl([-71, 0, 18], [-1, 0, 0], 6, 4, { n: 12 });
+  return { exPorts: [-36, -12, 12, 36].map((x) => [x, -32, 72 + h]), inPorts: [-36, -12, 12, 36].map((x) => [x, 32, 74 + h]), top: 92 + h, h };
+}
+function exhaustManifold(E, to, r = 5) { const paths = []; for (const p of E.exPorts) { const q = [p[0], -48, p[2]]; const m = [p[0] * 0.35 + to[0] * 0.65, -58, to[2] + 4]; const pts = [p, q, m, to]; tube(pts, r, { tone: 'hot' }); paths.push(pts); } return paths; }
+function intakeRunners(E, plenumY = 52, z = E.top - 4) {
+  const paths = [];
+  box(-56, plenumY - 9, z - 8, 56, plenumY + 9, z + 10, { tone: 'cool' });   // plenum
+  for (const p of E.inPorts) { const pts = [[p[0], plenumY - 9, z], [p[0], 40, p[2] + 4], p]; tube(pts, 4.6, { tone: 'cool' }); paths.push(pts.slice().reverse().reverse()); }
+  return { paths, plenum: [0, plenumY, z + 1], z };
+}
+// ---- page runtime ----
+function mountFigure(build, opts = {}) {
+  const svg = document.getElementById('fig'), Q = new URLSearchParams(location.search);
+  const home = { az: Q.has('az') ? +Q.get('az') : (opts.az ?? -50), el: opts.el ?? 28 };
+  CAM = { ...home };
+  let t = opts.t0 || 0, on = false, last = 0, raf = 0;
+  // fixed fit: bounding sphere of the scene at t0
+  PARTS = []; LABELS = []; setCam(); build(0);
+  let lo = [1e9, 1e9, 1e9], hi = [-1e9, -1e9, -1e9];
+  for (const p of PARTS) for (const f of (p.faces || [])) for (const q of f) for (let i = 0; i < 3; i++) { lo[i] = Math.min(lo[i], q[i]); hi[i] = Math.max(hi[i], q[i]); }
+  C0 = mul(add(lo, hi), 0.5); const R = Math.max(Math.hypot((hi[0] - lo[0]) / 2, (hi[1] - lo[1]) / 2), 1);
+  const Rz = (hi[2] - lo[2]) / 2;
+  K = Math.min((W - 150) / (2 * R), (H - 70) / (2 * (Rz * Math.cos(CAM.el * Math.PI / 180) + R * Math.sin(CAM.el * Math.PI / 180)))) * (opts.zoom || 1.12);
+  function draw() { PARTS = []; LABELS = []; setCam(); const info = build(t) || {}; svg.innerHTML = `<rect width="720" height="440" fill="#d9d9d6"/>` + render(svg) + head(info); }
+  function head(info) {
+    const f = "font-family=\"ui-sans-serif,system-ui,'PingFang SC',sans-serif\"";
+    return `<text x="18" y="28" font-size="14" font-weight="600" ${f} fill="#1d1d1b">${opts.title}</text>` + (info.read ? `<text x="18" y="46" font-size="10.5" font-family="ui-monospace,monospace" fill="#3c3c38">${info.read}</text>` : '') +
+      (opts.legend ? `<g font-size="10" ${f} fill="#3c3c38">${opts.legend.map((l, i) => `<circle cx="${704 - 8}" cy="${22 + i * 15}" r="3" fill="${l[0]}"/><text x="${704 - 16}" y="${25.5 + i * 15}" text-anchor="end">${l[1]}</text>`).join('')}</g>` : '');
+  }
+  function tick(ts) { if (!on) return; const dt = Math.min(0.05, (ts - (last || ts)) / 1000); last = ts; t += dt; draw(); raf = requestAnimationFrame(tick); }
+  let drag = null;
+  svg.addEventListener('pointerdown', (e) => { drag = { x: e.clientX, y: e.clientY, az: CAM.az, el: CAM.el }; svg.setPointerCapture(e.pointerId); svg.style.cursor = 'grabbing'; });
+  svg.addEventListener('pointermove', (e) => { if (!drag) return; CAM.az = drag.az - (e.clientX - drag.x) * 0.5; CAM.el = Math.max(8, Math.min(62, drag.el + (e.clientY - drag.y) * 0.3)); if (!on) draw(); });
+  const up = () => { drag = null; svg.style.cursor = ''; }; svg.addEventListener('pointerup', up); svg.addEventListener('pointercancel', up);
+  window.FIG = { play(v) { on = !!v; cancelAnimationFrame(raf); last = 0; if (on) raf = requestAnimationFrame(tick); }, reset() { CAM = { ...home }; t = opts.t0 || 0; draw(); }, playing: () => on, draw, setAz(a) { CAM.az = a; draw(); } };
+  draw();
+}
+
+// shared turbo / compressor helpers; axis along +x at centre c
+function wheel(c, r, blades, ang, tone = 'steel', L = 8, ax = AX.x) { const b = (dot(V, ax) > 0 ? 9 : -9); cyl(c, ax, r, L, { prof: gear(r, blades, r * 0.45, ang), tone, n: blades * 4, bias: b }); cyl(add(c, mul(ax, L)), ax, r * 0.22, 3, { n: 10, tone: 'dark', bias: b + 1 }); }
+function turbo(c, ang, o = {}) {
+  // c = shaft centre at turbine face; returns key points
+  const [x, y, z] = c;
+  annulus(11, 20, frameAlong([x, y, z], AX.x), 12, { tone: 'hot' });          // turbine scroll
+  wheel([x + 1, y, z], 10.5, 11, -ang, 'hot', 9);                                // turbine wheel
+  cyl([x + 12, y, z], AX.x, 9, 12, { n: 18 });                                 // bearing housing
+  cyl([x + 15, y, z - 13], AX.z, 2, 6, { tone: 'dark', n: 8 });                  // oil drain
+  annulus(12, 22, frameAlong([x + 24, y, z], AX.x), 14, { tone: 'cool' });     // compressor scroll
+  wheel([x + 27, y, z], 11.5, 12, ang, 'steel', 10);                             // compressor wheel
+  return { tin: [x + 6, y, z + 20], tout: [x + 6, y, z - 20], cin: [x + 44, y, z], cout: [x + 31, y, z + 22], cface: [x + 38, y, z] };
+}
+function intercooler(x0, y0, z0, x1, y1, z1) {
+  box(x0, y0, z0, x1, y1, z1, { tone: 'cool' });
+  const n = 9; for (let i = 1; i < n; i++) { const x = x0 + (x1 - x0) * i / n; box(x - 0.6, y0 - 0.8, z0 + 2, x + 0.6, y0, z1 - 2, { tone: 'steel' }); }
+  box(x0 - 5, y0 + 2, z0 - 1, x0, y1 - 2, z1 + 1, { tone: 'steel' }); box(x1, y0 + 2, z0 - 1, x1 + 5, y1 - 2, z1 + 1, { tone: 'steel' });
+}
+const cyc = (t, T) => (t % T) / T;
+const smooth = (a, b, x) => { const u = Math.max(0, Math.min(1, (x - a) / (b - a))); return u * u * (3 - 2 * u); };
+
+// Roots blower: casing walls (open +x end so rotors show), two 3-lobe rotors along x
+function roots(cx, cy, cz, len, ang, tone = 'steel') {
+  const x0 = cx - len / 2, x1 = cx + len / 2;
+  box(x0, cy - 20, cz + 12, x1, cy + 20, cz + 15, { tone });         // top
+  box(x0, cy - 20, cz - 15, x1, cy + 20, cz - 12, { tone });         // bottom
+  box(x0, cy - 20, cz - 12, x1, cy - 17, cz + 12, { tone });         // side
+  box(x0, cy + 17, cz - 12, x1, cy + 20, cz + 12, { tone });         // side
+  box(x0 - 8, cy - 20, cz - 15, x0, cy + 20, cz + 15, { tone: 'dark' }); // gear case
+  for (const [dy, s] of [[-8.2, 1], [8.2, -1]]) cyl([x0 + 1, cy + dy, cz], AX.x, 9, len - 3, { prof: lobes(4.6, 9.3, 3, s * ang + (s < 0 ? Math.PI / 3 : 0), 54), tone: 'cool', bias: dot(V, AX.x) > 0 ? 2 : -2 });
+  for (const dy of [-8.2, 8.2]) cyl([x1 - 2, cy + dy, cz], AX.x, 1.6, 3, { n: 8, tone: 'dark', bias: 3 });
+  return { top: [cx, cy, cz + 15], bot: [cx, cy, cz - 15], drive: [x0 - 8, cy - 8.2, cz], end: [x1, cy, cz] };
+}
+function belt(a, ra, b, rb, t, sp = 30) {
+  // two straight runs between pulleys in the y-z plane at the same x (approximate tangents)
+  const d = norm(sub(b, a)), n = norm(cross(d, AX.x));
+  const r1 = [add(a, mul(n, ra)), add(b, mul(n, rb))], r2 = [add(b, mul(n, -rb)), add(a, mul(n, -ra))];
+  tube(r1, 1.6, { tone: 'dark', seg: 14 }); tube(r2, 1.6, { tone: 'dark', seg: 14 });
+  flow(r1, 1.6, t, { color: FLOW.mech, speed: sp, gap: 10, size: 1.5 }); flow(r2, 1.6, t, { color: FLOW.mech, speed: sp, gap: 10, size: 1.5 });
+}
+
+let ANG = 0, TP = 0;
+mountFigure((t) => {
+  const ph = cyc(t, 9), thr = smooth(0.05, 0.45, ph) * (1 - smooth(0.8, 0.95, ph));
+  const dt = t - TP; TP = t; const boost = 0.15 + 1.05 * thr;            // bar, 示意
+  const wg = smooth(0.95, 1.15, boost); ANG += Math.max(0, dt) * (2 + 30 * thr);
+  const E = engineI4();
+  const T = turbo([82, -66, 58], ANG);
+  const col = [T.tin[0], T.tin[1], T.tin[2] + 4];
+  const ex = exhaustManifold(E, col);
+  const dp = [T.tout, [T.tout[0], T.tout[1], 12], [T.tout[0] + 4, -96, -8]];
+  tube(dp, 6, { tone: 'hot' });
+  // wastegate: bypass from manifold collector to downpipe
+  const wgp = [[64, -60, 68], [64, -64, 30], [T.tout[0] - 4, -66, 24]];
+  tube(wgp, 3.2, { tone: 'hot' });
+  cyl([64, -62, 46], AX.z, 5.2, 9, { tone: 'steel', n: 16 });                          // valve body
+  cyl([58, -84, 52], AX.y, 6, 9, { tone: 'acc', n: 18 });                                // actuator can
+  tube([[58, -75, 52], [64, -64, 52]], 1.2, { tone: 'dark' });
+  // intake: open compressor inlet, outlet → intercooler → plenum
+  const I = intakeRunners(E);
+  const ic = [-44, -26, 100, 44, 26, 112]; intercooler(...ic);
+  const hotSide = [T.cout, [T.cout[0], T.cout[1], 106], [70, -10, 106], [49, -10, 106]];
+  tube(hotSide, 5.5, { tone: 'cool' });
+  const coldSide = [[-49, 10, 106], [-76, 10, 106], [-76, 52, 96], [-61, 52, 89]];
+  tube(coldSide, 5.5, { tone: 'cool' });
+  // flows
+  const k = 0.35 + thr;
+  for (const p of ex) flow(p, 5, t, { color: FLOW.ex, speed: 45 * k, gap: 13 });
+  flow(dp, 6, t, { color: FLOW.ex, speed: 50 * k, gap: 13, on: 1 - wg * 0.5 });
+  flow(wgp, 3.2, t, { color: FLOW.ex, speed: 50, gap: 9, on: wg });
+  flow([[T.cin[0] + 40, T.cin[1], T.cin[2]], T.cface], 0, t, { color: FLOW.in, speed: 50 * k, gap: 11 });
+  flow(hotSide, 5.5, t, { color: FLOW.in, speed: 50 * k, gap: 13 });
+  flow(coldSide, 5.5, t, { color: FLOW.in, speed: 50 * k, gap: 13 });
+  for (const p of I.paths) flow(p, 4.6, t, { color: FLOW.in, speed: 40 * k, gap: 12 });
+  label(T.tin, '涡轮', -10, -26); label(T.cface, '压气机', 22, -30); label([64, -62, 55], '废气泄压阀', -60, 34);
+  label([0, -26, 112], '中冷器', -70, -30); label(I.plenum, '进气歧管', 40, -24);
+  return { read: `增压 ${boost.toFixed(2)} bar · 泄压阀 ${wg > 0.5 ? '开（旁通废气）' : '关'}` };
+}, { title: '涡轮增压', az: -40, el: 26, legend: [[FLOW.ex, '废气'], [FLOW.in, '进气']] });
+
+</script><script src="_embed-lite.js"></script></body></html>

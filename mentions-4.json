@@ -1,0 +1,700 @@
+{
+ "EA-040": {
+  "intro": [
+   {
+    "match": "Toyota Prius（NHW10）",
+    "kind": "car",
+    "name": "Toyota Prius NHW10（第一代）",
+    "year": "1997–2000",
+    "brief": "1997 年 12 月日本上市的首款量产混动车，行星齿轮连接发动机与电机。",
+    "image": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Toyota_PRIUS_%28NHW10%29_front.JPG/960px-Toyota_PRIUS_%28NHW10%29_front.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Toyota_PRIUS_(NHW10)_front.JPG",
+     "author": "Tokumeigakarinoaoshima",
+     "license": "CC0",
+     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+   },
+   {
+    "match": "1NZ-FXE",
+    "kind": "engine",
+    "name": "1NZ-FXE · 装车示例：Toyota Prius NHW10",
+    "year": "1997",
+    "brief": "1.5 L 阿特金森循环四缸机，43 kW，为配合电机而放弃爆发力。",
+    "image": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Toyota_PRIUS_%28NHW10%29_front.JPG/960px-Toyota_PRIUS_%28NHW10%29_front.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Toyota_PRIUS_(NHW10)_front.JPG",
+     "author": "Tokumeigakarinoaoshima",
+     "license": "CC0",
+     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "match": "Toyota Prius NHW10（1997，1NZ-FXE）",
+    "kind": "car",
+    "name": "Toyota Prius NHW10",
+    "year": "1997",
+    "brief": "首款量产混动，1.5 L 1NZ-FXE 配 30 kW 电机，约售 12.3 万辆。"
+   },
+   {
+    "match": "Honda Insight（1999，IMA 并联）",
+    "kind": "car",
+    "name": "Honda Insight（第一代）",
+    "year": "1999–2006",
+    "brief": "1.0 L 三缸配曲轴端 10 kW 电机的 IMA 并联混动，北美首款混动车。"
+   }
+  ]
+ },
+ "EA-041": {
+  "intro": [
+   {
+    "match": "BMW 316ti Compact",
+    "kind": "car",
+    "name": "BMW 316ti Compact（E46/5）",
+    "year": "2001–2004",
+    "brief": "2001 年首款搭载 Valvetronic 的车，1.8 L N42 四缸机。",
+    "image": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/2001-2003_BMW_316ti_%28E46%29_hatchback_%282009-07-15%29.jpg/960px-2001-2003_BMW_316ti_%28E46%29_hatchback_%282009-07-15%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:2001-2003_BMW_316ti_(E46)_hatchback_(2009-07-15).jpg",
+     "author": "OSX",
+     "license": "Public domain",
+     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing#Material_in_the_public_domain"
+    }
+   },
+   {
+    "match": "Fiat MultiAir",
+    "kind": "engine",
+    "name": "Fiat MultiAir · 装车示例：Alfa Romeo MiTo",
+    "year": "2009",
+    "brief": "Fiat 电液式气门升程控制，2009 年随 Alfa MiTo 推出的无节气门方案。",
+    "image": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Alfa_Romeo_MiTo_1.4_TB_16V_MultiAir_%282009%29_%2852184274288%29.jpg/960px-Alfa_Romeo_MiTo_1.4_TB_16V_MultiAir_%282009%29_%2852184274288%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_MiTo_1.4_TB_16V_MultiAir_(2009)_(52184274288).jpg",
+     "author": "Charles from Port Chester, New York",
+     "license": "CC BY 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "match": "BMW Valvetronic（2001）",
+    "kind": "engine",
+    "name": "BMW Valvetronic",
+    "year": "2001 起",
+    "brief": "BMW 用中间杠杆与偏心轴连续调节进气门升程，取代节气门控制进气量。"
+   }
+  ]
+ },
+ "EA-042": {
+  "intro": [
+   {
+    "match": "VR6",
+    "kind": "engine",
+    "name": "大众 VR6",
+    "year": "1991 起",
+    "brief": "15° 窄夹角 V6，两排气缸共用一个缸盖，是 W12 的基本模块。",
+    "image": null
+   },
+   {
+    "match": "Audi A8（D2）",
+    "kind": "car",
+    "name": "Audi A8 W12（D2）",
+    "year": "2001",
+    "brief": "2001 年第一款搭载大众 6.0 L W12 的量产车。",
+    "image": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Audi_A8_W12_%28D2%29_%28By-AV%29.jpg/960px-Audi_A8_W12_%28D2%29_%28By-AV%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Audi_A8_W12_(D2)_(By-AV).jpg",
+     "author": "Anton V.",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   },
+   {
+    "match": "Passat",
+    "kind": "car",
+    "name": "VW Passat W8（B5.5）",
+    "year": "2001–2004",
+    "brief": "搭载 4.0 L W8 的 Passat，275 PS，大众 W 型发动机的试验平台。",
+    "image": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/2003_Volkswagen_Passat_W8_4.0_%2839647062423%29.jpg/960px-2003_Volkswagen_Passat_W8_4.0_%2839647062423%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:2003_Volkswagen_Passat_W8_4.0_(39647062423).jpg",
+     "author": "Rutger van der Maar",
+     "license": "CC BY 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+   },
+   {
+    "match": "Bugatti Veyron",
+    "kind": "car",
+    "name": "Bugatti Veyron 16.4",
+    "year": "2005–2015",
+    "brief": "8.0 L 四涡轮 W16，1,001 PS，极速 407 km/h，共造 450 辆。",
+    "image": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/2009_Bugatti_Veyron_16.4.jpg/960px-2009_Bugatti_Veyron_16.4.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:2009_Bugatti_Veyron_16.4.jpg",
+     "author": "Calreyn88",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "match": "VW Passat W8（2001–2004）",
+    "kind": "car",
+    "name": "VW Passat W8",
+    "year": "2001–2004",
+    "brief": "4.0 L W8、275 PS、标配四驱，大众 W 型发动机的试验平台。"
+   },
+   {
+    "match": "W12（Phaeton、Audi A8、Bentley）",
+    "kind": "engine",
+    "name": "大众 6.0 L W12",
+    "year": "2001–2024",
+    "brief": "两组 VR6 以 72° 拼成，用于 Phaeton、A8 与 Bentley。"
+   },
+   {
+    "match": "Bugatti Veyron/Chiron W16",
+    "kind": "engine",
+    "name": "Bugatti 8.0 L 四涡轮 W16",
+    "year": "2005–2024",
+    "brief": "Veyron 1,001 PS、Chiron 1,500 PS，2024 年收尾。"
+   }
+  ]
+ },
+ "EA-043": {
+  "intro": [
+   {
+    "match": "2.4 L 自然吸气 V8",
+    "kind": "f1",
+    "name": "F1 2.4 L V8 发动机（示例：Ferrari 248 F1）",
+    "year": "2006–2013",
+    "brief": "2006 年起强制的 90° V8，后限转 18,000 rpm，F1 最后的自吸机。",
+    "image": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Michael_Schumacher_-_Ferrari_248_F1_-_Monaco_Grand_Prix.jpg/960px-Michael_Schumacher_-_Ferrari_248_F1_-_Monaco_Grand_Prix.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Michael_Schumacher_-_Ferrari_248_F1_-_Monaco_Grand_Prix.jpg",
+     "author": "Polmars",
+     "license": "CC BY-SA 2.5",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+    }
+   },
+   {
+    "match": "3.0 L V10",
+    "kind": "f1",
+    "name": "F1 3.0 L V10 发动机（示例：Renault R25）",
+    "year": "2000–2005",
+    "brief": "2000–2005 年 F1 强制规格，可超 900 hp，2006 年被 V8 取代。",
+    "image": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Renault_R25_%282005%29_Fernando_Alonso.jpg/960px-Renault_R25_%282005%29_Fernando_Alonso.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Renault_R25_(2005)_Fernando_Alonso.jpg",
+     "author": "Willtron",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+   },
+   {
+    "match": "1.6 L V6 涡轮混动动力单元",
+    "kind": "f1",
+    "name": "F1 1.6 L V6 涡轮混动动力单元（示例：Mercedes F1 W05）",
+    "year": "2014–2025",
+    "brief": "2014 年取代 V8，带 MGU-K 与 MGU-H，燃油流量限 100 kg/h。",
+    "image": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/2014_Mercedes-F1_W05_Hybrid.jpg/960px-2014_Mercedes-F1_W05_Hybrid.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:2014_Mercedes-F1_W05_Hybrid.jpg",
+     "author": "MrWalkr",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "match": "2006–2013 赛季 F1 赛车",
+    "kind": "f1",
+    "name": "2006–2013 年 F1 赛车",
+    "year": "2006–2013",
+    "brief": "统一用 2.4 L 90° V8，最低 95 kg，2009 年起可配 KERS。"
+   },
+   {
+    "match": "2006 年 Toro Rosso 使用限转 V10",
+    "kind": "f1",
+    "name": "Toro Rosso STR1",
+    "year": "2006",
+    "brief": "2006 年特许用 Cosworth 3.0 L V10，限转 16,700 rpm。"
+   }
+  ]
+ },
+ "EA-044": {
+  "intro": [
+   {
+    "match": "BMW Hydrogen 7",
+    "kind": "car",
+    "name": "BMW Hydrogen 7",
+    "year": "2005–2007",
+    "brief": "基于 760Li 的氢/汽油双燃料 V12 轿车，约产 100 辆，191 kW。",
+    "image": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/BMW_Hydrogen_7_%2832402740931%29.jpg/960px-BMW_Hydrogen_7_%2832402740931%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:BMW_Hydrogen_7_(32402740931).jpg",
+     "author": "More Cars from Berlin, Germany",
+     "license": "CC BY 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+   },
+   {
+    "match": "760Li",
+    "kind": "car",
+    "name": "BMW 760Li（E66）",
+    "year": "2003–2008",
+    "brief": "搭载 6.0 L V12 的长轴 7 系，Hydrogen 7 的原型车。",
+    "image": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/BMW_760Li_E66.jpg/960px-BMW_760Li_E66.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:BMW_760Li_E66.jpg",
+     "author": "Christian Schütt",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+   },
+   {
+    "match": "Corolla Sport",
+    "kind": "car",
+    "name": "Toyota Corolla Sport 氢燃料赛车",
+    "year": "2021",
+    "brief": "Toyota 2021 年起用氢内燃机 Corolla 参加 Super Taikyu 耐",
+    "image": null
+   }
+  ],
+  "examples": [
+   {
+    "match": "BMW Hydrogen 7（2005–2007，V12 双燃料）",
+    "kind": "car",
+    "name": "BMW Hydrogen 7",
+    "year": "2005–2007",
+    "brief": "6.0 L V12 可在液氢与汽油间切换，氢续航约 200 km，约产 100 辆。"
+   },
+   {
+    "match": "Mazda RX-8 Hydrogen RE",
+    "kind": "car",
+    "name": "Mazda RX-8 Hydrogen RE",
+    "year": "2003–2006",
+    "brief": "双燃料转子发动机，氢模式 80 kW，2006 年起在日本租赁。"
+   },
+   {
+    "match": "Toyota GR Corolla H2",
+    "kind": "car",
+    "name": "Toyota GR Corolla H2 Concept",
+    "year": "2022–",
+    "brief": "1.6 L 三缸涡轮改烧氢气的赛车，2023 年起改用液氢参加 Super Taikyu。"
+   }
+  ]
+ },
+ "EA-045": {
+  "intro": [
+   {
+    "match": "装有 KERS 的 McLaren",
+    "kind": "f1",
+    "name": "McLaren MP4-24",
+    "year": "2009",
+    "brief": "2009 年 McLaren 赛车，配 KERS，匈牙利站夺 KERS 赛车首胜。",
+    "image": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Hamilton_McLaren_MP4-24.jpg/960px-Hamilton_McLaren_MP4-24.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Hamilton_McLaren_MP4-24.jpg",
+     "author": "Jose Mª Izquierdo Galiot",
+     "license": "CC BY 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "match": "2009 年与 2011–2013 年的 F1 赛车（2.4 L V8 时代）",
+    "kind": "f1",
+    "name": "2009、2011–2013 年 F1 赛车",
+    "year": "2009–2013",
+    "brief": "2.4 L V8 配 60 kW KERS，每圈最多 400 kJ，2010 年停用。"
+   }
+  ]
+ },
+ "EA-046": {
+  "intro": [
+   {
+    "match": "Chevrolet Volt",
+    "kind": "car",
+    "name": "Chevrolet Volt（第一代）",
+    "year": "2010–2015",
+    "brief": "最早量产的增程式电动车，16 kWh 电池加 1.4 L 四缸发电机。",
+    "image": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/2011_Chevrolet_Volt_--_05-03-2011.jpg/960px-2011_Chevrolet_Volt_--_05-03-2011.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:2011_Chevrolet_Volt_--_05-03-2011.jpg",
+     "author": "IFCAR",
+     "license": "Public domain",
+     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing#Material_in_the_public_domain"
+    }
+   },
+   {
+    "match": "BMW i3 REx",
+    "kind": "car",
+    "name": "BMW i3 REx",
+    "year": "2014–2022",
+    "brief": "i3 增程版，用 647 cc 踏板车双缸机发电，续航拉到 240–300 km。",
+    "image": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/D%C3%BClmen%2C_Hausd%C3%BClmen%2C_Sandstra%C3%9Fe%2C_BMW_i3_--_2016_--_1748-54.jpg/960px-D%C3%BClmen%2C_Hausd%C3%BClmen%2C_Sandstra%C3%9Fe%2C_BMW_i3_--_2016_--_1748-54.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Hausd%C3%BClmen,_Sandstra%C3%9Fe,_BMW_i3_--_2016_--_1748-54.jpg",
+     "author": "Dietmar Rabich",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   },
+   {
+    "match": "C650 GT",
+    "kind": "car",
+    "name": "BMW C 650 GT 踏板摩托车",
+    "year": "2012–",
+    "brief": "BMW 大型踏板车，其 647 cc 双缸机被移植为 i3 的增程器。",
+    "image": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/BMW_C_650_GT%2C_left_view.jpg/960px-BMW_C_650_GT%2C_left_view.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:BMW_C_650_GT,_left_view.jpg",
+     "author": "Cjp24",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   },
+   {
+    "match": "理想 ONE",
+    "kind": "car",
+    "name": "理想 ONE",
+    "year": "2019–2022",
+    "brief": "理想汽车首款车，1.2 L 三缸增程器，2019 年确立中国增程式商业模式。",
+    "image": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/2020_Lixiang_ONE_%28front%29.jpg/960px-2020_Lixiang_ONE_%28front%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:2020_Lixiang_ONE_(front).jpg",
+     "author": "User3204",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   },
+   {
+    "match": "Mazda MX-30 R-EV",
+    "kind": "car",
+    "name": "Mazda MX-30 R-EV",
+    "year": "2023–2026",
+    "brief": "用 830 cc 单转子发动机做增程器的插混，2026 年退出市场。",
+    "image": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/PIMS_2024_-_Mazda_MX-30_R-EV.jpg/960px-PIMS_2024_-_Mazda_MX-30_R-EV.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:PIMS_2024_-_Mazda_MX-30_R-EV.jpg",
+     "author": "Ethan Llamas",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "match": "Chevrolet Volt（2011–2019）",
+    "kind": "car",
+    "name": "Chevrolet Volt",
+    "year": "2011–2019",
+    "brief": "首款量产增程式电动车，两代累计约 17.7 万辆，2019 年 2 月停产。"
+   },
+   {
+    "match": "BMW i3 REx（647 cc 双缸）",
+    "kind": "car",
+    "name": "BMW i3 REx",
+    "year": "2014–2022",
+    "brief": "碳纤维车身电动车的增程版，647 cc 双缸机在电量 6% 时介入发电。"
+   },
+   {
+    "match": "Mazda MX-30 R-EV",
+    "kind": "car",
+    "name": "Mazda MX-30 R-EV",
+    "year": "2023–2026",
+    "brief": "830 cc 单转子发动机只负责发电的串联式插混。"
+   },
+   {
+    "match": "理想 L 系列",
+    "kind": "car",
+    "name": "理想 L 系列",
+    "year": "2022–",
+    "brief": "理想 ONE 的后继增程式 SUV，中国增程式市场的主力车型。"
+   }
+  ]
+ },
+ "EA-047": {
+  "intro": [
+   {
+    "match": "1.6 L 90° V6 涡轮发动机",
+    "kind": "f1",
+    "name": "F1 1.6 L V6 涡轮混动动力单元（示例：Mercedes F1 W05）",
+    "year": "2014–2025",
+    "brief": "2014 年起的 F1 动力单元核心，配 MGU-K 与 MGU-H 两台电机。",
+    "image": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/2014_Mercedes-F1_W05_Hybrid.jpg/960px-2014_Mercedes-F1_W05_Hybrid.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:2014_Mercedes-F1_W05_Hybrid.jpg",
+     "author": "MrWalkr",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "match": "2014–2025 赛季 F1 动力单元",
+    "kind": "f1",
+    "name": "F1 V6 涡轮混动动力单元",
+    "year": "2014–2025",
+    "brief": "1.6 L V6 涡轮配 MGU-K/MGU-H，燃油流量限 100 kg/h。"
+   },
+   {
+    "match": "Honda V6 混动",
+    "kind": "f1",
+    "name": "Honda F1 V6 混动动力单元",
+    "year": "2015–2021",
+    "brief": "Honda 2015 年随 McLaren 回归，2021 年助 Red Bull 夺冠。"
+   },
+   {
+    "match": "MGU-K 120 kW，总功率约 1,000 hp",
+    "kind": "f1",
+    "name": "MGU-K 与总输出",
+    "year": "2014–2025",
+    "brief": "MGU-K 输出 120 kW、每圈回收 2 MJ，2019 年号称达 1,000 hp。"
+   }
+  ]
+ },
+ "EA-048": {
+  "intro": [
+   {
+    "match": "Audi SQ7 TDI",
+    "kind": "car",
+    "name": "Audi SQ7 TDI（4M）",
+    "year": "2016–2019",
+    "brief": "首款量产搭载 48 V 电动压气机的车，4.0 L V8 柴油机 429 hp。",
+    "image": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Audi_SQ7_TDI%2C_GIMS_2018%2C_Le_Grand-Saconnex_%281X7A1497%29.jpg/960px-Audi_SQ7_TDI%2C_GIMS_2018%2C_Le_Grand-Saconnex_%281X7A1497%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Audi_SQ7_TDI,_GIMS_2018,_Le_Grand-Saconnex_(1X7A1497).jpg",
+     "author": "Matti Blume",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "match": "Audi SQ7 4.0 TDI 电动压气机（2016）",
+    "kind": "car",
+    "name": "Audi SQ7 4.0 TDI",
+    "year": "2016",
+    "brief": "双涡轮柴油 V8 再加 70,000 rpm 的 48 V 电动压气机，消除涡轮迟滞。"
+   },
+   {
+    "match": "Mercedes-AMG M139/M256 e-turbo（2022 起）",
+    "kind": "engine",
+    "name": "Mercedes-AMG M139 电动涡轮版",
+    "year": "2022 起",
+    "brief": "2.0 L 四缸加电机直驱涡轮轴，用于 C 63 S E Performance。"
+   }
+  ]
+ },
+ "EA-049": {
+  "intro": [
+   {
+    "match": "VC-Turbo",
+    "kind": "engine",
+    "name": "Nissan VC-Turbo · 装车示例：Infiniti QX50",
+    "year": "2018 起",
+    "brief": "第一台投产的可变压缩比发动机，多连杆机构使压缩比在 8:1–14:1 间连续变化。",
+    "image": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Infiniti_QX50_%28J55%29_Washington_DC_Metro_Area%2C_USA.jpg/960px-Infiniti_QX50_%28J55%29_Washington_DC_Metro_Area%2C_USA.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Infiniti_QX50_(J55)_Washington_DC_Metro_Area,_USA.jpg",
+     "author": "OWS Photography",
+     "license": "CC BY 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+    }
+   },
+   {
+    "match": "Infiniti QX50",
+    "kind": "car",
+    "name": "Infiniti QX50（J55）",
+    "year": "2018–2025",
+    "brief": "2017 年 12 月发布，首款搭载 2.0 L VC-Turbo 的量产车。",
+    "image": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Infiniti_QX50_%28J55%29_Washington_DC_Metro_Area%2C_USA.jpg/960px-Infiniti_QX50_%28J55%29_Washington_DC_Metro_Area%2C_USA.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Infiniti_QX50_(J55)_Washington_DC_Metro_Area,_USA.jpg",
+     "author": "OWS Photography",
+     "license": "CC BY 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+    }
+   },
+   {
+    "match": "SVC",
+    "kind": "engine",
+    "name": "Saab SVC 可变压缩比发动机",
+    "year": "2000",
+    "brief": "Saab 2000 年展示的铰接缸体可变压缩比试验机，被 GM 以成本原因搁置。",
+    "image": null
+   }
+  ],
+  "examples": [
+   {
+    "match": "Infiniti QX50（2018，KR20DDET，8:1–14:1，268 hp）",
+    "kind": "car",
+    "name": "Infiniti QX50（J55）",
+    "year": "2018–2025",
+    "brief": "搭载 2.0 L KR20DDET，压缩比 8:1–14:1 连续可变，268 hp。"
+   },
+   {
+    "match": "KR15DDT（Rogue/X-Trail e-Power）",
+    "kind": "engine",
+    "name": "Nissan KR15DDT",
+    "year": "2021 起",
+    "brief": "1.5 L 三缸可变压缩比涡轮机，201 hp，用于 X-Trail e-Power。"
+   }
+  ]
+ },
+ "EA-050": {
+  "intro": [
+   {
+    "match": "Skyactiv-X",
+    "kind": "engine",
+    "name": "Mazda Skyactiv-X · 装车示例：Mazda3",
+    "year": "2019",
+    "brief": "第一台商用火花控制压燃汽油机，2.0 L、压缩比 16.3:1、132 kW。",
+    "image": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Mazda3_%28BP%29_X_e-Skyactiv-X_IMG_9022_%28cropped%29.jpg/960px-Mazda3_%28BP%29_X_e-Skyactiv-X_IMG_9022_%28cropped%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Mazda3_(BP)_X_e-Skyactiv-X_IMG_9022_(cropped).jpg",
+     "author": "Alexander Migl",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   },
+   {
+    "match": "Mazda3",
+    "kind": "car",
+    "name": "Mazda3（BP）",
+    "year": "2019–",
+    "brief": "第四代 Mazda3，欧洲与日本可选 Skyactiv-X 压燃发动机。",
+    "image": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Mazda3_%28BP%29_X_e-Skyactiv-X_IMG_9015.jpg/960px-Mazda3_%28BP%29_X_e-Skyactiv-X_IMG_9015.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Mazda3_(BP)_X_e-Skyactiv-X_IMG_9015.jpg",
+     "author": "Alexander Migl",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   },
+   {
+    "match": "CX-30",
+    "kind": "car",
+    "name": "Mazda CX-30（DM）",
+    "year": "2019–",
+    "brief": "基于 Mazda3 的紧凑 SUV，另一款搭载 Skyactiv-X 的车型。",
+    "image": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Mazda_CX-30_%28DM%29_in_Slovakia_2020.jpg/960px-Mazda_CX-30_%28DM%29_in_Slovakia_2020.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Mazda_CX-30_(DM)_in_Slovakia_2020.jpg",
+     "author": "Jakub CA",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   },
+   {
+    "match": "Skyactiv-G",
+    "kind": "engine",
+    "name": "Mazda Skyactiv-G",
+    "year": "2011–",
+    "brief": "Mazda 的高压缩比普通汽油机，Skyactiv-X 在英国比它贵近 2,000 英镑。",
+    "image": null
+   },
+   {
+    "match": "e-Skyactiv X",
+    "kind": "engine",
+    "name": "Mazda e-Skyactiv X · 装车示例：Mazda3",
+    "year": "2021–",
+    "brief": "Skyactiv-X 的改进版，压缩比降至 15.0:1，输出提至 183 hp。",
+    "image": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Mazda3_%28BP%29_X_e-Skyactiv-X_IMG_9015.jpg/960px-Mazda3_%28BP%29_X_e-Skyactiv-X_IMG_9015.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Mazda3_(BP)_X_e-Skyactiv-X_IMG_9015.jpg",
+     "author": "Alexander Migl",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   },
+   {
+    "match": "Skyactiv-Z",
+    "kind": "engine",
+    "name": "Mazda Skyactiv-Z",
+    "year": "2027（计划）",
+    "brief": "Mazda 计划 2027 年推出的下一代四缸机，将替代 G 与 X 两款。",
+    "image": null
+   }
+  ],
+  "examples": [
+   {
+    "match": "Mazda Skyactiv-X（2019，2.0 L，16.3:1）",
+    "kind": "engine",
+    "name": "Mazda Skyactiv-X",
+    "year": "2019",
+    "brief": "2.0 L 压缩比 16.3:1 的 SPCCI 压燃汽油机，带小型机械增压器稀释混合气。"
+   },
+   {
+    "match": "Mazda3",
+    "kind": "car",
+    "name": "Mazda3（BP）",
+    "year": "2019–",
+    "brief": "搭载 Skyactiv-X 的掀背/三厢车，仅在欧洲、日本等市场销售该版本。"
+   },
+   {
+    "match": "CX-30",
+    "kind": "car",
+    "name": "Mazda CX-30",
+    "year": "2019–",
+    "brief": "与 Mazda3 同平台的紧凑 SUV，提供 Skyactiv-X 版本。"
+   }
+  ]
+ },
+ "EA-051": {
+  "intro": [],
+  "examples": [
+   {
+    "match": "Porsche 等在智利的 Haru Oni 示范厂（2022 年 12 月首批出油）",
+    "kind": "engine",
+    "name": "Haru Oni E-fuel 示范厂",
+    "year": "2022–",
+    "brief": "Porsche 与 HIF 在智利用风电制氢合成汽油，年产约 13 万升。"
+   },
+   {
+    "match": "F1 2026 起用 100% 可持续燃料",
+    "kind": "f1",
+    "name": "F1 2026 可持续燃料规则",
+    "year": "2026 起",
+    "brief": "FIA 要求燃料完全由先进可持续组分构成，并以能量流量 3,000 MJ/h 限制。"
+   }
+  ]
+ },
+ "EA-052": {
+  "intro": [
+   {
+    "match": "1.6 L V6 涡轮发动机",
+    "kind": "f1",
+    "name": "F1 2026 动力单元 1.6 L V6（示例：Mercedes F1 W17）",
+    "year": "2026 起",
+    "brief": "保留 1.6 L V6 涡轮，取消 MGU-H，MGU-K 提到 350 kW。",
+    "image": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/2026_Chinese_GP_-_Mercedes_-_W17.jpg/960px-2026_Chinese_GP_-_Mercedes_-_W17.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Mercedes_-_W17.jpg",
+     "author": "Liauzh",
+     "license": "CC BY 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "match": "2026 赛季起全部 F1 动力单元，总功率超过 1,000 hp，使用 100% 可持续燃料",
+    "kind": "f1",
+    "name": "F1 2026 动力单元",
+    "year": "2026 起",
+    "brief": "五家制造商供应，电能占比约 50%，取消 MGU-H，用 100% 可持续燃料。"
+   }
+  ]
+ }
+}

@@ -1,0 +1,872 @@
+[
+  {
+    "id": "EA-001",
+    "n": 1,
+    "year": "1769",
+    "type": "ext",
+    "name": "蒸汽机汽车",
+    "en": "Steam car",
+    "desc": "锅炉产生蒸汽推动车轮，Cugnot 在 1769 年试验小型车辆。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-002",
+    "n": 2,
+    "year": "1807",
+    "type": "proto",
+    "name": "de Rivaz 内燃机",
+    "en": "de Rivaz engine",
+    "desc": "1807 年取得专利的氢燃料试验机，把燃烧移入气缸。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-003",
+    "n": 3,
+    "year": "1816",
+    "type": "ext",
+    "name": "斯特林发动机",
+    "en": "Stirling engine",
+    "desc": "封闭气体在冷热两端循环，汽车上的应用以研究项目为主。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-004",
+    "n": 4,
+    "year": "1860",
+    "type": "proto",
+    "name": "Lenoir 煤气机",
+    "en": "Lenoir engine",
+    "desc": "1860 年获得专利的早期商业内燃机，燃烧前不压缩混合气。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-005",
+    "n": 5,
+    "year": "1872",
+    "type": "proto",
+    "name": "Brayton 定压燃烧机",
+    "en": "Brayton engine",
+    "desc": "分开压缩与膨胀的活塞机，其定压循环思想延续到燃气轮机。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-006",
+    "n": 6,
+    "year": "1876",
+    "type": "proto",
+    "name": "奥托四冲程",
+    "en": "Otto cycle",
+    "desc": "1876 年的压缩式四冲程机，奠定点燃式发动机的基本工作顺序。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-007",
+    "n": 7,
+    "year": "1881",
+    "type": "proto",
+    "name": "二冲程",
+    "en": "Two-stroke",
+    "desc": "曲轴转一圈完成循环；传统小型汽油机的扫气与润滑带来排放难题。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-008",
+    "n": 8,
+    "year": "1882",
+    "type": "proto",
+    "name": "阿特金森 / 米勒循环",
+    "en": "Atkinson / Miller",
+    "desc": "用较大的有效膨胀比提高效率；原始连杆机构与现代配气实现须分清。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-009",
+    "n": 9,
+    "year": "1885",
+    "type": "layout",
+    "name": "单缸",
+    "en": "Single-cylinder",
+    "desc": "一个气缸承担全部做功，结构紧凑而输出脉动明显。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-010",
+    "n": 10,
+    "year": "1897",
+    "type": "diesel",
+    "name": "狄塞尔柴油机",
+    "en": "Diesel engine",
+    "desc": "压缩空气升温后喷油自燃，1897 年的成功试验是重要节点。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-011",
+    "n": 11,
+    "year": "1895",
+    "type": "layout",
+    "name": "直列双缸",
+    "en": "Inline-2",
+    "desc": "两缸排成一列，1895 年 Daimler Phoenix 改型是早期汽车实例。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-012",
+    "n": 12,
+    "year": "1903",
+    "type": "layout",
+    "name": "直列六缸",
+    "en": "Inline-6",
+    "desc": "常见布置可抵消一、二阶往复惯性力与力矩，代价是长度。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-013",
+    "n": 13,
+    "year": "1908",
+    "type": "layout",
+    "name": "直列四缸",
+    "en": "Inline-4",
+    "desc": "四缸直列兼顾尺寸与成本，Model T 是其大规模应用代表。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-014",
+    "n": 14,
+    "year": "1914",
+    "type": "layout",
+    "name": "V8",
+    "en": "V8",
+    "desc": "两排各四缸，Cadillac 于 1914 年推出重要量产车型。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-015",
+    "n": 15,
+    "year": "1915",
+    "type": "layout",
+    "name": "V12",
+    "en": "V12",
+    "desc": "两排各六缸，Packard Twin Six 是1915年的早期量产代表。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-016",
+    "n": 16,
+    "year": "1922",
+    "type": "layout",
+    "name": "星型",
+    "en": "Radial",
+    "desc": "气缸围绕曲轴排列，航空常见，汽车只有少量试验实例。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-017",
+    "n": 17,
+    "year": "1919",
+    "type": "layout",
+    "name": "直列八缸",
+    "en": "Straight-8",
+    "desc": "八缸排成一列，早期豪华车与赛车用平顺性换取很长的机体。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-018",
+    "n": 18,
+    "year": "1921",
+    "type": "boost",
+    "name": "机械增压",
+    "en": "Supercharger",
+    "desc": "曲轴驱动压气机；Mercedes在1921年展出、1923年上市增压车型。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-019",
+    "n": 19,
+    "year": "约1930",
+    "type": "layout",
+    "name": "H 型 / U 型",
+    "en": "H / U engine",
+    "desc": "以齿轮联结两根曲轴，BRM H16 是著名赛车实例。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-020",
+    "n": 20,
+    "year": "1930",
+    "type": "layout",
+    "name": "V16",
+    "en": "V16",
+    "desc": "两排各八缸，以平顺性和复杂程度体现极少数旗舰车型的取舍。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-021",
+    "n": 21,
+    "year": "1932",
+    "type": "unconv",
+    "name": "对置活塞",
+    "en": "Opposed-piston",
+    "desc": "两个活塞在同一气缸内相向运动，燃烧室位于两者之间。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-022",
+    "n": 22,
+    "year": "1934",
+    "type": "unconv",
+    "name": "自由活塞",
+    "en": "Free-piston",
+    "desc": "活塞不受曲轴几何约束，可直接驱动压缩机或线性发电机。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-023",
+    "n": 23,
+    "year": "1897",
+    "type": "layout",
+    "name": "水平对置",
+    "en": "Flat / Boxer",
+    "desc": "左右平卧气缸降低高度；Benz的1897年contra双缸是早期节点。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-024",
+    "n": 24,
+    "year": "1950s",
+    "type": "fuel",
+    "name": "CNG / LPG",
+    "en": "Autogas",
+    "desc": "以天然气或液化石油气替代汽油，需要相应储气和供气系统。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-025",
+    "n": 25,
+    "year": "1950",
+    "type": "layout",
+    "name": "V6",
+    "en": "V6",
+    "desc": "两排各三缸；1950年Lancia Aurelia推动V6进入量产汽车。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-026",
+    "n": 26,
+    "year": "1950",
+    "type": "unconv",
+    "name": "燃气轮机汽车",
+    "en": "Gas turbine car",
+    "desc": "压气机、燃烧室与涡轮连续工作，Rover和Chrysler都做过汽车试验。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-027",
+    "n": 27,
+    "year": "1957",
+    "type": "unconv",
+    "name": "汪克尔转子机",
+    "en": "Wankel rotary",
+    "desc": "转子在特殊壳体内形成变化容积，1957年原型是关键节点。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-028",
+    "n": 28,
+    "year": "约1960",
+    "type": "layout",
+    "name": "直列三缸",
+    "en": "Inline-3",
+    "desc": "三缸排列紧凑，往复力可平衡，但仍有端到端摇摆力矩。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-029",
+    "n": 29,
+    "year": "1962",
+    "type": "boost",
+    "name": "涡轮增压",
+    "en": "Turbocharger",
+    "desc": "废气驱动涡轮并带动压气机，1962年Jetfire先于Corvair涡轮车型推出。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-030",
+    "n": 30,
+    "year": "1951年机械汽油直喷；1967年电子喷射",
+    "type": "control",
+    "name": "燃油喷射（机械→电控）",
+    "en": "Fuel injection: mechanical to electronic",
+    "desc": "电子控制喷油量，1967年Bosch Jetronic是大规模应用的重要节点。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-031",
+    "n": 31,
+    "year": "1974",
+    "type": "layout",
+    "name": "直列五缸",
+    "en": "Inline-5",
+    "desc": "长度介于直四与直六之间；1974年柴油机、1976年Audi汽油机是关键节点。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-032",
+    "n": 32,
+    "year": "1980",
+    "type": "valve",
+    "name": "可变气门控制",
+    "en": "Variable valve control",
+    "desc": "按工况调整气门正时、持续期或升程；VTEC、Valvetronic和MultiAir采用不同实现。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-033",
+    "n": 33,
+    "year": "1985",
+    "type": "boost",
+    "name": "双增压",
+    "en": "Twincharger",
+    "desc": "机械增压与废气涡轮配合，扩展增压发动机的响应范围。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-034",
+    "n": 34,
+    "year": "1989",
+    "type": "f1",
+    "name": "F1 3.5 L 自然吸气",
+    "en": "F1 3.5 L NA",
+    "desc": "1989–1994年的F1自然吸气规则，V8、V10、V12同时竞争。",
+    "kind": "era"
+  },
+  {
+    "id": "EA-035",
+    "n": 35,
+    "year": "1989",
+    "type": "valve",
+    "name": "VTEC 可变升程",
+    "en": "VTEC",
+    "desc": "通过切换凸轮型线改变升程和持续期，1989年B16A是汽车应用节点。",
+    "kind": "variant"
+  },
+  {
+    "id": "EA-036",
+    "n": 36,
+    "year": "1991",
+    "type": "layout",
+    "name": "VR6",
+    "en": "VR engine",
+    "desc": "窄夹角使两排六缸共用一只缸盖，服务紧凑机舱的布置需求。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-037",
+    "n": 37,
+    "year": "1992",
+    "type": "layout",
+    "name": "V10",
+    "en": "V10",
+    "desc": "两排各五缸，Dodge Viper与F1展示了不同的V10设计。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-038",
+    "n": 38,
+    "year": "1996",
+    "type": "control",
+    "name": "汽油缸内直喷",
+    "en": "GDI",
+    "desc": "直接向气缸喷入汽油；1996年Mitsubishi GDI是现代电控推广节点。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-039",
+    "n": 39,
+    "year": "1997",
+    "type": "diesel",
+    "name": "柴油共轨",
+    "en": "Common-rail diesel",
+    "desc": "高压油轨把建压与喷射分开，1997年Alfa Romeo 156 JTD是乘用车里程碑。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-040",
+    "n": 40,
+    "year": "1997",
+    "type": "hybrid",
+    "name": "混合动力专用发动机",
+    "en": "Hybrid engine",
+    "desc": "围绕电机协同优化内燃机，Prius展示了偏重效率的阿特金森式配气。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-041",
+    "n": 41,
+    "year": "2001",
+    "type": "valve",
+    "name": "Valvetronic 可变升程",
+    "en": "Valvetronic variable lift",
+    "desc": "BMW用连续可变进气门升程控制进气量，降低部分负荷泵气损失。",
+    "kind": "variant"
+  },
+  {
+    "id": "EA-042",
+    "n": 42,
+    "year": "2001",
+    "type": "layout",
+    "name": "W12 / W16",
+    "en": "W engine",
+    "desc": "大众集团以窄夹角气缸组形成紧凑多排布局，代表为W12和W16。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-043",
+    "n": 43,
+    "year": "2006",
+    "type": "f1",
+    "name": "F1 2.4 L V8",
+    "en": "F1 2.4 L V8",
+    "desc": "2006–2013年F1的2.4升自然吸气V8，缸径和转速受到规则约束。",
+    "kind": "era"
+  },
+  {
+    "id": "EA-044",
+    "n": 44,
+    "year": "2006",
+    "type": "fuel",
+    "name": "氢内燃机",
+    "en": "Hydrogen ICE",
+    "desc": "在气缸内燃烧氢气，仍需控制氮氧化物并解决储氢问题。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-045",
+    "n": 45,
+    "year": "2009",
+    "type": "hybrid",
+    "name": "F1 KERS",
+    "en": "KERS",
+    "desc": "2009年F1引入可回收并再次释放制动能量的KERS。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-046",
+    "n": 46,
+    "year": "2010",
+    "type": "hybrid",
+    "name": "增程式",
+    "en": "Range extender",
+    "desc": "用内燃机延长电驱续航；纯串联方案与Volt的多模式传动要区分。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-047",
+    "n": 47,
+    "year": "2014",
+    "type": "f1",
+    "name": "F1 1.6 L V6 涡轮混动",
+    "en": "F1 V6 hybrid",
+    "desc": "2014–2025年F1采用V6涡轮混动，MGU-K与MGU-H分别回收两种能量。",
+    "kind": "era"
+  },
+  {
+    "id": "EA-048",
+    "n": 48,
+    "year": "2016",
+    "type": "boost",
+    "name": "电动增压 / 电子涡轮",
+    "en": "Electric compressor",
+    "desc": "独立电动压气机与轴上电机涡轮是两种不同方案，都可改善增压响应。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-049",
+    "n": 49,
+    "year": "2018",
+    "type": "combustion",
+    "name": "Infiniti／Nissan VC-Turbo",
+    "en": "Infiniti / Nissan VC-Turbo",
+    "desc": "多连杆机构改变活塞到达的位置，在效率与抗爆震之间调节。",
+    "kind": "variant"
+  },
+  {
+    "id": "EA-050",
+    "n": 50,
+    "year": "2019",
+    "type": "combustion",
+    "name": "Mazda SPCCI",
+    "en": "Mazda SPCCI",
+    "desc": "HCCI依靠均质混合气自燃；Mazda SPCCI以火花帮助控制压燃时机。",
+    "kind": "variant"
+  },
+  {
+    "id": "EA-051",
+    "n": 51,
+    "year": "2022",
+    "type": "fuel",
+    "name": "合成燃料 E-fuel",
+    "en": "E-fuel",
+    "desc": "用电制氢并与碳源合成液体燃料，减碳效果取决于整条生产链。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-052",
+    "n": 52,
+    "year": "2026",
+    "type": "f1",
+    "name": "F1 新规则",
+    "en": "F1 2026",
+    "desc": "2026年保留V6涡轮，取消MGU-H，并提高动能回收系统的功率。",
+    "kind": "era"
+  },
+  {
+    "id": "EA-053",
+    "n": 53,
+    "year": "1900年代；1932年普及节点",
+    "type": "valve",
+    "name": "侧置气门",
+    "en": "Side-valve / flathead",
+    "desc": "气门位于气缸旁的缸体内，缸盖简单；早期汽车以制造便利换取较曲折的气流路径。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-054",
+    "n": 54,
+    "year": "1904；1955 Chevrolet small-block",
+    "type": "valve",
+    "name": "顶置气门（OHV）",
+    "en": "Overhead valves (OHV)",
+    "desc": "气门位于缸盖，凸轮轴仍在缸体；常以推杆和摇臂传递运动。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-055",
+    "n": 55,
+    "year": "1912 Peugeot L76",
+    "type": "valve",
+    "name": "顶置凸轮轴与多气门",
+    "en": "OHC, DOHC and multi-valve heads",
+    "desc": "凸轮轴移入缸盖，缩短气门传动链；双顶置凸轮轴便于分别控制进排气门。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-056",
+    "n": 56,
+    "year": "1976推出／1977款",
+    "type": "combustion",
+    "name": "三元催化与氧传感器",
+    "en": "Three-way catalyst and oxygen sensor",
+    "desc": "催化器处理尾气，氧传感器帮助把汽油机混合气保持在合适范围。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-057",
+    "n": 57,
+    "year": "1979 Motronic",
+    "type": "control",
+    "name": "电子发动机控制单元",
+    "en": "Engine control unit (ECU)",
+    "desc": "传感器、控制程序和执行器构成闭环，让喷油、点火等随工况协调变化。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-058",
+    "n": 58,
+    "year": "1893 Maybach设计",
+    "type": "control",
+    "name": "化油器",
+    "en": "Carburetor",
+    "desc": "利用进气产生的压差计量和雾化燃油，再把混合气送入气缸。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-059",
+    "n": 59,
+    "year": "1897磁电机／1902高压系统",
+    "type": "control",
+    "name": "火花点火系统",
+    "en": "Spark-ignition systems",
+    "desc": "把电能变为适时的高压火花；从磁电机、分电器发展到电子控制与独立线圈。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-060",
+    "n": 60,
+    "year": "1980年代末：Croma／1989 Audi 100 TDI",
+    "type": "diesel",
+    "name": "直喷柴油",
+    "en": "Direct-injection diesel",
+    "desc": "燃油直接喷入主燃烧室，与通过预燃室的间接喷射区分；不等于共轨。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-061",
+    "n": 61,
+    "year": "1978 Mercedes-Benz 300 SD",
+    "type": "diesel",
+    "name": "涡轮增压柴油",
+    "en": "Turbocharged diesel",
+    "desc": "排气驱动压气机增加进气量，使柴油机在合适供油和冷却下提高输出。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-062",
+    "n": 62,
+    "year": "2000 DPF量产节点",
+    "type": "diesel",
+    "name": "柴油排气后处理",
+    "en": "Diesel exhaust aftertreatment",
+    "desc": "用不同装置分别处理碳烟和氮氧化物，发动机本体与排气系统共同满足排放目标。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-063",
+    "n": 63,
+    "year": "1979乙醇车；2003巴西Flex",
+    "type": "fuel",
+    "name": "乙醇与灵活燃料",
+    "en": "Ethanol and flexible-fuel engines",
+    "desc": "从专用乙醇发动机发展到兼容多种汽油—乙醇比例，变化不仅是更换油箱里的燃料。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-064",
+    "n": 64,
+    "year": "1967荷兰大奖赛",
+    "type": "model",
+    "name": "Cosworth DFV",
+    "en": "Cosworth DFV",
+    "desc": "3.0升自然吸气V8，以供多支车队使用的竞赛发动机改变F1格局。",
+    "kind": "model"
+  },
+  {
+    "id": "EA-065",
+    "n": 65,
+    "year": "1885年；1886年装车",
+    "type": "model",
+    "name": "Daimler／Maybach 高速汽油单缸",
+    "en": "Daimler–Maybach high-speed petrol single",
+    "desc": "把较小、较轻的高速汽油机装上车辆，是固定式煤气机走向汽车动力的重要过渡。",
+    "kind": "model"
+  },
+  {
+    "id": "EA-066",
+    "n": 66,
+    "year": "1981年量产节点",
+    "type": "valve",
+    "name": "停缸",
+    "en": "Cylinder deactivation",
+    "desc": "低负荷时让部分气缸暂时停止燃烧，提高仍在工作气缸的负荷，减少部分工况损失。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-067",
+    "n": 67,
+    "year": "2016年示范车",
+    "type": "valve",
+    "name": "无凸轮轴配气",
+    "en": "Camless valve actuation",
+    "desc": "用独立执行器控制气门，减少固定凸轮轮廓对升程和开启时机的约束。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-068",
+    "n": 68,
+    "year": "1951车型年代表实例",
+    "type": "combustion",
+    "name": "燃烧室形状",
+    "en": "Combustion-chamber geometry",
+    "desc": "半球、楔形与屋脊是燃烧室几何路线；它们与气门布置相关，却不是凸轮轴数量的别名。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-069",
+    "n": 69,
+    "year": "1972年试验／1973年日本量产",
+    "type": "combustion",
+    "name": "Honda CVCC 分层燃烧",
+    "en": "Honda CVCC stratified combustion",
+    "desc": "以较浓的副燃烧室混合气稳定点火，再点燃较稀的主燃烧室混合气。",
+    "kind": "variant"
+  },
+  {
+    "id": "EA-070",
+    "n": 70,
+    "year": "早期实践；2020年现代实例",
+    "type": "combustion",
+    "name": "汽油预燃室点火",
+    "en": "Petrol pre-chamber ignition",
+    "desc": "先在小室内点燃混合气，再让燃烧射流通过小孔进入主燃烧室。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-071",
+    "n": 71,
+    "year": "1979年ATAC研究先声",
+    "type": "combustion",
+    "name": "均质充量压燃",
+    "en": "Homogeneous charge compression ignition (HCCI)",
+    "desc": "让预混合充量在压缩后的温压条件下自燃，关键难点是控制自燃时机和工作范围。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-072",
+    "n": 72,
+    "year": "2020年原厂对照实例",
+    "type": "layout",
+    "name": "平面与交叉曲轴",
+    "en": "Flat-plane and cross-plane crankshafts",
+    "desc": "V8曲柄销的相位安排，改变惯性平衡、气缸列排气脉冲和整机调校方式。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-073",
+    "n": 73,
+    "year": "1975年Silent Shaft量产节点",
+    "type": "layout",
+    "name": "平衡轴",
+    "en": "Balance shafts",
+    "desc": "让偏心配重按特定转速和相位旋转，抵消某些惯性力或摇摆力矩。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-074",
+    "n": 74,
+    "year": "1948年2CV亮相；1997年水冷996",
+    "type": "combustion",
+    "name": "风冷与液冷",
+    "en": "Air and liquid cooling",
+    "desc": "通过空气或循环液体把热量从发动机带走；两者都需管理局部温度、暖机和散热负荷。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-075",
+    "n": 75,
+    "year": "1965年Indy赛用；2022年中国混动实例",
+    "type": "fuel",
+    "name": "甲醇燃料",
+    "en": "Methanol fuel",
+    "desc": "一种不同于乙醇的含氧液体燃料，既有赛车历史，也有针对它开发的道路车动力。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-076",
+    "n": 76,
+    "year": "1922年含铅使用；2021年车用全球退出",
+    "type": "fuel",
+    "name": "含铅汽油到无铅汽油",
+    "en": "From leaded to unleaded petrol",
+    "desc": "从用铅添加剂提升抗爆性，转向适配催化净化和健康目标的无铅燃料体系。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-077",
+    "n": 77,
+    "year": "2007年HVO工业化节点",
+    "type": "fuel",
+    "name": "生物柴油与HVO",
+    "en": "Biodiesel and HVO",
+    "desc": "FAME是脂肪酸甲酯，HVO类可再生柴油是烃类；两者不能互当名称或兼容性保证。",
+    "kind": "concept"
+  },
+  {
+    "id": "EA-078",
+    "n": 78,
+    "year": "1932年",
+    "type": "model",
+    "name": "Ford Flathead V8",
+    "en": "Ford Flathead V8",
+    "desc": "把侧置气门V8带入更广的大众市场，代表制造方法与发动机布局共同改变价格门槛。",
+    "kind": "model"
+  },
+  {
+    "id": "EA-079",
+    "n": 79,
+    "year": "1955车型年",
+    "type": "model",
+    "name": "Chevrolet Small-Block V8 家族",
+    "en": "Chevrolet small-block V8 family",
+    "desc": "以紧凑的推杆V8架构持续演进，是OHV并未随DOHC普及而消失的代表。",
+    "kind": "model"
+  },
+  {
+    "id": "EA-080",
+    "n": 80,
+    "year": "1974年自然吸气；1978年涡轮装车",
+    "type": "model",
+    "name": "Mercedes-Benz OM617",
+    "en": "Mercedes-Benz OM617",
+    "desc": "从自然吸气直五柴油到涡轮柴油轿车的桥梁，须区分家族诞生和增压版本。",
+    "kind": "model"
+  },
+  {
+    "id": "EA-081",
+    "n": 81,
+    "year": "1933年发展转折；1976年最后Indy胜利",
+    "type": "model",
+    "name": "Offenhauser 赛车直四",
+    "en": "Offenhauser racing inline-four",
+    "desc": "从Miller技术延续而来的美国赛车直四，说明成熟架构能在竞赛中长期演进。",
+    "kind": "model"
+  },
+  {
+    "id": "EA-082",
+    "n": 82,
+    "year": "2007年首批量产节点",
+    "type": "model",
+    "name": "Volkswagen EA888 家族",
+    "en": "Volkswagen EA888 family",
+    "desc": "涡轮、汽油直喷与持续代际改进结合的直四家族，不是一套永远相同的规格。",
+    "kind": "model"
+  },
+  {
+    "id": "EA-083",
+    "n": 83,
+    "year": "1982年F1首胜；1983年车手冠军",
+    "type": "model",
+    "name": "BMW M12/13",
+    "en": "BMW M12/13",
+    "desc": "以1.5升涡轮直四参与1980年代F1，连接量产机基础、增压开发与规则竞争。",
+    "kind": "model"
+  },
+  {
+    "id": "EA-084",
+    "n": 84,
+    "year": "1989年4月",
+    "type": "model",
+    "name": "Honda B16A",
+    "en": "Honda B16A",
+    "desc": "把VTEC可变气门升程与正时带入量产性能直四的代表机型。",
+    "kind": "model"
+  },
+  {
+    "id": "EA-085",
+    "n": 85,
+    "year": "1997年12月日本上市",
+    "type": "model",
+    "name": "Toyota 1NZ-FXE",
+    "en": "Toyota 1NZ-FXE",
+    "desc": "第一代Prius的混动专用汽油机，代表让发动机效率与电机能力共同规划的路线。",
+    "kind": "model"
+  },
+  {
+    "id": "EA-086",
+    "n": 86,
+    "year": "1973年13B；2003年RENESIS",
+    "type": "model",
+    "name": "Mazda 13B／RENESIS 家族",
+    "en": "Mazda 13B / RENESIS family",
+    "desc": "把双转子道路车路线延续多代；13B家族、RENESIS版本与R26B赛车机需分清。",
+    "kind": "model"
+  },
+  {
+    "id": "EA-087",
+    "n": 87,
+    "year": "2016年VC-Turbo公开实例",
+    "type": "combustion",
+    "name": "可变几何压缩比",
+    "en": "Variable geometric compression ratio",
+    "desc": "在运行中改变气缸最大与最小容积之比，区别于仅改变气门时序的有效压缩过程。",
+    "kind": "concept"
+  }
+]

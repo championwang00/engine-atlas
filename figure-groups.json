@@ -1,0 +1,448 @@
+{
+ "g1": [
+  {
+   "id": "EA-009",
+   "cn": "单缸",
+   "en": "Single-cylinder"
+  },
+  {
+   "id": "EA-011",
+   "cn": "直列双缸",
+   "en": "Inline-2"
+  },
+  {
+   "id": "EA-028",
+   "cn": "直列三缸",
+   "en": "Inline-3"
+  },
+  {
+   "id": "EA-013",
+   "cn": "直列四缸",
+   "en": "Inline-4"
+  },
+  {
+   "id": "EA-031",
+   "cn": "直列五缸",
+   "en": "Inline-5"
+  },
+  {
+   "id": "EA-012",
+   "cn": "直列六缸",
+   "en": "Inline-6"
+  },
+  {
+   "id": "EA-017",
+   "cn": "直列八缸",
+   "en": "Straight-8"
+  }
+ ],
+ "g2": [
+  {
+   "id": "EA-037",
+   "cn": "V10",
+   "en": "V10"
+  },
+  {
+   "id": "EA-020",
+   "cn": "V16",
+   "en": "V16"
+  },
+  {
+   "id": "EA-023",
+   "cn": "水平对置",
+   "en": "Flat / Boxer"
+  },
+  {
+   "id": "EA-042",
+   "cn": "W12 / W16",
+   "en": "W engine"
+  },
+  {
+   "id": "EA-036",
+   "cn": "VR6",
+   "en": "VR engine"
+  },
+  {
+   "id": "EA-019",
+   "cn": "H 型 / U 型",
+   "en": "H / U engine"
+  },
+  {
+   "id": "EA-016",
+   "cn": "星型",
+   "en": "Radial"
+  }
+ ],
+ "g3": [
+  {
+   "id": "EA-072",
+   "cn": "平面与交叉曲轴",
+   "en": "Flat-plane and cross-plane crankshafts"
+  },
+  {
+   "id": "EA-073",
+   "cn": "平衡轴",
+   "en": "Balance shafts"
+  },
+  {
+   "id": "EA-034",
+   "cn": "F1 3.5 L 自然吸气",
+   "en": "F1 3.5 L NA"
+  },
+  {
+   "id": "EA-043",
+   "cn": "F1 2.4 L V8",
+   "en": "F1 2.4 L V8"
+  },
+  {
+   "id": "EA-047",
+   "cn": "F1 1.6 L V6 涡轮混动",
+   "en": "F1 V6 hybrid"
+  },
+  {
+   "id": "EA-052",
+   "cn": "F1 新规则",
+   "en": "F1 2026"
+  },
+  {
+   "id": "EA-064",
+   "cn": "Cosworth DFV",
+   "en": "Cosworth DFV"
+  }
+ ],
+ "g4": [
+  {
+   "id": "EA-006",
+   "cn": "奥托四冲程",
+   "en": "Otto cycle"
+  },
+  {
+   "id": "EA-007",
+   "cn": "二冲程",
+   "en": "Two-stroke"
+  },
+  {
+   "id": "EA-010",
+   "cn": "狄塞尔柴油机",
+   "en": "Diesel engine"
+  },
+  {
+   "id": "EA-008",
+   "cn": "阿特金森 / 米勒循环",
+   "en": "Atkinson / Miller"
+  },
+  {
+   "id": "EA-004",
+   "cn": "Lenoir 煤气机",
+   "en": "Lenoir engine"
+  },
+  {
+   "id": "EA-005",
+   "cn": "Brayton 定压燃烧机",
+   "en": "Brayton engine"
+  },
+  {
+   "id": "EA-002",
+   "cn": "de Rivaz 内燃机",
+   "en": "de Rivaz engine"
+  }
+ ],
+ "g5": [
+  {
+   "id": "EA-027",
+   "cn": "汪克尔转子机",
+   "en": "Wankel rotary"
+  },
+  {
+   "id": "EA-086",
+   "cn": "Mazda 13B／RENESIS 家族",
+   "en": "Mazda 13B / RENESIS family"
+  },
+  {
+   "id": "EA-021",
+   "cn": "对置活塞",
+   "en": "Opposed-piston"
+  },
+  {
+   "id": "EA-022",
+   "cn": "自由活塞",
+   "en": "Free-piston"
+  },
+  {
+   "id": "EA-026",
+   "cn": "燃气轮机汽车",
+   "en": "Gas turbine car"
+  },
+  {
+   "id": "EA-001",
+   "cn": "蒸汽机汽车",
+   "en": "Steam car"
+  },
+  {
+   "id": "EA-003",
+   "cn": "斯特林发动机",
+   "en": "Stirling engine"
+  }
+ ],
+ "g6": [
+  {
+   "id": "EA-018",
+   "cn": "机械增压",
+   "en": "Supercharger"
+  },
+  {
+   "id": "EA-029",
+   "cn": "涡轮增压",
+   "en": "Turbocharger"
+  },
+  {
+   "id": "EA-033",
+   "cn": "双增压",
+   "en": "Twincharger"
+  },
+  {
+   "id": "EA-048",
+   "cn": "电动增压 / 电子涡轮",
+   "en": "Electric compressor"
+  },
+  {
+   "id": "EA-061",
+   "cn": "涡轮增压柴油",
+   "en": "Turbocharged diesel"
+  },
+  {
+   "id": "EA-040",
+   "cn": "混合动力专用发动机",
+   "en": "Hybrid engine"
+  },
+  {
+   "id": "EA-045",
+   "cn": "F1 KERS",
+   "en": "KERS"
+  }
+ ],
+ "g7": [
+  {
+   "id": "EA-053",
+   "cn": "侧置气门",
+   "en": "Side-valve / flathead"
+  },
+  {
+   "id": "EA-054",
+   "cn": "顶置气门（OHV）",
+   "en": "Overhead valves (OHV)"
+  },
+  {
+   "id": "EA-055",
+   "cn": "顶置凸轮轴与多气门",
+   "en": "OHC, DOHC and multi-valve heads"
+  },
+  {
+   "id": "EA-066",
+   "cn": "停缸",
+   "en": "Cylinder deactivation"
+  },
+  {
+   "id": "EA-067",
+   "cn": "无凸轮轴配气",
+   "en": "Camless valve actuation"
+  },
+  {
+   "id": "EA-032",
+   "cn": "可变气门控制",
+   "en": "Variable valve control"
+  },
+  {
+   "id": "EA-035",
+   "cn": "VTEC 可变升程",
+   "en": "VTEC"
+  }
+ ],
+ "g8": [
+  {
+   "id": "EA-041",
+   "cn": "Valvetronic 可变升程",
+   "en": "Valvetronic variable lift"
+  },
+  {
+   "id": "EA-058",
+   "cn": "化油器",
+   "en": "Carburetor"
+  },
+  {
+   "id": "EA-030",
+   "cn": "燃油喷射（机械→电控）",
+   "en": "Fuel injection: mechanical to electronic"
+  },
+  {
+   "id": "EA-038",
+   "cn": "汽油缸内直喷",
+   "en": "GDI"
+  },
+  {
+   "id": "EA-039",
+   "cn": "柴油共轨",
+   "en": "Common-rail diesel"
+  },
+  {
+   "id": "EA-060",
+   "cn": "直喷柴油",
+   "en": "Direct-injection diesel"
+  },
+  {
+   "id": "EA-057",
+   "cn": "电子发动机控制单元",
+   "en": "Engine control unit (ECU)"
+  }
+ ],
+ "g9": [
+  {
+   "id": "EA-059",
+   "cn": "火花点火系统",
+   "en": "Spark-ignition systems"
+  },
+  {
+   "id": "EA-068",
+   "cn": "燃烧室形状",
+   "en": "Combustion-chamber geometry"
+  },
+  {
+   "id": "EA-069",
+   "cn": "Honda CVCC 分层燃烧",
+   "en": "Honda CVCC stratified combustion"
+  },
+  {
+   "id": "EA-070",
+   "cn": "汽油预燃室点火",
+   "en": "Petrol pre-chamber ignition"
+  },
+  {
+   "id": "EA-071",
+   "cn": "均质充量压燃",
+   "en": "Homogeneous charge compression ignition (HCCI)"
+  },
+  {
+   "id": "EA-050",
+   "cn": "Mazda SPCCI",
+   "en": "Mazda SPCCI"
+  },
+  {
+   "id": "EA-049",
+   "cn": "Infiniti／Nissan VC-Turbo",
+   "en": "Infiniti / Nissan VC-Turbo"
+  },
+  {
+   "id": "EA-087",
+   "cn": "可变几何压缩比",
+   "en": "Variable geometric compression ratio"
+  }
+ ],
+ "g10": [
+  {
+   "id": "EA-056",
+   "cn": "三元催化与氧传感器",
+   "en": "Three-way catalyst and oxygen sensor"
+  },
+  {
+   "id": "EA-062",
+   "cn": "柴油排气后处理",
+   "en": "Diesel exhaust aftertreatment"
+  },
+  {
+   "id": "EA-074",
+   "cn": "风冷与液冷",
+   "en": "Air and liquid cooling"
+  },
+  {
+   "id": "EA-024",
+   "cn": "CNG / LPG",
+   "en": "Autogas"
+  },
+  {
+   "id": "EA-044",
+   "cn": "氢内燃机",
+   "en": "Hydrogen ICE"
+  },
+  {
+   "id": "EA-046",
+   "cn": "增程式",
+   "en": "Range extender"
+  },
+  {
+   "id": "EA-063",
+   "cn": "乙醇与灵活燃料",
+   "en": "Ethanol and flexible-fuel engines"
+  }
+ ],
+ "g11": [
+  {
+   "id": "EA-051",
+   "cn": "合成燃料 E-fuel",
+   "en": "E-fuel"
+  },
+  {
+   "id": "EA-075",
+   "cn": "甲醇燃料",
+   "en": "Methanol fuel"
+  },
+  {
+   "id": "EA-076",
+   "cn": "含铅汽油到无铅汽油",
+   "en": "From leaded to unleaded petrol"
+  },
+  {
+   "id": "EA-077",
+   "cn": "生物柴油与HVO",
+   "en": "Biodiesel and HVO"
+  },
+  {
+   "id": "EA-065",
+   "cn": "Daimler／Maybach 高速汽油单缸",
+   "en": "Daimler–Maybach high-speed petrol single"
+  }
+ ],
+ "g12a": [
+  {
+   "id": "EA-078",
+   "cn": "Ford Flathead V8",
+   "en": "Ford Flathead V8"
+  },
+  {
+   "id": "EA-079",
+   "cn": "Chevrolet Small-Block V8 家族",
+   "en": "Chevrolet small-block V8 family"
+  },
+  {
+   "id": "EA-080",
+   "cn": "Mercedes-Benz OM617",
+   "en": "Mercedes-Benz OM617"
+  },
+  {
+   "id": "EA-081",
+   "cn": "Offenhauser 赛车直四",
+   "en": "Offenhauser racing inline-four"
+  }
+ ],
+ "g12b": [
+  {
+   "id": "EA-082",
+   "cn": "Volkswagen EA888 家族",
+   "en": "Volkswagen EA888 family"
+  },
+  {
+   "id": "EA-083",
+   "cn": "BMW M12/13",
+   "en": "BMW M12/13"
+  },
+  {
+   "id": "EA-084",
+   "cn": "Honda B16A",
+   "en": "Honda B16A"
+  },
+  {
+   "id": "EA-085",
+   "cn": "Toyota 1NZ-FXE",
+   "en": "Toyota 1NZ-FXE"
+  }
+ ]
+}

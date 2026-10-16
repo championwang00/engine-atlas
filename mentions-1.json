@@ -1,0 +1,888 @@
+{
+ "EA-001": {
+  "intro": [
+   {
+    "match": "蒸汽炮车",
+    "kind": "car",
+    "name": "Cugnot 蒸汽炮车（fardier à vapeur）",
+    "year": "1770",
+    "brief": "Cugnot 为法国陆军造的全尺寸蒸汽拖炮车，空重约 2.5 吨，常被视为最早的自行车辆。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Joseph_Cugnot%27s_1770_Fardier_%C3%A0_Vapeur%2C_Mus%C3%A9e_des_arts_et_m%C3%A9tiers%2C_Paris_2015.jpg/960px-Joseph_Cugnot%27s_1770_Fardier_%C3%A0_Vapeur%2C_Mus%C3%A9e_des_arts_et_m%C3%A9tiers%2C_Paris_2015.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Joseph_Cugnot%27s_1770_Fardier_%C3%A0_Vapeur,_Mus%C3%A9e_des_arts_et_m%C3%A9tiers,_Paris_2015.jpg",
+     "author": "Joe deSousa",
+     "license": "CC0",
+     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "match": "Cugnot 蒸汽三轮炮车（1769，时速约 3 mph）",
+    "kind": "car",
+    "name": "Cugnot 蒸汽炮车（fardier à vapeur）",
+    "year": "1769–1770",
+    "brief": "1769 年试验模型、1770 年全尺寸，为法军拖运炮管，现存巴黎工艺学院。"
+   },
+   {
+    "match": "Stanley Steamer",
+    "kind": "car",
+    "name": "Stanley Steamer（斯坦利蒸汽车）",
+    "year": "1897–1924",
+    "brief": "美国 Stanley 公司的蒸汽汽车，1906 年创下约 127 mph 的一英里纪录。"
+   },
+   {
+    "match": "Doble E",
+    "kind": "car",
+    "name": "Doble Model E",
+    "year": "1922–1925",
+    "brief": "Doble 的经典蒸汽车，锅炉 750 psi，严寒下 30 秒内可起步，仅造 24 辆。"
+   }
+  ]
+ },
+ "EA-002": {
+  "intro": [
+   {
+    "match": "grand char mécanique",
+    "kind": "car",
+    "name": "de Rivaz grand char mécanique（大型机械车）",
+    "year": "1813",
+    "brief": "de Rivaz 1813 年造的 6 米长试验车，载 4 人爬坡走了 26 米。",
+    "image": null
+   }
+  ],
+  "examples": [
+   {
+    "match": "de Rivaz 自造的试验车",
+    "kind": "car",
+    "name": "de Rivaz 内燃机试验车",
+    "year": "1807–1813",
+    "brief": "de Rivaz 以氢气内燃机驱动的自制车辆，常被称为世界第一辆内燃机汽车。"
+   }
+  ]
+ },
+ "EA-003": {
+  "intro": [
+   {
+    "match": "Mod I",
+    "kind": "engine",
+    "name": "NASA 汽车斯特林机 Mod I",
+    "year": "1978 起",
+    "brief": "NASA 与美国能源部汽车斯特林项目的第一代发动机，为 Mod II 奠定基础。",
+    "image": null
+   },
+   {
+    "match": "Mod II",
+    "kind": "engine",
+    "name": "Mod II 斯特林机 · 装车示例：Chevrolet Celebrity",
+    "year": "1985 前后",
+    "brief": "NASA 项目最终版，热效率 38.5%，装进 1985 款 Celebrity 试验。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/%2784-%2785_Chevrolet_Celebrity_Eurosport_Sedan.jpg/960px-%2784-%2785_Chevrolet_Celebrity_Eurosport_Sedan.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:%2784-%2785_Chevrolet_Celebrity_Eurosport_Sedan.jpg",
+     "author": "Bull-Doser",
+     "license": "Public domain",
+     "licenseUrl": ""
+    }
+   },
+   {
+    "match": "Chevrolet Celebrity",
+    "kind": "car",
+    "name": "Chevrolet Celebrity",
+    "year": "1985（试验车）",
+    "brief": "通用中型轿车，1985 款被 NASA 用作 Mod II 斯特林机的装车试验平台。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/%2784-%2785_Chevrolet_Celebrity_Eurosport_Sedan.jpg/960px-%2784-%2785_Chevrolet_Celebrity_Eurosport_Sedan.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:%2784-%2785_Chevrolet_Celebrity_Eurosport_Sedan.jpg",
+     "author": "Bull-Doser",
+     "license": "Public domain",
+     "licenseUrl": ""
+    }
+   }
+  ],
+  "examples": [
+   {
+    "match": "Ford Torino 斯特林试验车（1975，4 缸 120 hp）",
+    "kind": "car",
+    "name": "Ford Torino 斯特林试验车",
+    "year": "1975",
+    "brief": "1970 年代在福特 Torino 上试装的 4 缸 120 hp 斯特林机，未量产。"
+   },
+   {
+    "match": "NASA Mod I/Mod II 装车试验（Celebrity 等）",
+    "kind": "engine",
+    "name": "NASA Mod I / Mod II",
+    "year": "1978 起",
+    "brief": "能源部出资、NASA 主持的两代汽车斯特林机，Mod II 装进 Celebrity。"
+   }
+  ]
+ },
+ "EA-004": {
+  "intro": [
+   {
+    "match": "Hippomobile",
+    "kind": "car",
+    "name": "Lenoir Hippomobile",
+    "year": "1863",
+    "brief": "Lenoir 装 1.5 马力煤气机的三轮车，巴黎出发约 11 公里走了约 90 分钟。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/%C3%89tienne_Lenoir_-_Hippomobile_-_Le_Monde_illust%C3%A9_1860.png/960px-%C3%89tienne_Lenoir_-_Hippomobile_-_Le_Monde_illust%C3%A9_1860.png",
+     "page": "https://commons.wikimedia.org/wiki/File:%C3%89tienne_Lenoir_-_Hippomobile_-_Le_Monde_illust%C3%A9_1860.png",
+     "author": "Émile Bourdelin",
+     "license": "Public domain",
+     "licenseUrl": ""
+    }
+   }
+  ],
+  "examples": [
+   {
+    "match": "Lenoir Hippomobile（1863）",
+    "kind": "car",
+    "name": "Lenoir Hippomobile",
+    "year": "1863",
+    "brief": "以 Lenoir 煤气机驱动的三轮车，1863 年从巴黎开到 Joinville。"
+   }
+  ]
+ },
+ "EA-005": {
+  "intro": [
+   {
+    "match": "Ready Motor",
+    "kind": "engine",
+    "name": "Brayton Ready Motor",
+    "year": "1872",
+    "brief": "Brayton 1872 年起销售的定压燃烧机，压缩与膨胀分缸，用于抽水、磨坊和船舶。",
+    "image": null
+   }
+  ],
+  "examples": [
+   {
+    "match": "Selden 专利车",
+    "kind": "car",
+    "name": "Selden 专利车（Road-Engine）",
+    "year": "1879 申请 / 1895 获批",
+    "brief": "Selden 据 Brayton 机申请的汽车专利，1911 年败于福特，车从未跑起来。"
+   }
+  ]
+ },
+ "EA-006": {
+  "intro": [
+   {
+    "match": "Otto Silent Engine",
+    "kind": "engine",
+    "name": "Otto Silent Engine（奥托静音发动机）",
+    "year": "1876",
+    "brief": "Deutz 1876 年推出的首台商业成功的缸内压缩发动机，单缸 6.1 升仅 3 马力。",
+    "image": null
+   }
+  ],
+  "examples": [
+   {
+    "match": "Benz Patent-Motorwagen（1886）",
+    "kind": "car",
+    "name": "Benz Patent-Motorwagen",
+    "year": "1886",
+    "brief": "Karl Benz 1886 年获专利的三轮车，954 cc 单缸，公认第一辆实用汽车。"
+   }
+  ]
+ },
+ "EA-007": {
+  "intro": [
+   {
+    "match": "Trabant",
+    "kind": "car",
+    "name": "Trabant（卫星）",
+    "year": "1957–1991",
+    "brief": "东德的二冲程小车，594 cc 双缸 26 PS，杜罗塑料车身，共产约 370 万辆。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Cream_Trabant_601_S_side_view.jpg/960px-Cream_Trabant_601_S_side_view.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Cream_Trabant_601_S_side_view.jpg",
+     "author": "Renée Kools",
+     "license": "CC BY 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+    }
+   },
+   {
+    "match": "Wartburg",
+    "kind": "car",
+    "name": "Wartburg 353",
+    "year": "1966–1988",
+    "brief": "东德 AWE 的二冲程中型车，约 1 升三缸 50–55 PS，产量超过百万。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Wartburg_353_1972.jpg/960px-Wartburg_353_1972.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Wartburg_353_1972.jpg",
+     "author": "Oostblokblik",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   },
+   {
+    "match": "Saab Sport",
+    "kind": "car",
+    "name": "Saab 96 Sport",
+    "year": "1962–1966",
+    "brief": "Saab 96 的高性能版，三化油器三缸二冲程，1966 年用过 850 cc 版本。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Saab_96_Sport_in_Saab_Car_Museum.jpg/960px-Saab_96_Sport_in_Saab_Car_Museum.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Saab_96_Sport_in_Saab_Car_Museum.jpg",
+     "author": "Jelger Groeneveld",
+     "license": "CC BY 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "match": "DKW F 系列",
+    "kind": "car",
+    "name": "DKW F 系列（F1–F8）",
+    "year": "1931 起",
+    "brief": "DKW 前驱二冲程小车系列，1931 年 F1 用 584 cc 双缸，是首款量产前驱车。"
+   },
+   {
+    "match": "Saab 92/93/96",
+    "kind": "car",
+    "name": "Saab 92 / 93 / 96",
+    "year": "1949–1980",
+    "brief": "Saab 早期轿车，92 为双缸、93/96 为三缸二冲程，1967 年改用 V4。"
+   },
+   {
+    "match": "Trabant",
+    "kind": "car",
+    "name": "Trabant（卫星）",
+    "year": "1957–1991",
+    "brief": "东德二冲程小车，594 cc 双缸 26 PS，杜罗塑料车身，共产约 370 万辆。"
+   },
+   {
+    "match": "Wartburg",
+    "kind": "car",
+    "name": "Wartburg 353",
+    "year": "1966–1988",
+    "brief": "东德 AWE 的二冲程中型车，约 1 升三缸 50–55 PS，产量超过百万。"
+   },
+   {
+    "match": "Suzuki Jimny SJ30（最后的两冲程 kei car）",
+    "kind": "car",
+    "name": "Suzuki Jimny SJ30",
+    "year": "1981 起",
+    "brief": "1981 年起的轻型越野车，539 cc 三缸二冲程 LJ50，日本最后的二冲程汽车。"
+   }
+  ]
+ },
+ "EA-008": {
+  "intro": [
+   {
+    "match": "差动式发动机",
+    "kind": "engine",
+    "name": "Atkinson 差动式发动机",
+    "year": "1882",
+    "brief": "阿特金森循环的首次实现，对置活塞加肘节连杆让压缩与膨胀行程不等长。",
+    "image": null
+   },
+   {
+    "match": "循环发动机",
+    "kind": "engine",
+    "name": "Atkinson 循环发动机",
+    "year": "1887",
+    "brief": "用凸轮和连杆在曲轴一转内完成四冲程，规避奥托专利，最大约 100 马力。",
+    "image": null
+   },
+   {
+    "match": "Toyota Prius",
+    "kind": "car",
+    "name": "第一代 Toyota Prius（NHW10/11）",
+    "year": "1997–2003",
+    "brief": "1997 年 12 月日本上市的首款量产混动车，搭载阿特金森循环 1NZ-FXE。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Toyota_PRIUS_S_%28NHW11%29_front.JPG/960px-Toyota_PRIUS_S_%28NHW11%29_front.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Toyota_PRIUS_S_(NHW11)_front.JPG",
+     "author": "Tokumeigakarinoaoshima",
+     "license": "CC0",
+     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+   },
+   {
+    "match": "1NZ-FXE",
+    "kind": "engine",
+    "name": "1NZ-FXE · 装车示例：第一代 Prius",
+    "year": "1997 起",
+    "brief": "丰田 1.5 升模拟阿特金森循环机，有效压缩比 9.5:1，初期 58 PS。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Toyota_PRIUS_S_%28NHW11%29_front.JPG/960px-Toyota_PRIUS_S_%28NHW11%29_front.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Toyota_PRIUS_S_(NHW11)_front.JPG",
+     "author": "Tokumeigakarinoaoshima",
+     "license": "CC0",
+     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+   },
+   {
+    "match": "Toyota Dynamic Force",
+    "kind": "engine",
+    "name": "Toyota Dynamic Force · 装车示例：Camry（XV70）",
+    "year": "2017 起",
+    "brief": "丰田 TNGA 发动机家族，2017 年随 Camry 首发，热效率约 40%。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Toyota_Camry_%28XV70%29_IMG_9081.jpg/960px-Toyota_Camry_%28XV70%29_IMG_9081.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Toyota_Camry_(XV70)_IMG_9081.jpg",
+     "author": "Alexander-93",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   },
+   {
+    "match": "Hyundai Ioniq",
+    "kind": "car",
+    "name": "Hyundai Ioniq",
+    "year": "2016–2022",
+    "brief": "现代首款专属新能源车，混动版 1.6 Kappa 阿特金森循环机热效率约 40%。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Hyundai_Ioniq_Hybrid_2018%2C_vista_lateral.jpg/960px-Hyundai_Ioniq_Hybrid_2018%2C_vista_lateral.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Hyundai_Ioniq_Hybrid_2018,_vista_lateral.jpg",
+     "author": "Malopez 21",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   },
+   {
+    "match": "Ford Fusion Hybrid",
+    "kind": "car",
+    "name": "Ford Fusion Hybrid",
+    "year": "2010–2020",
+    "brief": "福特中型混动轿车，先后用 2.5 升和 2.0 升阿特金森循环四缸机。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/2010_Ford_Fusion_Hybrid--DC.jpg/960px-2010_Ford_Fusion_Hybrid--DC.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:2010_Ford_Fusion_Hybrid--DC.jpg",
+     "author": "IFCAR",
+     "license": "Public domain",
+     "licenseUrl": ""
+    }
+   },
+   {
+    "match": "EA211 TSI evo",
+    "kind": "engine",
+    "name": "大众 EA211 TSI evo",
+    "year": "2017 起",
+    "brief": "大众 1.5 TSI evo 涡轮机，131–160 PS，用进气门晚关的米勒循环思路。",
+    "image": null
+   }
+  ],
+  "examples": [
+   {
+    "match": "Mazda KJ-ZEM 增压 Miller V6（1993）",
+    "kind": "engine",
+    "name": "Mazda KJ-ZEM",
+    "year": "1990 年代",
+    "brief": "马自达 2.3 升机械增压米勒循环 V6，217 hp，装于 Millenia。"
+   },
+   {
+    "match": "Toyota Prius 1NZ-FXE（1997）",
+    "kind": "engine",
+    "name": "Toyota 1NZ-FXE",
+    "year": "1997 起",
+    "brief": "1.5 升模拟阿特金森循环机，有效压缩比 9.5:1，随第一代 Prius 问世。"
+   },
+   {
+    "match": "VW EA211 TSI evo",
+    "kind": "engine",
+    "name": "大众 EA211 TSI evo",
+    "year": "2017 起",
+    "brief": "大众 1.5 TSI evo 涡轮机，131–160 PS，用进气门晚关的米勒循环思路。"
+   }
+  ]
+ },
+ "EA-009": {
+  "intro": [
+   {
+    "match": "Patent-Motorwagen",
+    "kind": "car",
+    "name": "Benz Patent-Motorwagen",
+    "year": "1886",
+    "brief": "Karl Benz 的三轮车，954 cc 单缸 0.68 PS，公认第一辆实用汽车。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Benz_Patent_Motorwagen_1.jpg/960px-Benz_Patent_Motorwagen_1.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Benz_Patent_Motorwagen_1.jpg",
+     "author": "Aschroet",
+     "license": "CC0",
+     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+   },
+   {
+    "match": "Bond Minicar",
+    "kind": "car",
+    "name": "Bond Minicar",
+    "year": "1949–1966",
+    "brief": "英国三轮微型车，用 Villiers 风冷二冲程单缸，共造 24,482 辆。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Bond_Minicar_line-up_%2848802463186%29.jpg/960px-Bond_Minicar_line-up_%2848802463186%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Bond_Minicar_line-up_(48802463186).jpg",
+     "author": "Andrew Bone from Weymouth, England",
+     "license": "CC BY 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+   },
+   {
+    "match": "Villiers 单缸机",
+    "kind": "engine",
+    "name": "Villiers 二冲程单缸机 · 装车示例：Bond Minicar",
+    "year": "1912 起",
+    "brief": "伍尔弗汉普顿 Villiers 的二冲程单缸机，广泛用于摩托车和 Bond 等微型车。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Bond_Minicar_line-up_%2848802463186%29.jpg/960px-Bond_Minicar_line-up_%2848802463186%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Bond_Minicar_line-up_(48802463186).jpg",
+     "author": "Andrew Bone from Weymouth, England",
+     "license": "CC BY 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+   },
+   {
+    "match": "Honda Super Cub",
+    "kind": "car",
+    "name": "Honda Super Cub",
+    "year": "1958 起",
+    "brief": "49 cc 四冲程单缸弯梁摩托，累计产量超 1 亿辆，史上产量最高的机动车。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Honda_super_cub%2C_1st_Gen._1958%2C_Left_side.jpg/960px-Honda_super_cub%2C_1st_Gen._1958%2C_Left_side.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Honda_super_cub,_1st_Gen._1958,_Left_side.jpg",
+     "author": "Mj-bird",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+   },
+   {
+    "match": "Ducati Supermono",
+    "kind": "car",
+    "name": "Ducati Supermono",
+    "year": "1993–1997",
+    "brief": "杜卡迪单缸赛车，549/572 cc，用假连杆配重抵消振动，仅造 65–67 辆。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Ducati_Supermono.jpg/960px-Ducati_Supermono.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Ducati_Supermono.jpg",
+     "author": "Klaus Nahr from Germany",
+     "license": "CC BY-SA 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "match": "Benz Patent-Motorwagen（单缸 954 cc）",
+    "kind": "car",
+    "name": "Benz Patent-Motorwagen",
+    "year": "1886",
+    "brief": "Karl Benz 的三轮车，954 cc 单缸 0.68 PS，公认第一辆实用汽车。"
+   },
+   {
+    "match": "De Dion-Bouton",
+    "kind": "engine",
+    "name": "De Dion-Bouton 单缸机",
+    "year": "1895 起",
+    "brief": "137 cc 高转速单缸机，常转 2000 rpm，授权 150 多家厂商，早期车辆主力。"
+   },
+   {
+    "match": "Messerschmitt KR 等 1950 年代微型车",
+    "kind": "car",
+    "name": "Messerschmitt KR175 / KR200",
+    "year": "1953–1964",
+    "brief": "三轮泡泡车，KR200 用 191 cc 单缸二冲程机，造约 3–4 万辆。"
+   }
+  ]
+ },
+ "EA-010": {
+  "intro": [
+   {
+    "match": "Motor 250/400",
+    "kind": "engine",
+    "name": "Diesel Motor 250/400",
+    "year": "1897",
+    "brief": "奥格斯堡机器厂造的第一台可用柴油机，1897 年实测效率 26.2%、13.1 kW。",
+    "image": null
+   },
+   {
+    "match": "Mercedes-Benz 260 D",
+    "kind": "car",
+    "name": "Mercedes-Benz 260 D（W138）",
+    "year": "1936–1940",
+    "brief": "首款批量生产的柴油轿车，OM 138 2545 cc 45 马力，共造 1967 辆。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Mercedes-Benz_260_D_Pullmann._side._Spielvogel.jpg/960px-Mercedes-Benz_260_D_Pullmann._side._Spielvogel.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_260_D_Pullmann._side._Spielvogel.jpg",
+     "author": "Spielvogel",
+     "license": "CC0",
+     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+   },
+   {
+    "match": "OM 138",
+    "kind": "engine",
+    "name": "OM 138 · 装车示例：Mercedes-Benz 260 D",
+    "year": "1936",
+    "brief": "2545 cc 顶置气门直四柴油机，博世喷射，45 马力，用于 260 D。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Mercedes-Benz_260_D_Pullmann._side._Spielvogel.jpg/960px-Mercedes-Benz_260_D_Pullmann._side._Spielvogel.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_260_D_Pullmann._side._Spielvogel.jpg",
+     "author": "Spielvogel",
+     "license": "CC0",
+     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "match": "Mercedes OM617 五缸（1974–1991）",
+    "kind": "engine",
+    "name": "Mercedes-Benz OM617",
+    "year": "1974–1991",
+    "brief": "约 3.0 升五缸柴油机，1978 年 300SD 涡轮版为首款量产涡轮柴油轿车，极耐久。"
+   },
+   {
+    "match": "VW TDI",
+    "kind": "engine",
+    "name": "Volkswagen TDI",
+    "year": "1989 起",
+    "brief": "大众涡轮直喷柴油机，1989 年奥迪 100 首发，2015 年爆发排放门。"
+   },
+   {
+    "match": "Alfa Romeo 156 JTD",
+    "kind": "car",
+    "name": "Alfa Romeo 156 2.4 JTD",
+    "year": "1997–2003",
+    "brief": "首款搭载共轨柴油机的量产轿车，2.4 升直五 136 PS。"
+   }
+  ]
+ },
+ "EA-011": {
+  "intro": [
+   {
+    "match": "Phoenix 发动机",
+    "kind": "engine",
+    "name": "Daimler Phoenix 发动机",
+    "year": "1894–1895",
+    "brief": "Maybach 设计的戴姆勒发动机，其直列双缸改型 1895 年装上 Panhard 车。",
+    "image": null
+   },
+   {
+    "match": "Fiat 500",
+    "kind": "car",
+    "name": "Fiat Nuova 500",
+    "year": "1957–1975",
+    "brief": "后置风冷 479 cc 双缸 13 马力的微型车，全系共造约 389 万辆。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Fiat_Nuova_500_20.JPG/960px-Fiat_Nuova_500_20.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Fiat_Nuova_500_20.JPG",
+     "author": "böhringer friedrich",
+     "license": "CC BY-SA 2.5",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+    }
+   },
+   {
+    "match": "Subaru 360",
+    "kind": "car",
+    "name": "Subaru 360",
+    "year": "1958–1971",
+    "brief": "斯巴鲁首款量产车，后置 356 cc 风冷二冲程双缸，共产约 39.2 万辆。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/1958_Subaru_360_01.jpg/960px-1958_Subaru_360_01.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:1958_Subaru_360_01.jpg",
+     "author": "Mytho88",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+   },
+   {
+    "match": "Fiat 126",
+    "kind": "car",
+    "name": "Fiat 126",
+    "year": "1972–2000",
+    "brief": "500 的继任者，594/652 cc 风冷双缸，多数在波兰生产，总产约 467 万辆。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Fiat_126-Mk1.JPG/960px-Fiat_126-Mk1.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Fiat_126-Mk1.JPG",
+     "author": "Luc106",
+     "license": "Public domain",
+     "licenseUrl": ""
+    }
+   },
+   {
+    "match": "Tata Nano",
+    "kind": "car",
+    "name": "Tata Nano",
+    "year": "2008–2018",
+    "brief": "塔塔的“全球最便宜汽车”，后置 624 cc 双缸，销量远低于预期。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Tata_Nano_Bangalore_2709.JPG/960px-Tata_Nano_Bangalore_2709.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Tata_Nano_Bangalore_2709.JPG",
+     "author": "Krokodyl",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+   },
+   {
+    "match": "Fiat TwinAir",
+    "kind": "engine",
+    "name": "Fiat TwinAir · 装车示例：Fiat 500（2010 起）",
+    "year": "2010 起",
+    "brief": "875 cc 涡轮双缸配 MultiAir，85/105 PS，2011 年度发动机奖。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Fiat_500_0.9_TwinAir_Turbo_%282013%29_%2854723928004%29.jpg/960px-Fiat_500_0.9_TwinAir_Turbo_%282013%29_%2854723928004%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Fiat_500_0.9_TwinAir_Turbo_(2013)_(54723928004).jpg",
+     "author": "Charles from Port Chester, New York",
+     "license": "CC0",
+     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+   },
+   {
+    "match": "Piaggio Porter",
+    "kind": "car",
+    "name": "Piaggio Porter（第一代）",
+    "year": "1992–2020",
+    "brief": "基于大发 Hijet 的微型货车，其 1200 cc 双缸柴油版 2020 年前后停产。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Piaggio_Porter_1.4D_R.jpg/960px-Piaggio_Porter_1.4D_R.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Piaggio_Porter_1.4D_R.jpg",
+     "author": "KGC626",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "match": "Fiat 500（1957，风冷）",
+    "kind": "car",
+    "name": "Fiat Nuova 500",
+    "year": "1957–1975",
+    "brief": "后置风冷 479 cc 双缸 13 马力的微型车，全系共造约 389 万辆。"
+   },
+   {
+    "match": "Trabant",
+    "kind": "car",
+    "name": "Trabant（卫星）",
+    "year": "1957–1991",
+    "brief": "东德二冲程小车，594 cc 双缸 26 PS，杜罗塑料车身，共产约 370 万辆。"
+   },
+   {
+    "match": "Fiat TwinAir 0.9（2010 起，双缸涡轮）",
+    "kind": "engine",
+    "name": "Fiat TwinAir",
+    "year": "2010 起",
+    "brief": "875 cc 涡轮双缸配 MultiAir，85/105 PS，2011 年度发动机奖。"
+   }
+  ]
+ },
+ "EA-012": {
+  "intro": [
+   {
+    "match": "Spyker 60 HP",
+    "kind": "car",
+    "name": "Spyker 60 HP",
+    "year": "1903",
+    "brief": "荷兰 8.8 升直六赛车，首款六缸且四驱的汽车，现藏 Louwman 博物馆。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Spyker_60_HP_at_Den_Haag_Louwman_Museum_190.jpg/960px-Spyker_60_HP_at_Den_Haag_Louwman_Museum_190.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Spyker_60_HP_at_Den_Haag_Louwman_Museum_190.jpg",
+     "author": "Zairon",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   },
+   {
+    "match": "Silver Ghost",
+    "kind": "car",
+    "name": "Rolls-Royce Silver Ghost（40/50 hp）",
+    "year": "1906–1926",
+    "brief": "7.0/7.4 升直六豪华车，共造约 7874 辆，1907 年被誉为“世界最好的车”。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Rolls_Royce_Silver_Ghost_1907.jpg/960px-Rolls_Royce_Silver_Ghost_1907.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Rolls_Royce_Silver_Ghost_1907.jpg",
+     "author": "Unknown author",
+     "license": "Public domain",
+     "licenseUrl": ""
+    }
+   },
+   {
+    "match": "N54",
+    "kind": "engine",
+    "name": "BMW N54 · 装车示例：335i（E90）",
+    "year": "2006–2016",
+    "brief": "宝马首款量产涡轮汽油机，双涡轮直六 302–335 bhp，随 335i 首发。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/BMW_335i_%28E90%29_Washington_DC_Metro_Area%2C_USA.jpg/960px-BMW_335i_%28E90%29_Washington_DC_Metro_Area%2C_USA.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:BMW_335i_(E90)_Washington_DC_Metro_Area,_USA.jpg",
+     "author": "OWS Photography",
+     "license": "CC BY 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+    }
+   },
+   {
+    "match": "B58",
+    "kind": "engine",
+    "name": "BMW B58 · 装车示例：340i（F30）",
+    "year": "2015 起",
+    "brief": "3.0 升涡轮直六，模块化家族每缸 500 cc，用于 340i、Z4、Supra。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/2017_BMW_340i_%28F30_LCI%29_Luxury_Line_sedan_%282018-02-20%29_01.jpg/960px-2017_BMW_340i_%28F30_LCI%29_Luxury_Line_sedan_%282018-02-20%29_01.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:2017_BMW_340i_(F30_LCI)_Luxury_Line_sedan_(2018-02-20)_01.jpg",
+     "author": "EurovisionNim",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   },
+   {
+    "match": "Mercedes-Benz M256",
+    "kind": "engine",
+    "name": "Mercedes-Benz M256 · 装车示例：S 450（W222）",
+    "year": "2017 起",
+    "brief": "48V 系统驱动电动增压器的涡轮直六，2017 年随 S 450 首发。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Mercedes-Benz_S_450_%28W222%2C_2018%29_%2854810381006%29.jpg/960px-Mercedes-Benz_S_450_%28W222%2C_2018%29_%2854810381006%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_S_450_(W222,_2018)_(54810381006).jpg",
+     "author": "Charles from Port Chester, New York",
+     "license": "CC0",
+     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+   },
+   {
+    "match": "Jaguar Land Rover Ingenium",
+    "kind": "engine",
+    "name": "Jaguar Land Rover Ingenium 直六",
+    "year": "2019 起",
+    "brief": "捷豹路虎模块化发动机家族，2019 年推出直列六缸版本，是直六回潮的例子之一。",
+    "image": null
+   },
+   {
+    "match": "Stellantis Hurricane",
+    "kind": "engine",
+    "name": "Stellantis Hurricane · 装车示例：Jeep Grand Wagoneer",
+    "year": "2021 起",
+    "brief": "3.0 升双涡轮直六，标准版 420 hp，2022 款大瓦格尼首发。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Jeep_Grand_Wagoneer_%28WS%29_1X7A1911.jpg/960px-Jeep_Grand_Wagoneer_%28WS%29_1X7A1911.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Jeep_Grand_Wagoneer_(WS)_1X7A1911.jpg",
+     "author": "Alexander-93",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   },
+   {
+    "match": "Mazda Skyactiv-X/D",
+    "kind": "engine",
+    "name": "Mazda Skyactiv 3.3 直六 · 装车示例：CX-60",
+    "year": "2022 起",
+    "brief": "马自达 3.3 升直六，柴油版 254 PS 配 48V 轻混，装于 CX-60。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Mazda_CX-60_XD_DSC_7920.jpg/960px-Mazda_CX-60_XD_DSC_7920.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Mazda_CX-60_XD_DSC_7920.jpg",
+     "author": "Alexander Migl",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "match": "Daimler M836（1924–1929）",
+    "kind": "engine",
+    "name": "Daimler M836",
+    "year": "1924–1929",
+    "brief": "戴姆勒 1924–1929 年间的直列六缸发动机，这里作为早期量产直六的代表列出。"
+   },
+   {
+    "match": "BMW M88（M1）",
+    "kind": "engine",
+    "name": "BMW M88",
+    "year": "1978–1989",
+    "brief": "3.5 升双顶置凸轮直六，1978 年 M1 上约 277 PS，后用于 M5 E28。"
+   },
+   {
+    "match": "Toyota 2JZ",
+    "kind": "engine",
+    "name": "Toyota 2JZ-GTE",
+    "year": "1991–2005",
+    "brief": "3.0 升双涡轮直六，1993 年 Supra RZ 旗舰机，出口版 320 hp。"
+   },
+   {
+    "match": "Mercedes M256（48V 轻混）",
+    "kind": "engine",
+    "name": "Mercedes-Benz M256",
+    "year": "2017 起",
+    "brief": "48V 系统驱动电动增压器的涡轮直六，2017 年随 S 450 首发。"
+   }
+  ]
+ },
+ "EA-013": {
+  "intro": [
+   {
+    "match": "Ford Model T",
+    "kind": "car",
+    "name": "Ford Model T",
+    "year": "1908–1927",
+    "brief": "2.9 升侧置气门直四 20 马力，共产约 1500 万辆，1913 年流水线让汽车普及。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Ford_Model_T_Touring_%281909%29_Classic-Gala_2021_1X7A0211.jpg/960px-Ford_Model_T_Touring_%281909%29_Classic-Gala_2021_1X7A0211.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Ford_Model_T_Touring_(1909)_Classic-Gala_2021_1X7A0211.jpg",
+     "author": "Alexander Migl",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   },
+   {
+    "match": "Alfa Romeo Twin Cam",
+    "kind": "engine",
+    "name": "Alfa Romeo Twin Cam · 装车示例：Alfa Romeo Spider（1980）",
+    "year": "1954–1994",
+    "brief": "Busso 设计的全铝双顶置凸轮直四，1980 年 Spider 上首次量产可变气门正时。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/1980_Alfa_Romeo_Spider_2000_Veloce_%288948789829%29.jpg/960px-1980_Alfa_Romeo_Spider_2000_Veloce_%288948789829%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:1980_Alfa_Romeo_Spider_2000_Veloce_(8948789829).jpg",
+     "author": "Niels de Wit from Lunteren, The Netherlands",
+     "license": "CC BY 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+   },
+   {
+    "match": "Mitsubishi 4M41 柴油机",
+    "kind": "engine",
+    "name": "Mitsubishi 4M41 · 装车示例：Pajero（第四代）",
+    "year": "1999–2022",
+    "brief": "3.2 升 DOHC 直四柴油机，165–200 PS，用于 Pajero 等。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Mitsubishi_Pajero_3.2_Di-Dc_GLS_%282011%29_%2852721949196%29.jpg/960px-Mitsubishi_Pajero_3.2_Di-Dc_GLS_%282011%29_%2852721949196%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Pajero_3.2_Di-Dc_GLS_(2011)_(52721949196).jpg",
+     "author": "Charles from Port Chester, New York",
+     "license": "CC BY 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "match": "Ford Model T",
+    "kind": "car",
+    "name": "Ford Model T",
+    "year": "1908–1927",
+    "brief": "2.9 升侧置气门直四 20 马力，共产约 1500 万辆，1913 年流水线让汽车普及。"
+   },
+   {
+    "match": "Honda B16A（第一台 VTEC）",
+    "kind": "engine",
+    "name": "Honda B16A",
+    "year": "1989 起",
+    "brief": "1.6 升 DOHC VTEC 直四，160 PS，1989 年 Integra 首发。"
+   },
+   {
+    "match": "VW EA888",
+    "kind": "engine",
+    "name": "Volkswagen EA888",
+    "year": "2007 起",
+    "brief": "大众 1.8/2.0 TSI 涡轮直喷直四，已历五代，装于 Golf GTI 等。"
+   },
+   {
+    "match": "Toyota 2ZR-FXE（Prius）",
+    "kind": "engine",
+    "name": "Toyota 2ZR-FXE",
+    "year": "2009 起",
+    "brief": "1.8 升阿特金森循环混动机，压缩比 13:1，用于第三至五代 Prius。"
+   }
+  ]
+ }
+}

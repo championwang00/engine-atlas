@@ -1,0 +1,119 @@
+{
+  "EA-014": {
+    "intro": "V8 就是把八个气缸分成两排、各四个，像一本摊开的书那样以 V 形共用一根曲轴。它要解决的问题很直接：想要八个缸的动力，又不想让发动机长得像直列八缸那样占满整个机舱。两排一叠，长度几乎减半，宽度换来了紧凑。\n\n最早的 V8 是 1904 年法国 Antoinette 公司为快艇和飞机做的，1910 年的 De Dion-Bouton 被认为是第一款有一定产量的 V8 汽车。真正把它变成量产商品的是 Cadillac：1914 年 9 月推出的 Type 51 用一台 5.1 L（314 cu in）L 头 V8，配电启动，第一年就卖出 13,000 辆。1932 年 Ford 的 Flathead V8 把缸体整体铸造，成本压到平民车也用得起，一直生产到 1954 年。战后美国人爱大车，车身宽正好装得下 V8，到 20 世纪 70 年代中后期，八缸机占了美国新车产量的大多数；GM 的 Chevrolet small-block 在 2011 年造出第一亿台，是产量最高的 V8。\n\n多数 V8 采用 90° 夹角和十字曲轴，平衡好、声音低沉；平面曲轴更轻、更适合赛车，但二阶振动大。进入 21 世纪后，小排量涡轮机、混动和电驱让乘用车 V8 持续收缩，但美国厂商和性能车仍在用。",
+    "sources": [
+      {"title": "Wikipedia: V8 engine", "url": "https://en.wikipedia.org/wiki/V8_engine"},
+      {"title": "Wikipedia: Cadillac Type 51", "url": "https://en.wikipedia.org/wiki/Cadillac_Type_51"}
+    ],
+    "verify": "ok",
+    "note": "Cadillac 1914 为第一台大批量量产的道路 V8 已核实（1914 年 9 月以 1915 年款推出，首年 13,000 辆）；两个来源都没给出该机的马力，所以正文未写马力。"
+  },
+  "EA-015": {
+    "intro": "V12 是两排各六缸的 V 形布局。它存在的理由不只是多两个缸的动力，而是平顺：一台直列六缸本身在一阶和二阶惯性力上都是天然平衡的，V12 等于把两台这样的发动机并到一根曲轴上，任何时刻都有三个气缸处在做功冲程，动力输出像连续水流而不是脉冲。\n\n汽车上最早有记录的 V12 是 1913 年 10 月在 Brooklands 跑的 Toodles V，9.0 L、60° 夹角、约 200 bhp。量产车里，Packard Twin Six 于 1915 年 5 月以 1916 年款推出：424 cu in（6.9 L）、60° L 头，88 hp，到 1923 年共造了 30,941 辆，1915 到 1920 年间它是 Packard 唯一的车型。后来 Ferrari 1948 年的 166 Inter 用 2.0 L Colombo V12，Jaguar 1971 至 1997 年为 E-Type、XJS 和 XJ 造了 5.3 到 6.0 L 的全铝 V12，BMW 的 M70 则在 1987 年装上 E32 7 系。\n\n四冲程 V12 在 60°、120° 或 180° 夹角下都能做到等间隔点火，60° 最常见。代价是长、重、贵、油耗高。BMW 的 V12 在 2022 年停产，如今只剩 Ferrari、Lamborghini、Aston Martin 和 Mercedes-Benz 等少数旗舰还在用。",
+    "sources": [
+      {"title": "Wikipedia: V12 engine", "url": "https://en.wikipedia.org/wiki/V12_engine"},
+      {"title": "Wikipedia: Packard Twin Six", "url": "https://en.wikipedia.org/wiki/Packard_Twin_Six"}
+    ],
+    "verify": "ok",
+    "note": "条目卡片的 Packard Twin Six、1915、60° 已核实（1915 年 5 月推出，1916 年款）。content.json 的 examples 写 Cadillac（1931），与此无冲突，但 Packard 比 Cadillac 早 16 年，建议 examples 补上 Packard。"
+  },
+  "EA-016": {
+    "intro": "星型发动机把气缸像车轮辐条一样围着曲轴箱排成一圈，所有活塞都推着同一个曲拐。因为所有气缸在同一个平面上，连杆没法都直接连到曲轴，于是只有一根主连杆直连，其余副连杆用销子挂在主连杆上。四冲程星型机每排必须是奇数个气缸，比如五缸按 1-3-5-2-4 点火，才能让点火间隔均匀。\n\n这种布局短、风冷效果好，功率重量比高，所以在飞机上大获成功：1925 年的 Wright J-5 Whirlwind 产出 225 hp，驱动了林白的 Spirit of St. Louis；Pratt & Whitney 的 R-1830 造了近 175,000 台，是产量最高的航空活塞机。汽车上只有零星尝试：1922 年英国 North-Lucas 把一台 1,460 cc 五缸风冷星型机装在车尾，极速 55 mph，从未出售；1935 年 Monaco-Trossi 赛车用了一台 3,982 cc、两排十六缸、250 hp 的星型机，前后配重 75:25，转向严重不足，一场都没跑。\n\n汽车不需要风冷圆盘的形状，而直列和 V 型机能在更小的体积里给出同样的功率，所以星型机从未在汽车上量产；在航空领域它也被涡轮发动机取代。",
+    "sources": [
+      {"title": "Wikipedia: Radial engine", "url": "https://en.wikipedia.org/wiki/Radial_engine"},
+      {"title": "SlashGear: Radial engine cars", "url": "https://www.slashgear.com/1635246/radial-engine-cars-use-do-company-still-make"}
+    ],
+    "verify": "ok",
+    "note": "content.json examples 中的改装车 Zombug 在 SlashGear 来源页面里找不到；该页列的是 North-Lucas、Julian、Monaco-Trossi、Guidobaldi 四辆。"
+  },
+  "EA-017": {
+    "intro": "直列八缸就是八个气缸排成一条直线、共用一根很长的曲轴。它的好处和直列六缸同源：只要曲轴配得合适，一阶和二阶惯性力与力矩都能自然抵消，运转极其平顺，而且比 V 型机结构简单、只需要一个缸盖。在 V8 还没普及的年代，想要又多缸又平顺的豪华车，直列八缸是现成答案。\n\n1903 年就有人设计过直列八缸但没有造出来，一战期间 Mercedes 的航空发动机用过这种布局。第一款量产直列八缸汽车是 1919 年巴黎车展上的 Isotta Fraschini Tipo 8，Duesenberg 1921 年跟进，Bugatti 1924 年推出 2 L 的 Type 35，造了近 400 辆。整个 20 世纪 20 至 50 年代，Duesenberg、Packard、Buick、Pontiac 的旗舰都是直列八缸，Alfa Romeo 158 的 1.5 L 机械增压直八还拿下了 1950 年首届 F1 世界冠军。\n\n问题出在那根曲轴：太长，高转速下会发生扭转振动，曲轴甩动时连杆可能撞到曲轴箱壁，后主轴颈附近也容易疲劳开裂，所以必须加扭振减振器。再加上机舱必须做得很长，一旦紧凑的顶置气门 V8 成熟，它就迅速退场：Oldsmobile 1949 年换成 Rocket V8，Chrysler 1951 年换 Hemi，Pontiac 和 Packard 都在 1954 年款结束后停产直八。",
+    "sources": [
+      {"title": "Wikipedia: Straight-eight engine", "url": "https://en.wikipedia.org/wiki/Straight-eight_engine"}
+    ],
+    "verify": "ok",
+    "note": "content.json 的 status 写 1919–1954，与来源一致（Isotta Fraschini 1919 起，Packard/Pontiac 1954 止）。principle 字段原为空，intro 第一段可作补充依据。"
+  },
+  "EA-018": {
+    "intro": "机械增压器是一台由发动机自己带动的空气泵：曲轴通过皮带或齿轮驱动压气机，把更多空气塞进气缸，同样的排量就能烧更多油、出更多力。它和涡轮增压的区别在于动力来源：涡轮靠废气推，机械增压直接吃曲轴的功率，所以油门一踩就有，没有迟滞。\n\n技术本身比汽车还老：1860 年 Roots 兄弟申请了给高炉送风的罗茨鼓风机专利，1885 年 Gottlieb Daimler 拿到了给内燃机增压的德国专利，1902 年 Louis Renault 在法国注册了离心式增压器。真正把它装上量产车的是 Mercedes：1921 年 9 月的柏林车展上展出了 6/25 PS 和 10/40 PS 两款车，Paul Daimler 主持开发，罗茨增压器由曲轴前端驱动、可按需接入，6/25 的输出从 20 hp 提到 40 hp，10/40 从 35 hp 提到 65 hp。上市比展出晚了一年多，通常把 1923 年算作批量生产的起点。1929 年的 Bentley 4½ Litre「Blower」是另一个著名例子。\n\n常见类型有罗茨式、螺杆式和离心式。罗茨式在高增压下效率只有 40–50%，离心式可到 70–85%，但无论哪种都要从曲轴分走功率，油耗因此偏高。Mercedes 在 2010 年前后把 Kompressor 机型换成了涡轮，如今机械增压主要留在少数高性能车、直线竞速和电动增压的混合方案里。",
+    "sources": [
+      {"title": "Wikipedia: Supercharger", "url": "https://en.wikipedia.org/wiki/Supercharger"},
+      {"title": "Secret Classics: 100 Years of Mercedes supercharger cars", "url": "https://www.secret-classics.com/en/?p=80461"}
+    ],
+    "verify": "ok",
+    "note": "与 content.json 的 examples「Mercedes Kompressor（1921 首批量产）」有出入：1921 年是柏林车展首次展出，Secret Classics 称上市晚了一年多，Wikipedia 把量产起点写成 1923 年。建议改为「1921 展出、1923 量产」。content.json 来源 Motor1 页面返回 502，未能打开。"
+  },
+  "EA-019": {
+    "intro": "H 型和 U 型都是「把两台发动机拼成一台」的做法。H 型是两台水平对置机上下叠放，从正面看像字母 H；U 型是两台直列机并排放。两者都有两根曲轴，再用齿轮把动力汇到一根输出轴上。动机很实际：现成的发动机已经调好了，直接叠加就能把气缸数翻倍。\n\n最著名的例子是 BRM 为 1966 年 F1 3.0 L 新规则造的 P75 H16：两台平八机上下叠合，2,996 cc，初期 32 气门版 390 bhp，后期 64 气门版 420 bhp。它只赢过一场，1966 年美国大奖赛，Jim Clark 驾驶装它的 Lotus 43 夺冠。摩托车上，1938 年发布的 Brough Superior Golden Dream 用了一台 1,000 cc H4，1939 年初做了几台就被二战打断。\n\n问题在重量和复杂度：H16 刚出来时重 555 lb（252 kg），最后减到 398 lb 仍然偏重；曲轴振动严重，平衡块脱落导致多次爆缸，40 场比赛里 30 次退赛有 27 次是发动机的错。它最后一次出现在 1968 赛季，之后这种布局就只存在于赛车史里了。",
+    "sources": [
+      {"title": "Wikipedia: H engine", "url": "https://en.wikipedia.org/wiki/H_engine"},
+      {"title": "Wikipedia: BRM P75", "url": "https://en.wikipedia.org/wiki/BRM_P75"}
+    ],
+    "verify": "ok",
+    "note": "content.json 的 status 写「BRM H16 在 1967 年被放弃」，但 Wikipedia BRM P75 页面写该机 1966–1968 年使用，最后一次出现在 1968 赛季（BRM P115）。建议改为 1968。"
+  },
+  "EA-020": {
+    "intro": "V16 是两排各八缸的 V 形布局，等于把两台直列八缸并到一根曲轴上。直八本身就能做到完全平衡，所以 V16 的平顺程度几乎无可挑剔；但 16 个气缸的意义从来不在动力需要，而在于向买家证明：这台车什么都是最多的。\n\n1930 年 1 月 4 日，Cadillac 在纽约车展上发布 Series 452 V-16：452 cu in（7.4 L）顶置气门，45° 夹角，Town Brougham 售价 9,200 美元。头一年卖了 2,500 辆，然后大萧条来了：1931 年 750 辆，1932 年 300 辆，到 1935–1937 年每年只有 49 到 50 辆。整个 11 年共造了 4,076 辆，1938 年后换成 135° 夹角的 L 头机，1940 年停产。竞争者 Marmon Sixteen 在 1931 至 1934 年推出，8.0 L 全铝机身、200 hp，产量只有 390 辆（也有约 400 辆的说法）。\n\n之后 V16 几乎消失，1991 年的 Cizeta-Moroder V16T 其实是两套横置 V8 共用缸体，只造了 9 到 11 辆。2024 年 6 月 Bugatti 发布的 Tourbillon 让它回来了：8.3 L 自然吸气 V16 与 Cosworth 合作开发，配三台电机，系统总输出 1,800 PS。",
+    "sources": [
+      {"title": "Wikipedia: V16 engine", "url": "https://en.wikipedia.org/wiki/V16_engine"},
+      {"title": "Wikipedia: Cadillac V-16", "url": "https://en.wikipedia.org/wiki/Cadillac_V-16"},
+      {"title": "Wikipedia: Marmon Sixteen", "url": "https://en.wikipedia.org/wiki/Marmon_Sixteen"}
+    ],
+    "verify": "ok",
+    "note": "Marmon Sixteen 产量：Marmon Sixteen 页面写 390 辆，V16 engine 页面写约 400 辆，正文写出分歧。Cadillac V-16 页面没有给出 1930 年原型机的马力，所以未写。"
+  },
+  "EA-021": {
+    "intro": "普通发动机每个气缸里有一个活塞，顶上盖着缸盖。对置活塞发动机的做法是在同一个气缸里放两个活塞，让它们相向运动，燃烧室就夹在两个活塞中间，根本不需要缸盖。这样省掉了缸盖、气门和整套配气机构，重量、零件数和摩擦都更少；进排气口直接开在缸壁上，气体从一端进、另一端出，是干净的直流扫气，通常配合两冲程循环。\n\n最早的尝试是 1900 年前后的法国 Gobron-Brillié，它的赛车在 1904 年 7 月 17 日成了第一辆飞行一公里超过 100 mph 的汽车。真正把这种结构做成经典的是德国 Junkers 的航空柴油机：Jumo 204 于 1932 年服役，后继的 Jumo 205 为六缸、12 活塞、两根齿轮联动的曲轴，16.62 L，205E 型可输出 700 PS，造了约 900 台，装在 Do 18、Do 24、BV 138 等巡逻飞艇和水上飞机上，靠的就是省油。卡车上有 1954 年起的 Commer TS3 三缸柴油机，坦克上有 1959 年 Chieftain 用的 19 L Leyland L60。\n\n它的代价是两个活塞必须用齿轮或连杆机构联动，结构重而复杂，润滑和机油消耗也不好控制。近年美国 Achates Power 把它重新拿出来做商用车柴油机，2014 年的论文称比下一代传统柴油机省油 30%，但乘用车上仍无量产。",
+    "sources": [
+      {"title": "Wikipedia: Opposed-piston engine", "url": "https://en.wikipedia.org/wiki/Opposed-piston_engine"},
+      {"title": "Wikipedia: Junkers Jumo 205", "url": "https://en.wikipedia.org/wiki/Junkers_Jumo_205"}
+    ],
+    "verify": "ok"
+  },
+  "EA-022": {
+    "intro": "自由活塞发动机把曲轴去掉了。普通发动机靠曲轴把活塞的往复运动变成旋转，自由活塞机里活塞只是在气缸里来回跑，位置由燃烧的推力、一侧的回弹装置（通常是气弹簧）和另一侧的负载共同决定。既然没有旋转输出，它的用途就不是直接驱动车轮，而是压缩空气、推动液压缸，或者让活塞杆上的磁铁在线圈里往复，直接发电。\n\n这个想法早在 1912 年就有人申请了专利，1922 年起 Raúl Pateras Pescara 的团队造出了早期原型，1930 到 1960 年间作为空气压缩机和燃气发生器有过一批商业产品。把它用作线性发电机的第一份专利出现在 1934 年。近年的代表是 2013 年德国 DLR 在台架上跑通的自由活塞线性发电机，以及 Toyota 在 2014 年 6 月公布的 FPEG 原型：长 24 英寸、直径 2.5 英寸，输出约 15 hp（11 kW 以上），双向冲程都发电，宣称连续工作热效率 42%，可以烧氢、天然气、乙醇、汽油或柴油。\n\n吸引力在于零件少、体积小、压缩比可变、适合多燃料和 HCCI 燃烧，很适合做电动车的增程器。难点是控制：没有飞轮储能，一次燃烧不稳就可能熄火，多缸并联才能平衡振动，而且曲轴驱动的附件（水泵、发电机）都得另想办法。目前仍停留在实验阶段。",
+    "sources": [
+      {"title": "Wikipedia: Free-piston engine", "url": "https://en.wikipedia.org/wiki/Free-piston_engine"},
+      {"title": "DLR: Free-piston linear generator", "url": "https://www.dlr.de/en/images/2013/2/the-free-piston-linear-generator-a-new-kind-of-range-extender-for-electric-cars_9716"}
+    ],
+    "verify": "ok",
+    "note": "待核实清单中 Toyota FPEG 约 15 hp 的数值在 Wikipedia Free-piston engine 页面得到确认（15 hp / 11 kW 以上，24 in × 2.5 in 演示机）。DLR 页面本身未给出年份与数值，2013 年来自其 URL 与 Wikipedia。"
+  },
+  "EA-023": {
+    "intro": "水平对置发动机把气缸分成左右两排，平躺在曲轴两侧，活塞像拳击手出拳那样同时向外、同时向内，所以也叫 boxer。它解决的是两件事：发动机高度低，整车重心随之下降；左右活塞的一阶惯性力互相抵消，不需要平衡轴就能很平顺。\n\n第一台水平对置机是 Karl Benz 在 1897 年做的双缸「contra」发动机（也有标注为约 1899 年的照片记录），1900 年 Benz 又做了一台 5.4 L 平四赛车机。真正让它走进千家万户的是 1938 年投产的 Volkswagen 甲壳虫：后置风冷平四，这一系列风冷机一直生产到 2006 年。Porsche 从 1948 年的 356 开始只用水平对置机，1964 年起的 911 全部是平六，1997 年改为水冷。Subaru 1966 年推出 EA 系列平四，1971 年起以前置四驱加水平对置的组合成为固定搭配；Citroën 2CV 则用平二从 1948 年卖到 1990 年。\n\n它的短板是宽：两排气缸把发动机横向撑开，前置布局下留给转向和悬架的空间变小；两套缸盖和排气歧管也更贵。如今乘用车上只剩 Porsche 和 Subaru 还在坚持，摩托车（主要是平二）和轻型飞机上则仍然常见。",
+    "sources": [
+      {"title": "Wikipedia: Flat engine", "url": "https://en.wikipedia.org/wiki/Flat_engine"},
+      {"title": "Wikipedia: Flat-four engine", "url": "https://en.wikipedia.org/wiki/Flat-four_engine"}
+    ],
+    "verify": "ok",
+    "note": "Benz 水平对置双缸年份：待核实清单写 1899 vs 1900，但两个 Wikipedia 页面正文都写 1897，仅一张照片注明约 1899，正文按 1897 并注明分歧。content.json examples 写「Subaru（1970 FF-1 起）」，来源写 Subaru 平四始于 1966 年 EA 系列、1971 年起前置四驱，建议核对 1970 这一年份。"
+  },
+  "EA-024": {
+    "intro": "LPG（液化石油气，丙烷和丁烷的混合物，车用时叫 autogas）和 CNG（压缩天然气，主要是甲烷）都是让普通点燃式发动机改烧气体燃料的方案。原理没变，还是奥托循环，只是多了一个气瓶和一套气体喷射系统，大多数改装车保留油箱做双燃料。吸引力很简单：气比油便宜，而且烧得干净。\n\n意大利在 20 世纪 50 年代就是最早推广车用 LPG 的国家之一，更早的 1935 年汉诺威已有加气站；CNG 的车用历史则始于 1930 年代意大利波河流域。70 年代石油危机后，出租车成了主力用户，荷兰、意大利、曼谷和伊斯坦布尔都有大批 LPG 出租车，香港除电动车外的出租车全部烧 LPG，泰国到 2008 年曼谷一半出租车改用 LPG。规模上，全球约有 2,780 万辆 autogas 乘用车，土耳其 37% 的乘用车用它，韩国 2021 年仍有 196 万辆；CNG 车到 2019 年接近 2,800 万辆，中国、伊朗、印度、巴基斯坦各有 300 万辆以上。排放方面，LPG 比汽油少约 15% 的 CO2、少 50% 的 NOx，CNG 比汽柴油少 20–29% 的 CO2。\n\n代价是续航短、气瓶占后备厢、加气站少，CNG 还要把气压到 200 bar 以上。Honda Civic GX 在美国卖了约 16,000 辆后于 2015 年停产，欧洲的 CNG 乘用车也在收缩，如今它更多是区域性和车队用的燃料。",
+    "sources": [
+      {"title": "Wikipedia: Autogas", "url": "https://en.wikipedia.org/wiki/Autogas"},
+      {"title": "Wikipedia: Natural gas vehicle", "url": "https://en.wikipedia.org/wiki/Natural_gas_vehicle"}
+    ],
+    "verify": "ok",
+    "note": "条目年份「1950s」对应 Autogas 页面「意大利 1950 年代最早引入」，但同页也提到 1935 年汉诺威已有加气站，CNG 车用始于 1930 年代。Autogas 页面带有「需改进 / 可能含宣传内容」的维护标签，其国别数字多为 2010–2021 年数据。"
+  },
+  "EA-025": {
+    "intro": "V6 是两排各三缸的 V 形布局。它的出发点是尺寸：直列六缸太长，横置前驱车根本放不下，而 V6 的长度和一台直列四缸差不多，却多了两个缸的平顺和动力。它是六缸和四缸之间的折中，也是今天六缸机的默认形态。\n\n早期尝试不少：Marmon 1906 年做过一台原型，Delahaye 1910 年量产过 30° 夹角的 3.2 L V6，Deutz 1908 到 1913 年的 V6 用在铁路发电。但第一款真正用在量产乘用车上的是 1950 年 Lancia Aurelia 的 V6，由 Francesco De Virgilio 设计，1,754 cc、60° 夹角、56 PS，选 60° 正是为了解决 Lancia 早年 V4 的振动问题；这台机一直造到 1970 年。美国这边，GMC 1959 年推出 60° 的 5 L V6，Buick 1962 年从 215 V8 上切两个缸做出了 90° V6。\n\n60° 夹角能做到 120° 的均匀点火间隔，体积也更紧凑；90° 多半是从 V8 改来的，更宽也更抖；Volkswagen 1991 年起的 VR6 把夹角缩到 15°，两排气缸共用一个缸盖。V6 的先天问题是每排都是一台直列三缸，存在一阶不平衡，要靠平衡轴和减振器压制。到 90 年代中期它已取代了大多数直列六缸，F1 自 2014 年起也用 1.6 L 涡轮混动 V6。现在它自己正被涡轮四缸挤压。",
+    "sources": [
+      {"title": "Wikipedia: V6 engine", "url": "https://en.wikipedia.org/wiki/V6_engine"},
+      {"title": "Wikipedia: Lancia V6 engine", "url": "https://en.wikipedia.org/wiki/Lancia_V6_engine"}
+    ],
+    "verify": "ok",
+    "note": "Lancia Aurelia 为第一款量产乘用车 V6 已核实；严格说 Delahaye 1910 年已有少量生产的 V6，Deutz 1908–1913 的 V6 为铁路发电用，所以表述为「第一款真正用在量产乘用车上的」。1.6 L 这一 F1 排量来自 content.json，V6 engine 页面只写 2014 年换用涡轮混动 V6。"
+  },
+  "EA-026": {
+    "intro": "燃气轮机汽车就是把飞机上的喷气发动机原理装进汽车：压气机把空气压缩，燃烧室持续燃烧，推动涡轮转动，再通过减速器把动力送到车轮。它没有活塞、没有往复运动，零件少，运转平顺得几乎没有振动，而且几乎什么燃料都能烧。二战后航空喷气技术成熟，汽车厂商自然想试一试。\n\n第一辆是英国 Rover 的 JET1：项目 1946 年启动，1950 年公开，由 Rover 75 轿车改制，涡轮装在座椅后方，Rover 因此获得当年的 Dewar 奖。1952 年换上升级发动机后，它在比利时 Jabbeke 公路上跑出 152 mph（244 km/h）的燃气轮机汽车世界纪录，这辆车现在陈列在伦敦科学博物馆。规模最大的尝试来自 Chrysler：1963 到 1964 年造了 50 辆 Turbine Car（加上 5 辆原型共 55 辆），130 bhp、36,000 rpm，起步扭矩 425 lb·ft，可烧柴油、无铅汽油、煤油和 JP-4 航空燃油，交给 133 个城市的 203 位普通用户试驾，累计超过 100 万英里。\n\n失败的原因两家一致：油耗差，油门响应慢。Rover 的测试结论是它不适合公路运输，但仍把燃气轮机车研发延续到 1965 年；Chrysler 的涡轮项目因为过不了排放法规和油耗问题在 1979 年终止，Turbine Car 现存 9 辆。此后燃气轮机只偶尔以增程器概念出现，比如 2010 年的 Jaguar C-X75。",
+    "sources": [
+      {"title": "Science Museum Group: Prototype Rover gas turbine motor car, JET 1", "url": "https://collection.sciencemuseumgroup.org.uk/objects/co26468/prototype-rover-gas-turbine-motor-car-jet-1"},
+      {"title": "Wikipedia: Rover JET1", "url": "https://en.wikipedia.org/wiki/Rover_JET1"},
+      {"title": "Wikipedia: Chrysler Turbine Car", "url": "https://en.wikipedia.org/wiki/Chrysler_Turbine_Car"}
+    ],
+    "verify": "ok",
+    "note": "Rover JET1 与 Chrysler Turbine Car 130 hp 已核实。Chrysler 油耗：Wikipedia 只说「sub-par」，13 与 19.4 mpg 是更早的测试车数据，不属于 Turbine Car，正文未写具体油耗数值。产量写法：正文 50 辆试驾车，信息框 55 辆含 5 辆原型。"
+  }
+}

@@ -1,0 +1,209 @@
+{
+ "EA-040": {
+  "intro": "混合动力专用发动机，是一开始就为“和电机搭档”而设计的内燃机。起步、爬坡这些费力的瞬间由电机补上，它便可以放弃一部分爆发力，专心把油烧得更省。像两个人抬东西，一个负责发力，一个负责持久。\n\n代表是 1997 年 12 月 10 日在日本上市的第一代 Toyota Prius（NHW10）：1.5 L 的 1NZ-FXE 四缸机功率只有 43 kW，配 30 kW 电机，由行星齿轮把发动机、发电机和驱动电机连在一起，取消了起动机和发电机。发动机采用晚关进气门的阿特金森循环：压缩时一部分空气被推回进气歧管，有效压缩比变小而膨胀比不变，热量转化为功的比例更高，代价是低转速扭矩弱，由电机来补。第一代 Prius 共售出约 12.3 万辆。\n\n这条路线后来成为主流，Toyota 混动累计销量 2007 年 5 月过 100 万辆，2013 年 3 月过 500 万辆。如今的 HEV/PHEV 几乎都用这类“为电机而生”的阿特金森或米勒循环发动机。",
+  "sources": [
+   {
+    "title": "Wikipedia: Toyota Prius (XW10)",
+    "url": "https://en.wikipedia.org/wiki/Toyota_Prius_(XW10)"
+   },
+   {
+    "title": "Wikipedia: Atkinson cycle",
+    "url": "https://en.wikipedia.org/wiki/Atkinson_cycle"
+   },
+   {
+    "title": "Wikipedia: Hybrid Synergy Drive",
+    "url": "https://en.wikipedia.org/wiki/Hybrid_Synergy_Drive"
+   }
+  ],
+  "verify": "ok",
+  "note": ""
+ },
+ "EA-041": {
+  "intro": "Valvetronic 是 BMW 的无节气门进气技术。普通汽油机靠一块节气门挡板控制进气量，轻踩油门时挡板几乎关闭，活塞要费力把空气从窄缝里吸进来，这部分白白消耗的功叫泵气损失。Valvetronic 不用挡板，而是直接改变进气门打开的高度来控制进气量，相当于把“门口的闸”换成“门本身开多大”。\n\n它在凸轮轴和气门之间加一根中间杠杆，再用电机驱动的偏心轴改变杠杆位置：杠杆离凸轮越远，气门升程越小。第一代系统最小升程可压到 0.3 mm，后来的版本到 0.18 mm，偏心轴转动范围约 225°。它与 VANOS 可变正时配合，可同时连续调节进气门的正时和升程。2001 年它首次装在 BMW 316ti Compact 的 1.8 L 发动机上，BMW 当时宣称油耗降低约 10%。\n\n局限在高转速：细长的中间杠杆在 6,000 rpm 以上摩擦明显增大，所以 BMW 的 M 系列高性能发动机长期不采用它。后来它与缸内直喷、涡轮增压组合使用，这一思路也影响了 Fiat MultiAir 等其他无节气门方案。",
+  "sources": [
+   {
+    "title": "Wikipedia: Valvetronic",
+    "url": "https://en.wikipedia.org/wiki/Valvetronic"
+   },
+   {
+    "title": "AutoZine: Throttleless engines - BMW Valvetronic",
+    "url": "https://www.autozine.org/technical_school/engine/Throttle_Ignition.html"
+   }
+  ],
+  "verify": "ok",
+  "note": ""
+ },
+ "EA-042": {
+  "intro": "W 型发动机可以理解为“把两台 V 型发动机并排塞进一个机体”。大众集团的做法更巧：先把 V6 的夹角缩到 15°，窄到两排气缸共用一个缸盖，这就是 VR6；再把两组 VR6 以 72° 夹角拼在一根曲轴上，得到四排气缸的 W12。好处是在差不多 V8 的长度里装下 12 个缸。\n\n大众集团的 W12 自 2001 年起生产，第一款量产车是 2001 年的 Audi A8（D2），排量 6.0 L，发动机长度只有 513 mm，比同期的 4.2 L V8 还紧凑；Bentley 版本加双涡轮，标准输出 560 PS。同期的 W8 装在 Passat 上，只生产了 2001–2004 年。更极端的是 Bugatti Veyron 的 W16：8.0 L、四台涡轮、64 个气门，标准版 1,001 PS，散热器多达 10 个，2005–2015 年共造 450 辆，极速 407 km/h。\n\n代价是复杂、重、发热多。2018 年大众宣布 W12 只保留给 Bentley，维基百科将 W12 的生产时间记为 2001 年至 2024 年 4 月；W16 也随 Bugatti 转向混动而走向尾声。",
+  "sources": [
+   {
+    "title": "Wikipedia: W engine",
+    "url": "https://en.wikipedia.org/wiki/W_engine"
+   },
+   {
+    "title": "Wikipedia: Volkswagen Group W12 engine",
+    "url": "https://en.wikipedia.org/wiki/Volkswagen_Group_W12_engine"
+   },
+   {
+    "title": "Wikipedia: Bugatti Veyron",
+    "url": "https://en.wikipedia.org/wiki/Bugatti_Veyron"
+   }
+  ],
+  "verify": "ok",
+  "note": "content.json 把 Bentley W12 2024 年停产列为待核实；维基百科 W12 条目信息框记为 2001 年至 2024 年 4 月，可作依据。W16 以 2025 Mistral 收尾这一点本次未核实。"
+ },
+ "EA-043": {
+  "intro": "2006–2013 年的 F1 发动机是一台 2.4 L 自然吸气 V8。它的出现不是为了更快，而是为了“限速”：FIA 把排量从 3.0 L V10 砍到 2.4 L，并规定必须是 90° V8、每缸四气门、缸径不超过 98 mm、最低重量 95 kg。给所有人画一样的框，再比谁在框里做得更精。\n\n即便如此，2006 年这些 V8 仍能超过 20,000 rpm，于是 2007 年加了 19,000 rpm 上限，2009 年再降到 18,000 rpm，功率大致在 720–800 hp。2007 年起规格被冻结，2006 年日本大奖赛用过的发动机直接沿用到 2008 年；2009 年起每位车手全年最多 8 台发动机，超用一台罚退 10 位。2009 年和 2011–2013 年，这台 V8 还搭配了 60 kW 的 KERS。\n\n这是 F1 最后一代纯自然吸气发动机。2014 年它被 1.6 L V6 涡轮混动动力单元取代。",
+  "sources": [
+   {
+    "title": "Wikipedia: Formula One engines",
+    "url": "https://en.wikipedia.org/wiki/Formula_One_engines"
+   }
+  ],
+  "verify": "ok",
+  "note": "content-gaps 认为卡片“统一缸径上限与转速限制”无依据；维基百科 Formula One engines 条目写明 2006 年起缸径上限 98 mm、2007 年 19,000 rpm、2009 年 18,000 rpm，可作依据。条目类别标为 hybrid，但主体是自然吸气 V8，KERS 仅为可选附加。"
+ },
+ "EA-044": {
+  "intro": "氢内燃机就是把汽油机里的燃料换成氢气，活塞、曲轴、点火都照旧，只是烧的东西不含碳，尾气里没有二氧化碳。它和氢燃料电池车不同：燃料电池靠电化学反应发电，氢内燃机是真的在气缸里点火烧氢。因为能沿用现有的发动机工厂和供应链，车企把它当作一条过渡路线。\n\n代表是 BMW Hydrogen 7：2005–2007 年共生产约 100 辆，基于 760Li 的 6.0 L V12，可在氢气和汽油间切换，两种燃料下输出都是 191 kW（260 PS）。液氢储罐接近 170 L，只装约 8 kg 氢，续航约 200 km；停放约 17 小时后储罐就要排气泄压，10–12 天能把氢跑光。赛车方面，2021 年 5 月 Toyota 的氢燃料 Corolla Sport 跑完了富士 24 小时耐力赛。\n\n难点有两处：氢燃烧仍会生成氮氧化物，所以不算零排放，通常靠稀燃压低燃烧温度来控制；进气道喷射的氢机理论功率只有汽油机的约 85%，缸内直喷才能反超。目前它主要停留在赛车与重型商用车的探索阶段。",
+  "sources": [
+   {
+    "title": "Wikipedia: BMW Hydrogen 7",
+    "url": "https://en.wikipedia.org/wiki/BMW_Hydrogen_7"
+   },
+   {
+    "title": "Wikipedia: Hydrogen internal combustion engine vehicle",
+    "url": "https://en.wikipedia.org/wiki/Hydrogen_internal_combustion_engine_vehicle"
+   }
+  ],
+  "verify": "ok",
+  "note": "content.json 写“功率约降一半”：维基百科氢内燃机条目给的是进气道喷射理论功率约为汽油机 85%，直喷可高出约 15%；Hydrogen 7 的 191 kW 相对 760Li 汽油版确实大幅下降，但“一半”这一口径未在来源中找到。"
+ },
+ "EA-045": {
+  "intro": "KERS（动能回收系统）解决的是“刹车时浪费的能量”：赛车减速进弯，巨大的动能全变成刹车盘上的热。KERS 让发电机在刹车时吸收一部分动能，存进电池或飞轮，出弯时车手按下方向盘上的按钮再放出来，相当于给赛车加了一个可反复充放的“能量存钱罐”。\n\n2009 年 F1 首次允许使用 KERS：输出和回收功率上限都是 60 kW（约 80 hp），每圈最多释放 400 kJ，换算下来每圈约 6.6 秒的加速助力。系统不是强制的，2009 年只有四支车队实际使用；Lewis Hamilton 在 2009 年匈牙利大奖赛驾驶装有 KERS 的 McLaren 夺冠，是 KERS 赛车的第一场胜利。Williams 开发了 40,000 rpm 的飞轮式 KERS，但因布置困难没有用在 F1 赛车上。\n\nKERS 增加约 30 kg 重量，又挤占配重空间，2010 年所有车队协议停用，2011 年才恢复。2014 年规则换代，电机功率提升到 120 kW，KERS 这个名字被 MGU-K 取代。",
+  "sources": [
+   {
+    "title": "Wikipedia: Kinetic energy recovery system",
+    "url": "https://en.wikipedia.org/wiki/Kinetic_energy_recovery_system"
+   },
+   {
+    "title": "New Atlas: Formula One KERS explained",
+    "url": "https://newatlas.com/formula-one-kers/11324/"
+   },
+   {
+    "title": "Wikipedia: 2009 Formula One World Championship",
+    "url": "https://en.wikipedia.org/wiki/2009_Formula_One_World_Championship"
+   }
+  ],
+  "verify": "ok",
+  "note": ""
+ },
+ "EA-046": {
+  "intro": "增程式电动车里，发动机不再连着车轮，只做一件事：发电。车轮始终由电机驱动，电池快没电时发动机启动，给电池和电机供电。可以理解成“背着一台小型发电机上路的电动车”：平时用电，长途不用担心充电桩。\n\n最早量产的是 Chevrolet Volt，2010 年 12 月在美国开始交付：16 kWh 电池，EPA 纯电续航 38 英里（2013–2015 款），电用完后一台 1.4 L 四缸汽油机接管发电；第二代纯电续航提到 53 英里，生产持续到 2019 年 2 月，全球累计约 17.7 万辆。2014 年的 BMW i3 REx 更极端，用一台来自 C650 GT 踏板摩托车的 647 cc 双缸机做增程器，电量降到 6% 时介入，把续航从 130–160 km 拉到 240–300 km。\n\n两套系统意味着更高的成本和重量，这类车型在欧美逐渐退出，在中国却成了主流：2019 年理想 ONE 确立商业模式，2024 年中国增程式销量约 118 万辆。用 830 cc 转子发动机做增程器的 Mazda MX-30 R-EV 则于 2026 年退出市场。",
+  "sources": [
+   {
+    "title": "Wikipedia: Extended-range electric vehicle",
+    "url": "https://en.wikipedia.org/wiki/Extended-range_electric_vehicle"
+   },
+   {
+    "title": "Wikipedia: Chevrolet Volt",
+    "url": "https://en.wikipedia.org/wiki/Chevrolet_Volt"
+   }
+  ],
+  "verify": "ok",
+  "note": "Volt 年份：content.json 写 2011–2019（车型年份），维基百科写 2010 年 11 月投产、12 月美国交付，条目年份 2010 与之一致。维基百科还指出 Volt 高速时发动机可经离合器与变速箱相连，并非严格的纯串联。"
+ },
+ "EA-047": {
+  "intro": "2014 年起的 F1 动力单元，核心是一台 1.6 L 90° V6 涡轮发动机，外加两台电机：MGU-K 装在曲轴端，刹车时回收动能、加速时输出 120 kW；MGU-H 装在涡轮轴上，把排气热能变成电，也能反过来带动涡轮，让涡轮迟滞几乎消失。它不再只是“发动机”，而是发动机、涡轮、电机、电池互相供能的系统，所以 F1 改称 power unit。\n\n规则限制的不是进气压力，而是燃油流量：最高 100 kg/h。多烧油没用，只能把每一克油榨得更干净，热效率成为竞争核心。名义转速上限 15,000 rpm，但受燃油流量限制各队通常只用到约 13,000 rpm，这个上限在 2022 年被取消。MGU-K 每圈可回收 2 MJ。首年由 Mercedes、Ferrari、Renault 供应，Honda 2015 年加入；2015 年 Mercedes 已达约 870 hp，2019 年 Renault 宣称排位赛可达 1,000 hp。\n\n2022–2025 年动力单元设计被冻结。2026 年规则取消了昂贵且与民用技术脱节的 MGU-H，电机功率提升到 350 kW。",
+  "sources": [
+   {
+    "title": "Wikipedia: Formula One engines",
+    "url": "https://en.wikipedia.org/wiki/Formula_One_engines"
+   },
+   {
+    "title": "Formula1.com: 2026 regulations explained - power units",
+    "url": "https://www.formula1.com/en/latest/article/all-you-need-to-know-about-f1s-new-power-units.14jfv7a36905uDJDdNyfQd"
+   }
+  ],
+  "verify": "ok",
+  "note": "卡片“缸径 80 × 行程 53 mm”：FIA 2026 技术规则 C5 规定缸径 80 mm，但 2014 年规则的缸径与行程数字本次来源未直接核实，正文未采用。"
+ },
+ "EA-048": {
+  "intro": "涡轮增压器靠排气推动，但油门踩下的瞬间排气还不够多，涡轮转不起来，这一两秒的“等待”就是涡轮迟滞。电动增压的思路很直接：用电机把压气机转起来，不等排气。它有两种形式：单独加一台电动压气机放在进气路上；或把电机直接装在涡轮轴上，既能帮涡轮提速，也能在排气充足时发电。\n\n2016 年的 Audi SQ7 TDI 是第一款量产搭载电动压气机的车：4.0 L V8 柴油机本有一大一小两台涡轮，再加一台 48 V 电动压气机，转速可达 70,000 rpm，由一块 0.47 kWh、最大 13 kW 的 48 V 锂电池供电，整机 429 hp、900 Nm。2020 年 6 月 Mercedes-AMG 公布了与 Garrett 合作的电动排气涡轮：一台细长电机直接装在涡轮轴上，夹在涡轮叶轮和压气叶轮之间，技术来源是 Mercedes F1 动力单元的 MGU-H。\n\n这类系统依赖 48 V 轻混电气架构，随轻混普及才进入量产，目前仍是高端车型上的新兴技术。",
+  "sources": [
+   {
+    "title": "WardsAuto: Electric Turbo, 48V Electrics Onboard New Audi SQ7",
+    "url": "https://wardsauto.com/internal-combustion-engines/electric-turbo-48v-electrics-onboard-new-audi-sq7"
+   },
+   {
+    "title": "Mercedes-AMG F1: F1 know-how in new road car technology",
+    "url": "https://www.mercedesamgf1.com/en/news/2020/06/mercedes-amg-f1-know-how-new-road-car-technology/"
+   }
+  ],
+  "verify": "ok",
+  "note": "content.json 写 AMG e-turbo 2022 年起量产（M139l 装于 C 43），本次只核实了 2020 年 6 月公布的技术，量产年份未直接核实。"
+ },
+ "EA-049": {
+  "intro": "压缩比是发动机的“体质”：压缩比高，油烧得省，但大负荷时容易爆震；压缩比低，可以放心加大增压，但平时费油。传统发动机只能选一个折中值，可变压缩比则让它在两者之间来回切换，等于一台发动机同时拥有“经济模式”和“运动模式”两副身体。\n\nNissan 的 VC-Turbo 是第一台投产的可变压缩比发动机。它在连杆和曲轴之间加了一套多连杆机构，用一台带谐波减速器的电机转动控制轴，改变活塞上止点的位置，压缩比可在 8:1（高性能）到 14:1（高效率）之间连续变化。这台 2.0 L 四缸涡轮机输出 268 hp、380 Nm，2017 年 12 月随新一代 Infiniti QX50 发布，2018 年投产；Nissan 宣称前驱版比上一代 QX50 的 V6 燃油效率提高 35%。多连杆机构还能抵消振动，不需要平衡轴。更早的尝试是 Saab 2000 年在日内瓦车展展示的 SVC，但没有量产。\n\n代价是复杂度：2025 年 7 月，Nissan 和 Infiniti 因轴承故障召回了约 44.4 万辆装有 VC-Turbo 的车。目前它仍只用于日产系车型。",
+  "sources": [
+   {
+    "title": "Nissan: VC-Turbo, the world's first production-ready variable compression ratio engine",
+    "url": "https://global.nissannews.com/releases/vc-turbo-the-worlds-first-production-ready-variable-compression-ratio-engine?lang=en-US"
+   },
+   {
+    "title": "Wikipedia: Variable compression ratio",
+    "url": "https://en.wikipedia.org/wiki/Variable_compression_ratio"
+   }
+  ],
+  "verify": "ok",
+  "note": "召回数字沿用 content.json（TFLcar 来源），本次未重新打开该页面。"
+ },
+ "EA-050": {
+  "intro": "HCCI（均质压燃）是让汽油像柴油一样靠压缩自己着火：混合气很稀、燃烧温度低，效率接近柴油机，尾气仍像汽油机一样干净。难点在于“什么时候着火”无法像火花塞那样精确控制，工况稍一变化就会失火或爆震。Mazda 的 SPCCI（火花控制压燃）给它加了一个开关：用火花塞先点燃附近一小团较浓混合气，这团火焰造成的压力上升把其余稀混合气整体压燃。火花塞成了压燃的“扳机”。\n\n2019 年投产的 Skyactiv-X 是第一台商用的压燃汽油机：2.0 L、压缩比 16.3:1，一台小型罗茨机械增压器负责多送空气把混合气稀释到可以压燃，发布时输出 132 kW、224 Nm；高速大负荷时可切回普通火花点火，Mazda 的目标是比同级汽油机省油 20–30%。它随 Mazda3 和 CX-30 在欧洲等市场销售，没有进入美国，在英国比 Skyactiv-G 贵近 2,000 英镑；后来的 e-Skyactiv X 把压缩比降到 15.0:1，输出提到 183 hp。\n\n成本高而动力平平，让它始终小众。Mazda 已表示下一代 Skyactiv-Z 四缸机将替代 Skyactiv-G 和 Skyactiv-X，计划 2027 年推出。",
+  "sources": [
+   {
+    "title": "Wikipedia: Mazda Skyactiv-X",
+    "url": "https://en.wikipedia.org/wiki/Mazda_Skyactiv-X"
+   },
+   {
+    "title": "SlashGear: What happened to Mazda's Skyactiv-X",
+    "url": "https://www.slashgear.com/1780894/what-happened-mazda-skyactiv-x/"
+   }
+  ],
+  "verify": "ok",
+  "note": "content.json 写“仅日本与欧洲”，本次来源只提到欧洲市场，日本未核实；Skyactiv-Z 继任由维基百科与 SlashGear 支持，预计 2027 年推出。"
+ },
+ "EA-051": {
+  "intro": "合成燃料（E-fuel）是用电“造”出来的汽油：先用可再生电力电解水得到氢，再把氢和捕集的二氧化碳合成甲醇，进一步转化成汽油或柴油。燃烧时排出的二氧化碳，理论上等于制造时从空气里取走的那部分，所以被称为近似碳中和。关键卖点是“即加即用”：现有发动机和加油站不用改。\n\n最知名的示范项目是 Porsche 与 HIF 在智利蓬塔阿雷纳斯建的 Haru Oni 工厂，2022 年 12 月 20 日正式投产，当地一年约 270 天刮大风，用风电制氢。试验阶段产能约每年 13 万升，先供 Porsche Mobil 1 Supercup 赛事使用，计划在十年代中期扩到每年 5,500 万升；Porsche 已向 E-fuel 投入超过 1 亿美元。F1 也从 2026 年起要求使用完全由“先进可持续组分”构成的燃料。\n\n问题是能耗：电解、合成、再燃烧，每一步都有损耗，烧 E-fuel 的内燃机车比纯电动车多耗 3–5 倍电力，研究估算 2050 年生产成本仍需每升 0.70–1.30 欧元。它更可能用于飞机、赛车和存量燃油车，而不是替代家用车的电动化。",
+  "sources": [
+   {
+    "title": "Porsche Newsroom: opening of the Haru Oni eFuels pilot plant",
+    "url": "https://newsroom.porsche.com/en/2022/company/porsche-highly-innovative-fuels-hif-opening-efuels-pilot-plant-haru-oni-chile-synthetic-fuels-30732"
+   },
+   {
+    "title": "Wikipedia: Electrofuel",
+    "url": "https://en.wikipedia.org/wiki/Electrofuel"
+   }
+  ],
+  "verify": "ok",
+  "note": "扩产目标：维基百科写 2026 年达到每年 5,500 万升，Porsche 2022 年通稿只说“十年代中期”，本文按 Porsche 口径。F1 2026 燃料：FIA 技术规则 C16 的表述是“完全由先进可持续组分构成”并允许少量非可持续来源添加剂，与 content.json 的“100% 可持续燃料”口径略有差异。"
+ },
+ "EA-052": {
+  "intro": "2026 年的 F1 新规则，目标是让动力单元更简单、更“电”、更贴近民用技术。1.6 L V6 涡轮发动机保留，但取消了复杂昂贵的 MGU-H，只留 MGU-K 一台电机，并把它的功率从 120 kW 提到 350 kW，电能在总输出中的占比从约 20% 提到约 50%。以前是发动机主唱、电机伴奏，现在两者几乎对唱。\n\n根据 FIA 2026 年技术规则 Section C：排量 1,600 cc、六缸 90° V 型、缸径 80 mm；燃油不再限质量流量而是限能量流量，上限 3,000 MJ/h；MGU-K 电功率不超过 350 kW，每圈回收能量不超过 8.5 MJ，电池电量变化幅度任何时候不超过 4 MJ；燃料必须完全由“先进可持续组分”构成。因燃油能量受限，内燃机输出约 400 kW，总功率仍超过 1,000 hp。2026 年有五家制造商：Mercedes、Ferrari、Red Bull 与 Ford、重返的 Honda，以及接手 Sauber 的 Audi。\n\n新规也带来新问题：电量用完后直道末段功率骤降，于是 DRS 被“超车模式”取代，与前车差距一秒以内的车手下一圈可多获得 0.5 MJ；FIA 还在特定赛段把部署功率限制在 250 kW。具体数值以 FIA 技术规则最新版本为准。",
+  "sources": [
+   {
+    "title": "FIA: 2026 Formula 1 Regulations - Section C Technical (Issue 20)",
+    "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_20_-_2026-08-05.pdf"
+   },
+   {
+    "title": "Formula1.com: 2026 regulations explained - power units",
+    "url": "https://www.formula1.com/en/latest/article/all-you-need-to-know-about-f1s-new-power-units.14jfv7a36905uDJDdNyfQd"
+   },
+   {
+    "title": "Wikipedia: Formula One engines",
+    "url": "https://en.wikipedia.org/wiki/Formula_One_engines"
+   }
+  ],
+  "verify": "ok",
+  "note": "卡片“取消 MGU-H（待核实）”已由 FIA 规则与 formula1.com 确认。内燃机约 400 kW 来自维基百科的推算，FIA 规则本身只限定燃油能量流量，不直接规定内燃机功率。"
+ }
+}

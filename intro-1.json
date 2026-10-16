@@ -1,0 +1,193 @@
+{
+ "EA-001": {
+  "intro": "蒸汽机汽车就是把一台锅炉和蒸汽机搬上车架：烧煤或木柴把水烧成高压蒸汽，蒸汽推动活塞，再经连杆带动车轮。它要解决的问题很直白——在没有内燃机的年代，让车辆不靠马也能自己走。可以把它想成一辆自带茶壶的推车，壶里的蒸汽就是动力，壶一凉就得重新烧。\n\n通常把 1769 年算作起点：法国军事工程师 Nicolas-Joseph Cugnot 先在这一年试验了小比例模型，1770 年造出全尺寸的“蒸汽炮车”（fardier à vapeur），目的是替法国陆军拖运炮管。它空重约 2.5 吨，两缸蒸汽机约 12 马力，设计目标是载 4 吨、每小时走约 7.8 公里，实际从未达到；一种记载的最高速度只有 3.6 km/h，而且锅炉每隔约 15 分钟就要重新生火加热。流传很广的“1771 年撞墙、史上第一起车祸”在当时文献里没有记录，最早出现在 1804 年，真实性存疑。\n\n陆军几次试车后放弃了项目，这辆车 1800 年移交巴黎国立工艺学院（CNAM），至今仍在馆内展出。蒸汽汽车在 20 世纪初的 Stanley、Doble 等品牌上一度成熟，但预热慢、要频繁加水、锅炉笨重，最终被内燃机取代。",
+  "sources": [
+   {
+    "title": "Wikipedia: Nicolas-Joseph Cugnot",
+    "url": "https://en.wikipedia.org/wiki/Nicolas-Joseph_Cugnot"
+   }
+  ],
+  "verify": "ok",
+  "note": "content.json 写 Cugnot 炮车“时速约 3 mph”（约 4.8 km/h），维基给出的一种记载为 3.6 km/h；全尺寸车为 1770 年造，1769 年是模型试验。"
+ },
+ "EA-002": {
+  "intro": "de Rivaz 内燃机是最早把“在气缸里直接点燃燃气”这个想法做成实物的尝试之一。和蒸汽机在外面烧锅炉不同，它让氢气与空气的混合物在气缸内爆燃，直接把活塞顶起来。可以把它理解成一个靠“放炮”推动的气缸：没有压缩，没有曲轴和连杆，每一次爆炸都靠人手触发。\n\n瑞士人 François Isaac de Rivaz 从 1804 年起做固定式试验，1806 年把设计用于车辆，1807 年 1 月 30 日获得巴黎第 731 号专利，同年把原型机装上一辆车，让它挪动了一小段距离。氢气存在一个气囊里，点火靠伏打电池产生的电火花，气门和点火都由人手操作，没有正时机构。1813 年他又造了一辆长 6 米、重近 1 吨的 grand char mécanique，在 Vevey 的测试中载着 300 公斤石木和 4 个人，在约 9% 的坡上走了 26 米，速度约 3 km/h。\n\n法国科学院当时断言内燃机永远比不上蒸汽机，同时代很少有人认真对待他的工作。它几乎没有实用价值，但常被视为最早的氢燃料内燃机和第一辆内燃机车辆。年份上，1806 年对应“把设计用于车辆”，1807 年对应专利与装车试验。",
+  "sources": [
+   {
+    "title": "Wikipedia: De Rivaz engine",
+    "url": "https://en.wikipedia.org/wiki/De_Rivaz_engine"
+   },
+   {
+    "title": "Wikipedia: François Isaac de Rivaz",
+    "url": "https://en.wikipedia.org/wiki/François_Isaac_de_Rivaz"
+   }
+  ],
+  "verify": "ok",
+  "note": "content.json 的 sources 为空；本条补充了两个维基来源。维基把 1807 年车辆描述为“挪动了一小段距离”，与“几乎不能行驶”一致。"
+ },
+ "EA-003": {
+  "intro": "斯特林发动机是一种“外面加热、里面封闭”的发动机：气缸里封着固定量的气体（空气、氦或氢），一端被外部热源加热、另一端被冷却，气体反复膨胀和收缩推动活塞。燃烧在气缸外进行，所以几乎什么热源都能用，运转也很安静。可以把它比作一个靠温差一张一缩的“热气泵”：热从外面来，里面的气体从不更换。\n\n苏格兰牧师 Robert Stirling 在 1816 年申请了专利，其中已经描述了后来称为回热器的“节能器”。汽车上最认真的尝试是 1978 年起由美国能源部出资、NASA 主持的项目：先后做出 Mod I、Mod II 两代发动机，Mod II 的峰值热效率达到 38.5%，而当时汽油机只有 20–25%；装进一辆 1985 年的 Chevrolet Celebrity 后，高速油耗从 40 mpg 改善到 58 mpg（美制）。\n\n没能量产的原因很具体：启动预热最长要 30 秒，加速响应慢，散热器要带走大约两倍于汽油机的热量，热交换器和耐高温材料成本高。资金削减加上车企缺乏兴趣，项目结束。今天斯特林机主要用在潜艇、太阳能发电和低温制冷上，汽车上只留下了试验记录。",
+  "sources": [
+   {
+    "title": "Wikipedia: Stirling engine",
+    "url": "https://en.wikipedia.org/wiki/Stirling_engine"
+   },
+   {
+    "title": "Wikipedia: Applications of the Stirling engine",
+    "url": "https://en.wikipedia.org/wiki/Applications_of_the_Stirling_engine"
+   }
+  ],
+  "verify": "ok",
+  "note": "content.json 的 Ford Torino 1975、4 缸 120 hp 与油耗差 10–20% 在本次打开的维基页面中未出现，intro 未采用；不构成冲突。"
+ },
+ "EA-004": {
+  "intro": "Lenoir 煤气机是第一台真正卖出去并投入使用的内燃机。它的结构基本是一台改装的蒸汽机：把城市煤气和空气送进气缸，用电火花点燃，爆燃推动活塞——只是把蒸汽换成了爆炸的气体。它没有压缩冲程，混合气进来就点，就像在敞开的罐子里点燃煤气，推力有限，大部分热量白白浪费。\n\n比利时裔工程师 Étienne Lenoir 于 1860 年取得专利，发动机为双作用式，气缸两端各做一次功，点火用 Ruhmkorff 感应线圈。广告标称每马力小时耗气 0.5 m³，1861 年德国工程师 H. Boetius 实测为 1.2–5.4 m³，效率之低可见一斑。到 1865 年仅巴黎就卖出 143 台，总产量不到 500 台，功率 6–20 马力。1863 年 Lenoir 把一台 2543 cc、1.5 马力的发动机装上三轮车 Hippomobile，从巴黎开到 Joinville-le-Pont，约 11 公里用了大约 90 分钟，比步行还慢。\n\n1867 年巴黎世博会上，Otto 与 Langen 的大气式发动机耗气不到 Lenoir 机的一半并获金奖；1876 年的奥托压缩式四冲程则彻底让 Lenoir 设计过时。",
+  "sources": [
+   {
+    "title": "Wikipedia: Étienne Lenoir",
+    "url": "https://en.wikipedia.org/wiki/Étienne_Lenoir"
+   },
+   {
+    "title": "Wikipedia: Lenoir gas engine",
+    "url": "https://en.wikipedia.org/wiki/Lenoir_gas_engine"
+   },
+   {
+    "title": "Wikipedia: Nicolaus Otto",
+    "url": "https://en.wikipedia.org/wiki/Nicolaus_Otto"
+   }
+  ],
+  "verify": "ok",
+  "note": "冲突：content.json 写 Hippomobile “行驶约 50 英里”，维基记载为巴黎至 Joinville-le-Pont 约 11 km（另一处写 18 km / 3 小时），intro 以维基为准。content.json 的“热效率仅约 4%”在打开的页面中未得到确认，intro 未采用该数值。"
+ },
+ "EA-005": {
+  "intro": "Brayton 定压燃烧机的特点是“压缩”和“做功”分开在两个气缸里进行：一个缸把空气压进储气罐，燃料在转移过程中以恒定压力持续燃烧，另一个缸负责膨胀做功。它想解决的是 Lenoir 机那种“进来就炸”的低效率，让燃烧像燃气灶一样平稳持续，而不是像鞭炮一样一下一下地爆。\n\n美国工程师 George Brayton 于 1872 年申请了“Ready Motor”专利并在当年开始销售，到 1880 年代可能造了几百台，用于抽水、磨坊、发电和船用。1874 年他改用液体燃料喷射并以引火焰点燃，解决了煤气版回火爆炸的问题；1881 年 John Philip Holland 用 Brayton 机驱动潜艇 Fenian Ram。汽车史上它因 George Selden 而出名：Selden 在 1876 年费城百年博览会上看到 Brayton 机，1878 年据此申请汽车专利，1895 年获批后向车企收取专利费，直到福特以“我的车用的是奥托循环，不是 Brayton 循环”打赢上诉，而 Selden 的车从未真正跑起来。\n\n活塞式 Brayton 机很快被奥托机取代，但“定压加热”的热力学循环以 Brayton 循环之名延续至今，是燃气轮机和喷气发动机的理论基础，典型燃气轮机的压比约为 11–16。",
+  "sources": [
+   {
+    "title": "Wikipedia: George Brayton",
+    "url": "https://en.wikipedia.org/wiki/George_Brayton"
+   },
+   {
+    "title": "Wikipedia: Brayton cycle",
+    "url": "https://en.wikipedia.org/wiki/Brayton_cycle"
+   }
+  ],
+  "verify": "ok",
+  "note": "content-gaps 记录的 1872 vs 1873 分歧：两个维基页面均给出 1872 年专利申请并开始销售，另一页记 1876 年开始商业生产；intro 采用 1872。"
+ },
+ "EA-006": {
+  "intro": "奥托四冲程是今天绝大多数汽油机仍在用的工作方式：活塞走四趟，完成进气、压缩、做功、排气，曲轴转两圈才做一次功。关键在“压缩”这一步——先把混合气压紧再点火，就像把弹簧先压到底再松手，释放的力量远大于不压缩直接点燃。它解决的正是 Lenoir 机效率低的问题。\n\nNicolaus Otto 早在 1862 年就试过压缩式发动机，但很快损坏。可用的版本由 Deutz 公司的 Franz Rings 和 Herman Schumm 做出，通常认为 1876 年问世（维基给出 1876 年 5 月 9 日），一举成功，被认为是第一台商业成功的缸内压缩发动机；美国专利第 194,047 号在 1877 年颁发，所以也有 1877 年的说法。早期的“Otto Silent Engine”单缸排量 6.1 升，180 rpm 时只有 3 马力。到 1889 年已有 50 多家公司制造奥托式发动机。\n\n1886 年德国专利局因 Alphonse Beau de Rochas 更早描述过四冲程原理而撤销了 Deutz 的专利，Daimler 与 Maybach 得以自由开发高速小型发动机，并在 1885 年前后造出最早的汽车。此后一百多年，四冲程原理没有变，变的只是进气、喷油和点火的精细程度。",
+  "sources": [
+   {
+    "title": "Wikipedia: Nicolaus Otto",
+    "url": "https://en.wikipedia.org/wiki/Nicolaus_Otto"
+   },
+   {
+    "title": "Wikipedia: Otto engine",
+    "url": "https://en.wikipedia.org/wiki/Otto_engine"
+   },
+   {
+    "title": "Wikipedia: History of the internal combustion engine",
+    "url": "https://en.wikipedia.org/wiki/History_of_the_internal_combustion_engine"
+   }
+  ],
+  "verify": "ok",
+  "note": "content.json 写“年份采用 1876 年专利”；维基显示 1876 年是发动机问世，1877 年是美国专利，建议表述改为“1876 年问世”。"
+ },
+ "EA-007": {
+  "intro": "二冲程发动机把进气、压缩、做功、排气压缩到活塞的一上一下两趟里，曲轴每转一圈就做一次功，而四冲程要转两圈。它用气缸壁上的开口代替气门，常用曲轴箱当泵来换气。同样排量下做功次数翻倍，零件更少更轻，就像把一套流程从两步并成一步——快，但不够干净。\n\n苏格兰工程师 Dugald Clerk 于 1881 年取得专利，通常被称为第一台商业化的带压缩二冲程机，它用单独的充气缸；用曲轴箱扫气的简化设计一般归功于英国人 Joseph Day。汽车上，DKW、Saab、Trabant、Wartburg 都长期使用二冲程：Saab 的 750 cc 三缸机按年份不同输出 36–42 马力，蒙特卡洛拉力版达 65 马力，1966 年的 Saab Sport 还用过 850 cc 版本。\n\n问题在排放：燃油里按大约 32:1 混入的润滑油会随废气排出，进排气口同时开启还会让未燃燃油逃逸，碳氢排放明显高于四冲程。西方车企在 1980 年代因排放法规停产，东德的 Trabant 和 Wartburg 造到 1991 年前后。今天二冲程主要留在舷外机、小摩托、链锯和割草机上；大型船用二冲程柴油机是另一条技术路线。",
+  "sources": [
+   {
+    "title": "Wikipedia: Two-stroke engine",
+    "url": "https://en.wikipedia.org/wiki/Two-stroke_engine"
+   }
+  ],
+  "verify": "ok"
+ },
+ "EA-008": {
+  "intro": "阿特金森循环的核心是让“膨胀行程比压缩行程长”：燃烧后的气体多推活塞一段，把更多能量榨出来，而不是热乎乎地排掉。可以把它想成用更少的气换更充分的做功。代价是同样排量下马力缩水，所以适合不追求爆发力、追求省油的场景。\n\n英国人 James Atkinson 在 1882 年设计了“差动式发动机”，用一套连杆让两个行程长短不同，并借此绕开奥托专利；1887 年的“循环发动机”做到了约 100 马力。现代做法完全不同：保持普通四冲程结构，只是让进气门晚关，把一部分空气推回进气歧管，有效压缩比降低而膨胀比不变。Ralph Miller 在 1957 年 12 月 24 日获批的专利把同一思路用于增压发动机，用增压补回功率损失，这就是米勒循环。\n\n真正把它推向大众的是混动车：1997 年底上市的第一代 Toyota Prius 用 1NZ-FXE 发动机，功率不足的部分由电机补上。此后 Toyota Dynamic Force、Hyundai Ioniq、Ford Fusion Hybrid，以及大众 EA211 TSI evo 这类小排量涡轮机都采用了类似做法。",
+  "sources": [
+   {
+    "title": "Wikipedia: Atkinson cycle",
+    "url": "https://en.wikipedia.org/wiki/Atkinson_cycle"
+   }
+  ],
+  "verify": "ok"
+ },
+ "EA-009": {
+  "intro": "单缸就是一个气缸、一个活塞，是活塞发动机能做到的最简单形态。零件少、成本低、紧凑，风冷散热也比多缸容易。缺点同样直接：曲轴转两圈才有一次做功，动力一冲一冲，振动大，需要很重的飞轮把转速“磨平”，这反过来又让发动机反应迟钝。\n\n早期的汽车、摩托车和船用发动机几乎都是单缸。1886 年 1 月 29 日 Karl Benz 提交专利的 Patent-Motorwagen 用的就是一台 954 cc 单缸四冲程机，400 rpm 时输出 0.68 PS，发动机本身重约 100 公斤，而整车只有 270 公斤。战后的 1959 年 Bond Minicar 等微型车仍用 Villiers 单缸机。\n\n今天单缸在汽车上几乎绝迹，却仍是销量最大的发动机形态：1958 年推出的 Honda Super Cub 用 49 cc 四冲程单缸，是有史以来累计销量最高的机动车；Moto3 赛事自 2012 年起使用 250 cc 四冲程单缸。割草机、便携工具、三轮摩托和卡丁车也几乎全靠它。为了压振动，有些机型加了平衡轴甚至假连杆（如 Ducati Supermono），但这会吃掉一部分简单和轻量的优势。",
+  "sources": [
+   {
+    "title": "Wikipedia: Single-cylinder engine",
+    "url": "https://en.wikipedia.org/wiki/Single-cylinder_engine"
+   },
+   {
+    "title": "Wikipedia: Benz Patent-Motorwagen",
+    "url": "https://en.wikipedia.org/wiki/Benz_Patent-Motorwagen"
+   }
+  ],
+  "verify": "ok"
+ },
+ "EA-010": {
+  "intro": "柴油机不用火花塞：先把空气压到很高的压力和温度，再把燃油喷进去，靠压缩产生的热让它自己着火。压缩比通常是 15:1 到 23:1，比汽油机高得多，所以同样的燃料能做更多功。可以想象打气筒打久了筒身发烫——柴油机就是把这股热用到极致。\n\nRudolf Diesel 1892 年在德国、瑞士、英国和美国取得专利，1893 年出版《合理热机的理论与构造》，德国专利 RP 67207 日期为 1893 年 2 月 23 日。在奥格斯堡机器厂的支持下，第一台可用的 Motor 250/400 在 1897 年通过正式测试：Moritz Schröter 于 1897 年 2 月 17 日测得有效效率 26.2%，功率 13.1 kW，而当时蒸汽机的效率只有约 10%。第一款批量生产的柴油轿车是 1936 年投产的 Mercedes-Benz 260 D，OM 138 发动机 2545 cc、45 马力，油耗约 9 L/100 km，比汽油版的 13 L/100 km 省三成，共造了 1967 辆。\n\n现代柴油机的峰值热效率，乘用车约 43%，大型卡车约 45%，船用大型二冲程可达 55%。它的代价是氮氧化物和颗粒物治理成本高，噪音和振动也更大。2015 年美国环保署向大众集团发出违反《清洁空气法》的通知后，欧洲乘用车的柴油份额持续收缩，但商用车和重载领域仍以柴油为主。",
+  "sources": [
+   {
+    "title": "Wikipedia: Diesel engine",
+    "url": "https://en.wikipedia.org/wiki/Diesel_engine"
+   },
+   {
+    "title": "Wikipedia: Rudolf Diesel",
+    "url": "https://en.wikipedia.org/wiki/Rudolf_Diesel"
+   },
+   {
+    "title": "Wikipedia: Mercedes-Benz W138",
+    "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_W138"
+   }
+  ],
+  "verify": "ok",
+  "note": "content-gaps 第 2 条：维基 Diesel engine 与 W138 页面均称 260 D（1936 年投产）为第一款批量生产的柴油轿车，可解除 pending；W138 页面被标注引用不足。"
+ },
+ "EA-011": {
+  "intro": "直列双缸是把两个气缸并排放在一条曲轴上，是单缸之上最省钱的升级：多一个气缸就把做功间隔缩短一半，振动和动力起伏都比单缸好。曲轴可以做成 360°、180° 或 270° 三种曲拐角度，各有取舍：360° 做功均匀但一阶振动和单缸相当；180° 一阶平衡却做功不均、有摇摆力矩；270° 二阶平衡，被摩托车广泛采用。\n\n汽车上第一台直列双缸是 Daimler 1895 年 Phoenix 发动机的改型，当年装在 Panhard 车上。它最广为人知的时代是 1950–70 年代的微型车：1957 年的 Fiat 500 用一台后置风冷 479 cc 双缸机，仅 13 马力，整个 500 系列到 1975 年共造了约 389 万辆；1958 年的 Subaru 360、1972 年的 Fiat 126 和 2008 年的 Tata Nano（623 cc）都是同类。2010 年日内瓦车展发布的 Fiat TwinAir 把它带回现代：875 cc 涡轮增压、MultiAir 气门、85 或 105 PS，2011 年拿下国际年度发动机四项奖。\n\n截至 2024 年初，TwinAir 已是量产汽车里唯一在售的汽油直列双缸，Piaggio Porter 的柴油双缸也在 2020 年停产。它紧凑省油，但声浪粗糙、振动偏大，如今主要留在摩托车和微型车上。",
+  "sources": [
+   {
+    "title": "Wikipedia: Straight-twin engine",
+    "url": "https://en.wikipedia.org/wiki/Straight-twin_engine"
+   },
+   {
+    "title": "Wikipedia: Fiat TwinAir engine",
+    "url": "https://en.wikipedia.org/wiki/Fiat_TwinAir_engine"
+   },
+   {
+    "title": "Wikipedia: Fiat 500",
+    "url": "https://en.wikipedia.org/wiki/Fiat_500"
+   }
+  ],
+  "verify": "ok",
+  "note": "条目年份写“约 1900”，维基记载第一台汽车用直列双缸为 1895 年 Daimler Phoenix 改型。content.json 的 principle 为空，intro 第一段的曲拐角度说明可作补充。"
+ },
+ "EA-012": {
+  "intro": "直列六缸把六个气缸排成一排，曲拐按 120° 均匀分布，前三缸和后三缸互为镜像。结果是活塞的一阶和二阶往复力都天然抵消，不需要平衡轴就能做到六缸以内布局里最平顺的运转。可以把它想成三对跷跷板彼此踩着节拍，谁动谁静刚好互补。\n\n第一台量产直列六缸出现在 1903 年荷兰 Spyker 60 HP 赛车上，Rolls-Royce 在 1905 年的 30 hp 车型上用了 6.0 升直六，随后的 Silver Ghost（1906–1926）延续了这一布局；到 1909 年已有约 80 家车企采用，其中 62 家在英国。BMW 自 1933 年开始造车起，所有六缸机都是直列六缸，2006 年的涡轮 N54 和至今在产的 B58 都是例子。\n\n它的短板是长：比直四、V6、多数 V8 甚至 V10 都长，难以横置。1970 年代起 V6 流行，到 2000 年代已在大多数轻型车上取代直六。2017 年以后风向反转：Mercedes-Benz M256（2017，48V 轻混）、Jaguar Land Rover Ingenium（2019）、Stellantis Hurricane（2021）、Mazda Skyactiv-X/D（2022）都用模块化直列家族让直六回潮。",
+  "sources": [
+   {
+    "title": "Wikipedia: Straight-six engine",
+    "url": "https://en.wikipedia.org/wiki/Straight-six_engine"
+   }
+  ],
+  "verify": "ok",
+  "note": "条目年份写“约 1900”，维基记载第一台量产直六为 1903 年 Spyker 60 HP。"
+ },
+ "EA-013": {
+  "intro": "直列四缸是四个气缸排成一排、共用一根平面曲轴的布局，是今天最普及的汽车发动机形态。它够平衡、够紧凑、够便宜：两对活塞一上一下互相抵消一阶往复力；长度适中，横置纵置都能装。可以把它看成发动机里的“标准答案”，不惊艳，但少出错。\n\n把它推向大众的是 1908 年投产的 Ford Model T：177 立方英寸（2.9 升）侧置气门直四，缸径 95.25 mm、行程 101.6 mm，压缩比只有 3.98:1，输出 20 马力，从 1908 年 9 月 27 日一直造到 1941 年 8 月 4 日，整整 12,000 天。1913 年 Peugeot 的直四以双顶置凸轮轴和每缸四气门赢得印第安纳波利斯 500，定下了赛车发动机的格式；1980 年 Alfa Romeo Twin Cam 成为第一台带可变气门正时的量产发动机。\n\n直四的固有弱点是二阶振动：连杆长度有限使活塞上下加速不对称，产生两倍曲轴转速的抖动，并随转速平方增长。对策是 1911 年发明的反向双平衡轴，Mitsubishi 在 1970 年代以“Silent Shaft”之名申请专利，大排量直四普遍采用；量产乘用车直四通常在 1.3–2.5 升之间，Mitsubishi 4M41 柴油机的 3.2 升是上限之一。在美国，截至 2025 车型年约 60% 的新车使用四缸发动机。",
+  "sources": [
+   {
+    "title": "Wikipedia: Straight-four engine",
+    "url": "https://en.wikipedia.org/wiki/Inline-four_engine"
+   },
+   {
+    "title": "Wikipedia: Ford Model T engine",
+    "url": "https://en.wikipedia.org/wiki/Ford_Model_T_engine"
+   }
+  ],
+  "verify": "ok"
+ }
+}

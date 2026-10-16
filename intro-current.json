@@ -1,0 +1,1759 @@
+{
+  "EA-001": {
+    "intro": "蒸汽汽车把燃烧与做功分在两个地方：炉火先把水烧成蒸汽，蒸汽再进入气缸推动活塞。发动机本身不在气缸内燃烧燃料。\n\nCugnot 于 1769 年试验小型蒸汽车辆，1770 年造出全尺寸炮车。它证明车辆可以自行移动，但锅炉补热、重量分配和操纵仍不成熟。这里的年份指早期试验，不代表已经实用化。\n\n蒸汽汽车后来也进入过商业生产。Stanley 博物馆以 1897 年的首辆 Stanley Steamer 为起点；英国科学博物馆群保存的 1899 年车辆，则见证了这类轻型蒸汽汽车的早期制造。到了 1920 年代，Doble Model E 以电点火燃烧器缩短预热，并用冷凝器回收蒸汽中的水；亨利·福特博物馆的 1924 年藏车说明，这些改进仍未让蒸汽汽车成为主流。\n\n1970 年代的排放研究又带来一轮试验。Lear Motors 把蒸汽朗肯循环装入城市公交车，采用单管蒸汽发生器和涡轮膨胀机。美国环保署在 1973 年 10 月测试、1974 年发表的报告中，记录了其低排放潜力，也指出测试车辆的燃油经济性和可靠性仍需改进。它属于示范项目，不能据此写成蒸汽汽车已经恢复大规模量产。",
+    "sources": [
+      {
+        "title": "Nicolas-Joseph Cugnot - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Nicolas-Joseph_Cugnot"
+      },
+      {
+        "title": "Stanley Museum — About Us",
+        "url": "https://www.stanleymuseum.org/about-us/"
+      },
+      {
+        "title": "Science Museum Group — Stanley steam car, 1899",
+        "url": "https://collection.sciencemuseumgroup.org.uk/objects/co24790"
+      },
+      {
+        "title": "The Henry Ford — 1924 Doble Steam Touring Car",
+        "url": "https://www.thehenryford.org/collections/explore/artifact/83327?AssetId=THF87080"
+      },
+      {
+        "title": "US EPA — Exhaust Emissions from a 53-Passenger Lear Rankine Cycle Steam Bus, February 1974",
+        "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100X46P.TXT"
+      },
+      {
+        "title": "Musée des Arts et Métiers — Fardier à vapeur",
+        "url": "https://www.arts-et-metiers.net/musee/fardier-vapeur"
+      }
+    ],
+    "verify": "ok",
+    "note": "区分1769小型车与1770全尺寸车；删除存在不同记载的速度、未证实事故传闻。；追加覆盖：Steam-car commercial development and 1970s experimental revival"
+  },
+  "EA-002": {
+    "intro": "de Rivaz 让燃气直接在气缸内点燃，把燃烧产生的压力用于推动活塞。与蒸汽机相比，它省去了先制取蒸汽这一步，但点火与进气仍需人工操作。\n\n本条采用 1807 年专利及试验车的年份。1806 年属于此前的设计发展阶段，不与专利年份混用，也不把短距离移动写成成熟道路应用。",
+    "sources": [
+      {
+        "title": "De Rivaz engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/De_Rivaz_engine"
+      },
+      {
+        "title": "Science Museum Group — Drawing of Rivaz’s gas engine, 1807",
+        "url": "https://collection.sciencemuseumgroup.org.uk/objects/co62034/drawing-of-rivazs-gas-engine-1807"
+      }
+    ],
+    "verify": "ok",
+    "note": "采用1807专利口径；避免“第一辆”绝对断言及未必一致的氢氧比例。"
+  },
+  "EA-003": {
+    "intro": "斯特林机把固定量的气体封在内部，用外部热源加热，再在另一端冷却。回热器在气体来回流动时储热、放热，使循环少浪费一些热量。\n\n1816 年 Robert Stirling 的专利是本条的历史起点。美国 NASA 与能源部后来开展汽车发动机项目，Mod II 曾装入 Chevrolet Celebrity。成绩不能只看单一效率数值：换热器的体积、成本和加速响应同样决定能否装车。",
+    "sources": [
+      {
+        "title": "Stirling engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Stirling_engine"
+      },
+      {
+        "title": "Applications of the Stirling engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Applications_of_the_Stirling_engine"
+      },
+      {
+        "title": "NASA/DOE AUTOMOTIVE STIRLING ENGINE PROJECT. OVERVIEW 1986 - TRID",
+        "url": "https://trid.trb.org/View/274460"
+      }
+    ],
+    "verify": "ok",
+    "note": "删除未直接证实的Torino年份、功率和油耗比较；不把旧试验的峰值效率与今日汽油机作比较。"
+  },
+  "EA-004": {
+    "intro": "Lenoir 的发动机借用了蒸汽机的双作用结构，但让煤气与空气直接在气缸里燃烧。它于 1860 年取得专利，是内燃机从试验走向商业应用的重要一步。\n\n1863 年的 Hippomobile 展示了装车用途。它把固定式煤气机的思路移到道路车辆上，但还没有成为成熟的交通工具。缺少压缩过程，也是它后来被奥托式发动机超越的重要原因。",
+    "sources": [
+      {
+        "title": "Étienne Lenoir - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Étienne_Lenoir"
+      },
+      {
+        "title": "The Henry Ford — Memoir: Lenoir-type Engine Made by Ford",
+        "url": "https://www.thehenryford.org/collections/explore/artifact/425632"
+      },
+      {
+        "title": "Musée des Arts et Métiers — Le moteur Lenoir (collection booklet)",
+        "url": "https://www.arts-et-metiers.net/sites/arts-et-metiers/files/2021-10/field_media_document-400-cp_moteur_lenoir.pdf"
+      }
+    ],
+    "verify": "ok",
+    "note": "删除50英里与4%热效率；来源自身含18km/3h及其他旅程口径，不强行换成唯一11km数值。"
+  },
+  "EA-005": {
+    "intro": "Brayton 没有让一个气缸包办所有冲程，而是把空气压缩与膨胀做功分开。Ready Motor 以独立压缩缸供气，燃烧后的气体进入做功缸。\n\n本条采用 1872 年专利这一明确节点。它与后来的燃气轮机不是同一结构，但两者都可以用定压加热的 Brayton 循环理解。",
+    "sources": [
+      {
+        "title": "George Brayton - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/George_Brayton"
+      },
+      {
+        "title": "Brayton cycle - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Brayton_cycle"
+      },
+      {
+        "title": "George B. Brayton — US125166A: Improvement in gas-engines (1872)",
+        "url": "https://patents.google.com/patent/US125166A/en"
+      }
+    ],
+    "verify": "ok",
+    "note": "1872对应专利；补原理和代价，未声称1872即大规模量产。"
+  },
+  "EA-006": {
+    "intro": "四冲程把换气、压缩和做功分开进行。混合气先被压缩，再点火推动活塞，排出废气后开始下一轮。一个完整循环需要曲轴转两圈。\n\n1876 年指 Otto 的成功压缩式四冲程发动机问世；相关美国专利于 1877 年获得。实际发动机还存在燃烧持续时间、换气和散热损失，与理想奥托循环并不完全相同。",
+    "sources": [
+      {
+        "title": "Otto engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Otto_engine"
+      },
+      {
+        "title": "Nicolaus Otto - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Nicolaus_Otto"
+      },
+      {
+        "title": "DEUTZ — DEUTZ builds its nine millionth engine",
+        "url": "https://www.deutz.com/en/news/press-releases/news-detail/deutz-builds-its-nine-millionth-engine/"
+      }
+    ],
+    "verify": "ok",
+    "note": "明确1876发动机/1877美国专利；补tradeoffs。"
+  },
+  "EA-007": {
+    "intro": "二冲程把四冲程中分开的过程压缩到一圈曲轴转动内。活塞接近行程末端时，扫气把废气推出并补入新鲜气体。\n\n1881 年标记 Dugald Clerk 带独立充气缸的专利，不代表所有二冲程都采用曲轴箱扫气。DKW、Saab、Trabant 曾让它进入乘用车；这些传统汽油机的排放问题也不能概括大型二冲程柴油机。\n\n二冲程也曾用于汽车，并非只属于摩托车。DKW F1于1931年投产，Audi档案记录其赛车版本使用双缸二冲程发动机。它说明同一工作循环可以用于不同车辆类型，具体性能与排放表现仍取决于结构和用途。\n\n二冲程曾进入不同地区的汽车市场。除了DKW，Bosch记录了1951年Gutbrod和Goliath的二冲程汽油直喷应用；Trabant P50从1958年开始量产，Horch博物馆展示了这一品牌的二冲程道路车与拉力历史。Saab Car Museum也保留了Saab 96二冲程版本的照片记录。\n\n传统预混合二冲程在扫气时可能让未燃燃料随气流进入排气；把汽油直接喷入气缸，可以将喷油与这段气体交换分开。不能据此把所有二冲程都称为相同的预混合汽油机，也不能将Trabant1991年的整车停产年当作全部车型一直采用二冲程的证据。\n\n二冲程汽车的研究没有停在传统化油器小车。Orbital Engine Co. 于 2000 年发表的论文摘要记录了 100 辆采用 OCP 空气辅助直喷二冲程发动机的澳大利亚试验车队；这说明该路线接受过整车耐久验证，不代表已普遍量产。另一条应用是 Detroit Diesel Series 71：1938 年推出的二冲程柴油系列，具有直列和 V 型版本，后来也用于重型卡车。二冲程描述工作循环，并不规定燃料种类，也不等于曲轴箱扫气或对置活塞结构。",
+    "sources": [
+      {
+        "title": "Two-stroke engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Two-stroke_engine"
+      },
+      {
+        "title": "912474: Two-Stroke Engine Technology for Passenger Automobiles - Technical Paper",
+        "url": "https://saemobilus.sae.org/papers/two-stroke-engine-technology-passenger-automobiles-912474"
+      },
+      {
+        "title": "Audi Media Center — Anniversary magazine Motorsports, DKW F1",
+        "url": "https://www.audi.com/en/photos/detail/anniversary-magazine-motorsports-8941"
+      },
+      {
+        "title": "Bosch — History of gasoline injection",
+        "url": "https://www.bosch.com/stories/the-history-of-the-bosch-gasoline-injection/"
+      },
+      {
+        "title": "August Horch Museum — Trabant exhibition",
+        "url": "https://www.horch-museum.de/trabant-museum.php"
+      },
+      {
+        "title": "Saab Car Museum — Photo contest, Saab96 two-stroke",
+        "url": "https://saabcarmuseum.se/en/fototavling/"
+      },
+      {
+        "title": "SAE — A Five-Million Kilometre, 100-Vehicle Fleet Trial, of an Air-Assist Direct Fuel Injected, Automotive 2-Stroke Engine (2000-01-0898)",
+        "url": "https://saemobilus.sae.org/papers/a-five-million-kilometre-100-vehicle-fleet-trial-air-assist-direct-fuel-injected-automotive-2-stroke-engine-2000-01-0898"
+      },
+      {
+        "title": "Detroit — From 2-Stroke to Today",
+        "url": "https://www.demanddetroit.com/our-company/community/blog/from-2-stroke-to-today/"
+      }
+    ],
+    "verify": "ok",
+    "note": "删除“1990因排放停产”及最后kei car断言；区分汽油小机与二冲程柴油机。；追加覆盖：append_application_milestone；追加覆盖：append_sourced_section；追加覆盖：research merge"
+  },
+  "EA-008": {
+    "intro": "阿特金森循环的核心是让膨胀过程比有效压缩过程更充分。1882 年的原始设计用特殊机械机构实现，不是简单延迟关气门。\n\n现代汽车常通过早关或晚关进气门取得类似效果。与增压结合时通常称米勒循环；在混动车中，电机可弥补发动机低速输出。两种称呼有交叉，不能只靠名称判断具体机构。",
+    "sources": [
+      {
+        "title": "Atkinson cycle - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Atkinson_cycle"
+      },
+      {
+        "title": "Miller cycle - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Miller_cycle"
+      },
+      {
+        "title": "Miniature Engineering Craftsmanship Museum — Atkinson Differential Engine",
+        "url": "https://craftsmanshipmuseum.com/exhibit/atkinson-differential-engine/"
+      },
+      {
+        "title": "Toyota — The Story Behind the Birth of the Prius, Part 2",
+        "url": "https://global.toyota/en/prius20th/challenge/birth/02/"
+      }
+    ],
+    "verify": "ok",
+    "note": "纠正首页把1882原始Atkinson等同晚关气门；保留现代二者术语交叠。"
+  },
+  "EA-009": {
+    "intro": "单缸是气缸布局中最直接的一种。只有一组活塞和连杆，零件少，但活塞运动产生的惯性力、两次燃烧之间的转速波动也较明显。\n\nBenz 在 1885 年完成的早期汽车采用单缸四冲程发动机，1886 年取得车辆专利。此后单缸还用于微型车；它是否适合一辆车，要结合重量、速度和舒适性要求判断。",
+    "sources": [
+      {
+        "title": "Single-cylinder engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Single-cylinder_engine"
+      },
+      {
+        "title": "Benz Patent-Motorwagen - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Benz_Patent-Motorwagen"
+      },
+      {
+        "title": "Mercedes-Benz Group — Benz Patent Motor Car: 1885–1886",
+        "url": "https://group.mercedes-benz.com/company/tradition/company-history/1885-1886.html"
+      }
+    ],
+    "verify": "ok",
+    "note": "1885为Benz车辆完成节点，不称单缸发明年份；删除不必要排量。"
+  },
+  "EA-010": {
+    "intro": "柴油机先压缩空气，再把燃油喷入高温空气中自燃。它不依靠火花塞触发正常燃烧，燃油喷射的时机、压力和雾化情况十分重要。\n\n1897 年的成功试验推动了 Diesel 设计的实用化。1936 年 Mercedes-Benz 260 D 是早期批量生产柴油轿车的代表。汽车柴油机后来经历预燃室、直喷、涡轮与共轨等不同阶段，不能把这些技术都归到同一个起点。\n\n1897年的柴油机工程验证与乘用车普及是两个节点。Mercedes-Benz 260 D于1936年柏林IAMA亮相，使柴油进入系列生产乘用车的叙事。后续可连接1978年涡轮柴油、1980年代末直喷和1997年共轨。\n\n柴油机的前史还包括 Hornsby-Akroyd 热球机。Akroyd-Stuart 在 1890 年取得重油发动机专利；其后公开的专利说明，启动时先用灯火加热汽化和点火室，运转后再靠燃烧维持温度。这种设计依赖热表面帮助汽化与点火，应与主要依靠压缩空气升温着火的柴油机分开理解；1890 年也不是汽车柴油机量产的起点。",
+    "sources": [
+      {
+        "title": "Diesel engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Diesel_engine"
+      },
+      {
+        "title": "Mercedes-Benz 260 D - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_W138"
+      },
+      {
+        "title": "Mercedes-Benz OM617 engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_OM617_engine"
+      },
+      {
+        "title": "Mercedes-Benz — World premiere of the 170 V and 260 D in 1936",
+        "url": "https://media.mercedes-benz.com/article/98189502-1a19-495f-9e70-7067004c870b"
+      },
+      {
+        "title": "Science Museum Group — Akroyd crude oil engine, 1890",
+        "url": "https://collection.sciencemuseumgroup.org.uk/objects/co62061/akroyd-crude-oil-engine-1890-oil-engines-models"
+      },
+      {
+        "title": "Science Museum Group — Herbert Akroyd Stuart",
+        "url": "https://collection.sciencemuseumgroup.org.uk/people/cp1112/herbert-akroyd-stuart"
+      },
+      {
+        "title": "Herbert Akroyd Stuart — US502837A, heated vaporizing and ignition chamber",
+        "url": "https://patents.google.com/patent/US502837A/en"
+      }
+    ],
+    "verify": "ok",
+    "note": "260D以早期批量代表而非无条件全球第一表述；删除未经新证据验证的2026市场份额趋势。；追加覆盖：append_application_milestone；追加覆盖：research merge"
+  },
+  "EA-011": {
+    "intro": "直列双缸把两个气缸并列在同一根曲轴上。360°、180°和270°等曲拐配置会带来不同点火节奏，不能仅凭“双缸”判断平顺性。\n\n1895 年的 Daimler Phoenix 改型是早期汽车用直列双缸的已知实例。Fiat 500 和后来的 TwinAir 则展示了从低成本小车到增压发动机的不同使用方式。",
+    "sources": [
+      {
+        "title": "Straight-twin engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Straight-twin_engine"
+      },
+      {
+        "title": "Fiat TwinAir engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Fiat_TwinAir_engine"
+      },
+      {
+        "title": "Fiat — Preview: the new Fiat 500 / fifty years since launch",
+        "url": "https://www.media.stellantis.com/uk-en/fiat/press/preview-the-new-fiat-500"
+      },
+      {
+        "title": "Mercedes-Benz Public Archive — Paris–Bordeaux–Paris race, 1895",
+        "url": "https://mercedes-benz-publicarchive.com/marsClassic/en/instance/ko/Paris---Bordeaux---Paris-race-1192-km.xhtml?oid=7398"
+      }
+    ],
+    "verify": "ok",
+    "note": "起点改1895；补principle；不把省油当作仅由缸数保证的性质。"
+  },
+  "EA-012": {
+    "intro": "直列六缸的平顺性来自活塞与曲拐相位的组合。常见布置能抵消一、二阶往复惯性力和摇摆力矩，但燃烧产生的转矩波动和曲轴扭振仍然存在。\n\n1903 年的 Spyker 60 HP 是重要六缸赛车实例。它为赛事而造，属于早期赛车试验，不能据此确定量产公路车的起点。直六后来广泛用于轿车、跑车和商用车，其主要布置代价是长度。\n\nToyota 2JZ-GTE 是直六在 1990 年代跑车上的代表应用。1993 年日本上市的 A80 Supra 提供 3.0 升、双顶置凸轮轴、24 气门的直六，分为 2JZ-GE 自然吸气版和 2JZ-GTE 双涡轮版。型号后缀和销售市场会影响配置，不能把整个 2JZ 家族都写成同一台双涡轮发动机。",
+    "sources": [
+      {
+        "title": "Straight-six engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Straight-six_engine"
+      },
+      {
+        "title": "Spyker 60-hp Four-wheel Drive Racing Car",
+        "url": "https://www.louwmanmuseum.nl/en/car/spyker-60-hp-four-wheel-drive-racing-car/"
+      },
+      {
+        "title": "Toyota 75 Years — Supra, released 24 May 1993",
+        "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60006850/index.html"
+      }
+    ],
+    "verify": "ok",
+    "note": "推翻旧note“量产直六首车”；以馆藏来源的赛车性质为准。；追加覆盖：2JZ representative engine card, not a separate optional entry"
+  },
+  "EA-013": {
+    "intro": "直列四缸把四个气缸安排在一排，通常只需一只缸盖。常见曲轴配置使两只活塞上行时另两只下行，一阶惯性力可以抵消，二阶惯性力却不能完全抵消。\n\n1908 年 Ford Model T 是这一布局进入大规模汽车生产的代表，不是直四的发明年份。后来的自然吸气、涡轮增压与混动发动机都采用过直四；较大的机型可能加装平衡轴以改善振动。",
+    "sources": [
+      {
+        "title": "Straight-four engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Inline-four_engine"
+      },
+      {
+        "title": "Ford Model T engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Ford_Model_T_engine"
+      },
+      {
+        "title": "VTEC - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/VTEC"
+      },
+      {
+        "title": "Toyota Prius (XW10) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Toyota_Prius_(XW10)"
+      },
+      {
+        "title": "Ford Racing — Model T Racer",
+        "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2025/05/model-t-racer"
+      }
+    ],
+    "verify": "ok",
+    "note": "删“全球销量最大”未量化断言；1908限定Model T节点。"
+  },
+  "EA-014": {
+    "intro": "V8 把八个气缸分成两排，缩短了发动机长度。它的声音与振动并非只由八个气缸决定：十字曲轴、平面曲轴以及具体点火顺序都会改变表现。\n\nCadillac Type 51 于1914年9月发布，作为1915年款销售，是V8走向大规模道路应用的重要车型。它不是历史上第一台V8，因此本条采用量产普及节点的表述。",
+    "sources": [
+      {
+        "title": "V8 engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/V8_engine"
+      },
+      {
+        "title": "Cadillac Type 51 - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Cadillac_Type_51"
+      },
+      {
+        "title": "The Henry Ford — Early American Luxury at 2022 Old Car Festival",
+        "url": "https://www.thehenryford.org/collections/explore/articles/early-american-luxury-at-2022-old-car-festival"
+      }
+    ],
+    "verify": "ok",
+    "note": "区分1914发布与1915年款；去除不必要的“第一台量产V8”绝对表述。"
+  },
+  "EA-015": {
+    "intro": "V12 将两排六缸组合在一根曲轴上。常见60°布局既能保持较好的往复平衡，又能让四冲程的点火间隔均匀；这不代表整台发动机没有任何振动。\n\n1915 年的 Packard Twin Six 是早期量产 V12 汽车代表。其后 Ferrari、Jaguar 和 BMW 等厂商采用不同设计。它的优势是平顺与输出能力，代价则是更多零件、摩擦和布置空间。",
+    "sources": [
+      {
+        "title": "V12 engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/V12_engine"
+      },
+      {
+        "title": "Packard Twelve - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Packard_Twin_Six"
+      },
+      {
+        "title": "The Henry Ford — Early American Luxury at 2022 Old Car Festival",
+        "url": "https://www.thehenryford.org/collections/explore/articles/early-american-luxury-at-2022-old-car-festival"
+      }
+    ],
+    "verify": "ok",
+    "note": "保留1915推出节点，删除“完全平衡”无范围措辞及2026现售品牌断言；补tradeoffs。"
+  },
+  "EA-016": {
+    "intro": "星型发动机的气缸像辐条一样围绕曲轴排列。典型设计通过一根主连杆及相连副连杆传力，这使机体轴向长度较短，却形成很大的横截面。\n\n这种形状在螺旋桨飞机上有利于迎风冷却，放进汽车则较难安排。1922 年 North-Lucas 和1925 年 Julian Sport Coupe 是可查的汽车实例；不能据此推论它曾是普遍的汽车方案。",
+    "sources": [
+      {
+        "title": "Radial engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Radial_engine"
+      },
+      {
+        "title": "Which Cars Have Used Radial Engines & Do Companies Still Make Them Today?",
+        "url": "https://www.slashgear.com/1635246/radial-engine-cars-use-do-company-still-make"
+      }
+    ],
+    "verify": "ok",
+    "note": "删除来源不存在的Zombug；把“从未量产”收紧为非主流试验；1922为North-Lucas。"
+  },
+  "EA-017": {
+    "intro": "直列八缸把八个气缸排在同一条线上。它能取得良好的往复平衡，但长曲轴更需要处理扭转振动，发动机舱也必须为长度让出空间。\n\nIsotta Fraschini 在1919年巴黎车展展示 Tipo 8，是早期重要实例。Duesenberg、Bugatti、Packard及Alfa Romeo赛车随后各有应用。V8逐渐成熟后，较短的布置使直八失去许多优势。",
+    "sources": [
+      {
+        "title": "Straight-eight engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Straight-eight_engine"
+      },
+      {
+        "title": "Alfa Romeo 8-cylinder F1 engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Alfa_Romeo_8-cylinder_F1_engine"
+      },
+      {
+        "title": "MAUTO — Storia, tecnica e stile ISOTTA FRASCHINI 8",
+        "url": "https://www.museoauto.com/qrcode/storia-tecnica-e-stile-isotta-fraschini-8/"
+      }
+    ],
+    "verify": "ok",
+    "note": "补principle；1919按展出而非未经区分的全部量产；删除统一1954全球停产断言。"
+  },
+  "EA-018": {
+    "intro": "机械增压用发动机的曲轴带动压气机，增加进入气缸的空气量。它不必等待废气把涡轮推到工作转速，但不能把所有类型都概括成“零迟滞”或“低转速增压相同”。\n\nMercedes 在1921年柏林车展展示带可接合 Roots 增压器的6/25 hp和10/40 hp。厂方历史资料把上市时间写为1923年；因此1921是展出节点，不是批量交付年份。",
+    "sources": [
+      {
+        "title": "Supercharger - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Supercharger"
+      },
+      {
+        "title": "100 Years of Mercedes supercharger cars - Secret Classics",
+        "url": "https://www.secret-classics.com/en/?p=80461"
+      },
+      {
+        "title": "Mercedes-Benz Classic — First Mercedes compressor cars at the DAA 1921 (20 September 2021)",
+        "url": "https://mb-france.mercedes-benz-clubs.com/wp-content/uploads/sites/21/2021/09/20210922PI-Kompressormodelle-1.pdf"
+      }
+    ],
+    "verify": "ok",
+    "note": "1921展出/1923上市依据另附Mercedes官方PDF；删除统一效率百分比及零迟滞夸张。"
+  },
+  "EA-019": {
+    "intro": "H型和U型的关键是两根曲轴。前者从正面看有上下两组平卧气缸，后者是两组直列气缸并排，动力经过齿轮汇合。它们不同于只用一根曲轴的普通V型机。\n\nBRM为1966年F1规则开发了P75 H16。Jim Clark驾驶采用该机的Lotus 43赢得1966年美国大奖赛，但整套系统沉重且复杂。这款发动机的F1使用记录延续到1968年。",
+    "sources": [
+      {
+        "title": "H engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/H_engine"
+      },
+      {
+        "title": "BRM P75 - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/BRM_P75"
+      },
+      {
+        "title": "Bugatti Type 45 Bi Motor",
+        "url": "https://www.supercars.net/blog/1930-bugatti-type-45-bi-motor"
+      }
+    ],
+    "verify": "ok",
+    "note": "修正1967放弃为使用至1968；删除不一致功率、重量及退赛统计。"
+  },
+  "EA-020": {
+    "intro": "V16比V12再多四个气缸。更多燃烧事件可以让输出更连续，但并不会自动提高燃油效率；它也意味着更多活塞、气门和需要冷却的表面。\n\n1930年Cadillac推出V-16，Marmon随后推出Sixteen。2024年Bugatti公布采用8.3升自然吸气V16的Tourbillon。不同时代的V16目标差异很大，共同点是为极少数车型接受很高的制造与布置成本。",
+    "sources": [
+      {
+        "title": "V16 engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/V16_engine"
+      },
+      {
+        "title": "Cadillac V-16 - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Cadillac_V-16"
+      },
+      {
+        "title": "Marmon Sixteen - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Marmon_Sixteen"
+      },
+      {
+        "title": "The Bugatti Tourbillon: an automotive icon Pour l’éternité",
+        "url": "https://newsroom.bugatti.com/en/press-releases/the-bugatti-tourbillon-an-automotive-icon-pour-leternite"
+      }
+    ],
+    "verify": "ok",
+    "note": "删除Marmon390/约400争议数字，保留车型；Tourbillon仅写2024公布，不推断2026交付状态。"
+  },
+  "EA-021": {
+    "intro": "对置活塞与水平对置不是一回事。对置活塞让两个活塞共享一个气缸与燃烧室，中间没有传统缸盖；水平对置则是左右两排各自独立的气缸。\n\nJunkers Jumo 204在1932年投入使用，是这一结构的航空柴油机代表。汽车领域有1950年代的Commer TS3卡车机。现代研究重新评估其效率优势，但不能据此声称所有设计都更轻或更简单。",
+    "sources": [
+      {
+        "title": "Opposed-piston engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Opposed-piston_engine"
+      },
+      {
+        "title": "Junkers Jumo 205 - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Junkers_Jumo_205"
+      },
+      {
+        "title": "Commer TS3 - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Commer_TS3"
+      },
+      {
+        "title": "A Historical Look at Opposed-Piston Engines - Achates Power",
+        "url": "https://achatespower.com/opposed-piston-engine-history/"
+      }
+    ],
+    "verify": "ok",
+    "note": "1932对应Jumo204服役，不是结构发明年；删飞机型号/马力/省油30%与无量产绝对现状。"
+  },
+  "EA-022": {
+    "intro": "自由活塞机没有用曲轴规定每一时刻的活塞位置。燃烧推动活塞，气弹簧或其他装置使其回程，负载也参与决定运动过程。\n\n1934年对应自由活塞发电机的专利节点，而不是所有自由活塞机的起点。DLR与Toyota后来研究了线性发电方案：它能省去部分旋转传动，但必须主动控制行程，避免失火或活塞撞击。",
+    "sources": [
+      {
+        "title": "Free-piston engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Free-piston_engine"
+      },
+      {
+        "title": "The free-piston linear generator: a new kind of range extender for electric cars",
+        "url": "https://www.dlr.de/en/images/2013/2/the-free-piston-linear-generator-a-new-kind-of-range-extender-for-electric-cars_9716"
+      },
+      {
+        "title": "2013-01-1727: The Free Piston Linear Generator - Development of an Innovative, Compact, Highly Efficient Range-Extender Module - Technical Paper",
+        "url": "https://saemobilus.sae.org/papers/free-piston-linear-generator-development-innovative-compact-highly-efficient-range-extender-module-2013-01-1727"
+      }
+    ],
+    "verify": "ok",
+    "note": "删除Toyota约15hp、尺寸、42%及多燃料清单；保留可证实原型，1934明确为发电机专利。"
+  },
+  "EA-023": {
+    "intro": "水平对置通常指boxer：左右活塞像对向拳击手，成对向内或向外运动。不能把所有180°夹角发动机都叫boxer，共用曲柄销的180°V型机是另一种结构。\n\nBenz在1897年制造contra双缸机。Subaru于1966年推出采用水平对置发动机的前驱Subaru 1000；1971年展出四驱试验车，1972年开始量产并销售Leone 4WD Estate Van。这段历史需要分开看待发动机布局、展车与四驱车型量产。\n\nflat-12 描述十二缸平卧排列，并不自动等于 boxer。1973 年的 Porsche 917/30 在厂方资料中采用 180° V12。区分点在曲轴：boxer 左右相对的活塞各有曲柄销，而 180° V 型发动机的对应连杆共用曲柄销，活塞运动关系也不同。低矮外形相似，内部机构仍须分开。",
+    "sources": [
+      {
+        "title": "Flat engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Flat_engine"
+      },
+      {
+        "title": "Flat-four engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Flat-four_engine"
+      },
+      {
+        "title": "ヒストリー | SUBARUのクルマづくり | SUBARU",
+        "url": "https://www.subaru.jp/manufacturing/history/"
+      },
+      {
+        "title": "スバル4WD車販売30周年 | ニュースリリース | 株式会社SUBARU（スバル）",
+        "url": "https://www.subaru.co.jp/news/archives/02_07_09/02_09_02.htm/"
+      },
+      {
+        "title": "Porsche — To the Limit: 917/30 and 919 Hybrid Evo",
+        "url": "https://newsroom.porsche.com/en/motorsports/porsche-919-hybrid-evo-917-30-canam-spyder-timo-bernhard-mark-donohue-race-car-16320.html"
+      },
+      {
+        "title": "Subaru South Africa — Difference Between Boxer Engines vs Inline Engines",
+        "url": "https://www.subaru.co.za/tech/boxer-engines-vs-inline-engines/"
+      }
+    ],
+    "verify": "ok",
+    "note": "纠正Benz1897；Subaru1966前驱/1971展车/1972量产四驱；删Porsche从1948只用boxer及仅两品牌使用的错误排他性断言。；追加覆盖：research merge"
+  },
+  "EA-024": {
+    "intro": "CNG和LPG不是同一种燃料。CNG依靠高压储存天然气，LPG则在较低压力下液化储存；储罐、阀件和供气系统不能混为一谈。\n\n1950年代是意大利车用LPG发展的一段时期，不是气体燃料汽车的发明日期。Civic GX展示了专用天然气量产车，Panda Natural Power展示了另一种小型车应用。实际经济性取决于当地气价、税制与加气网络。",
+    "sources": [
+      {
+        "title": "Autogas - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Autogas"
+      },
+      {
+        "title": "Natural gas vehicle - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Natural_gas_vehicle"
+      },
+      {
+        "title": "Honda Civic GX - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Honda_Civic_GX"
+      },
+      {
+        "title": "2012 Honda Civic — Powertrains",
+        "url": "https://hondanews.com/en-US/releases/2012-honda-civic-powertrains?l=es-ES"
+      }
+    ],
+    "verify": "ok",
+    "note": "删除宣传性全球数量/固定减排比例与现售收缩断言；1950s仅为区域应用节点，历史早期首创仍不作结论。"
+  },
+  "EA-025": {
+    "intro": "V6缩短了六缸发动机的长度，因此容易适应较短的机舱。它不像常见直六那样自然消除所有一、二阶往复力矩，设计者需要选择合适夹角、曲轴和平衡措施。\n\n1950年的Lancia Aurelia采用60°V6，是这一布局量产化的重要起点。后来的V6并不都使用60°夹角，例如F1采用90°；气缸数相同，不代表曲轴和振动特征相同。\n\nV 型布局也不限于六缸。1889 年的 Daimler Stahlradwagen 使用 V2 发动机；1963 年推出的 Lancia Fulvia 则采用窄夹角 V4，并以发动机驱动前轮。V2、V4、V6 表示两排气缸的总缸数，不能仅凭字母 V 推断夹角、曲轴形式或驱动方式。",
+    "sources": [
+      {
+        "title": "V6 engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/V6_engine"
+      },
+      {
+        "title": "Lancia V6 engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Lancia_V6_engine"
+      },
+      {
+        "title": "Mercedes-Benz Public Archive — Daimler Stahlradwagen",
+        "url": "https://mercedes-benz-archive.com/marsClassic/en/instance/picture/Daimler-Stahlradwagen.xhtml?oid=106477"
+      },
+      {
+        "title": "Lancia celebrates 60 years of HF passion — Fulvia history",
+        "url": "https://www.media.stellantis.com/em-en/lancia/press/lancia-brings-its-little-red-elephant-back-to-the-road-and-celebrates-60-years-of-hf-passion"
+      },
+      {
+        "title": "El Lancia Aurelia cumple 75 años de sofisticación y espíritu deportivo",
+        "url": "https://www.media.stellantis.com/es-es/lancia/press/el-lancia-aurelia-cumple-75-anos-de-sofisticacion-y-espiritu-deportivo"
+      },
+      {
+        "title": "Lancia — Happy Birthday, Lancia! 119 years of style and innovation",
+        "url": "https://www.media.stellantis.com/em-en/lancia/press/happy-birthday-lancia-119-years-of-style-and-innovation"
+      }
+    ],
+    "verify": "ok",
+    "note": "补tradeoffs；1950以Aurelia量产节点表达；不声称所有V6天然完全平衡。；追加覆盖：research merge"
+  },
+  "EA-026": {
+    "intro": "燃气轮机没有往复活塞，压缩、燃烧和膨胀在不同部件中连续进行。汽车试验常采用独立动力涡轮，把输出与压气机转速部分解耦。\n\nRover于1950年展示JET1。Chrysler后来制造55辆Turbine Car，其中50辆进入公众试用项目；总制造数与试用车数不能混用。试验显示多燃料与平顺性的吸引力，也暴露道路工况下油耗和响应方面的难题。",
+    "sources": [
+      {
+        "title": "Rover JET1 - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Rover_JET1"
+      },
+      {
+        "title": "Chrysler Turbine Car - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Chrysler_Turbine_Car"
+      },
+      {
+        "title": "Rover T3 Gas Turbine Base Unit, 1955 — British Motor Museum collection",
+        "url": "https://www.britishmotormuseum.co.uk/online-collections/details-page?row_id=111340085682"
+      }
+    ],
+    "verify": "ok",
+    "note": "博物馆页403未用于背书；55总数/50试用数由实际打开车型页支持；删除冲突油耗数字。"
+  },
+  "EA-027": {
+    "intro": "汪克尔机通过转子运动改变工作腔容积，用旋转运动完成类似四冲程的气体过程。转子每一面与壳体之间都会形成独立工作腔，密封条负责隔开它们。\n\n1957年NSU试验原型运转成功，随后出现NSU Spider与Mazda转子车型。2023年的MX-30 R-EV把转子机用作发电机动力源。紧凑并不等于高效率，密封、润滑和排放始终是关键设计问题。\n\n转子发动机的道路与赛事发展经历了多条路线。四转子Mazda 787B赢得1991年勒芒；2003 RX-8的RENESIS采用侧壳进排气口；2023年量产的MX-30 e-SKYACTIV R-EV让转子负责发电，车轮始终由电动机驱动。三者分别展示赛车应用、道路发动机改进和串联混合动力中的发电用途。",
+    "sources": [
+      {
+        "title": "Wankel engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Wankel_engine"
+      },
+      {
+        "title": "Mazda MX-30 - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Mazda_MX-30"
+      },
+      {
+        "title": "Mazda’s Revived Rotary Engine Starts Production - Mobility Engineering Technology",
+        "url": "https://www.mobilityengineeringtech.com/component/content/article/48537-sae-ma-07191"
+      },
+      {
+        "title": "Mazda — RX-8 Goes on Sale in Japan",
+        "url": "https://newsroom.mazda.com/en/publicity/release/2003/200304/0409e.html"
+      },
+      {
+        "title": "Mazda — RENESIS Rotary Engine Wins International Engine of the Year",
+        "url": "https://newsroom.mazda.com/en/publicity/release/2003/200306/0604e.html"
+      },
+      {
+        "title": "Mazda — 787B Returns to Le Mans",
+        "url": "https://newsroom.mazda.com/en/publicity/release/2023/202305/230525a.html"
+      },
+      {
+        "title": "Mazda — Production of MX-30 e-SKYACTIV R-EV starts",
+        "url": "https://newsroom.mazda.com/en/publicity/release/2023/202306/230622a.html"
+      }
+    ],
+    "verify": "ok",
+    "note": "把RENESIS及MX-30作为转子机下位实例；只说2023返回生产，不推断2026销售地域。；追加覆盖：append_family_history"
+  },
+  "EA-028": {
+    "intro": "直列三缸不能简单概括成“一阶不平衡”。常见120°曲轴可以使往复合力相互抵消，但力作用在不同气缸位置，仍会形成前后摇摆力矩。\n\n战后DKW等小型车采用过三缸二冲程机，后来的四冲程三缸则常与涡轮增压配合。紧凑的机体有利于小型车布置，减振措施则影响实际驾驶质感。\n\nFord 1.0 EcoBoost在2012年用于欧洲Focus，是2010年代小排量增压路线的代表。小型化用较小排量配合增压、供油与配气控制满足目标性能，但不是单凭缸数少就能保证油耗更低；高负荷增压需求和车辆使用方式同样重要。",
+    "sources": [
+      {
+        "title": "Straight-three engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Straight-three_engine"
+      },
+      {
+        "title": "Ford EcoBoost engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Ford_EcoBoost_engine"
+      },
+      {
+        "title": "Ford India — 2012 engine award archive",
+        "url": "https://www.india.ford.com/about-ford/media/review/"
+      },
+      {
+        "title": "Audi Service Training — Chain-driven TFSI engine / EA888 (document mirror)",
+        "url": "https://manuals.plus/m/6528789dde9d7039432955d5664a306604ff9c75cb345568c7d3b4c8cddfe7dc.pdf"
+      },
+      {
+        "title": "Audi Tradition — Anniversary Dates 2025",
+        "url": "https://www.audi-mediacenter.com/en/publications/more/audi-tradition-anniversary-dates-2025-1565/download"
+      }
+    ],
+    "verify": "ok",
+    "note": "保持往复力平衡/摇摆力矩准确区分；约1960限定时代示例。；追加覆盖：append_sourced_section"
+  },
+  "EA-029": {
+    "intro": "涡轮增压器把部分排气能量转为压气机的驱动力，增加气缸充量。它并非免费增加动力：排气背压、压气加热和机械损失同样要纳入设计。\n\n1962年的Oldsmobile F-85 Jetfire先于Chevrolet Corvair Monza Spyder推出。Jetfire采用水与甲醇混合液帮助抑制爆震。这些早期车型体现了增压潜力，也说明燃料、温度与控制系统必须一起解决。\n\n双涡管在一个涡轮壳内分隔排气脉冲，双涡轮则使用两个增压器；二者不是同义词。双涡轮可以按不同气路并联工作，也可以像Porsche 959那样按工况顺序投入。串联两级系统则让空气通过低压与高压压气级，并配旁通控制。可变几何涡轮通过调整入口导叶适应流量变化，2006年上市的Porsche 997 Turbo是汽油车实例。\n\n防迟滞系统用空气、供油和点火控制维持过渡工况中的涡轮转速；具体策略与热负荷取舍因系统而异，不能把所有实现简化成排气爆鸣。水喷射处理的是另一个问题：2015年公开、对应2016车型年的BMW M4 GTS让水雾在进气中蒸发吸热，减小爆震倾向。它需要水箱、泵和控制，水本身不提供燃料能量。\n\n赛事中的涡轮方案也有不同取舍。IndyCar 在 2012 年引入 2.2 升 V6 涡轮发动机；2022 年的 Toyota GR YARIS Rally1 则把 1.6 升直喷涡轮发动机与混动单元配合。这里记录的是对应赛季的代表应用：排量、混动方式和允许的增压条件都须放回具体规则年代，不能把两种赛车当成同一套配方。",
+    "sources": [
+      {
+        "title": "Turbocharger - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Turbocharger"
+      },
+      {
+        "title": "Chevrolet Corvair - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvair"
+      },
+      {
+        "title": "The Olds F-85 Jetfire: the first U.S. car with a turbo - Old Cars Weekly",
+        "url": "https://www.oldcarsweekly.com/features/olds-f85-jetfire"
+      },
+      {
+        "title": "Garrett — Types of turbo",
+        "url": "https://www.garrettmotion.com/knowledge-center-category/turbo-replacement/types-of-turbo-say-hello-to-turbocharging/"
+      },
+      {
+        "title": "BorgWarner — Dual-volute turbocharger",
+        "url": "https://www.borgwarner.com/newsroom/press-releases/2018/09/06/borgwarner-introduces-dual-volute-turbocharger-for-gasoline-engines"
+      },
+      {
+        "title": "Porsche — Story of the 959",
+        "url": "https://www.porsche.com/stories/innovation/the-story-of-the-959-the-brilliant-classic-porsche-supercar/"
+      },
+      {
+        "title": "Porsche Classic — 997 Turbo",
+        "url": "https://www.porsche.com/spain/accessoriesandservice/classic/models/997/997-turbo/"
+      },
+      {
+        "title": "Link Engine Management — Motorsport features",
+        "url": "https://support.linkecu.com/learn/latest/product-features/motorsport-features"
+      },
+      {
+        "title": "Link ECU — G4X FuryX specifications",
+        "url": "https://dealers.au.linkecu.com/G4X-FuryX"
+      },
+      {
+        "title": "BMW — New 2016 M4 GTS",
+        "url": "https://www.press.bmwgroup.com/usa/article/detail/T0237582EN_US/the-new-2016-bmw-m4-gts-an-exclusive-high-performance-special-edition-m4-available-for-the-first-time-in-the-us"
+      },
+      {
+        "title": "Honda Racing / HPD — Honda’s Racing Heritage",
+        "url": "https://hondaracing-us.honda.com/-/media/HPD/Files/Hondas_Racing_Heritage.ashx"
+      },
+      {
+        "title": "Toyota Gazoo Racing — 2022 GR YARIS Rally1 technical details",
+        "url": "https://toyotagazooracing.com/wrc/cars/2022/"
+      }
+    ],
+    "verify": "ok",
+    "note": "统一Jetfire在先；删除未经交叉核对的产量与通用转速上限。；追加覆盖：append_sourced_section；追加覆盖：research merge"
+  },
+  "EA-030": {
+    "intro": "电子喷射让控制单元根据发动机工况决定喷油量。喷油器的布置位置与控制方式是不同维度：早期电子进气道喷射与后来的电子缸内直喷，喷油位置不同。\n\nBendix在1950年代试用Electrojector，但可靠性限制了应用。Bosch于1967年推出Jetronic，首先用于美国市场VW 1600，德国市场随后跟进。这个节点标记可靠电子供油走向大规模使用，而不是“1967年才有喷油”。\n\n电子燃油喷射描述控制方式，进气道喷射描述喷油位置，两者不能等同。Bosch Jetronic在1967年提供电子喷射；1979 Motronic进一步把喷油和点火纳入统一电子管理。\n\n汽车汽油喷射并非从电喷开始。Bosch在1951年为Gutbrod和Goliath二冲程车提供缸内喷射，使燃料能在扫气过程之后进入气缸，减少随新鲜充量直接逃入排气的机会。1954年Mercedes-Benz 300 SL使用机械式汽油直喷，说明喷油位置与控制方式是两个独立维度。\n\n1967年的D-Jetronic把电子控制带入这条路线。1973年机械连续喷射K-Jetronic与电子喷射L-Jetronic并行，不能把二者都叫EFI；1979年Motronic进一步集成喷油与点火管理。理解一套喷射系统时，应分别看喷在哪里、怎样计量、怎样控制。",
+    "sources": [
+      {
+        "title": "Fuel injection - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Fuel_injection"
+      },
+      {
+        "title": "Jetronic - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Jetronic"
+      },
+      {
+        "title": "Bosch — 50 years of gasoline injection: Jetronic",
+        "url": "https://www.bosch.com/stories/50-years-of-bosch-gasoline-injection-jetronic/"
+      },
+      {
+        "title": "Bosch — History of electronics",
+        "url": "https://www.bosch.com/stories/history-of-electronics/"
+      },
+      {
+        "title": "Bosch — History of gasoline injection",
+        "url": "https://www.bosch.com/stories/the-history-of-the-bosch-gasoline-injection/"
+      }
+    ],
+    "verify": "ok",
+    "note": "补principle/tradeoffs；改英文标题Electronic fuel injection；1967美国市场与1968德国市场不混淆；不把Bosch说成无前史的首个EFI。；追加覆盖：clarify_name_and_relation；追加覆盖：append_sourced_section"
+  },
+  "EA-031": {
+    "intro": "直列五缸在长度与气缸数之间提供了一种折中。常见四冲程机每144°曲轴转角点火一次，点火间隔可以均匀；独特声浪不等于点火时刻不均匀。\n\nMercedes的OM617柴油机在1974年用于乘用车。Audi在1976年发布五缸汽油版100，交付于1977年3月开始。两个年份对应不同事件，不是必须二选一的资料冲突。\n\n1980年Audi quattro把直列五缸汽油机、涡轮、中冷和永久四驱组合成道路与赛车方案。1983年Sport quattro进一步采用每缸四气门的直五；同期Group B赛车与道路版本不能共享一套功率数字。1989年Audi 100 TDI又把直五与柴油直喷、电控和涡轮结合，体现同一布局跨越燃料与用途的演进。",
+    "sources": [
+      {
+        "title": "Straight-five engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Straight-five_engine"
+      },
+      {
+        "title": "Mercedes-Benz OM617 engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_OM617_engine"
+      },
+      {
+        "title": "50 years of the Audi five-cylinder | audi.com",
+        "url": "https://www.audi-mediacenter.com/en/press-releases/50-years-of-the-audi-five-cylinder-16921"
+      },
+      {
+        "title": "Audi — 50 years of the five-cylinder",
+        "url": "https://www.audi.com/en/press-releases/50-years-of-the-audi-five-cylinder-16921"
+      }
+    ],
+    "verify": "ok",
+    "note": "1974为OM617节点；官方消解Audi1976发布/1977交付；删除“不均匀声浪”对点火间隔的误导。；追加覆盖：append_sourced_section"
+  },
+  "EA-032": {
+    "intro": "固定配气正时只适合有限工况。可变气门正时让开闭时刻随转速、负荷等条件改变，帮助兼顾换气效率与泵气损失。只变相位的系统，并不会自动改变气门打开的高度。\n\nAlfa Romeo在1980年Spider 2000上应用可变正时，BMW官方资料确认VANOS于1992年推出。不同系统对进气、排气凸轮轴的控制范围不同，不能只凭VVT名称判断具体功能。\n\n可变配气不只有转动凸轮轴相位。2009年的Alfa Romeo MiTo MultiAir在凸轮轴与进气门之间设置受电磁阀控制的油腔，改变实际传到气门的运动，可调整升程和开启过程。它保留凸轮驱动能量来源，与完全独立执行器的无凸轮轴方案不同。\n\n进气系统还可以用可变歧管改变通道长度或连接方式，利用压力波和气流惯性改善不同转速下的充气。可变歧管、可变气门相位和可变升程能够配合工作，但属于不同机械环节。",
+    "sources": [
+      {
+        "title": "Variable valve timing - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Variable_valve_timing"
+      },
+      {
+        "title": "80 years of BMW car production. The origins of EfficientDynamics.",
+        "url": "https://www.press.bmwgroup.com/global/article/detail/T0022917EN/80-years-of-bmw-car-production-the-origins-of-efficientdynamics"
+      },
+      {
+        "title": "Alfa Romeo — MultiAir launched on the MiTo",
+        "url": "https://www.media.stellantis.com/em-en/alfa-romeo/press/multiair-is-launched-on-the-alfa-romeo-mito"
+      },
+      {
+        "title": "Fiat — MultiAir technical video description",
+        "url": "https://www.media.stellantis.com/de-de/fiat/press/multiair-video"
+      },
+      {
+        "title": "MANN+HUMMEL — Variable intake manifolds",
+        "url": "https://www.mann-hummel.com/content/dam/website/mann-hummel/products/related-articles/air-cleaner-and-intake-systems/Artikel_Saugrohre_EN_V1.pdf"
+      }
+    ],
+    "verify": "ok",
+    "note": "BMW1992现由官方历史页确认；删除Nissan首个电控VVT及40%/24%孤立收益；不复述Alfa机械/电控演进的过细争议。；追加覆盖：append_sourced_section"
+  },
+  "EA-033": {
+    "intro": "双增压在这里指机械增压器与涡轮增压器共同使用，不是两只涡轮。两者可以分担工况，也可能在部分区域同时工作，具体气路因设计而异。\n\n1985年Lancia Delta S4是著名实例。Nissan March Super Turbo与Volkswagen 1.4 TSI也曾采用这一思路。收益来自较宽的响应范围，代价是更多硬件与标定工作，系统复杂度也是厂商选择其他增压方式时需要考虑的因素。",
+    "sources": [
+      {
+        "title": "Twincharger - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Twincharger"
+      },
+      {
+        "title": "Lancia Delta S4 - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Lancia_Delta_S4"
+      },
+      {
+        "title": "Forty years after the legendary Delta S4, Lancia is back in the race with the Ypsilon Rally4 HF",
+        "url": "https://www.media.stellantis.com/em-en/heritage-hub-italy/press/forty-years-after-the-legendary-delta-s4-lancia-is-back-in-the-race-with-the-ypsilon-rally4-hf"
+      }
+    ],
+    "verify": "ok",
+    "note": "删除无依据全面淘汰、转速切换点和事故直接导致禁赛的单因果表述。"
+  },
+  "EA-034": {
+    "intro": "1989年F1禁用涡轮，3.5升自然吸气成为统一排量路线。V8、V10和V12可以同场竞争，但气缸数仍受规则范围约束。\n\nHonda、Renault、Ferrari和Ford Cosworth分别展示了不同选择。V8、V10与V12分别在重量、尺寸、摩擦和高转速换气之间作出不同取舍。1995年规则转为3.0升上限。",
+    "sources": [
+      {
+        "title": "Formula One engines - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Formula_One_engines"
+      },
+      {
+        "title": "RA109E — F1 Engines / Power Units Powered by Honda",
+        "url": "https://global.honda/en/POWEREDbyHONDA/1989_ra109e/"
+      }
+    ],
+    "verify": "ok",
+    "note": "删除“没有规定气缸数”错误概括与混年功率；补tradeoffs，供F1独立年代表使用。"
+  },
+  "EA-035": {
+    "intro": "经典DOHC VTEC不是只把凸轮轴转一个角度，而是切换负责驱动气门的凸轮型线。高转速型线通常有更大升程与更长持续期，帮助发动机在高转速吸入更多空气。\n\n汽车上的重要起点是1989年Integra XSi的B16A。后来的i-VTEC、VTEC-E与涡轮版本各有不同目的，不能把早期双凸轮切换结构机械套用到所有带VTEC标识的发动机。",
+    "sources": [
+      {
+        "title": "VTEC - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/VTEC"
+      },
+      {
+        "title": "B16A: Honda’s Innovative Engine with VTEC Variable Valve Timing and Lift Technology",
+        "url": "https://global.honda/en/tech/engine/car/B16A_integra_vtec/?from=engin_car"
+      }
+    ],
+    "verify": "ok",
+    "note": "补专属已打开来源；避免把所有VTEC版本描述成同一机构。"
+  },
+  "EA-036": {
+    "intro": "VR6让两排气缸靠得很近，共用一只缸盖，以便把六缸发动机放进原本空间有限的机舱。早期15°夹角不是所有后期版本都采用的唯一数值。\n\nVolkswagen在1991年的Passat与Corrado上推出VR6。后来的W12等采用相关窄夹角模块思想。代价是狭窄空间内的进排气、冷却与缸盖结构更难安排，紧凑程度并不能单独决定整机效率。",
+    "sources": [
+      {
+        "title": "VR6 engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/VR6_engine"
+      },
+      {
+        "title": "What was the Volkswagen VR6? | The Daily Drive | Consumer Guide®",
+        "url": "https://blog.consumerguide.com/what-was-the-volkswagen-vr6/"
+      }
+    ],
+    "verify": "ok",
+    "note": "删除近190万产量；2024年底停产仅有二手报道，正文不作全球全系列停产断言。"
+  },
+  "EA-037": {
+    "intro": "V10介于V8与V12之间，但不能简单把它当作“少两缸的V12”。两排五缸会产生摇摆力矩，平顺性取决于夹角与曲轴等具体设计。\n\n1992年的Dodge Viper是早期量产汽油V10公路车代表；F1在1989年已开始使用V10。公路车型的低速大排量路线与F1高转速路线目标不同，不宜直接比较缸数或声浪来判断技术优劣。",
+    "sources": [
+      {
+        "title": "V10 engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/V10_engine"
+      },
+      {
+        "title": "Dodge Viper - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Dodge_Viper"
+      },
+      {
+        "title": "Dodge Viper — 2003 model overview and history",
+        "url": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/attachments/08192002_VIPER_OVERVIEW.pdf"
+      }
+    ],
+    "verify": "ok",
+    "note": "删除Viper不等间隔因而无需平衡轴的错误因果；不把已停产车型写成当前现售。"
+  },
+  "EA-038": {
+    "intro": "汽油直喷改变的是喷油位置：燃油直接进入气缸，不先经过进气门。喷射时机、压力和喷雾形状共同决定燃料如何与空气混合。\n\n1950年代已有机械汽油直喷汽车，1996年Mitsubishi的电子GDI则推动了现代应用。直喷可以冷却充量并改善抗爆震，但不是所有直喷机都采用分层稀燃，也不能套用统一的省油百分比。",
+    "sources": [
+      {
+        "title": "Gasoline direct injection - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Gasoline_direct_injection"
+      },
+      {
+        "title": "Mitsubishi 4G9 engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Mitsubishi_4G9_engine"
+      },
+      {
+        "title": "Mitsubishi Motors Car History — eighth-generation Galant, 1996",
+        "url": "https://www.mitsubishi-motors.com/en/company/history/car/?MID=21"
+      }
+    ],
+    "verify": "ok",
+    "note": "1951/1952早期日期不必硬选；保留1950年代机械直喷与1996电控推广；删固定省油10–20%。"
+  },
+  "EA-039": {
+    "intro": "共轨把产生高压与执行喷射分开。油轨储存高压燃油，喷油器不必等待一次机械泵送动作才能工作，因此喷射次数与时机更灵活。\n\n汽车电控共轨经历了多方开发。1997年Alfa Romeo 156的2.4 JTD被来源列为乘用车首发实例，同代也有1.9 JTD。此处的“首发”限定乘用车电控共轨，不能扩大为所有共轨系统的发明。\n\n共轨将高压生成与喷油事件分开，轨压仍按工况控制。泵喷嘴把每缸高压泵与喷嘴集成，是另一种供油架构。1997 Alfa Romeo 156 JTD是共轨柴油进入乘用车的重要实例。",
+    "sources": [
+      {
+        "title": "Common rail - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Common_rail"
+      },
+      {
+        "title": "Alfa Romeo 156 - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Alfa_Romeo_156"
+      },
+      {
+        "title": "Bosch Mobility — Common-rail system with solenoid injectors",
+        "url": "https://www.bosch-mobility.com/en/solutions/powertrain/diesel/common-rail-system-solenoid/"
+      },
+      {
+        "title": "Bosch Mobility — Unit pump and unit injector systems",
+        "url": "https://www.bosch-mobility.com/en/solutions/powertrain/diesel/unit-pump-and-unit-injector-system-ohw/"
+      },
+      {
+        "title": "Fiat — New Fiat Croma in UK",
+        "url": "https://www.media.stellantis.com/uk-en/fiat/press/new-fiat-croma-in-uk"
+      }
+    ],
+    "verify": "ok",
+    "note": "将2.4JTD作为乘用车首发实例，1.9保留同代；Stellantis403未当作已读证据；删除普遍2000bar/每循环最多五次等固定上限。；追加覆盖：clarify_principle_and_neighbors"
+  },
+  "EA-040": {
+    "intro": "混动专用发动机不是单一循环，也不是某一种气缸排列。设计者可以把更多低速或瞬态需求交给电机，让内燃机的换气和燃烧更偏向效率。\n\n1997年Prius的1NZ-FXE通过晚关进气门形成阿特金森式有效循环，并与Toyota混动系统配合。其他混动车也可能使用不同循环；不能把“混动”直接等同于“无需充电”或“所有发动机都是阿特金森”。\n\n混动专用机让发动机与电机、储能和传动一起优化。2020年11月发布的比亚迪骁云1.5L采用阿特金森式工作方式、较高几何压缩比、EGR和分体冷却；原始发布稿所述43%是厂商发动机台架热效率口径。2021年11月公布的吉利雷神DHE1.5采用米勒循环和低压EGR，厂商给出43.32%。这些峰值不能当作平均实车效率，也不宜忽略测试条件直接排列优劣。\n\n48V轻混属于另一种电气化配置：以较小的电机支持启停、回收和助力。Mercedes-Benz在2017年将集成式ISG用于S-Class的M256直六，M264则采用皮带连接的RSG。它们的连接方式不同，48V电压标签本身也不保证持续纯电行驶能力。",
+    "sources": [
+      {
+        "title": "Toyota Prius (XW10) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Toyota_Prius_(XW10)"
+      },
+      {
+        "title": "Atkinson cycle - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Atkinson_cycle"
+      },
+      {
+        "title": "Hybrid Synergy Drive - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Hybrid_Synergy_Drive"
+      },
+      {
+        "title": "BYD — New DM-i technology and Xiaoyun engine (issuer press-release PDF mirror)",
+        "url": "https://0e190a550a8c4c8c4b93-fcd009c875a5577fd4fe2f5b7e3bf4eb.ssl.cf2.rackcdn.com/EINPresswire-530870648-byd-introduces-new-dm-i-hybrid-technology-and-1-5l-new-xiaoyun-engine-2.pdf"
+      },
+      {
+        "title": "Geely — Launch of Leishen Powertrain brand",
+        "url": "https://www.geely.com/en/news/2021/geely-auto-group-launches-leishen-powertrain-brand"
+      },
+      {
+        "title": "Mercedes-Benz — Technology strategy, 2019",
+        "url": "https://media.mercedes-benz.com/article/ef6fe27e-0233-481a-a33b-10de097d384f"
+      },
+      {
+        "title": "75 Years of Toyota — First-generation Prius specifications",
+        "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012360/index.html"
+      },
+      {
+        "title": "Toyota — The Story Behind the Birth of the Prius, Part 2",
+        "url": "https://global.toyota/en/prius20th/challenge/birth/02/"
+      }
+    ],
+    "verify": "ok",
+    "note": "删几乎所有HEV/PHEV、无需充电及现年份增长断言；Honda Insight不再作为同循环的直接例子。；追加覆盖：append_sourced_section"
+  },
+  "EA-041": {
+    "intro": "普通汽油机常用节气门限制进气量。Valvetronic主要通过改变进气门打开的高度来调节负荷，减少部分工况下的节流损失。它不意味着发动机一定完全没有节气门。\n\nBMW于2001年在316ti Compact上首次应用这一系统。它可以与VANOS相位控制配合：一个主要调升程，另一个调开闭时刻。机械结构与摩擦控制会随代际改变，不能为所有版本设定同一个适用转速范围。",
+    "sources": [
+      {
+        "title": "Valvetronic - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Valvetronic"
+      },
+      {
+        "title": "Der BMW Vierzylinder Otto-Motor mit VALVETRONIC",
+        "url": "https://www.press.bmwgroup.com/austria/article/detail/T0034160DE/der-bmw-vierzylinder-otto-motor-mit-valvetronic"
+      }
+    ],
+    "verify": "ok",
+    "note": "名称改Valvetronic可变升程，去掉“取消节气门”绝对说法；删6000rpm/M系列不用等过时推断。"
+  },
+  "EA-042": {
+    "intro": "“W型”并不只有一种结构。本条特指大众集团采用的四排气缸方案：窄夹角模块减少长度，再通过共用曲轴组合成W12或W16。\n\n2001年的Audi A8 W12是道路量产节点，Bentley与Bugatti后来形成各自版本。Bentley W12的生产结束年份为2024年；这不等于所有装有W型发动机的车辆在同一天停产，也不等于库存发动机不能用于后续交付。",
+    "sources": [
+      {
+        "title": "List of BMW engines - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/List_of_BMW_engines"
+      },
+      {
+        "title": "Volkswagen Group W-12 engine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Volkswagen_Group_W12_engine"
+      },
+      {
+        "title": "Bugatti Veyron - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Bugatti_Veyron"
+      },
+      {
+        "title": "Leading by example — Audi A8 history",
+        "url": "https://magazine.audi.com.au/article/leading-by-example"
+      }
+    ],
+    "verify": "ok",
+    "note": "只保留2024停产年；Bentley新闻页直开403，搜索摘要有7月庆祝而官方年报摘要写4月，不以摘要背书月份；删W16统一2025收尾。"
+  },
+  "EA-043": {
+    "intro": "F1从2006年进入2.4升自然吸气V8时代。规则还限定90°夹角、每缸四气门和98mm缸径上限；2006年的受限V10特许使用是需要单列的例外。\n\n2007年引入19000rpm上限，2009年进一步降至18000rpm。KERS在2009年及2011–2013年与这代V8并用，但不能把整个V8时代都叫作混动时代。",
+    "sources": [
+      {
+        "title": "FIA 2008 Formula One Technical Regulations — 14 December 2007",
+        "url": "https://argent.fia.com/web/fia-public.nsf/8EF6904A1B580E74C12573B400548207/%24FILE/1-2008%20F1%20TECHNICAL%20REGULATIONS%2014-12-2007.pdf?Openelement="
+      },
+      {
+        "title": "Formula One engines - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Formula_One_engines"
+      }
+    ],
+    "verify": "ok",
+    "note": "FIA2008原文验证98mm/19000rpm，首实施年份由历史来源支持；去掉估算马力，KERS年份分清。"
+  },
+  "EA-044": {
+    "intro": "氢内燃机仍以燃烧推动活塞或转子，和燃料电池把氢转成电能的路线不同。纯氢本身不含碳，但空气中的氮在高温下仍可能生成NOx，润滑油等也使“整车尾气绝对零碳”不够严谨。\n\nBMW Hydrogen 7的双燃料V12在汽油或氢模式都标称191kW。因此不能用它推出“氢机功率一律减半”。输出取决于进气道或缸内喷射、空燃比、增压及具体发动机设计。\n\n氢燃烧也曾用于转子发动机。Mazda RX-8 Hydrogen RE采用13B/RENESIS基础的氢—汽油双燃料系统，驾驶者可以切换燃料。2003年展示开发车、2004年开始公路试验后，Mazda于2006年2月签订首批限定租赁合同，并在3月向两家企业交车，4月再交付广岛政府客户。这是实际运营的示范车队，不能据此写成面向普通消费者的大规模量产。",
+    "sources": [
+      {
+        "title": "Hydrogen internal combustion engine vehicle - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Hydrogen_internal_combustion_engine_vehicle"
+      },
+      {
+        "title": "BMW Hydrogen 7 - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/BMW_Hydrogen_7"
+      },
+      {
+        "title": "Mazda — Starts Leasing Rotary Hydrogen Vehicles",
+        "url": "https://newsroom.mazda.com/en/publicity/release/2006/200602/060215.html"
+      },
+      {
+        "title": "Mazda — Delivers Two Rotary Hydrogen Vehicles to Hiroshima Government Authorities",
+        "url": "https://newsroom.mazda.com/en/publicity/release/2006/200604/060421.html"
+      },
+      {
+        "title": "Eine neue Ära der Mobilität beginnt. Der BMW Hydrogen 7.",
+        "url": "https://www.press.bmwgroup.com/austria/article/detail/T0026585DE/eine-neue-aera-der-mobilitaet-beginnt-der-bmw-hydrogen-7"
+      }
+    ],
+    "verify": "ok",
+    "note": "删除功率一律减半与JCB未核实纪录；191kW是双燃料车辆两模式标称，不与未改装760Li混为比较。；追加覆盖：append_publication_section"
+  },
+  "EA-045": {
+    "intro": "KERS把原本主要变成制动热量的一部分动能回收，在之后加速时释放。电池与飞轮都能用于储能，但并非所有研究过的方案都实际参加了F1比赛。\n\n2009年F1允许60kW的KERS，每圈最多释放400kJ；以满功率释放约为6.7秒。车队在2010年没有使用，2011年恢复。这里将它作为内燃机赛事动力系统的配套历史记录，而非独立发动机。\n\n动能回收也进入了 LMP1 耐力赛车。2012 年的 Audi R18 e-tron quattro 以 V6 TDI 驱动后轮，前轴电机回收制动能量并将其存入飞轮，再辅助前轮驱动。2016 年的 Toyota TS050 HYBRID 采用 2.4 升双涡轮 V6 与前后电机，回收能量储存在锂离子电池中。飞轮与电池展示了不同储能选择；这些是各自赛季的配置，不能套用 F1 KERS 的功率和单圈能量限制。",
+    "sources": [
+      {
+        "title": "Kinetic energy recovery system - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Kinetic_energy_recovery_system"
+      },
+      {
+        "title": "Formula One KERS explained",
+        "url": "https://newatlas.com/formula-one-kers/11324/"
+      },
+      {
+        "title": "Audi — Audi banks on hybrid technology",
+        "url": "https://www.audi.com/en/press-releases/audi-banks-on-hybrid-technology-7487"
+      },
+      {
+        "title": "Audi R18 e-tron quattro — 2012 press kit (29 February 2012)",
+        "url": "https://www.ausmotive.com/downloads/Audi/R18-etron-quattro-press-kit.pdf"
+      },
+      {
+        "title": "Toyota — TS050 HYBRID: New Car, New Challenge for Toyota Gazoo Racing",
+        "url": "https://newsroom.toyota.eu/ts050-hybrid-new-car-new-challenge-for-toyota-gazoo-racing/"
+      }
+    ],
+    "verify": "ok",
+    "note": "补tradeoffs；去掉单一系统重量与Williams未上车转速；保留60kW/400kJ与推算6.7秒。；追加覆盖：research merge"
+  },
+  "EA-046": {
+    "intro": "纯串联增程车让发动机发电，再由电机驱动车轮。发动机可以选择较合适的转速与负荷，但不保证始终恒速，也不消除能量转换损失。\n\nChevrolet Volt于2010年12月开始美国交付，对应2011车型年，车型年延续至2019。它在部分工况可以把发动机机械连接到传动系统，因此不能拿Volt证明“所有增程车发动机都不驱动车轮”。BMW i3 REx和MX-30 R-EV更适合说明纯发电用途。",
+    "sources": [
+      {
+        "title": "Extended-range electric vehicle - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Extended-range_electric_vehicle"
+      },
+      {
+        "title": "Chevrolet Volt - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Chevrolet_Volt"
+      },
+      {
+        "title": "Mazda MX-30 - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Mazda_MX-30"
+      },
+      {
+        "title": "Mazda reveals Mazda MX-30 e-Skyactiv R-EV in Europe",
+        "url": "https://newsroom.mazda.com/en/publicity/release/2023/202301/230113a.html"
+      }
+    ],
+    "verify": "ok",
+    "note": "明确Volt交付/车型年及机械耦合例外；删中国2025销量增长、i3终售年份及恒定高效工况绝对化。"
+  },
+  "EA-047": {
+    "intro": "这代F1动力单元把内燃机与两套电机协同设计。MGU-K在传动侧回收并释放能量；MGU-H位于涡轮轴上，把排气经涡轮转化出的轴功用于发电，也可反过来驱动涡轮。\n\nMGU-K的规则功率上限为120kW。MGU-H提高了能量利用与增压控制能力，也增加了系统复杂性。2014–2025是一段明确规则时期；不同年份的具体尺寸与控制限制，需要与当年的规则一起理解。",
+    "sources": [
+      {
+        "title": "Evolution of Hybrid Technologies (MGU-H, MGU-K) â 2015 to 2022ï½Formula 1ï½Motorsports Technologyï½Honda Technologyï½Honda",
+        "url": "https://global.honda/en/tech/motorsports/Formula-1/Powertrain_MGU-H_MGU-K/"
+      },
+      {
+        "title": "2026 REGULATIONS EXPLAINED: All you need to know about F1’s new power units",
+        "url": "https://www.formula1.com/en/latest/article/all-you-need-to-know-about-f1s-new-power-units.14jfv7a36905uDJDdNyfQd"
+      }
+    ],
+    "verify": "ok",
+    "note": "删除首页80×53mm；不把MGU-H写成直接把热变电，说明先经涡轮轴功；不写各代固定总功率。"
+  },
+  "EA-048": {
+    "intro": "电动增压器与电辅助涡轮容易被统称为“电子涡轮”，但结构不同。前者是一台独立空气泵，后者仍有废气涡轮，只是在同轴上加入电机。\n\n2016年Audi SQ7 TDI使用独立电动压气机。2022年Mercedes-AMG公布SL43与C43的M139l电辅助废气涡轮。不能把Mercedes M256的独立电动压气机和M139l方案混作同一产品，也不能把发电能力当作所有电增压器的标配。\n\nMercedes-Benz的M256把48V集成式起动发电机、电动附件和电动辅助压气机组合起来。压气机把电能用于增压，起动发电机则在电气系统与机械传动之间交换能量，两者不是同一个部件；电气母线、储能和控制共同决定助力可用范围。",
+    "sources": [
+      {
+        "title": "Audi SQ7 TDI: ’s werelds eerste auto met elektrisch aangedreven compressor",
+        "url": "https://nieuws.audi.nl/audi-sq7-tdi-s-werelds-eerste-auto-met-elektrisch-aangedreven-compressor/"
+      },
+      {
+        "title": "Mercedes-Benz Media Newsroom USA",
+        "url": "https://media.mbusa.com/news/the-new-mercedes-amg-c-43-sedan-more-power-greater-efficiency"
+      },
+      {
+        "title": "Mercedes-AMG Using F1 Know-How in New Road Car Technology - Mercedes-AMG PETRONAS F1 Team",
+        "url": "https://www.mercedesamgf1.com/en/news/2020/06/mercedes-amg-f1-know-how-new-road-car-technology/"
+      },
+      {
+        "title": "Mercedes-Benz — Technology strategy, 2019",
+        "url": "https://media.mercedes-benz.com/article/ef6fe27e-0233-481a-a33b-10de097d384f"
+      }
+    ],
+    "verify": "ok",
+    "note": "官方核实SQ7 2016与M139l 2022；去除M256=e-turbo混淆；不泛化发电、零迟滞。；追加覆盖：append_sourced_section"
+  },
+  "EA-049": {
+    "intro": "几何压缩比通常由发动机结构固定。VC-Turbo通过多连杆和执行机构改变活塞运动位置，在高负荷时降低压缩比以抑制爆震，在适合工况提高压缩比以改善效率。\n\nInfiniti QX50的量产系统覆盖8:1至14:1。它不同于仅改变气门关闭时刻的有效压缩比调节。它的效率收益需与额外连杆、轴承和执行机构带来的成本一起衡量。\n\nVC-Turbo是可变几何压缩比的一种多连杆实现；控制轴改变活塞的上止点位置。其8:1至14:1范围属于这套系统，不应作为所有VCR原理的定义。",
+    "sources": [
+      {
+        "title": "VC-Turbo – the world's first production-ready variable compression ratio engine",
+        "url": "https://global.nissannews.com/releases/vc-turbo-the-worlds-first-production-ready-variable-compression-ratio-engine?lang=en-US"
+      },
+      {
+        "title": "Variable compression ratio - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Variable_compression_ratio"
+      },
+      {
+        "title": "Nissan / Infiniti — VC-Turbo variable compression ratio engine",
+        "url": "https://global.nissannews.com/ja-JP/releases/infiniti-vc-turbo-the-worlds-first-production-ready-variable-compression-ratio-engine"
+      }
+    ],
+    "verify": "ok",
+    "note": "删除未经官方逐项核实的召回数量及全系停产/独占断言；量产日期与公告日期分开，2018为QX50应用节点。；追加覆盖：append_sourced_section"
+  },
+  "EA-050": {
+    "intro": "HCCI的难点是自燃时机不易直接控制。Mazda的SPCCI保留火花塞，借局部火焰造成的压力上升帮助触发压燃，并在不适合的工况切回其他燃烧方式。\n\nSkyactiv-X于2019年进入量产汽车。Mazda日本公告明确写出Mazda3于2019年12月上市，其销售覆盖并不能用“仅欧洲”或“仅日本和欧洲”概括。Skyactiv-Z的后续规划不等同于Skyactiv-X已经全面停产。\n\nHCCI是均质充量压燃的概念：预先混合的燃料与空气经压缩升温后自燃。SPCCI是Mazda以火花控制压燃时刻的具体方法，SKYACTIV-X则是应用它的发动机技术家族。概念、控制方法和产品家族分别回答不同问题。\n\nSPCCI是在压燃路线中引入火花控制的Mazda实现，与HCCI概念相关，但不能把它写成所有工况都无需火花塞的均质自燃。其意义在于控制压燃发生的时机及与其他燃烧模式的切换。",
+    "sources": [
+      {
+        "title": "Skyactiv - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Mazda_Skyactiv-X"
+      },
+      {
+        "title": "MAZDA NEWSROOMマツダ、MAZDA3「SKYACTIV-X」搭載車を発売｜ニュースリリース",
+        "url": "https://newsroom.mazda.com/ja/publicity/release/2019/201911/191125a.html"
+      },
+      {
+        "title": "Where Engine Dreams Meet Possibilities: The SKYACTIV-Z Challenge and Mazda’s Internal Combustion-Focused Electrification Strategy | MAZDA MIRAI BASE | MAZDA MOTOR CORPORATION GLOBAL WEBSITE",
+        "url": "https://www.mazda.com/en/mazda-mirai-base/articles/20250319-multisolution-skyactivez/"
+      },
+      {
+        "title": "Mazda — Explanation on Next Generation Engine",
+        "url": "https://newsroom.mazda.com/en/about/speech/1607/index.html"
+      }
+    ],
+    "verify": "ok",
+    "note": "日本市场由Mazda官方2019公告确认；删除仅日本欧洲、固定16.3压缩比与现售收缩。2025官方Z规划为计划，不证明X全面停产。；追加覆盖：separate_concept_and_implementation；追加覆盖：append_sourced_section"
+  },
+  "EA-051": {
+    "intro": "电合成燃料把电能经制氢和化学合成转为可储运燃料。Haru Oni路线先制甲醇，再转为汽油；“e-fuel”并不保证任意产物都能直接加入任意发动机。\n\nPorsche与合作伙伴于2022年12月宣布Haru Oni启动生产。燃料燃烧仍释放CO₂，潜在减碳来自电力与碳源的选择及整个生命周期。示范生产、规划产能和实际产量是不同指标，应分别考察。",
+    "sources": [
+      {
+        "title": "eFuels pilot plant in Chile officially opened - Porsche Newsroom",
+        "url": "https://newsroom.porsche.com/en/2022/company/porsche-highly-innovative-fuels-hif-opening-efuels-pilot-plant-haru-oni-chile-synthetic-fuels-30732"
+      },
+      {
+        "title": "HIF Haru Oni",
+        "url": "https://www.hifglobal.com/locations/hif-haru-oni"
+      },
+      {
+        "title": "Electrofuel - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Electrofuel"
+      }
+    ],
+    "verify": "ok",
+    "note": "删5500万升等未验证扩产实现断言；不把F1可持续燃料等同全部电合成，不把使用时零CO2。"
+  },
+  "EA-052": {
+    "intro": "2026规则继续使用1.6升90°V6涡轮发动机，但取消MGU-H。350kW是ERS-K的直流电功率上限，3000MJ/h是燃料输入能量流量上限，两者都不能直接写成内燃机输出功率。\n\n燃料须符合先进可持续燃料规定；规则另允许总计不超过1.0%质量比例的特定非可持续来源添加剂与变性剂。因此“100%可持续”是简化宣传口径。本条依据2026年8月5日Issue 20，不把估计的400kW内燃机功率当成规则值。",
+    "sources": [
+      {
+        "title": "FIA 2026 F1 Regulations — Section C Technical, Issue 20, 5 August 2026",
+        "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_20_-_2026-08-05.pdf"
+      },
+      {
+        "title": "2026 REGULATIONS EXPLAINED: All you need to know about F1’s new power units",
+        "url": "https://www.formula1.com/en/latest/article/all-you-need-to-know-about-f1s-new-power-units.14jfv7a36905uDJDdNyfQd"
+      }
+    ],
+    "verify": "ok",
+    "note": "按2026-08-05Issue20实读；350kW明确直流电口径；删除400kW硬规则、固定总功率和待核实取消MGU-H。"
+  },
+  "EA-053": {
+    "intro": "L-head侧置气门发动机把进排气门置于气缸一侧，凸轮轴在缸体内驱动气门。燃烧室跨过气缸和气门区域，缸盖不必容纳完整配气机构。\n\n1904 Packard Model L是已核实的L-head实例。1932 Ford V8把侧置气门与适合大批量制造的整体铸造缸体结合，成为这一路线的著名代表。\n\n结构简单、缸盖较低，制造和维护方便；弯曲的进排气路径与扁长燃烧室限制充气和提高压缩比的空间。不能仅用气门位置判断一台发动机的实际功率。",
+    "sources": [
+      {
+        "title": "The Henry Ford — 1904 Packard Model L Touring Car",
+        "url": "https://www.thehenryford.org/collections/explore/artifact/73767"
+      },
+      {
+        "title": "The Henry Ford — Ford’s Game-Changing V-8 Engine",
+        "url": "https://www.thehenryford.org/collections/explore/articles/detail/articles/2022/03/11/ford-s-game-changing-v-8-engine"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份表示所列实车或系统的代表性节点，不代表该原理的绝对发明年份。"
+  },
+  "EA-054": {
+    "intro": "通常所说的OHV推杆机由缸体内凸轮轴依次驱动挺柱、推杆和摇臂，打开缸盖上的气门。OHV与OHC的气门都可位于顶部，区分重点是凸轮轴的位置。\n\nBuick在1904年采用量产OHV设计。1955年Chevrolet small-block及后续家族展示了这一路线在V8中的长期发展。\n\n缸盖布置紧凑，适合控制V型机外廓；较长传动链带来运动件质量、刚度和高速气门控制的挑战。OHV不等于落后，也不等于只能每缸两气门。",
+    "sources": [
+      {
+        "title": "GM — The Small Block comes home",
+        "url": "https://news.gm.com/home.detail.html/Pages/topic/us/en/2026/apr/0409-ls6.html"
+      },
+      {
+        "title": "Chevrolet — Small-Block Engine Timeline",
+        "url": "https://www.chevrolet.com/performance-parts/crate-engines/small-block-engines/timeline-history"
+      },
+      {
+        "title": "Briggs & Stratton — How a 4-Stroke Engine Works",
+        "url": "https://www.briggsandstratton.com/en-us/support/videos/4-stroke-theory"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份表示所列实车或系统的代表性节点，不代表该原理的绝对发明年份。"
+  },
+  "EA-055": {
+    "intro": "OHC把凸轮轴放在缸盖中；SOHC通常每个缸盖一根，DOHC通常每个缸盖两根。多气门是另一维度：可增加总流通面积并改善火花塞布置，不应把DOHC与四气门画等号。正时带、链或齿轮负责让凸轮轴与曲轴保持同步；四冲程凸轮轴转速通常为曲轴一半。\n\n1912 Peugeot L76赛车将DOHC与每缸四气门结合，是高性能配气系统的重要节点。Honda小型OHC发动机展示了单顶置凸轮轴和正时带的另一种实现。\n\n减少推杆等运动件有利于高速控制，但缸盖尺寸、正时传动、润滑与维修复杂度可能增加。正时驱动材料和维护周期必须按具体发动机判断。\n\n每缸四气门不自动等于DOHC。Mercedes-Benz的1910年发动机回顾记录了由低置凸轮轴、推杆与摇臂驱动的四气门设计；1912年Peugeot L76则把DOHC与四气门结合用于赛车。比较配气时，应分别说明气门位置、每缸气门数、凸轮轴位置及驱动方式。",
+    "sources": [
+      {
+        "title": "Peugeot — L500 R HYbrid and the L76 heritage",
+        "url": "https://www.media.stellantis.com/em-en/peugeot/press/l500-r-hybrid-how-peugeot-sees-the-future-of-motor-sport"
+      },
+      {
+        "title": "Honda Engines — OHC",
+        "url": "https://w3.honda-engines-eu.com/en/engines/ohc"
+      },
+      {
+        "title": "Mercedes-Benz — Innovations over 100 years ago: engine anniversaries in 2020",
+        "url": "https://media.mercedes-benz.be/innovaties-van-meer-dan-100-jaar-geleden-motorjubilea-in-2020/"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份表示所列实车或系统的代表性节点，不代表该原理的绝对发明年份。；追加覆盖：append_sourced_section"
+  },
+  "EA-056": {
+    "intro": "三元催化器在适当温度与近化学计量比条件下，同时促进CO、未燃碳氢化合物氧化和NOx还原。上游氧传感器向控制系统反馈排气含氧状态，以闭环调节喷油；现代下游传感器还可用于监测催化器。\n\nVolvo于1976年秋在美国市场的1977款244上推出Lambda Sond与三元催化组合。应把实际推出年和车型年分别显示。\n\n净化效果依赖温度、混合气和催化材料状态；冷启动、失火和污染会影响效果。它不去除燃烧生成的CO₂，也不能直接取代稀燃柴油所需的NOx处理。",
+    "sources": [
+      {
+        "title": "Volvo Cars — 30 years of Lambda Sond",
+        "url": "https://www.volvocars.com/uk/media/press-releases/601FD27BCF5DFB17/"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份表示所列实车或系统的代表性节点，不代表该原理的绝对发明年份。"
+  },
+  "EA-057": {
+    "intro": "ECU读取转速、负荷、温度等信号，按标定与反馈决定喷油时刻和数量、点火以及其他可用执行器。ECU不是一种燃烧循环，也不必只控制喷油；不同代际的功能和集成程度不同。\n\nBosch Jetronic于1967年提供电子喷射；1979年的Motronic进一步把喷油和点火纳入统一电子管理。\n\n可以兼顾启动、响应、油耗、排放和保护，但依赖传感器、执行器、供电与大量标定。软件无法消除机械和燃烧边界。",
+    "sources": [
+      {
+        "title": "Bosch — History of electronics",
+        "url": "https://www.bosch.com/stories/history-of-electronics/"
+      },
+      {
+        "title": "US DOE Alternative Fuels Data Center — How Do Flexible Fuel Cars Work?",
+        "url": "https://afdc.energy.gov/vehicles/how-do-flexible-fuel-cars-work"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份表示所列实车或系统的代表性节点，不代表该原理的绝对发明年份。"
+  },
+  "EA-058": {
+    "intro": "典型化油器让空气经过收缩通道，压差使燃油从喷口进入气流；浮子室维持油面，节气门调节流量。冷启动与加速需要额外补偿，具体回路因设计而异。\n\nScience Museum Group保存了标为1893年Maybach喷雾化油器的图示。它是早期可核实节点，不应把化油器起源缩成单一年份。\n\n机械结构直观、无需高压喷油系统，但对温度、海拔和瞬态的精确补偿较困难，多缸混合气分配也受进气路径影响。",
+    "sources": [
+      {
+        "title": "Science Museum Group — Diagram of Maybach spray carburettor, 1893",
+        "url": "https://collection.sciencemuseumgroup.org.uk/objects/co25406/diagram-of-maybach-spray-carburettor-1893"
+      },
+      {
+        "title": "Briggs & Stratton — How a 4-Stroke Engine Works",
+        "url": "https://www.briggsandstratton.com/en-us/support/videos/4-stroke-theory"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份表示所列实车或系统的代表性节点，不代表该原理的绝对发明年份。"
+  },
+  "EA-059": {
+    "intro": "磁电机自身发电并形成点火脉冲；蓄电池点火以线圈升压。传统分电器把高压依次送往各缸火花塞，现代系统可由ECU控制独立线圈。点火提前角随负荷、转速与爆震限制调整，不是永远在上止点点火。\n\nBosch在1897年把磁电机点火用于汽车，1902年推出高压磁电机系统。1997 Chevrolet LS1的近火花塞线圈展示了减少集中高压分配的后续路线。\n\n准确且可控的点火有利于效率和稳定燃烧；线圈、绝缘、火花塞与标定仍受温度、压力和电气条件限制。火花点火与柴油压燃是不同点火机制。",
+    "sources": [
+      {
+        "title": "Bosch — 1886–1905: From first workshop to factory",
+        "url": "https://www.bosch.co.uk/stories/1886-1905-from-first-workshop-to-factory/"
+      },
+      {
+        "title": "Briggs & Stratton — How a 4-Stroke Engine Works",
+        "url": "https://www.briggsandstratton.com/en-us/support/videos/4-stroke-theory"
+      },
+      {
+        "title": "Chevrolet — Small-Block Engine Timeline",
+        "url": "https://www.chevrolet.com/performance-parts/crate-engines/small-block-engines/timeline-history"
+      },
+      {
+        "title": "Bosch — History of electronics",
+        "url": "https://www.bosch.com/stories/history-of-electronics/"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份表示所列实车或系统的代表性节点，不代表该原理的绝对发明年份。"
+  },
+  "EA-060": {
+    "intro": "柴油直喷把燃油喷入含高温压缩空气的主燃烧室，常利用活塞碗形凹坑组织混合。直喷描述喷射位置，共轨、分配泵和泵喷嘴描述供油与计量方式，不能互相替代。\n\nFiat官方历史资料把Croma直喷柴油节点分别记为1986、1987或1988年，本图谱保留为1980年代末。Audi官方发布稿明确1989年Audi 100 TDI在IAA亮相，组合直喷、涡轮与电子管理。\n\n减少预燃室带来的热损失和节流损失，有利于效率；喷雾、噪声、颗粒物与NOx需要精密控制。高压喷射本身不能保证清洁排放。\n\n2006年，Audi R10 TDI凭V12 TDI发动机赢得勒芒24小时赛总冠军，成为这项赛事首辆获胜的柴油赛车。该项目把柴油喷射、燃烧和可靠性开发带入顶级耐力赛；Audi当年的技术报道也强调了赛车与量产研发之间的联系。赛车成绩须放在当年规则、整车设计与比赛条件中理解，不能单凭这场胜利推断所有柴油机都优于汽油机。",
+    "sources": [
+      {
+        "title": "Fiat — Diesel-Historie im Fiat Konzern",
+        "url": "https://www.media.stellantis.com/de-de/fiat/press/diesel-historie-im-fiat-konzern"
+      },
+      {
+        "title": "Fiat — New Fiat Croma in UK",
+        "url": "https://www.media.stellantis.com/uk-en/fiat/press/new-fiat-croma-in-uk"
+      },
+      {
+        "title": "Fiat — The new Fiat Croma",
+        "url": "https://www.media.stellantis.com/em-en/fiat/press/the-new-fiat-croma"
+      },
+      {
+        "title": "Audi Canada — 25 years of TDI: The bestseller for efficiency",
+        "url": "https://www.prnewswire.com/news-releases/25-years-of-tdi-the-bestseller-for-efficiency-515131971.html"
+      },
+      {
+        "title": "Bosch Mobility — Common-rail system with solenoid injectors",
+        "url": "https://www.bosch-mobility.com/en/solutions/powertrain/diesel/common-rail-system-solenoid/"
+      },
+      {
+        "title": "Audi — Le Mans win accelerates TDI development",
+        "url": "https://www.audi.com/en/press-releases/le-mans-win-accelerates-tdi-development-8268"
+      }
+    ],
+    "verify": "pending",
+    "note": "原理与Audi节点已核；Croma具体上市年存在同厂官方资料冲突，1988只供内部排序，前台展示年代范围。；追加覆盖：append_publication_section"
+  },
+  "EA-061": {
+    "intro": "涡轮从排气获取能量，带动压气机压缩进气；更多空气可支持更多燃油燃烧。中冷降低压缩后空气温度，可变几何涡轮等后续手段扩大有效工作范围。增压、直喷与共轨是可以组合的不同技术维度。\n\nMercedes-Benz 300 SD于1978年5月推出，使用3.0升五缸涡轮柴油，面向美国与加拿大。1989 Audi 100 TDI进一步展示涡轮、直喷和电子管理的组合。\n\n可提升比功率和低中速扭矩，但增压响应、排气背压、热负荷及颗粒物控制都需要权衡；不能单凭有涡轮判断效率。",
+    "sources": [
+      {
+        "title": "Mercedes-Benz — 40 years of the 116 series",
+        "url": "https://imprensa.mercedes-benz.com.br/releases/mercedes-benz-celebra-40-anos-da-serie-116-o-luxo-no-mais-alto-nivel"
+      },
+      {
+        "title": "Audi Canada — 25 years of TDI: The bestseller for efficiency",
+        "url": "https://www.prnewswire.com/news-releases/25-years-of-tdi-the-bestseller-for-efficiency-515131971.html"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份表示所列实车或系统的代表性节点，不代表该原理的绝对发明年份。"
+  },
+  "EA-062": {
+    "intro": "DPF捕集颗粒物，并通过再生氧化积累的碳烟；SCR以尿素水溶液产生的氨参与催化反应降低NOx。氧化催化器可处理CO及碳氢化合物。EGR属于缸内排放控制：引回部分排气降低NOx形成，不应画成滤芯。\n\n2000年5月Peugeot 607采用添加剂辅助DPF，是柴油乘用车的重要节点。Cummins资料展示DPF、DEF/AdBlue喷射及SCR的系统分工；不同应用的组合并不完全相同。\n\n需要温度管理、传感器、再生和维护；短途低温工况可能使系统难以达到理想状态。碳烟与NOx是不同问题，装有一种装置不能证明另一类排放也达标。",
+    "sources": [
+      {
+        "title": "PSA Peugeot Citroën — More than 3 million HDi engines fitted with particulate filters",
+        "url": "https://www.media.stellantis.com/em-en/psa-archive/press/psa-peugeot-citroen-has-sold-more-than-3-million-hdi-diesel-engines-fitted"
+      },
+      {
+        "title": "Cummins — How an aftertreatment system works",
+        "url": "https://www.cummins.com/en-apac/components/aftertreatment/how-it-works"
+      },
+      {
+        "title": "Cummins — Decarbonizing combustion: Tier 4, Stage V and beyond",
+        "url": "https://www.cummins.com/en-na/news/2025/06/09/decarbonizing-combustion-tier-4-stage-v-and-beyond"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份表示所列实车或系统的代表性节点，不代表该原理的绝对发明年份。"
+  },
+  "EA-063": {
+    "intro": "乙醇与汽油的热值、汽化和所需空燃比不同。专用乙醇发动机按特定燃料设计；灵活燃料车则使用兼容的燃油系统与控制标定，适应获准范围内不同混合比例。各市场的E85、含水乙醇等规格不能混用。\n\n巴西Fiat 147乙醇车型于1979年7月5日推出。Volkswagen Gol Total Flex于2003年成为巴西灵活燃料量产发展的代表。\n\n乙醇抗爆性高，可为发动机设计提供空间；单位体积能量较低，冷启动、材料兼容和燃料供应需要处理。温室气体收益取决于原料、生产能源和土地使用等全生命周期条件。",
+    "sources": [
+      {
+        "title": "Fiat — 45 years of the ethanol-powered Fiat 147",
+        "url": "https://www.media.stellantis.com/es-es/fiat/press/fiat-celebra-los-45-anos-del-primer-coche-propulsado-por-etanol-del-mundo"
+      },
+      {
+        "title": "Volkswagen Brasil — 70 anos no Brasil",
+        "url": "https://www.vw.com.br/pt/volkswagen/70-anos-brasil.html"
+      },
+      {
+        "title": "US DOE Alternative Fuels Data Center — How Do Flexible Fuel Cars Work?",
+        "url": "https://afdc.energy.gov/vehicles/how-do-flexible-fuel-cars-work"
+      },
+      {
+        "title": "US DOE Alternative Fuels Data Center — Ethanol Benefits and Considerations",
+        "url": "https://afdc.energy.gov/fuels/ethanol-benefits"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份表示所列实车或系统的代表性节点，不代表该原理的绝对发明年份。"
+  },
+  "EA-064": {
+    "intro": "DFV属于V8的具体机型，采用90°夹角、自然吸气、双顶置凸轮轴及每缸四气门。应与V8布局概念和1966年开始的3.0升规则分别理解。\n\n1967年荷兰大奖赛，Jim Clark驾驶搭载DFV的Lotus 49赢得首战。Cosworth统计DFV取得155场大奖赛胜利，说明该家族长期影响；衍生型和末次参赛年份需另行限定。\n\n向多支车队提供有竞争力的发动机，扩大了独立车队的选择；任何机型的竞争力仍受规则、底盘整合与持续开发影响，后来也面临涡轮动力挑战。",
+    "sources": [
+      {
+        "title": "Cosworth — Six decades of heritage at Goodwood Revival",
+        "url": "https://cosworth.com/news/cosworth-to-celebrate-more-than-six-decades-of-heritage-at-goodwood-revival/"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份表示所列实车或系统的代表性节点，不代表该原理的绝对发明年份。"
+  },
+  "EA-065": {
+    "intro": "这台立式单缸因外形被称为“落地钟”。Daimler与Maybach追求更高转速和适合移动设备的尺寸，让发动机能够脱离固定式机器的使用方式。这里的“高速”是相对19世纪早期内燃机而言，不能与今天汽车转速直接相比。\n\n1885年的发动机装入Reitwagen两轮试验车；1886年又出现发动机驱动的马车。两个节点分别说明动力单元可移动化和向四轮车辆的应用，不应合并成一个笼统的“第一辆汽车”年份。\n\n它补上了奥托四冲程原理与实际汽油汽车之间的工程环节。早期供油、点火和冷却仍受材料及加工能力限制，其意义主要在便携动力系统的组合，而不是把四冲程原理重新发明一次。",
+    "sources": [
+      {
+        "title": "Mercedes-Benz — Innovations over 100 years ago: engine anniversaries in 2020",
+        "url": "https://media.mercedes-benz.be/innovaties-van-meer-dan-100-jaar-geleden-motorjubilea-in-2020/"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份采用所列历史节点，不表示整个原理的唯一发明年。"
+  },
+  "EA-066": {
+    "intro": "典型停缸系统切断部分气缸的燃油，并控制气门使其保持关闭；其余气缸继续推动同一根曲轴。对节气门控制的汽油机，剩余气缸承担更大负荷，可以减少轻负荷下的进气节流与泵气损失。\n\n1981车型年的GM V8-6-4是早期量产节点，按负荷切换工作气缸数。后来电子控制与气门执行技术改进，使这类策略再次进入量产；Chevrolet small-block家族的现代停缸版本是后续实例。\n\n收益取决于行驶负荷和控制范围。切换过程要处理扭矩波动、振动、声响及催化器温度；并非关闭越多气缸就一定越省油，也不能把所有系统都理解为固定的八缸切四缸。",
+    "sources": [
+      {
+        "title": "US EPA — Regulatory Impact Analysis, MY2012–2016 light-duty standards",
+        "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P100Z4TB.TXT"
+      },
+      {
+        "title": "Chevrolet — Small-Block Engine Timeline",
+        "url": "https://www.chevrolet.com/performance-parts/crate-engines/small-block-engines/timeline-history"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份采用所列历史节点，不表示整个原理的唯一发明年。"
+  },
+  "EA-067": {
+    "intro": "无凸轮轴配气用可控执行器代替传统凸轮驱动，让进排气门的开启时刻、持续时间和升程具有更多独立调节空间。Freevalve展示的方案使用气动、液压与电子控制；“无凸轮轴”描述驱动方式，不表示发动机没有气门。\n\nFreevalve在2016年公开了Qoros3等可行驶示范车，展示这一技术在整车中的应用。此处把它记为工程示范节点，并不由此推断Qoros或后来其他车型已经大规模量产。\n\n更自由的配气可支持早关或晚关进气门、停缸等策略，但执行器能耗、压缩空气与油路、控制精度、耐久及成本都需要解决。示范机的某个测试收益不能直接套用于全部汽车。",
+    "sources": [
+      {
+        "title": "Freevalve — Cam-less valve train opportunities",
+        "url": "https://www.freevalve.com/insights/cam-less-valve-train-opportunities/"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份采用所列历史节点，不表示整个原理的唯一发明年。"
+  },
+  "EA-068": {
+    "intro": "燃烧室是活塞接近上止点时进行燃烧的空间。半球形、楔形和屋脊形描述其总体几何，实际形状还由活塞顶、气门凹坑与挤流区域共同决定。火花塞位置、气门夹角及火焰传播距离，都需要与进气运动和抗爆要求一起设计。\n\nChrysler在1950年公布、用于1951车型年的FirePower，是量产HEMI的代表节点。1989年Honda B16A采用屋脊燃烧室、DOHC与每缸四气门，展示另一种组合；不能据此把所有屋脊燃烧室直接等同于DOHC。\n\n较大的气门空间并不自动带来更好的综合效率。燃烧室表面积、压缩比、混合气运动和排放都有取舍；品牌名HEMI也不能代替对具体代际缸盖和活塞几何的判断。",
+    "sources": [
+      {
+        "title": "Stellantis — HEMI Day: Running the numbers on history-making engines",
+        "url": "https://blog.stellantisnorthamerica.com/2019/04/26/hemi-day-running-the-numbers-on-history-making-engines/"
+      },
+      {
+        "title": "Honda — B16A Integra VTEC",
+        "url": "https://global.honda/en/tech/engine/car/B16A_integra_vtec/"
+      },
+      {
+        "title": "General Motors — Combustion chamber, US2791996A",
+        "url": "https://patents.google.com/patent/US2791996A/en"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份采用所列历史节点，不表示整个原理的唯一发明年。"
+  },
+  "EA-069": {
+    "intro": "CVCC通过额外进气通道向副燃烧室提供较浓混合气，由火花塞点燃后喷出火焰，帮助主燃烧室中的稀混合气燃烧。它以混合气分层改善稀燃稳定性，属于特定厂商的工程实现，不能把CVCC当作所有稀燃或预燃室系统的通称。\n\nHonda在1972年12月接受美国EPA测试；Civic CVCC于1973年12月13日在日本上市，美国销售对应1975车型年。这三个日期分别代表验证、当地上市与车型年，放在同一时间轴时必须注明口径。\n\n副室、额外气门和供油通路增加结构复杂度；这种燃烧策略也不能替代后续所有排放控制需求。CVCC的历史价值，是用可量产的燃烧室与供气设计处理当时的稀燃稳定性和排放问题。",
+    "sources": [
+      {
+        "title": "Honda 75 Years — CVCC engine",
+        "url": "https://global.honda/en/about/history-digest/75years-history/chapter3/section2_3/"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份采用所列历史节点，不表示整个原理的唯一发明年。"
+  },
+  "EA-070": {
+    "intro": "预燃室点火把初始燃烧集中在与主燃烧室相通的小空间内，燃烧气体或火焰通过孔道进入主室，形成多个点火位置。小室的供油方式和工作范围因方案而异；汽油火花预燃室与柴油间接喷射的预燃室不能只因名称相似而混为一谈。\n\n较早的Honda CVCC已使用主、副燃烧室分工。2020年Maserati Nettuno则把预燃室、主室侧置火花塞以及缸内和进气道双喷射组合起来，作为现代道路车的具体实例；不是整个预燃室历史的起点。\n\n快速、分散的点火可扩展燃烧控制空间，但孔道几何、残余气体、积碳及低负荷点火稳定性都需要管理。不同预燃室的表现不能由一个品牌的功率或效率数据概括。",
+    "sources": [
+      {
+        "title": "Maserati — The Nettuno engine",
+        "url": "https://www.maserati.com/us/en/news/maserati-nettuno-engine"
+      },
+      {
+        "title": "Honda 75 Years — CVCC engine",
+        "url": "https://global.honda/en/about/history-digest/75years-history/chapter3/section2_3/"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份采用所列历史节点，不表示整个原理的唯一发明年。"
+  },
+  "EA-071": {
+    "intro": "HCCI把空气与燃料预先混合，再靠压缩和缸内热状态触发自燃。它与传统柴油先压缩空气再喷油的燃烧组织不同，也不靠单一火花传播火焰完成整个主燃烧过程。温度、残余废气和混合气状态都直接影响何时开始燃烧。\n\n1979年的ATAC论文研究二冲程发动机的热气氛自燃，是这一思路的早期研究节点。后来厂商继续研究四冲程汽油压燃；Mazda在2017年公开的SPCCI则用火花控制压燃时机，应作为相关具体实现单列。\n\n均匀而快速的燃烧具有降低部分损失和排放的潜力，但冷启动、低负荷稳定性、高负荷压力上升和工况切换都困难。HCCI不是“取消火花塞就能工作的汽油机”，实际系统常须结合其他燃烧模式。",
+    "sources": [
+      {
+        "title": "SAE — Active Thermo-Atmosphere Combustion (ATAC), 790501",
+        "url": "https://saemobilus.sae.org/papers/active-thermo-atmosphere-combustion-atac-a-new-combustion-process-internal-combustion-engines-790501"
+      },
+      {
+        "title": "Mazda — Explanation on Next Generation Engine",
+        "url": "https://newsroom.mazda.com/en/about/speech/1607/index.html"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份采用所列历史节点，不表示整个原理的唯一发明年。"
+  },
+  "EA-072": {
+    "intro": "对常见90度V8，交叉曲轴的曲拐分布在相差90度的平面内，平面曲轴则集中于相差180度的两个方向。曲轴形式与V8气缸布局是两个维度；同样为V8，燃烧顺序、排气脉冲、配重与振动特点仍可很不相同。\n\n2020年Mercedes-AMG GT Black Series的M178 LS2采用平面曲轴，原厂用它与此前交叉曲轴V8对照。平面方案有利于两侧气缸列轮流排气，但也需要相应改变凸轮轴、点火和排气系统，不能只把曲轴换掉。\n\n交叉曲轴常通过配重取得较好的平顺性；平面方案可简化部分旋转件并获得更规则的同侧排气间隔，却面临往复惯性振动等取舍。声音是整套发动机与排气系统的结果，不是单靠曲轴名称决定。",
+    "sources": [
+      {
+        "title": "Mercedes-AMG — GT Black Series",
+        "url": "https://media.mercedes-benz.be/fr/le-modele-de-pointe-de-la-gamme-amg-gt-la-nouvelle-mercedes-amg-gt-black-series/"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份采用所列历史节点，不表示整个原理的唯一发明年。"
+  },
+  "EA-073": {
+    "intro": "活塞与连杆的往复运动会产生随曲轴转角变化的惯性力；各缸叠加后，有些力和力矩不能自行抵消。平衡轴利用受控旋转的偏心质量生成反向作用，但轴数、转速、转向和位置必须针对发动机布局设计。\n\nMitsubishi在1975年2月的Galant GTO 4G52 Astron80上采用Silent Shaft：两根反向旋转、转速为曲轴两倍的轴处理直四二阶惯性影响。直三常见的一次摇摆力矩可涉及同曲轴转速的轴，不能照搬直四方案。\n\n平衡轴能改善振动，却增加质量、轴承摩擦、传动负担和布置空间；它也不等于曲轴扭振减振器。缸数相同的发动机仍可能采用不同平衡策略，不能用“有平衡轴”直接判断机械品质。",
+    "sources": [
+      {
+        "title": "Mitsubishi Motors — Company history",
+        "url": "https://www.mitsubishi-motors.com/en/company/history/company/?year=1960s"
+      },
+      {
+        "title": "US Patent 4,565,169 — Balancing apparatus for three-cylinder engines",
+        "url": "https://patents.google.com/patent/US4565169A/en"
+      },
+      {
+        "title": "Nissan — Reciprocating internal combustion engine, US6390035B2",
+        "url": "https://patents.google.com/patent/US6390035B2/en"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份采用所列历史节点，不表示整个原理的唯一发明年。"
+  },
+  "EA-074": {
+    "intro": "风冷依靠缸体和缸盖散热片与空气交换热量，液冷则先由水套中的冷却液带走热量，再通过散热器排向空气。两者最终都把热量交给环境；液冷并非“用水代替所有空气”，风冷发动机也可能用机油协助散热。\n\n经典Volkswagen Beetle采用风冷水平对置四缸；1948年亮相、1949年投产的Citroën 2CV采用风冷水平对置双缸。Porsche 993延续风冷至1998年，而新一代996已在1997年引入水冷，这是两代车型交叠。\n\n风冷可省去部分水路零件，但气缸间温差、噪声及高热负荷控制更困难。液冷提供较灵活的温度分配，代价是泵、管路和散热器；冷却方式应与燃烧室、排放和整车布置共同考量。",
+    "sources": [
+      {
+        "title": "Citroën — 75 years of the 2CV",
+        "url": "https://www.media.stellantis.com/uk-en/citroen/press/historic-iconic-legendary-citroen-celebrates-75-years-of-the-2cv"
+      },
+      {
+        "title": "Porsche — Why the 911 switched to a water-cooled engine",
+        "url": "https://www.porsche.com/stories/innovation/why-the-porsche-911-switched-to-a-water-cooled-engine/"
+      },
+      {
+        "title": "Porsche — 7 things about the 911 type 993",
+        "url": "https://www.porsche.com/stories/mobility/7-things-you-need-to-know-about-the-porsche-911-type-993/"
+      },
+      {
+        "title": "Volkswagen — The Beetle: a success story",
+        "url": "https://www.volkswagen-newsroom.com/en/the-volkswagen-beetle-a-success-story-2341/download"
+      },
+      {
+        "title": "MAHLE — Engine cooling for passenger cars",
+        "url": "https://www.mahle.com/en/products-and-services/passenger-cars/cooling/"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份采用所列历史节点，不表示整个原理的唯一发明年。"
+  },
+  "EA-075": {
+    "intro": "甲醇与乙醇都属于醇类，但分子结构、燃料性质和车辆适配并不相同。车用甲醇路线需要相应的供油、点火、材料和冷启动设计；标为甲醇发动机，不表示可以把任意普通汽油车直接改用甲醇。\n\n1965年的Indianapolis500使用纯甲醇燃料，Jim Clark取得胜利，构成清楚的赛用节点。Geely的2022年官方资料记录了Emgrand Methanol Hybrid的发布，说明甲醇在中国也进入特定道路车与混动应用。\n\n燃料来源可以不同，其生命周期排放要看原料、制取能源和供应链，不能仅凭尾气中含水就称为零碳。赛车经历说明技术可行性，却不能自动证明道路车的成本、供应便利和全生命周期优势。",
+    "sources": [
+      {
+        "title": "IndyCar — Engine technology keeps racing forward",
+        "url": "https://www.indycar.com/News/2024/06/06-28-Engine-Technology"
+      },
+      {
+        "title": "Geely — Sustainable club loan",
+        "url": "https://www.geely.com/en/news/2022/geely-auto-sustainable-club-loan"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份为明确的发布、量产或比赛节点；家族参数不能推广至全部版本。"
+  },
+  "EA-076": {
+    "intro": "辛烷值衡量汽油抵抗爆震的能力。四乙基铅曾用于改善汽油抗爆表现，但铅的污染和健康影响推动了退出；同时，含铅燃料与现代催化净化系统不相容，使燃料和发动机排放技术必须协同改变。\n\n联合国环境规划署将四乙基铅用于汽油的节点记为1922年。2021年7月阿尔及利亚停止供应车用含铅汽油，标志这类道路燃料在全球退出。这里讨论道路汽油，不把这一事件写成所有航空含铅燃料同时消失。\n\n无铅不等于低辛烷值，也不等于没有其他添加组分。高压缩比、增压和点火控制仍须配合规定牌号；对历史车辆，还需要考虑其原有材料和使用规范，不能用一种燃料标签推断所有机械适配。",
+    "sources": [
+      {
+        "title": "UNEP — Era of leaded petrol over",
+        "url": "https://www.unep.org/en/news-and-stories/press-release/era-leaded-petrol-over-eliminating-major-threat-human-and-planetary"
+      },
+      {
+        "title": "Volvo Cars — 30 years of Lambda Sond",
+        "url": "https://www.volvocars.com/uk/media/press-releases/601FD27BCF5DFB17/"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份为明确的发布、量产或比赛节点；家族参数不能推广至全部版本。"
+  },
+  "EA-077": {
+    "intro": "常见生物柴油由脂肪酸酯组成，FAME指脂肪酸甲酯；HVO则通过加氢处理等路线得到烃类可再生柴油。它们都可能以生物来源原料制取，但化学组成、低温性质和适用燃料标准不同，不能只用“植物油柴油”概括。\n\n2007年Neste为Porvoo的NExBTL装置举行落成活动，并预告当年夏季投产，是加氢可再生柴油工业化的一个节点。B5、B20中的数字表示生物柴油掺混体积分数；HVO不是其中字母B的同义词。\n\n原料可持续性与制取过程决定生命周期表现。车辆能否使用某种纯燃料或混合比例，要看对应标准、发动机厂认证及使用条件；不能把供应商的通用兼容宣传扩展为任何年代柴油机均可直接使用。\n\n可再生替代燃料还包括二甲醚（DME），但它既不是 FAME，也不是 HVO。DME 在常温常压下是气体，可加压液化，并用于专门设计的压燃发动机；原料既可来自生物质，也可来自化石资源。Volvo 的 BioDME 项目试验了从制取、加注到车辆运行的整条链路，其 2010 年报告记载两辆示范车于 2011 年初交给客户路试。燃料来源与发动机、储罐适配需要分别判断。",
+    "sources": [
+      {
+        "title": "US DOE AFDC — Renewable diesel",
+        "url": "https://afdc.energy.gov/fuels/renewable-diesel"
+      },
+      {
+        "title": "US DOE AFDC — Biodiesel blends",
+        "url": "https://afdc.energy.gov/fuels/biodiesel-blends"
+      },
+      {
+        "title": "Neste — Porvoo diesel line and NExBTL plant inauguration",
+        "url": "https://www.neste.com/news/neste-oil-inaugurates-new-diesel-line-and-biodiesel-plant-at-porvoo-and-celebrates-40-years-of-operations-at-its-technology-center"
+      },
+      {
+        "title": "US DOE Alternative Fuels Data Center — Dimethyl Ether",
+        "url": "https://afdc.energy.gov/fuels/emerging-dme"
+      },
+      {
+        "title": "Volvo Group Sustainability Report 2010 — BioDME",
+        "url": "https://www.volvogroup.com/content/dam/volvo-group/markets/global/classic/investors/reports-and-presentations/sustainability-reports/Volvo-Group-Sustainability-Report-2010-EN.pdf"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份为明确的发布、量产或比赛节点；家族参数不能推广至全部版本。；追加覆盖：research merge"
+  },
+  "EA-078": {
+    "intro": "Ford Flathead V8把八个气缸分成两列，气门位于缸体内而非缸盖顶部。它最有代表性的工程意义，是让缸体与曲轴箱适合一体铸造和大批量生产，把V8的制造成本降到更广的市场能够承担的范围。\n\n1932年推出的Ford V8成为这一转折的标志，美国Ford的相关生产脉络延续至1953年。此前已有V8汽车，所以它的贡献应表述为平价化与规模制造，而不是“发明V8”或“世界首台量产V8”。\n\n侧置气门的缸盖简单、轮廓较低，代价是燃烧室和进排气路径受到限制。后来的顶置气门V8改变了气流条件；研究Flathead有助于理解为什么看似相同的V8布局，会随着配气架构产生不同的发展空间。",
+    "sources": [
+      {
+        "title": "The Henry Ford — Ford’s Game-Changing V-8 Engine",
+        "url": "https://www.thehenryford.org/collections/explore/articles/detail/articles/2022/03/11/ford-s-game-changing-v-8-engine"
+      },
+      {
+        "title": "Ford Racing — Ford V8 Museum",
+        "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2025/04/ford-v8-museum"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份为明确的发布、量产或比赛节点；家族参数不能推广至全部版本。"
+  },
+  "EA-079": {
+    "intro": "Chevrolet small-block采用V8布局和缸体内凸轮轴，经推杆与摇臂驱动顶置气门。“Small-block”首先是家族和尺寸定位，并不表示所有成员都使用同一排量、同一缸体材料或同一供油系统；也不能把它与全部GM V8直接画等号。\n\n第一代265立方英寸small-block面向1955车型年推出。后续家族在保留紧凑OHV路线的同时更新控制与供油；1997年LS1的近火花塞点火线圈就是一个明确的代际变化。\n\n推杆机构可以减小缸盖体积，但气门运动质量、转速目标与多气门布置有相应取舍。实际性能仍取决于缸盖、燃烧、电子控制和使用目标，不能仅凭OHV或DOHC标签判定技术先进程度。",
+    "sources": [
+      {
+        "title": "GM — The Small Block comes home",
+        "url": "https://news.gm.com/home.detail.html/Pages/topic/us/en/2026/apr/0409-ls6.html"
+      },
+      {
+        "title": "Chevrolet — Small-Block Engine Timeline",
+        "url": "https://www.chevrolet.com/performance-parts/crate-engines/small-block-engines/timeline-history"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份为明确的发布、量产或比赛节点；家族参数不能推广至全部版本。"
+  },
+  "EA-080": {
+    "intro": "OM617是Mercedes-Benz的直列五缸柴油机家族。直五在发动机长度、工作脉冲和输出需求之间形成一种折中；它并不等同于五缸都能自行完全平衡，也不能把家族中每个版本都称为涡轮柴油。\n\n1974年7月公开的240 D 3.0采用三升OM617，随后这一自然吸气路线进入W123 300 D。1978年的300 SD是涡轮柴油轿车应用节点；机型家族先出现、增压装车后发生，两个年份不应互相替代。\n\n加装涡轮意味着供油、散热与机械负荷都需要重新匹配，不只是改变尾标。OM617适合连接直五布局与柴油增压的历史，但耐久口碑不能被写成所有使用和维护条件下都成立的寿命保证。",
+    "sources": [
+      {
+        "title": "Mercedes-Benz Classic Notes 2/2024 (official document mirror)",
+        "url": "https://sverige.mercedes-benz-clubs.com/wp-content/uploads/sites/89/2024/05/2024-04-17-Classic-Notizen-2-2024_EN.pdf"
+      },
+      {
+        "title": "SAE 780633 — The Turbocharged Five-Cylinder Diesel Engine for the Mercedes-Benz 300 SD",
+        "url": "https://saemobilus.sae.org/papers/turbocharged-five-cylinder-diesel-engine-mercedes-benz-300-sd-780633"
+      },
+      {
+        "title": "Mercedes-Benz — 40 years of the 116 series",
+        "url": "https://imprensa.mercedes-benz.com.br/releases/mercedes-benz-celebra-40-anos-da-serie-116-o-luxo-no-mais-alto-nivel"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份为明确的发布、量产或比赛节点；家族参数不能推广至全部版本。"
+  },
+  "EA-081": {
+    "intro": "Offenhauser通常简称“Offy”，是一系列美国赛车用直列四缸发动机。它承接Miller时期的设计经验，与双顶置凸轮轴和多气门赛车机的发展相连；这里的机型家族应与更广的直四布局概念分开阅读。\n\n1933年Miller破产后，Fred Offenhauser与Leo Goossen继续相关设计工作，基础涉及Miller四缸船用机。赛道官方记录Offy获得27次Indianapolis500胜利，最后一次在1976年，显示其跨越多个规则与增压阶段的适应能力。\n\n同一个家族名称下存在不同排量与竞赛配置，不能把某一时期的增压、燃料或功率推广至全部Offy。它的历史地位来自长期开发和赛场生态，而不是证明四缸在所有赛事中天然优于更多气缸。",
+    "sources": [
+      {
+        "title": "Indianapolis Motor Speedway — Advancements in automotive technology and safety",
+        "url": "https://www.indianapolismotorspeedway.com/news-multimedia/news/2020/08/03/indianapolis-500-has-incubated-endless-advancements-in-automotive-technology-safety"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份为明确的发布、量产或比赛节点；家族参数不能推广至全部版本。"
+  },
+  "EA-082": {
+    "intro": "EA888涵盖大众集团一系列链条驱动配气、涡轮增压的汽油直列四缸。早期培训资料讨论1.8升与2.0升路线；家族名称能说明开发脉络，却不能替代发动机代码、市场和车型年，尤其不能把一代的喷射配置套到另一代。\n\nAudi原始培训资料把BYT的量产开始标为2007年1月。到2020年第八代Golf GTI，原厂资料已称其为EA888 evo4，并列出喷油压力及颗粒过滤等变化，显示燃烧、增压与排放系统持续共同演进。\n\n小排量涡轮直喷可以兼顾低负荷与高负荷需求，但真实油耗依赖工况，热负荷、颗粒物与控制复杂度也要处理。评价EA888时应指定版本，避免把某代优点、缺点或故障模式扩大成全家族属性。",
+    "sources": [
+      {
+        "title": "Audi Service Training — Chain-driven TFSI engine / EA888 (document mirror)",
+        "url": "https://manuals.plus/m/6528789dde9d7039432955d5664a306604ff9c75cb345568c7d3b4c8cddfe7dc.pdf"
+      },
+      {
+        "title": "Volkswagen — New Golf GTI international media drive",
+        "url": "https://www.volkswagen-newsroom.com/en/the-new-golf-gti-international-media-drive-6282/download"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份为明确的发布、量产或比赛节点；家族参数不能推广至全部版本。"
+  },
+  "EA-083": {
+    "intro": "M12/13是BMW的1.5升直列四缸涡轮F1发动机，其开发借用了量产缸体的基础。赛车化不只是给公路机添加涡轮，而是围绕燃烧、增压、冷却、转速与比赛寿命做系统改造；它不能代表普通道路发动机的工作负荷。\n\nBMW在1982年取得F1首胜，1983年Nelson Piquet驾驶Brabham BT52获得车手冠军，使这一发动机成为涡轮时代的重要代表。它与DFV自然吸气V8形成鲜明对照，体现当时两条规则允许路线的竞争。\n\n常见的极高排位功率数字中，有些连BMW自己的回顾也明确说是未经测量的估计。因此这里保留可核实的布局、排量和竞赛节点，不把传闻峰值当成台架实测；排位与正赛设定也不能混写。",
+    "sources": [
+      {
+        "title": "BMW M — 50 years of BMW M",
+        "url": "https://special.bmw-m.com/50-years-bmw-m"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份为明确的发布、量产或比赛节点；家族参数不能推广至全部版本。"
+  },
+  "EA-084": {
+    "intro": "B16A是Honda的1.6升自然吸气直列四缸，采用DOHC、每缸四气门和VTEC。系统通过液压锁销联接不同摇臂，切换凸轮轮廓，使气门升程与开启持续时间能随工作条件改变；这里的VTEC不是单纯转动整根凸轮轴。\n\n1989年4月19日发布的Integra采用B16A，构成清楚的量产应用节点。屋脊燃烧室和高转速进气需求与配气设计相互配合，说明一项可变技术需要嵌入完整的缸盖与燃烧系统，而不是孤立的电子开关。\n\n高转速输出与低转速可用性需要平衡，切换式凸轮方案也有机械与控制成本。不同市场、年代和变速箱版本的规格不能混用；VTEC的品牌名称在其他发动机上亦可能对应不同实现。",
+    "sources": [
+      {
+        "title": "Honda — B16A Integra VTEC",
+        "url": "https://global.honda/en/tech/engine/car/B16A_integra_vtec/"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份为明确的发布、量产或比赛节点；家族参数不能推广至全部版本。"
+  },
+  "EA-085": {
+    "intro": "1NZ-FXE是第一代Toyota Prius使用的水冷直列四缸DOHC汽油机。其阿特金森式工作方式通过进气门时序影响实际压缩过程，让膨胀利用与动力输出之间取得偏向效率的取舍；并不需要照搬19世纪阿特金森的特殊连杆机构。\n\nPrius在1997年10月公开，并于12月10日在日本上市。Toyota把NZ发动机与混动系统一起开发，使电机、储能和动力分配承担部分运行需求，发动机因此可以采用与独立驱动车辆不同的优化方向。\n\n发动机峰值效率不是整车每一时刻的效率。电池充放电、电机、传动和附件均有损失，收益取决于工况与控制；“阿特金森”也不能脱离具体气门策略，当作所有同名发动机相同的保证。",
+    "sources": [
+      {
+        "title": "Toyota — Vehicle lineage: Prius",
+        "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012360/"
+      },
+      {
+        "title": "Toyota — Birth of the Prius, engine development",
+        "url": "https://global.toyota/en/prius20th/challenge/birth/02/"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份为明确的发布、量产或比赛节点；家族参数不能推广至全部版本。"
+  },
+  "EA-086": {
+    "intro": "13B是Mazda双转子发动机家族，转子在壳体内运动形成变化的工作容积。Mazda将其记为每个转子654立方厘米、两个转子；这种标称排量应按转子口径理解，不能未经说明直接套用活塞机赛事等效排量。\n\n1973年Luce采用13B；2003年日本上市的RX-8使用13B-MSP RENESIS，后来延续至2012年。RENESIS是家族中的具体发展版本，侧排气口等改进可与此前转子技术对读，而R26B是另一台四转子赛车发动机。\n\n家族持续时间不表示所有版本采用相同进排气、增压或排放控制。转子路线仍需处理密封、润滑和燃烧室形状带来的取舍；后来的转子增程应用也不能倒推为13B家族继续以相同形式量产。",
+    "sources": [
+      {
+        "title": "Mazda — R26B and rotary engine development",
+        "url": "https://www.mazda.com/en/experience/mspr/motorsports/lemans/r26b/"
+      },
+      {
+        "title": "Mazda — RX-8 Goes on Sale in Japan",
+        "url": "https://newsroom.mazda.com/en/publicity/release/2003/200304/0409e.html"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份为明确的发布、量产或比赛节点；家族参数不能推广至全部版本。"
+  },
+  "EA-087": {
+    "intro": "几何压缩比由活塞在下止点和上止点时的气缸总容积之比决定。可变压缩比机构改变燃烧室或活塞运动的几何关系，使发动机在不同负荷下选择不同压缩比；与进气门晚关造成的有效压缩变化相关，但不是同一个定义。\n\nInfiniti在2016年公开VC-Turbo多连杆方案。该实现用控制轴改变连杆系统姿态和活塞上止点位置，原厂给出的8:1至14:1范围只属于该系统，不是所有可变压缩比发动机的共同数值。\n\n较高压缩比可服务部分工况效率，较低值可为高负荷抗爆留出空间，但效果仍取决于燃烧与增压标定。附加连杆、轴承和执行机构增加设计与制造要求；具体厂商实现应独立于通用概念。",
+    "sources": [
+      {
+        "title": "Nissan / Infiniti — VC-Turbo variable compression ratio engine",
+        "url": "https://global.nissannews.com/ja-JP/releases/infiniti-vc-turbo-the-worlds-first-production-ready-variable-compression-ratio-engine"
+      }
+    ],
+    "verify": "ok",
+    "note": "年份为明确的发布、量产或比赛节点；家族参数不能推广至全部版本。"
+  }
+}

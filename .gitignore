@@ -1,0 +1,12 @@
+# build output and local working files
+dist/
+work/
+outputs/
+*.zip
+__pycache__/
+.DS_Store
+# figure backups kept locally during redraw rounds
+assets/figures/*.pre-*.html
+assets/figures/*.pre-*.svg
+atlas.py.pre-*
+assets/*.pre-ui

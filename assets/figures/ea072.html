@@ -1,0 +1,230 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>V8 交叉平面 vs 平面曲轴</title>
+<style>html,body{margin:0;background:#d9d9d6}#fig{display:block;width:100%;max-width:720px;margin:0 auto;touch-action:none;cursor:grab}</style></head><body>
+<svg id="fig" viewBox="0 0 720 440" tabindex="0" role="img" aria-label="V8 交叉平面 vs 平面曲轴"></svg>
+<script>
+// mini iso painter: world x=crank axis, y=lateral, z=up
+const NS = 'http://www.w3.org/2000/svg';
+const D2R = Math.PI / 180;
+const EL = 30 * D2R;
+let YAW = -38 * D2R, PHI = 0, SC = 1, CX = 360, CY = 220;
+const svg = document.getElementById('fig');
+const LIGHT = norm([-0.45, -0.6, 0.75]);
+function norm(v) { const l = Math.hypot(...v) || 1; return v.map((a) => a / l); }
+function rotV(p) { // world -> view (x right, y up, z toward viewer)
+  const c = Math.cos(YAW), s = Math.sin(YAW);
+  const x1 = p[0] * c - p[1] * s, y1 = p[0] * s + p[1] * c, z1 = p[2];
+  const ce = Math.cos(EL), se = Math.sin(EL);
+  return [x1, z1 * ce + y1 * se, -y1 * ce + z1 * se];
+}
+// view depth: larger y1 = farther. Use z (toward viewer) as depth
+function proj(p) { const v = rotV(p); return [CX + v[0] * SC, CY - v[1] * SC, v[2]]; }
+function hex(c) { return [1, 3, 5].map((i) => parseInt(c.slice(i, i + 2), 16)); }
+function tone(base, n) {
+  const d = n[0] * LIGHT[0] + n[1] * LIGHT[1] + n[2] * LIGHT[2];
+  const k = d > 0.55 ? 1.12 : d > 0.15 ? 0.96 : d > -0.25 ? 0.8 : 0.66; // four tones
+  const [r, g, b] = hex(base);
+  const f = (x) => Math.max(0, Math.min(255, Math.round(k > 1 ? x + (255 - x) * (k - 1) * 1.6 : x * k)));
+  return `rgb(${f(r)},${f(g)},${f(b)})`;
+}
+let FACES = [], OVER = [], PTS = [];
+function face(pts, col, o = {}) {
+  const a = pts[0], b = pts[1], c = pts[2];
+  const u = [b[0] - a[0], b[1] - a[1], b[2] - a[2]], v = [c[0] - a[0], c[1] - a[1], c[2] - a[2]];
+  let n = norm([u[1] * v[2] - u[2] * v[1], u[2] * v[0] - u[0] * v[2], u[0] * v[1] - u[1] * v[0]]);
+  const cen = pts.reduce((s, p) => [s[0] + p[0] / pts.length, s[1] + p[1] / pts.length, s[2] + p[2] / pts.length], [0, 0, 0]);
+  const vn = rotV(n);
+  if (vn[2] < 0 && !o.two) return; // backface
+  const pr = pts.map(proj);
+  pts.forEach((p) => PTS.push(p));
+  FACES.push({ pr, depth: (o.bias || 0) + proj(cen)[2], fill: o.flat ? col : tone(col, n), op: o.op, lw: o.lw, sk: o.sk });
+}
+// box centered at c, size s, optional rotation matrix about x (angle ax)
+function rx(p, a) { const c = Math.cos(a), s = Math.sin(a); return [p[0], p[1] * c - p[2] * s, p[1] * s + p[2] * c]; }
+function box(c, s, col, o = {}) {
+  const h = s.map((v) => v / 2), a = o.ax || 0;
+  const V = [];
+  for (const i of [-1, 1]) for (const j of [-1, 1]) for (const k of [-1, 1]) { const p = rx([i * h[0], j * h[1], k * h[2]], a); V.push([c[0] + p[0], c[1] + p[1], c[2] + p[2]]); }
+  const F = [[0, 1, 3, 2], [4, 6, 7, 5], [0, 4, 5, 1], [2, 3, 7, 6], [0, 2, 6, 4], [1, 5, 7, 3]];
+  const bias = o.bias || 0;
+  for (const f of F) face(f.map((i) => V[i]), col, { ...o, bias });
+}
+// prism between points A and B, radius r, n sides
+function cyl(A, B, r, col, o = {}) {
+  const n = o.n || 14;
+  const d = norm([B[0] - A[0], B[1] - A[1], B[2] - A[2]]);
+  let t = Math.abs(d[2]) < 0.9 ? [0, 0, 1] : [1, 0, 0];
+  let u = norm([d[1] * t[2] - d[2] * t[1], d[2] * t[0] - d[0] * t[2], d[0] * t[1] - d[1] * t[0]]);
+  let w = [d[1] * u[2] - d[2] * u[1], d[2] * u[0] - d[0] * u[2], d[0] * u[1] - d[1] * u[0]];
+  const ring = (P, rr) => Array.from({ length: n }, (_, i) => { const a = (i / n) * 2 * Math.PI + (o.rot || 0); return [0, 1, 2].map((k) => P[k] + rr * (Math.cos(a) * u[k] + Math.sin(a) * w[k])); });
+  const ra = ring(A, r), rb = ring(B, o.r2 ?? r);
+  const midBias = o.bias || 0;
+  for (let i = 0; i < n; i++) { const j = (i + 1) % n; face([ra[i], ra[j], rb[j], rb[i]], col, { ...o, bias: midBias, lw: 0 }); }
+  face([...ra].reverse(), o.cap || col, { ...o, bias: midBias });
+  face(rb, o.cap || col, { ...o, bias: midBias });
+}
+function line3(pts, cls, o = {}) { OVER.push({ pts, cls, ...o }); }
+function label3(p, text, dx, dy, o = {}) { OVER.push({ lab: true, p, text, dx, dy, ...o }); }
+function el(tag, at) { const e = document.createElementNS(NS, tag); for (const k in at) e.setAttribute(k, at[k]); return e; }
+function render(scene, title, readout) {
+  FACES = []; OVER = []; PTS = [];
+  scene(PHI);
+  FACES.sort((a, b) => a.depth - b.depth);
+  svg.textContent = '';
+  svg.append(el('rect', { x: 0, y: 0, width: 720, height: 440, fill: '#d9d9d6' }));
+  const g = el('g', { 'stroke-linejoin': 'round' });
+  let s = '';
+  const groups = {};
+  for (const f of FACES) {
+    const d = 'M' + f.pr.map((p) => p[0].toFixed(1) + ' ' + p[1].toFixed(1)).join('L') + 'Z';
+    const p = el('path', { d, fill: f.fill, stroke: f.sk || '#262624', 'stroke-width': f.lw === 0 ? 0.25 : 0.7 });
+    if (f.op) p.setAttribute('fill-opacity', f.op);
+    if (f.lw === 0) p.setAttribute('stroke', f.fill);
+    g.append(p);
+  }
+  svg.append(g);
+  const ov = el('g', {});
+  for (const o of OVER) {
+    if (o.lab) {
+      const q = proj(o.p); let tx = q[0] + o.dx, ty = q[1] + o.dy;
+      tx = Math.max(8, Math.min(712, tx)); ty = Math.max(46, Math.min(428, ty));
+      ov.append(el('path', { d: `M${q[0].toFixed(1)} ${q[1].toFixed(1)}L${tx.toFixed(1)} ${(ty - 4).toFixed(1)}`, stroke: '#3a3a36', 'stroke-width': 0.6, fill: 'none' }));
+      ov.append(el('circle', { cx: q[0], cy: q[1], r: 1.6, fill: '#3a3a36' }));
+      const t = el('text', { x: tx, y: ty, 'font-size': 10.5, 'font-family': 'ui-monospace,Menlo,monospace', fill: '#232321', 'text-anchor': o.dx < 0 ? 'end' : 'start', 'paint-order': 'stroke', stroke: '#d9d9d6', 'stroke-width': 3 });
+      t.textContent = o.text; ov.append(t);
+      continue;
+    }
+    const pr = o.pts.map(proj);
+    const d = 'M' + pr.map((p) => p[0].toFixed(1) + ' ' + p[1].toFixed(1)).join('L');
+    ov.append(el('path', { d, fill: 'none', stroke: o.col || '#c0392b', 'stroke-width': o.w || 2, 'stroke-dasharray': o.dash || '', 'stroke-dashoffset': o.off || 0, 'stroke-linecap': 'round', opacity: o.op || 1 }));
+    if (o.head) { const a = pr[pr.length - 2], b = pr[pr.length - 1]; const ang = Math.atan2(b[1] - a[1], b[0] - a[0]); const L = o.hl || 7;
+      ov.append(el('path', { d: `M${b[0]} ${b[1]}L${b[0] - L * Math.cos(ang - 0.45)} ${b[1] - L * Math.sin(ang - 0.45)}L${b[0] - L * Math.cos(ang + 0.45)} ${b[1] - L * Math.sin(ang + 0.45)}Z`, fill: o.col || '#c0392b' })); }
+  }
+  svg.append(ov);
+  const tt = el('text', { x: 16, y: 26, 'font-size': 13, 'font-weight': 600, 'font-family': 'ui-monospace,Menlo,monospace', fill: '#1e1e1c' }); tt.textContent = title; svg.append(tt);
+  const ro = el('text', { x: 704, y: 26, 'font-size': 11, 'text-anchor': 'end', 'font-family': 'ui-monospace,Menlo,monospace', fill: '#3a3a36' }); ro.textContent = readout(PHI); svg.append(ro);
+}
+// fit: sample yaws, find extents, set SC & center so drawing fits 700x360 band
+function fit(scene) {
+  const y0 = YAW; let mnx = 1e9, mxx = -1e9, mny = 1e9, mxy = -1e9;
+  const keep = PHI;
+  for (const yy of [y0 - 0.15, y0, y0 + 0.15]) { YAW = yy; for (const ph of [0, 90, 180, 270]) { PHI = ph; FACES = []; OVER = []; PTS = []; SC = 1; CX = 0; CY = 0; scene(PHI);
+    for (const p of PTS) { const v = rotV(p); mnx = Math.min(mnx, v[0]); mxx = Math.max(mxx, v[0]); mny = Math.min(mny, v[1]); mxy = Math.max(mxy, v[1]); } } }
+  YAW = y0; PHI = keep;
+  SC = Math.min(690 / (mxx - mnx), 360 / (mxy - mny));
+  CX = 360 - ((mxx + mnx) / 2) * SC; CY = 232 + ((mxy + mny) / 2) * SC;
+}
+function setup(scene, title, readout, speed = 90) {
+  fit(scene);
+  const Y0 = YAW; let on = false, last = 0, raf = 0;
+  let fy = YAW; const draw = () => { if (Math.abs(fy - YAW) > 1e-6) { fy = YAW; fit(scene); } render(scene, title, readout); };
+  const tick = (t) => { if (!on) return; if (last) PHI = (PHI + Math.min(50, t - last) * speed / 1000) % 720; last = t; draw(); raf = requestAnimationFrame(tick); };
+  window.FIG = {
+    play(v) { on = !!v; last = 0; cancelAnimationFrame(raf); if (on) raf = requestAnimationFrame(tick); },
+    reset() { YAW = Y0; PHI = 0; draw(); },
+    playing() { return on; },
+    set(yawDeg, phi) { YAW = yawDeg * D2R; PHI = phi; draw(); },
+  };
+  let drag = null;
+  svg.addEventListener('pointerdown', (e) => { drag = { x: e.clientX, y: YAW }; svg.setPointerCapture(e.pointerId); });
+  svg.addEventListener('pointermove', (e) => { if (!drag) return; YAW = drag.y + (e.clientX - drag.x) * 0.008; if (!on) draw(); });
+  svg.addEventListener('pointerup', () => (drag = null));
+  svg.addEventListener('keydown', (e) => { if (e.key === 'ArrowLeft') YAW -= 0.1; else if (e.key === 'ArrowRight') YAW += 0.1; else return; if (!on) draw(); });
+  draw();
+}
+// ---- V engine kinematics (from engines/model.mjs) ----
+const mod = (a, n) => ((a % n) + n) % n;
+function makeModel(cfg) {
+  const { n, bank, throws } = cfg; const m = n / 2; const cylinders = [];
+  for (const side of [-1, 1]) for (let j = 0; j < m; j++) { const beta = (side * bank) / 2; cylinders.push({ id: (side < 0 ? 0 : m) + j + 1, side, j, theta: throws[j], beta, tdc: mod(beta - throws[j], 360) }); }
+  let best = null; const ideal = 720 / n;
+  for (let mask = 0; mask < 1 << (n - 1); mask++) {
+    const fires = cylinders.map((c, i) => mod(c.tdc + (i > 0 && (mask >> (i - 1)) & 1 ? 360 : 0), 720));
+    const sorted = [...fires].sort((a, b) => a - b); let cost = 0;
+    for (let i = 0; i < n; i++) cost += (((sorted[(i + 1) % n] - sorted[i] + 720) % 720 || 720) - ideal) ** 2;
+    if (!best || cost < best.cost - 1e-9) best = { cost, fires };
+  }
+  cylinders.forEach((c, i) => (c.fire = best.fires[i]));
+  const order = [...cylinders].sort((a, b) => a.fire - b.fire);
+  return { cylinders, fires: order.map((c) => c.fire) };
+}
+// draw a V engine skeleton. cfg: n, bank, throws, bore, stroke, rod, pitch, x0; returns {cyl:[...]} for extras
+const C = { steel: '#9a9c9f', dark: '#5d6064', pin: '#b9bcbf', piston: '#c9c5bb', rod: '#7f8388', lit: '#e0793a', block: '#b8b3a8', cover: '#a83a2e', alu: '#c4c6c4', blue: '#3f6fa8', green: '#3f8f5a' };
+function vEngine(cfg, phi, o = {}) {
+  const M = cfg._M || (cfg._M = makeModel(cfg));
+  const R = cfg.stroke / 2, P = cfg.pitch, m = cfg.n / 2, x0 = cfg.x0 || 0, y0 = cfg.y0 || 0;
+  const xs = (j) => x0 + (j - (m - 1) / 2) * P;
+  const pa = (th) => [R * Math.sin((th + phi) * D2R), R * Math.cos((th + phi) * D2R)]; // (y,z)
+  // crank: main journals + webs + pins
+  const half = P / 2, off = cfg.bore * 0.18;
+  for (let j = 0; j <= m; j++) { const x = xs(j) - half; cyl([x - 6, y0, 0], [x + 6, y0, 0], cfg.bore * 0.2, C.steel, { n: 12 }); }
+  cyl([xs(0) - half - 26, y0, 0], [xs(0) - half - 6, y0, 0], cfg.bore * 0.14, C.dark, { n: 12 }); // nose
+  cyl([xs(m - 1) + half + 6, y0, 0], [xs(m - 1) + half + 14, y0, 0], cfg.bore * 0.55, C.dark, { n: 18 }); // flywheel flange
+  for (let j = 0; j < m; j++) {
+    const [py, pz] = pa(cfg.throws[j]);
+    const L = P / 2 - 7;
+    for (const sgn of [-1, 1]) { // webs
+      const wx = xs(j) + sgn * (L - 2);
+      const a = Math.atan2(py, pz);
+      box([wx, y0 + py * 0.35, pz * 0.35], [5, cfg.bore * 0.34, R * 2.1], C.steel, { ax: -a });
+      box([wx, y0 - py * 0.35, -pz * 0.35], [5, cfg.bore * 0.42, R * 0.8], C.dark, { ax: -a }); // counterweight
+    }
+    cyl([xs(j) - L + 4, y0 + py, pz], [xs(j) + L - 4, y0 + py, pz], cfg.bore * 0.17, C.pin, { n: 12 });
+  }
+  const out = [];
+  for (const c of M.cylinders) {
+    const beta = c.beta * D2R, ax = [Math.sin(beta), Math.cos(beta)];
+    const [py, pz] = pa(c.theta);
+    const d = (c.theta + phi - c.beta) * D2R;
+    const s = R * Math.cos(d) + Math.sqrt(cfg.rod ** 2 - (R * Math.sin(d)) ** 2);
+    const x = xs(c.j) + c.side * cfg.bore * 0.14;
+    const pp = [x, y0 + ax[0] * s, ax[1] * s];
+    const ph = mod(phi - c.fire, 720);
+    const lit = ph < 180;
+    const pc = o.noLit ? C.piston : lit ? C.lit : C.piston;
+    cyl([x, y0 + py, pz], pp, cfg.bore * 0.07, C.rod, { n: 8 });
+    const top = [x, y0 + ax[0] * (s + cfg.bore * 0.32), ax[1] * (s + cfg.bore * 0.32)];
+    cyl([x, y0 + ax[0] * (s - cfg.bore * 0.12), ax[1] * (s - cfg.bore * 0.12)], top, cfg.bore * 0.46, pc, { n: 16 });
+    out.push({ c, top, x, ax, s, lit, ph });
+  }
+  if (o.covers !== false) { // cam covers above each bank, beyond TDC
+    const reach = R + cfg.rod + cfg.bore * 0.5 + 6;
+    for (const side of [-1, 1]) {
+      const beta = (side * cfg.bank / 2) * D2R, ax = [Math.sin(beta), Math.cos(beta)];
+      const lenX = m * P + 14;
+      box([x0 + side * cfg.bore * 0.14, y0 + ax[0] * (reach + 12), ax[1] * (reach + 12)], [lenX, cfg.bore * 0.95, 22], o.coverCol || C.cover, { ax: -beta });
+      const bl = reach - cfg.bore * 0.2;
+      box([x0 + side * cfg.bore * 0.14, y0 + ax[0] * (bl / 2 + cfg.bore * 0.2), ax[1] * (bl / 2 + cfg.bore * 0.2)], [lenX - 6, cfg.bore * 0.9, bl], o.blockCol || C.block, { ax: -beta, op: o.blockOp ?? 0.22, sk: '#55554f' });
+      for (let j = 0; j < m; j++) { // plug wells
+        const pw = [xs(j) + side * cfg.bore * 0.14, y0 + ax[0] * (reach + 24), ax[1] * (reach + 24)];
+        cyl(pw, [pw[0], pw[1] + ax[0] * 6, pw[2] + ax[1] * 6], 5, C.dark, { n: 8 });
+      }
+    }
+  }
+  return { M, out, xs, R };
+}
+
+
+const A = { n: 8, bank: 90, throws: [0, 90, 270, 180], bore: 92, stroke: 80, rod: 150, pitch: 104, y0: -190 };
+const B = { n: 8, bank: 90, throws: [0, 180, 180, 0], bore: 92, stroke: 80, rod: 150, pitch: 104, y0: 190 };
+function ring(cfg, yC, phi, col) { // phase ring at front: 8 firing ticks over 720°, cursor at phi
+  const M = cfg._M; const x = -cfg.pitch * 2 - 70, r = 70;
+  const pt = (deg) => [x, yC + r * Math.sin(deg / 2 * D2R), r * Math.cos(deg / 2 * D2R)];
+  const pts = []; for (let k = 0; k <= 48; k++) pts.push(pt(k * 15));
+  line3(pts, '', { col: '#55554f', w: 1.2 });
+  for (const f of M.fires) { const a = pt(f), b = [a[0], yC + (r + 12) * Math.sin(f / 2 * D2R), (r + 12) * Math.cos(f / 2 * D2R)]; line3([a, b], '', { col, w: 3 }); }
+  line3([[x, yC, 0], pt(phi)], '', { col: '#1e1e1c', w: 1.6, head: true });
+}
+function scene(phi) {
+  vEngine(A, phi, { coverCol: '#7d8590' });
+  vEngine(B, phi, { coverCol: '#a83a2e' });
+  ring(A, A.y0, phi, '#3f6fa8'); ring(B, B.y0, phi, '#c0392b');
+  label3([A.pitch * 2 + 20, A.y0, 0], '交叉平面：曲拐 0/90/270/180°', -20, 110);
+  label3([B.pitch * 2 + 20, B.y0, 0], '平面：曲拐 0/180/180/0°', 30, 70);
+  label3([-A.pitch * 2 - 70, A.y0, 82], '点火相位环（720°）', -40, -40);
+}
+const readout = (p) => '曲轴 ' + Math.round(p % 360) + '° · 单排点火间隔 交叉 90/180/270/180 · 平面 180';
+
+setup(scene, "V8 交叉平面 vs 平面曲轴", readout, 80);
+</script>
+<script src="_embed-lite.js"></script>
+</body></html>

@@ -1,0 +1,249 @@
+{
+  "Isotta Fraschini Tipo 8": {
+    "brief": "1919 年展出的豪华汽车，用直列八缸展示早期多缸化路线。",
+    "brief_en": "A luxury car unveiled in 1919, illustrating the early straight-eight route to multi-cylinder engines.",
+    "description_basis": "EA-017"
+  },
+  "Bugatti Type 45 U16": {
+    "brief": "把两组直列八缸通过传动组合起来的 U16 方案，是多曲轴组合发动机的例子。",
+    "brief_en": "A U16 design combining two straight-eight banks through a transmission, illustrating a multi-crank engine layout.",
+    "description_basis": "EA-019"
+  },
+  "Honda Civic GX": {
+    "brief": "Civic 的压缩天然气版本，以气态燃料供给火花点火发动机。",
+    "brief_en": "A compressed-natural-gas version of the Civic, using gaseous fuel in a spark-ignition engine.",
+    "description_basis": "EA-024"
+  },
+  "Ferrari 3.5 L V12": {
+    "brief": "F1 3.5 升自然吸气规则时代的 V12 路线，与同期 V8、V10 方案竞争。",
+    "brief_en": "Ferrari’s V12 approach during the 3.5-litre naturally aspirated F1 era, alongside competing V8 and V10 designs.",
+    "description_basis": "EA-034"
+  },
+  "Renault RS 系列 V10": {
+    "brief": "Renault 在 F1 自然吸气时代采用的 V10 路线，用十缸布局平衡发动机外廓和运行特性。",
+    "brief_en": "Renault’s V10 approach during F1’s naturally aspirated era, using ten cylinders to balance packaging and operating characteristics.",
+    "description_basis": "EA-034"
+  },
+  "Audi Quattro": {
+    "brief": "采用涡轮增压直列五缸的车型，也是 Audi 拉力赛车历史的重要代表。",
+    "brief_en": "A turbocharged straight-five application and a key model in Audi’s rally history.",
+    "description_basis": "EA-031"
+  },
+  "Porsche 911": {
+    "brief": "以水平对置发动机著称的跑车系列；其风冷与水冷时代在冷却条目中分别说明。",
+    "brief_en": "A sports-car family known for flat engines; the cooling entry distinguishes its air-cooled and water-cooled eras.",
+    "description_basis": "EA-023"
+  },
+  "Honda B16A": {
+    "brief": "1989 年 Integra 应用的直列四缸 DOHC VTEC 发动机，以切换凸轮型线改变气门动作。",
+    "brief_en": "An inline-four DOHC VTEC engine used in the 1989 Integra, switching cam profiles to change valve operation.",
+    "description_basis": "EA-035"
+  },
+  "Porsche 356": {
+    "brief": "Porsche 早期跑车中的水平对置发动机应用，展示低矮气缸布局。",
+    "brief_en": "An early Porsche sports-car application of the flat-engine layout, which keeps the cylinder arrangement low.",
+    "description_basis": "EA-023"
+  },
+  "Audi V10": {
+    "brief": "Audi 公路高性能车型采用的十缸 V 型发动机路线，与 F1 V10 的用途和设计条件不同。",
+    "brief_en": "Audi’s road-performance V10 engine route, with a different purpose and design context from F1 V10s.",
+    "description_basis": "EA-037"
+  },
+  "BMW S85": {
+    "brief": "BMW 的公路用 V10 发动机，是十缸布局在高性能乘用车中的代表。",
+    "brief_en": "BMW’s road-going V10 engine, an example of the ten-cylinder layout in high-performance passenger cars.",
+    "description_basis": "EA-037"
+  },
+  "Mitsubishi 4G93 GDI": {
+    "brief": "1996 年的汽油缸内直喷应用，把燃油直接喷入主燃烧室。",
+    "brief_en": "A 1996 gasoline direct-injection application, delivering fuel directly into the main combustion chamber.",
+    "description_basis": "EA-038"
+  },
+  "BMW M70": {
+    "brief": "BMW 的 V12 发动机，属于把十二个气缸分列两排的公路车应用。",
+    "brief_en": "BMW’s V12 engine, a road-car application with twelve cylinders arranged in two banks.",
+    "description_basis": "EA-015"
+  },
+  "Marmon Sixteen": {
+    "brief": "采用 V16 发动机的豪华汽车，是大气缸数布局的历史实例。",
+    "brief_en": "A luxury car powered by a V16 engine, illustrating a historical high-cylinder-count layout.",
+    "description_basis": "EA-020"
+  },
+  "Honda RA109E": {
+    "brief": "Honda 在 1989 年 F1 自然吸气规则时代采用的 V10 赛车发动机。",
+    "brief_en": "Honda’s V10 racing engine used in the 1989 naturally aspirated F1 era.",
+    "description_basis": "EA-034"
+  },
+  "Alfa Romeo 158 Alfetta": {
+    "brief": "采用机械增压直列八缸的赛车，也是早期 F1 的代表机型。",
+    "brief_en": "A racing car with a supercharged straight-eight engine, and a representative car from early Formula 1.",
+    "description_basis": "EA-017"
+  },
+  "VW W12": {
+    "brief": "以窄夹角气缸模块组成的 W12 布局，用四列气缸缩短十二缸发动机的长度。",
+    "brief_en": "A W12 arrangement using narrow-angle cylinder modules, packaging twelve cylinders in four rows to reduce engine length.",
+    "description_basis": "EA-042"
+  },
+  "Volkswagen Beetle": {
+    "brief": "大众甲壳虫采用后置风冷水平对置发动机，是这一布局长期量产的代表。",
+    "brief_en": "The Beetle used a rear-mounted, air-cooled flat engine, a long-running production application of that layout.",
+    "description_basis": "EA-074"
+  },
+  "Mazda RX-8 Hydrogen RE": {
+    "brief": "Mazda 将氢燃料用于转子发动机的试验与示范车型；它仍是燃烧发动机。",
+    "brief_en": "Mazda’s experimental and demonstration application of hydrogen fuel to a rotary combustion engine.",
+    "description_basis": "EA-044"
+  },
+  "Achates Power 对置活塞柴油机": {
+    "brief": "在同一气缸内布置相向运动的两个活塞，用于研究对置活塞柴油机路线。",
+    "brief_en": "An opposed-piston diesel research design, placing two pistons moving toward each other in one cylinder.",
+    "description_basis": "EA-021"
+  },
+  "Bugatti Type 35": {
+    "brief": "采用直列八缸发动机的 Bugatti 赛车，属于早期多缸赛车布局的实例。",
+    "brief_en": "A Bugatti racing car using a straight-eight engine, illustrating early multi-cylinder racing layouts.",
+    "description_basis": "EA-017"
+  },
+  "Lotus 43": {
+    "brief": "安装 BRM H16 发动机的 F1 赛车，是复杂组合气缸布局的应用实例。",
+    "brief_en": "A Formula 1 car powered by the BRM H16, illustrating a complex combined-cylinder arrangement.",
+    "description_basis": "EA-019"
+  },
+  "Bugatti 8.0 L 四涡轮 W16": {
+    "brief": "Bugatti Veyron、Chiron 采用的四涡轮 W16 发动机，以窄夹角气缸模块构成四列气缸。",
+    "brief_en": "The quad-turbo W16 engine used in the Bugatti Veyron and Chiron, arranging narrow-angle cylinder modules into four cylinder rows.",
+    "description_basis": "EA-042"
+  },
+  "Mazda Cosmo Sport 110S": {
+    "brief": "Mazda 早期量产转子跑车，用旋转转子代替往复活塞完成工作循环。",
+    "brief_en": "An early production Mazda rotary sports car, using a rotating rotor rather than reciprocating pistons for its working cycle.",
+    "description_basis": "EA-027"
+  },
+  "Ford 1.0 EcoBoost": {
+    "brief": "Ford 的小排量涡轮增压直列三缸发动机，是发动机小型化路线的代表。",
+    "brief_en": "Ford’s small-displacement turbocharged inline-three, illustrating the downsizing approach.",
+    "description_basis": "EA-028"
+  },
+  "Ferrari Colombo V12": {
+    "brief": "Ferrari 公路车与赛车历史中的 V12 发动机家族，展示十二缸布局的高性能应用。",
+    "brief_en": "A V12 engine family in Ferrari’s road and racing history, illustrating high-performance use of the twelve-cylinder layout.",
+    "description_basis": "EA-015"
+  },
+  "Bentley Continental GT": {
+    "brief": "历史上采用 W12 的豪华 GT 车型，是紧凑十二缸布局的公路应用。",
+    "brief_en": "A luxury GT historically offered with W12 power, illustrating compact twelve-cylinder packaging in a road car.",
+    "description_basis": "EA-042"
+  },
+  "Fiat MultiJet": {
+    "brief": "Fiat 后续的共轨柴油喷射技术家族，延续乘用车电子共轨路线。",
+    "brief_en": "Fiat’s later common-rail diesel injection technology family, continuing the passenger-car electronic-common-rail approach.",
+    "description_basis": "EA-039"
+  },
+  "Benz Contra 发动机": {
+    "brief": "1897 年的早期水平对置发动机实例，两侧气缸相对布置。",
+    "brief_en": "An early flat-engine example from 1897, with cylinders arranged opposite one another.",
+    "description_basis": "EA-023"
+  },
+  "Rover JET1": {
+    "brief": "Rover 于 1950 年展示的燃气轮机试验车，以连续燃烧和涡轮输出动力。",
+    "brief_en": "Rover’s 1950 gas-turbine experimental car, using continuous combustion and a turbine to produce power.",
+    "description_basis": "EA-026"
+  },
+  "Fiat Panda Natural Power": {
+    "brief": "Panda 的天然气车型，以压缩天然气储存与供气系统配合燃烧发动机。",
+    "brief_en": "A natural-gas version of the Panda, pairing compressed-gas storage and fuel delivery with a combustion engine.",
+    "description_basis": "EA-024"
+  },
+  "第一代 Toyota Prius": {
+    "brief": "1997 年在日本推出的量产混动车，采用汽油机与电机配合的动力分流方案。",
+    "brief_en": "A production hybrid introduced in Japan in 1997, combining a gasoline engine and electric motors through a power-split system.",
+    "description_basis": "EA-040"
+  },
+  "Bosch Motronic": {
+    "brief": "1979 年问世的电子发动机管理系统，把喷油和点火纳入同一控制框架。",
+    "brief_en": "An electronic engine-management system introduced in 1979, coordinating fuel injection and ignition within one controller.",
+    "description_basis": "EA-057"
+  },
+  "Duesenberg Model J": {
+    "brief": "采用直列八缸发动机的豪华汽车，代表早期高端车的大排量多缸路线。",
+    "brief_en": "A luxury car powered by a straight-eight engine, illustrating the multi-cylinder approach of early high-end cars.",
+    "description_basis": "EA-017"
+  },
+  "DLR 自由活塞线性发电机": {
+    "brief": "DLR 的自由活塞研究系统，用活塞的直线运动驱动发电装置，省去传统曲轴输出路径。",
+    "brief_en": "DLR’s free-piston research system, converting the pistons’ linear motion into electricity without a conventional crankshaft output path.",
+    "description_basis": "EA-022"
+  },
+  "Mercedes-Benz 300 SL": {
+    "brief": "1954 年的公路车汽油机械直喷代表，把燃油直接送入气缸，而非依靠化油器混合。",
+    "brief_en": "A 1954 road-car example of mechanical gasoline direct injection, delivering fuel into the cylinders instead of mixing it in a carburetor.",
+    "description_basis": "EA-030"
+  },
+  "Mazda RX-7": {
+    "brief": "Mazda 的转子跑车系列，是转子发动机公路应用的重要代表。",
+    "brief_en": "Mazda’s rotary sports-car family, a prominent road application of the rotary engine.",
+    "description_basis": "EA-027"
+  },
+  "Ford Model T": {
+    "brief": "采用直列四缸发动机的早期大规模量产汽车，展示紧凑、实用的四缸路线。",
+    "brief_en": "An early mass-produced car with an inline-four engine, illustrating a compact and practical four-cylinder layout.",
+    "description_basis": "EA-013"
+  },
+  "Mercedes-Benz M256": {
+    "brief": "Mercedes-Benz 的直列六缸发动机，结合 48V 系统与集成式起动发电机。",
+    "brief_en": "Mercedes-Benz’s inline-six engine combining a 48-volt system with an integrated starter-generator.",
+    "description_basis": "EA-048"
+  },
+  "Toyota FPEG": {
+    "brief": "Toyota 的自由活塞发电原型，把燃烧产生的活塞往复运动直接用于线性发电。",
+    "brief_en": "Toyota’s free-piston generator prototype, using combustion-driven reciprocating motion directly for linear electrical generation.",
+    "description_basis": "EA-022"
+  },
+  "Fiat TwinAir": {
+    "brief": "Fiat 的增压直列双缸发动机家族，展示小气缸数与增压结合的路线。",
+    "brief_en": "Fiat’s turbocharged inline-twin engine family, combining a small cylinder count with forced induction.",
+    "description_basis": "EA-011"
+  },
+  "Toyota 2JZ-GTE": {
+    "image": {
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/1993_Toyota_Supra_%28JZA80%29_Coupe.jpg/960px-1993_Toyota_Supra_%28JZA80%29_Coupe.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:1993_Toyota_Supra_(JZA80)_Coupe.jpg",
+      "author": "Coolalabright",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "file": "File:1993 Toyota Supra (JZA80) Coupe.jpg",
+      "kind": "车型示例（非发动机本体）",
+      "kind_en": "Vehicle example, not a photograph of the engine",
+      "caption": "Toyota Supra A80车型外观；2JZ家族装车示例，照片不证明具体动力版本。",
+      "caption_en": "Toyota Supra A80 exterior; a 2JZ-family application, without identifying this car’s engine variant."
+    }
+  },
+  "Toyota 2JZ-GE": {
+    "image": {
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/1993_Toyota_Supra_%28JZA80%29_Coupe.jpg/960px-1993_Toyota_Supra_%28JZA80%29_Coupe.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:1993_Toyota_Supra_(JZA80)_Coupe.jpg",
+      "author": "Coolalabright",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "file": "File:1993 Toyota Supra (JZA80) Coupe.jpg",
+      "kind": "车型示例（非发动机本体）",
+      "kind_en": "Vehicle example, not a photograph of the engine",
+      "caption": "Toyota Supra A80车型外观；2JZ家族装车示例，照片不证明具体动力版本。",
+      "caption_en": "Toyota Supra A80 exterior; a 2JZ-family application, without identifying this car’s engine variant."
+    }
+  },
+  "Toyota Supra A80": {
+    "image": {
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/1993_Toyota_Supra_%28JZA80%29_Coupe.jpg/960px-1993_Toyota_Supra_%28JZA80%29_Coupe.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:1993_Toyota_Supra_(JZA80)_Coupe.jpg",
+      "author": "Coolalabright",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "file": "File:1993 Toyota Supra (JZA80) Coupe.jpg",
+      "kind": "车型示例（非发动机本体）",
+      "kind_en": "Vehicle example, not a photograph of the engine",
+      "caption": "Toyota Supra A80车型外观；2JZ家族装车示例，照片不证明具体动力版本。",
+      "caption_en": "Toyota Supra A80 exterior; a 2JZ-family application, without identifying this car’s engine variant."
+    }
+  }
+}

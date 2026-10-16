@@ -1,0 +1,111 @@
+{
+  "EA-027": {
+    "intro": "普通发动机靠活塞往复推动曲轴，转子发动机则让一个三角形转子在 8 字形腔体里偏心转动，直接输出旋转。可以把它想成一个三角饭团在椭圆盒子里打转，三个角把盒子隔成三个不断变大变小的空间，轮流完成进气、压缩、做功、排气。它要解决的问题是去掉往复件，让发动机更小、更轻、更平顺。\n\n第一台能运转的样机 DKM 54 于 1957 年 2 月 1 日在 NSU 点火，输出 21 PS。量产采用 Hanns-Dieter Paschke 改进的 KKM 结构：转子每转一圈做功三次。1964 年的 NSU Spider 是第一款转子轿车，约产 2000 辆；1967 年马自达 Cosmo 110S 是第一款双转子跑车，此后 RX-7、RX-8 延续到 2012 年。\n\n短板是转子顶角密封片磨损快，早期马自达发动机常在约 8 万公里就要大修；燃烧室狭长，油耗和排放不占优势。2023 年马自达 MX-30 R-EV 让转子机以 830 cc 单转子增程器的身份回归，只发电不驱动车轮，输出 55 kW。",
+    "sources": [
+      {"title": "Wikipedia: Wankel engine", "url": "https://en.wikipedia.org/wiki/Wankel_engine"},
+      {"title": "Wikipedia: Mazda MX-30", "url": "https://en.wikipedia.org/wiki/Mazda_MX-30"}
+    ],
+    "verify": "ok",
+    "note": "content.json 写 MX-30 R-EV 为 0.8 L 单转子，维基 MX-30 条目给出 830 cc，一致。"
+  },
+  "EA-028": {
+    "intro": "直列三缸就是把三个气缸排成一排、共用一根曲轴，相当于把直列六缸砍掉一半。它要解决的问题是在小排量涡轮增压时代，用尽可能短、尽可能轻的机体提供够用的动力，同时又比双缸平顺得多。\n\n曲拐相隔 120°，点火间隔均匀，往复方向的一阶、二阶惯性力可以互相抵消，但两端气缸交替动作会产生前后摇摆的力矩，需要平衡轴或特殊的飞轮配重来压制。早在 1938 年 DKW F9 就用过三缸二冲程机；现代的代表是 2012 年 4 月投产的福特 1.0 EcoBoost，排量 999 cc，缸体占地约一张 A4 纸，靠飞轮设计而非平衡轴获得平顺运转，并连续多年获得 1.0 L 以下组别的国际年度发动机奖。\n\n今天宝马 B38、丰田 G16E 和柯尼塞格 TFG 都属于这一布局。低转速的抖动和独特的声音仍是代价，但在混动与小排量化趋势下，三缸已从廉价车专属变成主流选择。",
+    "sources": [
+      {"title": "Wikipedia: Straight-three engine", "url": "https://en.wikipedia.org/wiki/Straight-three_engine"},
+      {"title": "Wikipedia: Ford EcoBoost engine", "url": "https://en.wikipedia.org/wiki/Ford_EcoBoost_engine"}
+    ],
+    "verify": "ok",
+    "note": "条目一句话说明写“一阶不平衡”，维基与 content.json 均写一阶、二阶往复力平衡但有端部摇摆力矩，intro 按后者。"
+  },
+  "EA-029": {
+    "intro": "涡轮增压器利用发动机排出的废气推动一个涡轮，涡轮再带动同轴的压气机把更多空气压进气缸。就像用风车带动鼓风机，而这股风本来是要白白排掉的废气，相当于把扔掉的能量捡回来一部分。它要解决的问题是让小排量发动机输出大排量的功率。\n\n瑞士工程师 Alfred Büchi 于 1905 年申请了涡轮增压专利，第一台商用产品出现在 1924 年。乘用车首次量产是 1962 年：奥兹莫比尔 F-85 Jetfire 当年先行推出，215 立方英寸 V8 搭配 Garrett 涡轮输出 215 bhp，但需加注水与甲醇混合液抑制爆震，可靠性问题使其只售出 3765 辆；雪佛兰 Corvair Monza Spyder 在 1962 年春季跟进，是第二款厂装涡轮量产车，输出 150 hp。\n\n涡轮要先被废气吹转起来才能增压，这段延迟就是涡轮迟滞；涡轮转速可达 25 万 rpm，热负荷和润滑要求都高。随着电控和小型化，它现在已是主流增压方式。",
+    "sources": [
+      {"title": "Wikipedia: Turbocharger", "url": "https://en.wikipedia.org/wiki/Turbocharger"},
+      {"title": "Wikipedia: Oldsmobile Cutlass", "url": "https://en.wikipedia.org/wiki/Oldsmobile_Cutlass"},
+      {"title": "Wikipedia: Chevrolet Corvair", "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvair"}
+    ],
+    "verify": "ok",
+    "note": "条目一句话说明把 Corvair Monza 写在 Jetfire 之前；维基 Corvair 条目明确 Jetfire 在 1962 年更早发布，Corvair 是第二款。intro 按 Jetfire 在先。"
+  },
+  "EA-030": {
+    "intro": "化油器靠进气气流把汽油吸出来混合，像一只随气流出雾的香水瓶，精度有限；电子燃油喷射则用电控喷油器把汽油精确喷到每个气缸的进气道里，喷多少、喷多久由电路根据工况决定。它要解决的是混合气配比不准带来的油耗、排放和冷启动问题。\n\n第一个电子喷射系统是美国 Bendix 的 Electrojector，原本为 1957 年 AMC Rambler Rebel 设计，因可靠性问题没有向客户提供；1958 年它出现在 Chrysler 300D、DeSoto Adventurer 等车上，是已知最早的电喷汽车。Bendix 的专利随后卖给博世，发展成 1967 年的 D-Jetronic，首先装在大众 1600 TL/E 上。它用进气歧管压力传感器判断负荷，控制单元由约 25 个晶体管组成，没有微处理器。\n\n随后博世推出机械式 K-Jetronic（1973 年）、用空气流量计的 L-Jetronic（1974 年）和首个数字化的 Motronic。到 1990 年代初，电喷已在发达国家取代了绝大多数新车上的化油器；今天进气道喷射常与缸内直喷组合使用。",
+    "sources": [
+      {"title": "Wikipedia: Fuel injection", "url": "https://en.wikipedia.org/wiki/Fuel_injection"},
+      {"title": "Wikipedia: Jetronic", "url": "https://en.wikipedia.org/wiki/Jetronic"}
+    ],
+    "verify": "ok",
+    "note": "D-Jetronic 生产年限两条维基条目分别写 1967–1976 与 1967–1979，intro 未写结束年份。"
+  },
+  "EA-031": {
+    "intro": "直列五缸是直四和直六之间的折中：比直四多一缸、更平顺、动力更足，又比直六短，能横置或塞进中小型车的发动机舱。它要解决的问题是在有限的空间里得到接近六缸的输出。\n\n曲拐相隔 72°，常用点火顺序 1-2-4-5-3，但五缸不像直六那样天然平衡，存在一阶、二阶的摇摆力矩，需要配重来抑制，也因此有独特的不均匀声浪。第一台量产直五是 1974 年奔驰 300D 上的 3.0 L OM617 柴油机；第一台直五汽油机是奥迪 100 的 2.1 L、136 PS 喷射发动机，奥迪 100 条目记为 1976 年推出，直列五缸条目则写 1977 年。1980 年奥迪 Quattro 用 2.1 涡轮直五把这一布局带进拉力赛，1991 年沃尔沃 850 也采用了模块化直五。\n\n如今多数厂商已转向四缸加涡轮，奥迪 RS3 的 2.5 TFSI 是仍在生产的少数例子之一。",
+    "sources": [
+      {"title": "Wikipedia: Straight-five engine", "url": "https://en.wikipedia.org/wiki/Straight-five_engine"},
+      {"title": "Wikipedia: Audi 100", "url": "https://en.wikipedia.org/wiki/Audi_100"}
+    ],
+    "verify": "ok",
+    "note": "奥迪直五首发年份两条维基条目分歧（1976 vs 1977），intro 中已写明分歧。"
+  },
+  "EA-032": {
+    "intro": "气门的开关时刻由凸轮轴决定，传统发动机是固定的，只能在低转速扭矩和高转速功率之间选一个折中。可变气门正时让凸轮轴相对曲轴提前或滞后一个角度，就像根据路况调整呼吸节奏，让发动机在不同转速下都能吸气顺畅。\n\n这个想法出现得很早：1903 年凯迪拉克的 Runabout 就用了 Alanson Brush 的专利方案，1960 年代末菲亚特的 Giovanni Torazza 也申请过液压式专利。真正的量产应用来自阿尔法·罗密欧：工程师 Giampaolo Garcea 设计的机械式系统装在 1980 年喷射版 Spider 2000 上，被认为是第一款量产 VVT 轿车，1983 年起改为电控。1989 年本田 VTEC 更进一步切换凸轮型线，1992 年保时捷 968 的 VarioCam 实现连续调节。\n\n仅改正时不改升程，收益仍不小：部分负荷下调整进气门关闭时刻可使泵气损失减少约 40%，NOx 下降约 24%。今天它几乎是所有汽油机的标配。",
+    "sources": [
+      {"title": "Wikipedia: Variable valve timing", "url": "https://en.wikipedia.org/wiki/Variable_valve_timing"}
+    ],
+    "verify": "ok",
+    "note": "content.json 写 Nissan 300ZX Z31（1987）为首个电控 VVT、BMW VANOS 1992；维基 VVT 条目未给出这两个年份，1992 年在该条目中属于保时捷 VarioCam。intro 未采用这两个说法。"
+  },
+  "EA-033": {
+    "intro": "机械增压由曲轴直接带动，一踩油门就有反应，但高转速时要消耗发动机功率；涡轮增压靠废气驱动效率高，但低转速时转不起来。双增压把两者串联，低转速靠机械增压，高转速交给涡轮，像一辆先靠脚蹬再切换到电助力的自行车。它要解决的就是涡轮迟滞。\n\n先驱是 1985 年的 Lancia Delta S4：1759 cc 直四搭配 Abarth Volumex R18 机械增压器与 KKK 27 涡轮，涡轮在约 4500 rpm 以上接管，赛车版约 490 PS，公路版 Stradale 为 250 PS。它在 1985 年首战 RAC 拉力赛即由 Henri Toivonen 驾驶夺冠；1986 年 Toivonen 在科西嘉的事故直接导致 B 组被取消。量产车方面，日产 March Super Turbo 输出 110 PS，大众 1.4 TSI 双增压有 140 到 185 PS 多个版本，沃尔沃 1969 cc 四缸 T6 达 320 PS。\n\n代价是结构复杂、成本和重量高。随着电动增压器和 48V 系统出现，双增压已基本退出。",
+    "sources": [
+      {"title": "Wikipedia: Twincharger", "url": "https://en.wikipedia.org/wiki/Twincharger"},
+      {"title": "Wikipedia: Lancia Delta S4", "url": "https://en.wikipedia.org/wiki/Lancia_Delta_S4"}
+    ],
+    "verify": "ok"
+  },
+  "EA-034": {
+    "intro": "1989 年 F1 禁止涡轮增压后，规则改为 3.5 L 自然吸气，但没有规定气缸数，于是 V8、V10、V12 三种布局同场竞技。这个格式要解决的问题是把 1980 年代涡轮时代失控的功率拉回来，同时给厂商留出技术路线的选择空间。\n\n1989 年，McLaren 使用的本田 RA109E 72° V10 在 13500 rpm 输出约 685 hp，威廉姆斯的雷诺 RS1 V10 约 650 hp，法拉利 65° V12 约 660 hp，而多数车队使用的 Ford Cosworth DFR V8 约 620 hp。到 1991 年本田改用 V12，约 725 至 780 hp；1994 年法拉利 Tipo 043 V12 达到约 850 hp、15800 rpm，是这一规格中功率最高的发动机。V8 轻、V12 功率大、V10 在重量、油耗和功率之间取得平衡，这也是后来 V10 成为主流的原因。\n\n1995 年起排量缩至 3.0 L，3.5 L 时代结束。这些功率数字多为估算或排位赛数值，不同来源略有出入。",
+    "sources": [
+      {"title": "Wikipedia: Formula One engines", "url": "https://en.wikipedia.org/wiki/Formula_One_engines"}
+    ],
+    "verify": "ok"
+  },
+  "EA-035": {
+    "intro": "普通 VVT 只改变气门开关的时刻，VTEC 则在两套凸轮型线之间切换：低转速用升程小、持续期短的凸轮，省油安静；高转速切换到升程大的凸轮，大口吸气。就像一个人慢走时浅呼吸、冲刺时深呼吸。\n\nVTEC 源自本田 1983 年 CBR400 摩托车上的 REV 系统，由工程师 Ikuo Kajitani 主导开发。汽车上的首次应用是 1989 年日本市场的 Integra XSi，搭载 160 bhp 的 B16A 双顶置凸轮轴发动机。原理是每个气门有多个摇臂，ECU 根据转速、负荷、油温等条件，通过电磁阀让机油压力推动锁销把摇臂锁在一起，从而由高升程凸轮驱动气门；切回低转速凸轮的转速低于切换上去的转速，避免在临界点反复跳动。\n\n之后出现了偏重经济性的 VTEC-E、2001 年起加入连续可变进气相位的 i-VTEC，以及 2013 年把 VTEC 用于排气门的 VTEC TURBO。可变升程的思路今天已被多家厂商以不同形式采用。",
+    "sources": [
+      {"title": "Wikipedia: VTEC", "url": "https://en.wikipedia.org/wiki/VTEC"}
+    ],
+    "verify": "ok"
+  },
+  "EA-036": {
+    "intro": "VR6 是一种又直又 V 的发动机：六个气缸分成两排，但夹角只有 15°，窄到可以共用一个缸盖、两根凸轮轴。它既比直六短，又比传统 V6 窄，目的是把六缸机横置塞进原本只放四缸的前驱车发动机舱。\n\n大众在 1991 年把它装上 Passat B3 和 Corrado：2.8 L 版本输出 128 kW（172 hp），2.9 L 版本输出 140 kW（188 hp）。窄夹角 V 型的思路可以追溯到 1922 年的 Lancia V4。后来的 3.6 L FSI 在 2005 年 Passat B6 上输出 206 kW，部分版本夹角进一步缩小到 10.6°。更重要的是，大众把两个 VR 模块拼在一根曲轴上，得到了 W8、W12 和 W16，布加迪的发动机即由此而来。\n\nVR6 的生产于 2024 年底结束，随着电动化和四缸涡轮的普及，这种布局已退出大众的产品线。",
+    "sources": [
+      {"title": "Wikipedia: VR6 engine", "url": "https://en.wikipedia.org/wiki/VR6_engine"}
+    ],
+    "verify": "ok",
+    "note": "content.json 写产量近 190 万台，维基未给出总产量，intro 未采用该数字。"
+  },
+  "EA-037": {
+    "intro": "V10 就是两排各五缸共用一根曲轴，可以看作两台直五并在一起。它比 V8 多两缸、比 V12 短，目的是在长度受限的车身里获得更大排量和更高转速。\n\n公路车上的 V10 从 1992 年道奇 Viper 开始：8.0 L、400 hp、630 N·m，由当时属于克莱斯勒的兰博基尼协助设计，采用 90° 夹角与不等间隔点火，因而不需要平衡轴；最终 8.4 L 版本达到 645 hp，车型 2017 年停产。F1 里第一批 V10 是 1989 年的 McLaren MP4/5 与 Williams FW12，到 1998 年所有车队都在用 V10，2000 年起规则强制 3.0 L V10，2002 年宝马 P82 转速达到 19050 rpm；2006 年起改为 2.4 L V8。\n\n每排五缸自带摇摆力矩，所以 V10 常需要平衡措施。今天它只在少数超跑（如兰博基尼、奥迪 R8）和宝马 S85 这样的历史车型上出现，福特 Triton 卡车 V10 也只供应到 2019 年款。",
+    "sources": [
+      {"title": "Wikipedia: V10 engine", "url": "https://en.wikipedia.org/wiki/V10_engine"},
+      {"title": "Wikipedia: Dodge Viper", "url": "https://en.wikipedia.org/wiki/Dodge_Viper"},
+      {"title": "Wikipedia: Formula One engines", "url": "https://en.wikipedia.org/wiki/Formula_One_engines"}
+    ],
+    "verify": "ok"
+  },
+  "EA-038": {
+    "intro": "进气道喷射把汽油喷在进气门外面，和空气混合后再进缸；缸内直喷则用高压喷油器把汽油直接打进气缸，像把水直接注进锅里而不是先倒进漏斗。好处是可以精确控制每一滴油的时机和位置，让混合气更稀、压缩比更高、更省油。\n\n直喷的历史很长：1936 年戴姆勒-奔驰 DB 601 航空发动机已是量产直喷机；1952 年 Goliath GP700 和 Gutbrod Superior 用博世机械直喷的二冲程机，油耗比化油器版本最多低 30%；1954 年奔驰 300 SL 成为第一款四冲程直喷车。现代电控直喷的起点是 1996 年三菱在日本市场 Galant 上推出的 4G93 GDI，采用分层稀燃，到 2001 年三菱已生产超过 100 万台。美国市场直喷占比从 2008 车型年的 2.3% 升到 2016 车型年的约 50%。\n\n代价是汽油不再冲刷进气门，容易积碳；分层燃烧的 NOx 和颗粒物偏高，欧洲多家厂商放弃了稀燃模式并加装颗粒捕集器。丰田 2005 年的 D-4S 开始在每缸同时布置进气道与缸内喷油器，这种双喷射如今已很常见。",
+    "sources": [
+      {"title": "Wikipedia: Gasoline direct injection", "url": "https://en.wikipedia.org/wiki/Gasoline_direct_injection"}
+    ],
+    "verify": "ok"
+  },
+  "EA-039": {
+    "intro": "传统柴油机的喷射压力由泵在每次喷油时临时建立，压力随转速变化，喷油时机也不灵活。共轨把高压泵和喷油器分开：泵先把柴油压进一根共用的高压油轨蓄起来，各缸喷油器再由电控阀门按需喷射，像把水塔和水龙头分开，水压随时稳定可用。\n\n共轨概念早在 1916 年就用于 Vickers 的潜艇发动机；汽车用的电控原型由瑞士的 Robert Huber 在 1960 年代末提出，后由苏黎世联邦理工的 Marco Ganser 推进。1990 年代 Magneti Marelli 与菲亚特研究中心完成电控原型，因菲亚特财务困难转让给博世量产。1995 年日野 Ranger 卡车率先搭载电装系统；1997 年阿尔法·罗密欧 156 的 2.4 JTD 成为第一款使用共轨的乘用车（同期还有 105 PS 的 1.9 JTD 四缸），奔驰 W202 同年跟进。现代系统压力普遍超过 2000 bar，每循环最多喷射五次，其中小量预喷显著降低了柴油机的敲击噪声。\n\n今天共轨已是柴油机的标准配置，代价是对燃油清洁度敏感、系统成本高。",
+    "sources": [
+      {"title": "Wikipedia: Common rail", "url": "https://en.wikipedia.org/wiki/Common_rail"},
+      {"title": "Wikipedia: Alfa Romeo 156", "url": "https://en.wikipedia.org/wiki/Alfa_Romeo_156"}
+    ],
+    "verify": "ok",
+    "note": "维基把 156 的 2.4 JTD 五缸列为第一款共轨乘用车发动机，content.json 把 1.9 与 2.4 并列；无实质冲突，intro 以 2.4 为首。"
+  }
+}

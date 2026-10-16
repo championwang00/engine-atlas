@@ -1,0 +1,299 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>二冲程</title>
+<style>html,body{margin:0;background:#d9d9d6}#fig{display:block;width:100%;max-width:960px;margin:0 auto;touch-action:none;cursor:grab;user-select:none}</style></head>
+<body><svg id="fig" viewBox="0 0 720 440" role="img" aria-label="二冲程单缸半剖动画"></svg>
+<script>const CFG={"type":"two","title":"二冲程","en":"Two-stroke","clear":10,"still":150};
+(() => {
+const T = CFG.type, TWO = T === 'two', FOUR = !TWO, DIESEL = T === 'diesel', MILLER = T === 'miller';
+const EN = new URLSearchParams(location.search).get('lang') === 'en';
+const svg = document.getElementById('fig');
+const D2R = Math.PI / 180, mod = (a, n) => ((a % n) + n) % n;
+// ---- geometry (mm) ----
+const r = 40, R = 40, L = 140, CH = 22, PH = 70, CT = 11;
+const crownAt = (a) => R * Math.cos(a * D2R) + Math.sqrt(L * L - (R * Math.sin(a * D2R)) ** 2) + CH;
+const zTop = crownAt(0) + CFG.clear;
+const W = TWO ? r + 22 : r + 14, Wc = 82, tc = 8, zcb = -78, zCeil = 62, zLed = 70, D = 64;
+const Hh = TWO ? 30 : 40, Wh = W + 6, zHt = zTop + Hh;
+const zCam = zHt + 34, rb = 11, VX = 22, VR = 12;
+const CYC = TWO ? 360 : 720;
+// ---- view ----
+const AZ0 = -34, EL0 = 22;
+let az = AZ0, el = EL0, phi = CFG.still || 30, playing = false, raf = 0, last = 0;
+let ca, sa, ce, se, S = 1, OX = 0, OY = 0;
+const setView = () => { ca = Math.cos(az * D2R); sa = Math.sin(az * D2R); ce = Math.cos(el * D2R); se = Math.sin(el * D2R); };
+const rawP = (p) => { const x = p[0] * ca - p[1] * sa, y = p[0] * sa + p[1] * ca; return [x, -(p[2] * ce + y * se), y * ce - p[2] * se]; };
+const BOUND = [];
+for (const x of [-Wc - 4, Wc + 4]) for (const y of [0, D + 30]) for (const z of [zcb - 2, zCam + 24]) BOUND.push([x, y, z]);
+function fit() {
+  // one scale for the whole orbit range so the engine never breathes
+  let s = Infinity;
+  for (let a = -55; a <= 55; a += 5) for (const e of [6, 30, 60]) {
+    az = a; el = e; setView();
+    const q = BOUND.map(rawP), xs = q.map((p) => p[0]), ys = q.map((p) => p[1]);
+    s = Math.min(s, 400 / (Math.max(...xs) - Math.min(...xs)), 396 / (Math.max(...ys) - Math.min(...ys)));
+  }
+  S = s;
+}
+function center() {
+  setView();
+  const q = BOUND.map(rawP), xs = q.map((p) => p[0]), ys = q.map((p) => p[1]);
+  OX = 360 - S * (Math.max(...xs) + Math.min(...xs)) / 2; OY = 222 - S * (Math.max(...ys) + Math.min(...ys)) / 2;
+}
+const P = (p) => { const q = rawP(p); return [OX + S * q[0], OY + S * q[1], q[2]]; };
+const LT = (() => { const l = [-0.45, -0.55, 0.7], n = Math.hypot(...l); return l.map((v) => v / n); })();
+function shade(n, base) {
+  const x = n[0] * ca - n[1] * sa, y = n[0] * sa + n[1] * ca;
+  const vis = -y * ce + n[2] * se;
+  if (vis <= 1e-4) return null;
+  const k = Math.max(0, x * LT[0] + y * LT[1] + n[2] * LT[2]);
+  const t = 0.62 + 0.5 * k;
+  return `rgb(${base.map((c) => Math.min(255, Math.round(c * t))).join(',')})`;
+}
+// ---- colours ----
+const C = { block: [190, 189, 183], head: [200, 198, 190], steel: [160, 165, 171], piston: [205, 203, 196], dark: [120, 122, 126], brass: [196, 170, 120], fly: [150, 152, 156] };
+const CUT = { block: '#ecebe6', head: '#f1efe9', steel: '#d9dde1', piston: '#f4f3ef', dark: '#b9bcc0', brass: '#e2cfa3' };
+const STROKE = { intake: '#4f86cf', compression: '#d79a2b', power: '#e5531f', exhaust: '#8d8a83', scav: '#6fa0c4', back: '#8aa5c9', crank: '#7d9fd0' };
+const NAME = EN ? { intake: 'Intake', compression: 'Compression', power: 'Power', exhaust: 'Exhaust', scav: 'Scavenge', back: 'Push-back' } : { intake: '进气', compression: '压缩', power: '做功', exhaust: '排气', scav: '扫气', back: '回推' };
+// ---- face builders ----
+let F; // {layer, d, svg}
+const pts2 = (a) => a.map((p) => { const q = P(p); return q[0].toFixed(1) + ',' + q[1].toFixed(1); }).join(' ');
+function face(layer, poly, n, base, extra = '') {
+  const fill = shade(n, base); if (!fill) return;
+  let d = 0; for (const p of poly) d += P(p)[2]; d /= poly.length;
+  F.push({ layer, d, svg: `<polygon points="${pts2(poly)}" fill="${fill}" stroke="#2e2d2a" stroke-opacity=".38" stroke-width=".6" stroke-linejoin="round"${extra}/>` });
+}
+const cutSvg = []; // drawn in insertion order on the y=0 plane
+const cutPoly = (poly2, fill, sw = 0.9, extra = '') => cutSvg.push(`<polygon points="${pts2(poly2.map(([x, z]) => [x, 0, z]))}" fill="${fill}" stroke="#2b2a27" stroke-width="${sw}" stroke-linejoin="round"${extra}/>`);
+const cutLine = (pl, col = '#2b2a27', w = 0.8) => cutSvg.push(`<polyline points="${pts2(pl.map(([x, z]) => [x, 0, z]))}" fill="none" stroke="${col}" stroke-width="${w}" stroke-linecap="round"/>`);
+const circ = (cx, cz, rr, n = 24, a0 = 0) => Array.from({ length: n }, (_, i) => { const a = a0 + i / n * 2 * Math.PI; return [cx + rr * Math.cos(a), cz + rr * Math.sin(a)]; });
+function hull(p) {
+  p = p.slice().sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+  const cr = (o, a, b) => (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]);
+  const lo = [], up = [];
+  for (const q of p) { while (lo.length > 1 && cr(lo[lo.length - 2], lo[lo.length - 1], q) <= 0) lo.pop(); lo.push(q); }
+  for (const q of p.slice().reverse()) { while (up.length > 1 && cr(up[up.length - 2], up[up.length - 1], q) <= 0) up.pop(); up.push(q); }
+  return lo.slice(0, -1).concat(up.slice(0, -1)); // CCW in (x,z)
+}
+// prism along +y of a convex CCW (x,z) polygon; front cap on y=0 becomes a cut face
+function prismY(layer, poly, y0, y1, base, cutFill) {
+  for (let i = 0; i < poly.length; i++) {
+    const a = poly[i], b = poly[(i + 1) % poly.length];
+    const ex = b[0] - a[0], ez = b[1] - a[1], l = Math.hypot(ex, ez) || 1;
+    face(layer, [[a[0], y0, a[1]], [b[0], y0, b[1]], [b[0], y1, b[1]], [a[0], y1, a[1]]], [ez / l, 0, -ex / l], base);
+  }
+  if (y0 === 0 && cutFill) cutPoly(poly, cutFill); else face(layer, poly.map(([x, z]) => [x, y0, z]), [0, -1, 0], base);
+}
+const cylY = (layer, cx, cz, rr, y0, y1, base, cutFill, n = 28) => prismY(layer, circ(cx, cz, rr, n), y0, y1, base, cutFill);
+// half cylinder about a vertical axis, the half with y >= 0; inner = concave surface seen from inside
+function halfZ(layer, cx, rr, z0, z1, base, inner = false, n = 18, top = false) {
+  for (let i = 0; i < n; i++) {
+    const a0 = i / n * Math.PI, a1 = (i + 1) / n * Math.PI, am = (a0 + a1) / 2, s = inner ? -1 : 1;
+    face(layer, [[cx + rr * Math.cos(a0), rr * Math.sin(a0), z0], [cx + rr * Math.cos(a1), rr * Math.sin(a1), z0], [cx + rr * Math.cos(a1), rr * Math.sin(a1), z1], [cx + rr * Math.cos(a0), rr * Math.sin(a0), z1]], [s * Math.cos(am), s * Math.sin(am), 0], base);
+  }
+  if (top) face(layer, Array.from({ length: n + 1 }, (_, i) => [cx + rr * Math.cos(i / n * Math.PI), rr * Math.sin(i / n * Math.PI), z1]), [0, 0, 1], base);
+}
+function box(layer, x0, x1, y0, y1, z0, z1, base, cutFill, noTop) {
+  if (!noTop) face(layer, [[x0, y0, z1], [x1, y0, z1], [x1, y1, z1], [x0, y1, z1]], [0, 0, 1], base);
+  face(layer, [[x1, y0, z0], [x1, y1, z0], [x1, y1, z1], [x1, y0, z1]], [1, 0, 0], base);
+  face(layer, [[x0, y0, z0], [x0, y1, z0], [x0, y1, z1], [x0, y0, z1]], [-1, 0, 0], base);
+  if (y0 === 0 && cutFill) cutPoly([[x0, z0], [x1, z0], [x1, z1], [x0, z1]], cutFill);
+  else if (cutFill !== false) face(layer, [[x0, y0, z0], [x1, y0, z0], [x1, y0, z1], [x0, y0, z1]], [0, -1, 0], base);
+}
+// ---- cycle ----
+function strokeOf(ph) {
+  if (TWO) return ph < 100 ? 'power' : ph < 120 ? 'exhaust' : ph < 255 ? 'scav' : 'compression';
+  if (ph < 180) return 'power'; if (ph < 360) return 'exhaust'; if (ph < 540) return 'intake';
+  if (MILLER && ph < CFG.IN[1]) return 'back';
+  return 'compression';
+}
+const SEGS = TWO ? [[0, 100, 'power'], [100, 120, 'exhaust'], [120, 255, 'scav'], [255, 360, 'compression']]
+  : MILLER ? [[0, 180, 'power'], [180, 360, 'exhaust'], [360, 540, 'intake'], [540, CFG.IN[1], 'back'], [CFG.IN[1], 720, 'compression']]
+  : [[0, 180, 'power'], [180, 360, 'exhaust'], [360, 540, 'intake'], [540, 720, 'compression']];
+// cam lobe whose follower lift is >0 exactly over the crank window [o,c] (cam turns at half speed)
+const LIFT = 8;
+function lobe(win) {
+  const half = (win[1] - win[0]) / 4 * D2R, c = Math.cos(half), d = LIFT / (1 - c), rn = rb - c * d;
+  return { d, rn, mid: (win[0] + win[1]) / 2 };
+}
+const LOBES = FOUR ? { in: lobe(CFG.IN), ex: lobe(CFG.EX) } : null;
+function lobeState(lb, ph) {
+  const th = Math.PI + (ph - lb.mid) / 2 * D2R; // nose direction from +z, pointing down at mid window
+  const nx = Math.sin(th), nz = Math.cos(th);
+  const sup = Math.max(rb, -nz * lb.d + lb.rn); // support toward -z
+  return { nx, nz, lift: sup - rb, poly: hull([...circ(0, 0, rb, 30), ...circ(nx * lb.d, nz * lb.d, lb.rn, 16)]) };
+}
+const liftOf = (win, ph) => { const x = mod(ph - win[0], 720), s = win[1] - win[0]; if (x >= s) return 0; const lb = lobe(win); return lobeState(lb, ph).lift; };
+// ---- scene ----
+function build() {
+  F = []; cutSvg.length = 0;
+  const ph = mod(phi, CYC), st = strokeOf(ph);
+  const a = phi * D2R, px = R * Math.sin(a), pz = R * Math.cos(a);
+  const zw = crownAt(phi) - CH, zc = zw + CH;
+  // layer 0: flywheel behind the block
+  cylY(0, 0, 0, 74, D + 14, D + 28, C.fly, null, 48);
+  for (let i = 0; i < 6; i++) { const t = a + i * Math.PI / 3; box(0, 66 * Math.sin(t) - 2, 66 * Math.sin(t) + 2, D + 12, D + 14, 66 * Math.cos(t) - 2, 66 * Math.cos(t) + 2, C.dark); }
+  // layer 1: interior of the case and bore
+  face(1, [[-(Wc - tc), D - tc, zcb + tc], [Wc - tc, D - tc, zcb + tc], [Wc - tc, D - tc, zCeil], [-(Wc - tc), D - tc, zCeil]], [0, -1, 0], C.block);
+  face(1, [[-(Wc - tc), 0, zcb + tc], [Wc - tc, 0, zcb + tc], [Wc - tc, D - tc, zcb + tc], [-(Wc - tc), D - tc, zcb + tc]], [0, 0, 1], C.block);
+  face(1, [[Wc - tc, 0, zcb + tc], [Wc - tc, D - tc, zcb + tc], [Wc - tc, D - tc, zCeil], [Wc - tc, 0, zCeil]], [-1, 0, 0], C.block);
+  face(1, [[-(Wc - tc), 0, zcb + tc], [-(Wc - tc), D - tc, zcb + tc], [-(Wc - tc), D - tc, zCeil], [-(Wc - tc), 0, zCeil]], [1, 0, 0], C.block);
+  halfZ(1, 0, r, zCeil, zTop, [214, 212, 205], true, 22);
+  // main bearing boss on the rear wall
+  cylY(1, 0, 0, 24, D - tc - 4, D - tc, C.block, null, 30);
+  // layer 2: crank and rod
+  cylY(2, 0, 0, 15, 20, D + 14, C.steel, null, 26);
+  const cw = []; for (let i = -3; i <= 3; i++) { const t = a + Math.PI + i * 0.3; cw.push([52 * Math.sin(t), 52 * Math.cos(t)]); }
+  prismY(2, hull([...circ(0, 0, 22, 24), ...circ(px, pz, 16, 20), ...cw]), 12, 20, C.steel);
+  cylY(2, px, pz, 10, 0, 12, C.steel, CUT.steel, 22);
+  const rod = hull([...circ(px, pz, 17, 24), ...circ(0, zw, 11, 18)]);
+  prismY(2, rod, 0, 7, C.steel, CUT.steel);
+  halfZ(2, 0, r - 6, zc - PH, zc - CT, [176, 174, 168], true, 16);
+  // layer 3: piston, wrist pin
+  halfZ(3, 0, r - 0.6, zc - PH, zc, C.piston, false, 22, true);
+  cylY(3, 0, zw, 8, 0, r - 7, C.steel, null, 18);
+  // layer 4: outside of the block and head
+  box(4, -Wc, Wc, 0, D, zcb, zLed, C.block, false, true);
+  for (const s of [-1, 1]) face(4.02, [[s * W, 0, zLed], [s * Wc, 0, zLed], [s * Wc, D, zLed], [s * W, D, zLed]], [0, 0, 1], C.block);
+  face(4.02, [[-W, D - 0.01, zLed], [W, D - 0.01, zLed], [W, D, zLed], [-W, D, zLed]], [0, 0, 1], C.block);
+  box(4.1, -W, W, 0, D, zLed, zTop, C.block, false, true);
+  box(4.2, -Wh, Wh, 0, D, zTop, zHt, C.head, false);
+  const sideVis = (s) => s * ca * 1 + 0 > 0 ? true : false;
+  for (let z = zLed + 14; z < zTop - 6; z += 16) for (const s of [-1, 1]) if (shade([s, 0, 0], C.block)) face(4.15, [[s * W, 4, z], [s * W, D - 4, z], [s * (W + 3), D - 4, z + 2], [s * (W + 3), 4, z + 2]], [0, 0, 1], C.block); // cooling fins
+  for (let z = zLed + 14; z < zTop - 6; z += 16) for (const s of [-1, 1]) if (shade([s, 0, 0], C.block)) face(4.15, [[s * (W + 3), 4, z + 2], [s * (W + 3), D - 4, z + 2], [s * (W + 3), D - 4, z - 2], [s * (W + 3), 4, z - 2]], [s, 0, 0], C.block);
+  for (const s of [-1, 1]) for (const y of [14, D - 12]) { // crankcase ledge bolts, head bolts
+    halfZB(4.05, s * (Wc - 9), y, 3.4, zLed, zLed + 4, C.dark);
+    halfZB(5, s * (Wh - 7), y, 4, zHt, zHt + 5, C.dark);
+  }
+  if (TWO) { box(4.3, W, W + 22, 0, 26, 116, 156, C.block, CUT.block); box(4.3, W, W + 26, 0, 22, 88, 114, C.brass, CUT.brass); }
+  else { box(4.3, -Wh - 18, -Wh, 0, 24, zTop + 8, zTop + 34, C.brass, CUT.brass); box(4.3, Wh, Wh + 18, 0, 24, zTop + 8, zTop + 34, C.block, CUT.block); }
+  // ---- cut faces (y = 0), back to front in the plane ----
+  const cs = [];
+  // crankcase + cylinder wall: one U-shaped section
+  const U = [[-Wc, zcb], [Wc, zcb], [Wc, zLed], [W, zLed], [W, zTop], [r, zTop], [r, zCeil], [Wc - tc, zCeil], [Wc - tc, zcb + tc], [-(Wc - tc), zcb + tc], [-(Wc - tc), zCeil], [-r, zCeil], [-r, zTop], [-W, zTop], [-W, zLed], [-Wc, zLed]];
+  cutSvg.unshift(); cutPoly(U, CUT.block, 1.1);
+  // head section
+  cutPoly([[-Wh, zTop], [Wh, zTop], [Wh, zHt], [-Wh, zHt]], CUT.head, 1.1);
+  const gasCol = STROKE[st];
+  const gasOp = st === 'power' ? 0.78 * (1 - Math.min(1, (TWO ? ph : ph) / 200)) + 0.3 : 0.42;
+  if (FOUR) {
+    const li = liftOf(CFG.IN, ph), le = liftOf(CFG.EX, ph);
+    // ports: cavity in the head section, tinted when the valve is open
+    const port = (s) => [[s * (VX - VR), zTop], [s * (VX + VR), zTop], [s * (VX + VR + 6), zTop + 10], [s * Wh, zTop + 12], [s * Wh, zTop + 30], [s * (VX - 4), zTop + 24], [s * (VX - VR + 2), zTop + 8]].map(([x, z]) => [x, z]);
+    const pin = port(-1).reverse(), pex = port(1);
+    cutPoly(pin, '#c7c5bf', 0.9); cutPoly(pex, '#c7c5bf', 0.9);
+    cutPoly(pin, STROKE.intake, 0, ` fill-opacity="${(0.18 + 0.6 * li / LIFT).toFixed(2)}"`);
+    cutPoly(pex, STROKE.exhaust, 0, ` fill-opacity="${(0.12 + 0.6 * le / LIFT).toFixed(2)}"`);
+    // gas in the cylinder
+    cutPoly([[-r, zc], [r, zc], [r, zTop], [-r, zTop]], gasCol, 0, ` fill-opacity="${gasOp.toFixed(2)}"`);
+    // valves (stem, head), guides, springs, buckets
+    for (const [s, lv, key] of [[-1, li, 'in'], [1, le, 'ex']]) {
+      const x = s * VX, z0 = zTop - lv;
+      halfZ(3, x, VR, z0, z0 + 4, C.steel, false, 12, false);
+      cutPoly([[x - 2.6, z0 + 4], [x + 2.6, z0 + 4], [x + 2.6, zCam - rb - 8 - lv], [x - 2.6, zCam - rb - 8 - lv]], CUT.steel, 0.7);
+      cutPoly([[x - VR, z0], [x + VR, z0], [x + 4, z0 + 5], [x - 4, z0 + 5]], CUT.steel, 0.8);
+      const zb = zCam - rb - lv; // bucket top touches the cam
+      const zs0 = zHt, zs1 = zb - 10;
+      const zig = []; for (let i = 0; i <= 12; i++) zig.push([x + (i % 2 ? 7 : -7) * (i === 0 || i === 12 ? 0 : 1), zs0 + (zs1 - zs0) * i / 12]);
+      cutLine(zig, '#3c3b37', 1.1);
+      halfZ(5, x, 9, zb - 10, zb, C.steel, false, 14, true);
+      cutPoly([[x - 9, zb - 10], [x + 9, zb - 10], [x + 9, zb], [x - 9, zb]], CUT.steel, 0.8);
+      // cam tower at the back, camshaft, lobe
+      box(5, x - 11, x + 11, D - 14, D, zHt, zCam + 4, C.head);
+      cylY(5, x, zCam, 6, 0, D, C.steel, CUT.steel, 20);
+      const ls = lobeState(LOBES[key], ph);
+      prismY(5, ls.poly.map(([u, w]) => [x + u, zCam + w]), 0, 10, C.steel, CUT.steel);
+      cutPoly(circ(x, zCam, 3.2, 14), CUT.dark, 0.6);
+    }
+    if (DIESEL) {
+      cutPoly([[-5, zTop + 2], [5, zTop + 2], [5, zHt + 30], [-5, zHt + 30]], CUT.steel, 0.8);
+      cutPoly([[-3, zTop - 2], [3, zTop - 2], [2, zTop + 2], [-2, zTop + 2]], CUT.dark, 0.6);
+      halfZ(5, 0, 7, zHt, zHt + 30, C.steel, false, 14, true);
+      const inj = ph >= 708 || ph < 32 ? 1 : 0;
+      if (inj) for (const s of [-1, 1]) cutPoly([[0, zTop - 2], [s * 30, zc + 4], [s * 18, zc + 2]], '#f2e6a8', 0.4, ' fill-opacity=".85"');
+    } else {
+      cutPoly([[-4, zTop - 1], [4, zTop - 1], [4, zHt + 8], [-4, zHt + 8]], '#f3f1ea', 0.8);
+      cutPoly([[-6.5, zHt + 8], [6.5, zHt + 8], [6.5, zHt + 16], [-6.5, zHt + 16]], CUT.dark, 0.8);
+      halfZ(5, 0, 6.5, zHt, zHt + 16, C.dark, false, 6, true);
+      halfZ(5, 0, 3.4, zHt + 16, zHt + 30, [236, 233, 222], false, 12, true);
+    }
+  } else {
+    // two-stroke: ports in the wall, transfer passage, crankcase charge
+    const eo = crownAt(100), to = crownAt(120);
+    const exP = [[r, 122], [W, 118], [W + 22, 120], [W + 22, 152], [W, 152], [r, eo]];
+    const trP = [[-(W - 4), zCeil], [-(W - 14), zCeil], [-(W - 14), 120], [-r, 120], [-r, to], [-(W - 4), to + 4]];
+    const inP = [[r, 94], [W + 26, 92], [W + 26, 110], [r, 110]];
+    const open = (zLo) => Math.max(0, Math.min(1, (zLo - zc) / 8));
+    cutPoly(exP, '#c7c5bf', 0.9); cutPoly(trP, '#c7c5bf', 0.9); cutPoly(inP, '#c7c5bf', 0.9);
+    const skirt = zc - PH, inOpen = Math.max(0, Math.min(1, (skirt - 94) / 10));
+    const caseCol = inOpen > 0 ? STROKE.intake : STROKE.crank;
+    cutPoly([[-(Wc - tc), zcb + tc], [Wc - tc, zcb + tc], [Wc - tc, zCeil], [r, zCeil], [r, skirt], [-r, skirt], [-r, zCeil], [-(Wc - tc), zCeil]], caseCol, 0, ` fill-opacity="${(0.12 + 0.12 * inOpen).toFixed(2)}"`);
+    cutPoly(trP, STROKE.scav, 0, ` fill-opacity="${(0.2 + 0.5 * open(to)).toFixed(2)}"`);
+    cutPoly(exP, STROKE.exhaust, 0, ` fill-opacity="${(0.15 + 0.55 * open(eo)).toFixed(2)}"`);
+    cutPoly(inP, STROKE.intake, 0, ` fill-opacity="${(0.15 + 0.55 * inOpen).toFixed(2)}"`);
+    cutPoly([[-r, zc], [r, zc], [r, zTop], [-r, zTop]], gasCol, 0, ` fill-opacity="${gasOp.toFixed(2)}"`);
+    cutPoly([[-4, zTop - 1], [4, zTop - 1], [4, zHt + 8], [-4, zHt + 8]], '#f3f1ea', 0.8);
+    cutPoly([[-6.5, zHt + 8], [6.5, zHt + 8], [6.5, zHt + 16], [-6.5, zHt + 16]], CUT.dark, 0.8);
+    halfZ(5, 0, 6.5, zHt, zHt + 16, C.dark, false, 6, true);
+    halfZ(5, 0, 3.4, zHt + 16, zHt + 30, [236, 233, 222], false, 12, true);
+  }
+  // piston section (inverted U), rings, pin boss
+  const pr = r - 0.6, bowl = DIESEL ? [[-pr, zc], [-16, zc], [-12, zc - 7], [12, zc - 7], [16, zc]] : [[-pr, zc]];
+  const pist = [...bowl, [pr, zc], [pr, zc - PH], [r - 6, zc - PH], [r - 6, zc - CT], [-(r - 6), zc - CT], [-(r - 6), zc - PH], [-pr, zc - PH]];
+  cutPoly(pist, st === 'power' ? '#fbe2d2' : CUT.piston, 1.0);
+  for (const k of [3.5, 7, 10.5]) for (const s of [-1, 1]) cutLine([[s * pr, zc - k], [s * (pr - 3), zc - k]], '#4a4843', 0.9);
+  cutPoly([[-(r - 6), zw - 13], [-(r - 16), zw - 13], [-(r - 16), zw + 12], [-(r - 6), zw + 12]], CUT.piston, 0.7);
+  cutPoly([[(r - 6), zw - 13], [(r - 16), zw - 13], [(r - 16), zw + 12], [(r - 6), zw + 12]], CUT.piston, 0.7);
+  cutPoly(rod, CUT.steel, 1.0);
+  cutPoly(circ(px, pz, 10, 22), CUT.dark, 0.8);
+  cutPoly(circ(0, zw, 8, 18), CUT.dark, 0.8);
+  cutLine([[px + 6 * Math.sin(a), pz + 6 * Math.cos(a)], [0.6 * px, zw * 0.6 + pz * 0.4]], '#7a7c80', 0.6);
+  // spark / combustion flash
+  const flash = TWO ? (ph > 352 || ph < 20) : (!DIESEL && (ph > 712 || ph < 22));
+  let fx = '';
+  if (flash) { const q = P([0, 0, zTop - 3]); fx = `<g fill="#fff4c9" stroke="#e5531f" stroke-width="1.1"><polygon points="${[0, 1, 2, 3, 4, 5, 6, 7].map((i) => { const rr = i % 2 ? 4 : 11, t = i / 8 * 2 * Math.PI; return (q[0] + rr * Math.cos(t)).toFixed(1) + ',' + (q[1] + rr * Math.sin(t)).toFixed(1); }).join(' ')}"/></g>`; }
+  // compose
+  const order = F.sort((p, q) => p.layer - q.layer || q.d - p.d).map((f) => f.svg).join('');
+  return order + cutSvg.join('') + fx + overlay(ph, st);
+}
+function halfZB(layer, cx, cy, rr, z0, z1, base) { // full small cylinder (bolt head) not on the cut plane
+  const n = 10;
+  for (let i = 0; i < n; i++) { const a0 = i / n * 2 * Math.PI, a1 = (i + 1) / n * 2 * Math.PI, am = (a0 + a1) / 2; face(layer, [[cx + rr * Math.cos(a0), cy + rr * Math.sin(a0), z0], [cx + rr * Math.cos(a1), cy + rr * Math.sin(a1), z0], [cx + rr * Math.cos(a1), cy + rr * Math.sin(a1), z1], [cx + rr * Math.cos(a0), cy + rr * Math.sin(a0), z1]], [Math.cos(am), Math.sin(am), 0], base); }
+  face(layer, Array.from({ length: n }, (_, i) => [cx + rr * Math.cos(i / n * 2 * Math.PI), cy + rr * Math.sin(i / n * 2 * Math.PI), z1]), [0, 0, 1], base);
+}
+// stroke label, cycle dial and (Miller) lift curves: flat overlay
+function overlay(ph, st) {
+  let o = `<text x="28" y="44" font-family="ui-sans-serif,system-ui,sans-serif" font-size="20" font-weight="650" fill="${STROKE[st]}">${NAME[st]}</text>`;
+  const cx = 668, cy = 52, R1 = 30, R2 = 22;
+  for (const [s0, s1, k] of SEGS) {
+    const a0 = s0 / CYC * 2 * Math.PI - Math.PI / 2, a1 = s1 / CYC * 2 * Math.PI - Math.PI / 2, big = a1 - a0 > Math.PI ? 1 : 0;
+    const p = (rr, t) => (cx + rr * Math.cos(t)).toFixed(1) + ' ' + (cy + rr * Math.sin(t)).toFixed(1);
+    o += `<path d="M${p(R1, a0)}A${R1} ${R1} 0 ${big} 1 ${p(R1, a1)}L${p(R2, a1)}A${R2} ${R2} 0 ${big} 0 ${p(R2, a0)}Z" fill="${STROKE[k]}" fill-opacity="${k === st ? 1 : 0.35}" stroke="#d9d9d6" stroke-width="1"/>`;
+  }
+  const t = ph / CYC * 2 * Math.PI - Math.PI / 2;
+  o += `<line x1="${cx}" y1="${cy}" x2="${(cx + 33 * Math.cos(t)).toFixed(1)}" y2="${(cy + 33 * Math.sin(t)).toFixed(1)}" stroke="#2b2a27" stroke-width="1.6" stroke-linecap="round"/><circle cx="${cx}" cy="${cy}" r="2.6" fill="#2b2a27"/>`;
+  if (MILLER) {
+    const x0 = 24, y0 = 420, w = 200, h = 54, X = (d) => x0 + d / 720 * w;
+    const curve = (win, col, dash) => { const pl = []; for (let d = 0; d <= 720; d += 6) pl.push(X(d).toFixed(1) + ',' + (y0 - liftOfAny(win, d) / LIFT * h).toFixed(1)); return `<polyline points="${pl.join(' ')}" fill="none" stroke="${col}" stroke-width="${dash ? 1.2 : 2}"${dash ? ' stroke-dasharray="3 3"' : ''}/>`; };
+    o += `<line x1="${x0}" y1="${y0}" x2="${x0 + w}" y2="${y0}" stroke="#55534e" stroke-width=".8"/>`;
+    for (const d of [180, 360, 540]) o += `<line x1="${X(d)}" y1="${y0}" x2="${X(d)}" y2="${y0 - h}" stroke="#55534e" stroke-opacity=".3" stroke-width=".7"/>`;
+    o += curve(CFG.EX, STROKE.exhaust) + curve(CFG.REF, '#55534e', true) + curve(CFG.IN, STROKE.intake);
+    o += `<line x1="${X(ph).toFixed(1)}" y1="${y0 + 3}" x2="${X(ph).toFixed(1)}" y2="${y0 - h - 3}" stroke="#2b2a27" stroke-width="1.3"/>`;
+  }
+  return o;
+}
+const liftOfAny = (win, ph) => liftOf(win, ph);
+function draw() { center(); svg.innerHTML = build(); }
+fit(); az = AZ0; el = EL0; draw();
+// ---- motion & input ----
+const SPEED = 110; // crank degrees per second
+function tick(now) { const dt = last ? Math.min(0.05, (now - last) / 1000) : 0; last = now; phi = mod(phi + dt * SPEED, CYC); draw(); raf = playing ? requestAnimationFrame(tick) : 0; }
+function play(on) { playing = !!on; if (playing && !raf) { last = 0; raf = requestAnimationFrame(tick); } }
+let drag = null;
+svg.addEventListener('pointerdown', (e) => { drag = [e.clientX, e.clientY]; svg.setPointerCapture(e.pointerId); svg.style.cursor = 'grabbing'; });
+svg.addEventListener('pointermove', (e) => { if (!drag) return; az = Math.max(-55, Math.min(55, az + (e.clientX - drag[0]) * 0.4)); el = Math.max(6, Math.min(60, el + (e.clientY - drag[1]) * 0.3)); drag = [e.clientX, e.clientY]; if (!playing) draw(); });
+const up = () => { drag = null; svg.style.cursor = ''; };
+svg.addEventListener('pointerup', up); svg.addEventListener('pointercancel', up);
+window.FIG = { play, reset() { az = AZ0; el = EL0; draw(); }, playing: () => playing, set(p, a, e) { phi = p; if (a !== undefined) { az = a; el = e; } draw(); }, parts: () => svg.querySelectorAll('polygon,polyline,path,line,circle').length };
+if (!matchMedia('(prefers-reduced-motion: reduce)').matches && !new URLSearchParams(location.search).has('still') && !new URLSearchParams(location.search).has('embed')) play(true);
+})();
+</script>
+<script src="_embed-lite.js"></script></body></html>

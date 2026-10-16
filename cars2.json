@@ -1,0 +1,2217 @@
+{
+  "EA-001": [
+    {
+      "match": "Cugnot 蒸汽三轮炮车",
+      "kind": "car",
+      "name": "Cugnot fardier à vapeur",
+      "year": "1769",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Mus%C3%A9e_des_Arts_et_M%C3%A9tiers_-_Fardier_de_Cugnot_%2823725801128%29.jpg/960px-Mus%C3%A9e_des_Arts_et_M%C3%A9tiers_-_Fardier_de_Cugnot_%2823725801128%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_des_Arts_et_M%C3%A9tiers_-_Fardier_de_Cugnot_(23725801128).jpg",
+        "author": "Frédéric BISSON from Rouen, France",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:Musée des Arts et Métiers - Fardier de Cugnot (23725801128).jpg"
+      }
+    },
+    {
+      "match": "Stanley Steamer",
+      "kind": "car",
+      "name": "Stanley Steamer",
+      "year": "1900s–1920s",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/1911_Stanley_Steamer_Touring_Car_%289420367123%29.jpg/960px-1911_Stanley_Steamer_Touring_Car_%289420367123%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1911_Stanley_Steamer_Touring_Car_(9420367123).jpg",
+        "author": "F. D. Richards from Clinton, MI",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "file": "File:1911 Stanley Steamer Touring Car (9420367123).jpg"
+      }
+    },
+    {
+      "match": "Doble E",
+      "kind": "car",
+      "name": "Doble Model E",
+      "year": "1920s",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/1924_Doble_Model_E_at_Henry_Ford_Museum.jpg/960px-1924_Doble_Model_E_at_Henry_Ford_Museum.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1924_Doble_Model_E_at_Henry_Ford_Museum.jpg",
+        "author": "NAParish",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "file": "File:1924 Doble Model E at Henry Ford Museum.jpg"
+      }
+    }
+  ],
+  "EA-002": [
+    {
+      "match": "de Rivaz 自造的试验车",
+      "kind": "car",
+      "name": "de Rivaz 试验车（1807）",
+      "year": "1807",
+      "image": null,
+      "note": "Commons 仅有 400 px 的发动机结构线图（无整车外观照片），不符合宽 ≥ 800 的整车外观要求"
+    }
+  ],
+  "EA-003": [
+    {
+      "match": "Ford Torino 斯特林试验车",
+      "kind": "car",
+      "name": "Ford Torino 斯特林试验车",
+      "year": "1975",
+      "image": null,
+      "note": "Commons 未找到该试验车的自由许可外观图"
+    },
+    {
+      "match": "NASA Mod I/Mod II 装车试验",
+      "kind": "other",
+      "name": "NASA 汽车斯特林机项目（Mod I/Mod II）装车试验",
+      "year": "1980 年代",
+      "image": null,
+      "note": "机构试验项目，非量产整车；Commons 无对应装车照片"
+    }
+  ],
+  "EA-004": [
+    {
+      "match": "Lenoir Hippomobile",
+      "kind": "car",
+      "name": "Lenoir Hippomobile",
+      "year": "1863",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Lenoir_Hippomobile.jpg/960px-Lenoir_Hippomobile.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Lenoir_Hippomobile.jpg",
+        "author": "Émile Bourdelin",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "file": "File:Lenoir Hippomobile.jpg"
+      }
+    }
+  ],
+  "EA-005": [
+    {
+      "match": "Selden 专利车",
+      "kind": "car",
+      "name": "Selden 专利车（复制品）",
+      "year": "1877 专利 / 1905–1907 制造",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Selden_Road_engine_replica_%281%29.jpg/960px-Selden_Road_engine_replica_%281%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Selden_Road_engine_replica_(1).jpg",
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "file": "File:Selden Road engine replica (1).jpg"
+      },
+      "note": "图为 Selden 专利车复制品（公有领域），非原车"
+    }
+  ],
+  "EA-006": [
+    {
+      "match": "Benz Patent-Motorwagen",
+      "kind": "car",
+      "name": "Benz Patent-Motorwagen",
+      "year": "1886",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Benz_Patent_Motorwagen_1.jpg/960px-Benz_Patent_Motorwagen_1.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Benz_Patent_Motorwagen_1.jpg",
+        "author": "Aschroet",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file": "File:Benz Patent Motorwagen 1.jpg"
+      }
+    }
+  ],
+  "EA-007": [
+    {
+      "match": "DKW F 系列",
+      "kind": "car",
+      "name": "DKW F-series",
+      "year": "1931–1942",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/DKW_Front_F1.jpg/960px-DKW_Front_F1.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:DKW_Front_F1.jpg",
+        "author": "Matěj Baťha",
+        "license": "CC BY-SA 2.5",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+        "file": "File:DKW Front F1.jpg"
+      }
+    },
+    {
+      "match": "Saab 92/93/96",
+      "kind": "car",
+      "name": "Saab 92/93/96",
+      "year": "1949–1980",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Saab_96%2C_La_Orotava%2C_Tenerife%2C_Espa%C3%B1a%2C_2012-12-13%2C_DD_01.jpg/960px-Saab_96%2C_La_Orotava%2C_Tenerife%2C_Espa%C3%B1a%2C_2012-12-13%2C_DD_01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Saab_96,_La_Orotava,_Tenerife,_Espa%C3%B1a,_2012-12-13,_DD_01.jpg",
+        "author": "Diego Delso",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file": "File:Saab 96, La Orotava, Tenerife, España, 2012-12-13, DD 01.jpg"
+      }
+    },
+    {
+      "match": "Trabant",
+      "kind": "car",
+      "name": "Trabant 601",
+      "year": "1957–1991",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Cream_Trabant_601_S_side_view.jpg/960px-Cream_Trabant_601_S_side_view.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Cream_Trabant_601_S_side_view.jpg",
+        "author": "Renée Kools",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "file": "File:Cream Trabant 601 S side view.jpg"
+      }
+    },
+    {
+      "match": "Wartburg",
+      "kind": "car",
+      "name": "Wartburg 353",
+      "year": "1966–1988",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Wartburg_353_1972.jpg/960px-Wartburg_353_1972.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Wartburg_353_1972.jpg",
+        "author": "Oostblokblik",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Wartburg 353 1972.jpg"
+      }
+    },
+    {
+      "match": "Suzuki Jimny SJ30",
+      "kind": "car",
+      "name": "Suzuki Jimny SJ30",
+      "year": "1981–1987",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Suzuki_Jimny_sj30.JPG/960px-Suzuki_Jimny_sj30.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:Suzuki_Jimny_sj30.JPG",
+        "author": "Rainmaker47",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file": "File:Suzuki Jimny sj30.JPG"
+      }
+    }
+  ],
+  "EA-008": [
+    {
+      "match": "Mazda KJ-ZEM 增压 Miller V6",
+      "kind": "engine",
+      "name": "Mazda KJ-ZEM · 装车示例：Mazda Millenia S / Eunos 800",
+      "year": "1993–2002",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/US-spec_Mazda_Millenia_%281996%29.jpg/960px-US-spec_Mazda_Millenia_%281996%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:US-spec_Mazda_Millenia_(1996).jpg",
+        "author": "OnceInAMillenia",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "file": "File:US-spec Mazda Millenia (1996).jpg"
+      },
+      "note": "Wikipedia「Mazda K engine」「Mazda Millenia」：KJ-ZEM 增压 Miller 循环 V6 搭载于 Millenia S（日本名 Eunos 800）；图为 1996 款美规 Millenia，未标注是否为 S 型"
+    },
+    {
+      "match": "Toyota Prius 1NZ-FXE",
+      "kind": "car",
+      "name": "Toyota Prius NHW10",
+      "year": "1997",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Toyota_HK-NHW10_Prius_%2822022010354%29.jpg/960px-Toyota_HK-NHW10_Prius_%2822022010354%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Toyota_HK-NHW10_Prius_(22022010354).jpg",
+        "author": "先従隗始",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file": "File:Toyota HK-NHW10 Prius (22022010354).jpg"
+      }
+    },
+    {
+      "match": "VW EA211 TSI evo",
+      "kind": "engine",
+      "name": "VW EA211 TSI evo · 装车示例：Volkswagen Golf VII 1.5 TSI evo",
+      "year": "2017 起",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Volkswagen_Golf_VII_1.5_TSI_R-Line_%282017%29_%2854857918183%29.jpg/960px-Volkswagen_Golf_VII_1.5_TSI_R-Line_%282017%29_%2854857918183%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Volkswagen_Golf_VII_1.5_TSI_R-Line_(2017)_(54857918183).jpg",
+        "author": "Charles from Port Chester, New York",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file": "File:Volkswagen Golf VII 1.5 TSI R-Line (2017) (54857918183).jpg"
+      },
+      "note": "Wikipedia「Volkswagen EA211 engine」：EA211 evo（1.5 TSI）2017 起用于 Golf VII 等"
+    }
+  ],
+  "EA-009": [
+    {
+      "match": "Benz Patent-Motorwagen",
+      "kind": "car",
+      "name": "Benz Patent-Motorwagen",
+      "year": "1886",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Benz_Patent_Motorwagen_1.jpg/960px-Benz_Patent_Motorwagen_1.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Benz_Patent_Motorwagen_1.jpg",
+        "author": "Aschroet",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file": "File:Benz Patent Motorwagen 1.jpg"
+      }
+    },
+    {
+      "match": "De Dion-Bouton",
+      "kind": "car",
+      "name": "De Dion-Bouton",
+      "year": "1900s",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/De_Dion_Bouton-Vis-a-vis-CNAM_16788-IMG_5513.JPG/960px-De_Dion_Bouton-Vis-a-vis-CNAM_16788-IMG_5513.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:De_Dion_Bouton-Vis-a-vis-CNAM_16788-IMG_5513.JPG",
+        "author": "Rama",
+        "license": "CC BY-SA 3.0 fr",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/deed.en",
+        "file": "File:De Dion Bouton-Vis-a-vis-CNAM 16788-IMG 5513.JPG"
+      }
+    },
+    {
+      "match": "Messerschmitt KR",
+      "kind": "car",
+      "name": "Messerschmitt KR200",
+      "year": "1950s",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Messerschmitt_KR200_Rekord_%281955%29_Classic-Gala_2022_1X7A0320.jpg/960px-Messerschmitt_KR200_Rekord_%281955%29_Classic-Gala_2022_1X7A0320.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Messerschmitt_KR200_Rekord_(1955)_Classic-Gala_2022_1X7A0320.jpg",
+        "author": "Alexander Migl",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Messerschmitt KR200 Rekord (1955) Classic-Gala 2022 1X7A0320.jpg"
+      }
+    }
+  ],
+  "EA-010": [
+    {
+      "match": "Mercedes OM617 五缸",
+      "kind": "engine",
+      "name": "Mercedes-Benz OM617 · 装车示例：Mercedes-Benz 300 D（W123）",
+      "year": "1976–1985",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/1980_Mercedes-Benz_300_D_%28W123%29_sedan_%2820980100691%29.jpg/960px-1980_Mercedes-Benz_300_D_%28W123%29_sedan_%2820980100691%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1980_Mercedes-Benz_300_D_(W123)_sedan_(20980100691).jpg",
+        "author": "Jeremy from Sydney, Australia",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:1980 Mercedes-Benz 300 D (W123) sedan (20980100691).jpg"
+      },
+      "note": "Wikipedia「Mercedes-Benz OM617 engine」「Mercedes-Benz W123」：OM617 五缸柴油机随 W123 300 D 推出"
+    },
+    {
+      "match": "VW TDI",
+      "kind": "engine",
+      "name": "VW TDI · 装车示例：Audi 100 C3 2.5 TDI（首款 TDI）",
+      "year": "1989–1990",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/1990_Audi_100_Avant_TDI_front.jpg/960px-1990_Audi_100_Avant_TDI_front.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1990_Audi_100_Avant_TDI_front.jpg",
+        "author": "Mr.choppers",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file": "File:1990 Audi 100 Avant TDI front.jpg"
+      },
+      "note": "Wikipedia「TDI (engine)」「Audi 100」：首台 TDI 为 1989/1990 年 Audi 100 的 2.5 L 直列五缸"
+    },
+    {
+      "match": "Alfa Romeo 156 JTD",
+      "kind": "car",
+      "name": "Alfa Romeo 156 JTD",
+      "year": "1997",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/1999_Alfa_Romeo_156_1.9_JTD.jpg/960px-1999_Alfa_Romeo_156_1.9_JTD.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1999_Alfa_Romeo_156_1.9_JTD.jpg",
+        "author": "Corvettec6r",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "file": "File:1999 Alfa Romeo 156 1.9 JTD.jpg"
+      }
+    }
+  ],
+  "EA-011": [
+    {
+      "match": "Fiat 500",
+      "kind": "car",
+      "name": "Fiat 500 (Nuova 500)",
+      "year": "1957",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Fiat_Nuova_500_20.JPG/960px-Fiat_Nuova_500_20.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:Fiat_Nuova_500_20.JPG",
+        "author": "böhringer friedrich",
+        "license": "CC BY-SA 2.5",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+        "file": "File:Fiat Nuova 500 20.JPG"
+      }
+    },
+    {
+      "match": "Trabant",
+      "kind": "car",
+      "name": "Trabant 601",
+      "year": "1957–1991",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Cream_Trabant_601_S_side_view.jpg/960px-Cream_Trabant_601_S_side_view.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Cream_Trabant_601_S_side_view.jpg",
+        "author": "Renée Kools",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "file": "File:Cream Trabant 601 S side view.jpg"
+      }
+    },
+    {
+      "match": "Fiat TwinAir 0.9",
+      "kind": "engine",
+      "name": "Fiat TwinAir 0.9 · 装车示例：Fiat 500（2007 款）TwinAir Turbo",
+      "year": "2010 起",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Fiat_500_0.9_TwinAir_Turbo_%282013%29_%2854723928004%29.jpg/960px-Fiat_500_0.9_TwinAir_Turbo_%282013%29_%2854723928004%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Fiat_500_0.9_TwinAir_Turbo_(2013)_(54723928004).jpg",
+        "author": "Charles from Port Chester, New York",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file": "File:Fiat 500 0.9 TwinAir Turbo (2013) (54723928004).jpg"
+      },
+      "note": "文件名即标注 0.9 TwinAir Turbo 车型"
+    }
+  ],
+  "EA-012": [
+    {
+      "match": "Daimler M836",
+      "kind": "engine",
+      "name": "Daimler M836 · 装车示例：Mercedes-Benz 24/100/140 PS（630）",
+      "year": "1924–1929",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Mercedes-Benz_630_Kompressor_%281928%29_%2853378857754%29.jpg/960px-Mercedes-Benz_630_Kompressor_%281928%29_%2853378857754%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_630_Kompressor_(1928)_(53378857754).jpg",
+        "author": "Charles from Port Chester, New York",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:Mercedes-Benz 630 Kompressor (1928) (53378857754).jpg"
+      },
+      "note": "按年份（1924–1929）与规格（Porsche 设计的 6.24 L 直六 Kompressor）对应 Mercedes 24/100/140 PS（后称 630）；Wikipedia 页面未标注 M836 代号；图为 1928 年 Mercedes-Benz 630 Kompressor"
+    },
+    {
+      "match": "BMW M88",
+      "kind": "engine",
+      "name": "BMW M88 · 装车示例：BMW M1（E26）",
+      "year": "1978–1981",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/BMW_M1_%28E26%2C_1980%29_%2852858728204%29.jpg/960px-BMW_M1_%28E26%2C_1980%29_%2852858728204%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:BMW_M1_(E26,_1980)_(52858728204).jpg",
+        "author": "Charles from Port Chester, New York",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:BMW M1 (E26, 1980) (52858728204).jpg"
+      },
+      "note": "Wikipedia「BMW M88」：M88 原型机装于 BMW M1"
+    },
+    {
+      "match": "Toyota 2JZ",
+      "kind": "engine",
+      "name": "Toyota 2JZ · 装车示例：Toyota Supra（JZA80）",
+      "year": "1993–2002",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/1993_Toyota_Supra_%28JZA80%29_Coupe.jpg/960px-1993_Toyota_Supra_%28JZA80%29_Coupe.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1993_Toyota_Supra_(JZA80)_Coupe.jpg",
+        "author": "Coolalabright",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "file": "File:1993 Toyota Supra (JZA80) Coupe.jpg"
+      },
+      "note": "Wikipedia「Toyota JZ engine」：2JZ-GTE 1993 年随 Supra RZ（JZA80）成为旗舰性能机"
+    },
+    {
+      "match": "Mercedes M256",
+      "kind": "engine",
+      "name": "Mercedes-Benz M256 · 装车示例：Mercedes-Benz CLS 450（C257）",
+      "year": "2018–2023",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Mercedes-Benz_CLS_450_4Matic_Genf_2018.jpg/960px-Mercedes-Benz_CLS_450_4Matic_Genf_2018.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_CLS_450_4Matic_Genf_2018.jpg",
+        "author": "Alexander Migl",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Mercedes-Benz CLS 450 4Matic Genf 2018.jpg"
+      },
+      "note": "Wikipedia「Mercedes-Benz M256 engine」：2018–2023 C257 CLS 450 搭载 M256；图为 2018 日内瓦车展 CLS 450 4Matic"
+    }
+  ],
+  "EA-013": [
+    {
+      "match": "Ford Model T",
+      "kind": "car",
+      "name": "Ford Model T",
+      "year": "1908–1927",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Ford_Model_T_%281925%29_Classic-Gala_2021_1X7A0217.jpg/960px-Ford_Model_T_%281925%29_Classic-Gala_2021_1X7A0217.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Ford_Model_T_(1925)_Classic-Gala_2021_1X7A0217.jpg",
+        "author": "Alexander Migl",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Ford Model T (1925) Classic-Gala 2021 1X7A0217.jpg"
+      }
+    },
+    {
+      "match": "Honda B16A",
+      "kind": "engine",
+      "name": "Honda B16A · 装车示例：Honda Civic SiR（EF9）",
+      "year": "1989–1991",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Honda_CIVIC_SiR_%28E-EF9%29_front.jpg/960px-Honda_CIVIC_SiR_%28E-EF9%29_front.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Honda_CIVIC_SiR_(E-EF9)_front.jpg",
+        "author": "Tokumeigakarinoaoshima",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Honda CIVIC SiR (E-EF9) front.jpg"
+      },
+      "note": "Wikipedia「Honda B engine」：B16A 第一代用于 1989–1991 Civic SiR（EF9）与 Integra XSi"
+    },
+    {
+      "match": "VW EA888",
+      "kind": "engine",
+      "name": "VW EA888 · 装车示例：Volkswagen Golf GTI Mk7",
+      "year": "2013–2020",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Volkswagen_Golf_GTI_Mk7_2017.jpg/960px-Volkswagen_Golf_GTI_Mk7_2017.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Volkswagen_Golf_GTI_Mk7_2017.jpg",
+        "author": "Ethan Llamas",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Volkswagen Golf GTI Mk7 2017.jpg"
+      },
+      "note": "Wikipedia「List of Volkswagen Group petrol engines」：EA888 2.0 TSI（CHHB）用于 VW Golf Mk7 GTI"
+    },
+    {
+      "match": "Toyota 2ZR-FXE",
+      "kind": "engine",
+      "name": "Toyota 2ZR-FXE · 装车示例：Toyota Prius（XW30）",
+      "year": "2009–2015",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Toyota_Prius_ZVW30_1.8_HSD_White_Pearl_Crystal_Shine.jpg/960px-Toyota_Prius_ZVW30_1.8_HSD_White_Pearl_Crystal_Shine.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Toyota_Prius_ZVW30_1.8_HSD_White_Pearl_Crystal_Shine.jpg",
+        "author": "Ethan Llamas",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Toyota Prius ZVW30 1.8 HSD White Pearl Crystal Shine.jpg"
+      },
+      "note": "Wikipedia「Toyota ZR engine」：2ZR-FXE 1.8 L 用于第三代 Prius XW30（ZVW30）"
+    }
+  ],
+  "EA-014": [
+    {
+      "match": "Cadillac L-Head",
+      "kind": "engine",
+      "name": "Cadillac L-Head V8 · 装车示例：Cadillac Type 51",
+      "year": "1915",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/1915_Cadillac_51_%2810793180364%29.jpg/960px-1915_Cadillac_51_%2810793180364%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1915_Cadillac_51_(10793180364).jpg",
+        "author": "Walter from Tampa/St Petersburg, Florida",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:1915 Cadillac 51 (10793180364).jpg"
+      },
+      "note": "Wikipedia「Cadillac Type 51」：Type 51 全系采用新 L-head V8"
+    },
+    {
+      "match": "Ford Flathead",
+      "kind": "engine",
+      "name": "Ford Flathead V8 · 装车示例：1932 Ford Model 18",
+      "year": "1932",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/1932_Ford_Model_18_%28V8%29_%2854813849607%29.jpg/960px-1932_Ford_Model_18_%28V8%29_%2854813849607%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1932_Ford_Model_18_(V8)_(54813849607).jpg",
+        "author": "Tomás Del Coro from Fabulous Las Vegas, Nevada, USA",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:1932 Ford Model 18 (V8) (54813849607).jpg"
+      },
+      "note": "Wikipedia「1932 Ford」：Model 18 是第一款装 flathead V8 的 Ford"
+    },
+    {
+      "match": "Chevrolet small-block",
+      "kind": "engine",
+      "name": "Chevrolet small-block · 装车示例：1955 Chevrolet Corvette（C1）",
+      "year": "1955",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/1955_Chevrolet_Corvette_Convertible_%2820658648930%29.jpg/960px-1955_Chevrolet_Corvette_Convertible_%2820658648930%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1955_Chevrolet_Corvette_Convertible_(20658648930).jpg",
+        "author": "Mustang Joe",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file": "File:1955 Chevrolet Corvette Convertible (20658648930).jpg"
+      },
+      "note": "Wikipedia「Chevrolet Corvette (C1)」：1955 年起搭载 265 small-block V8"
+    },
+    {
+      "match": "F1 2.4 L V8",
+      "kind": "f1",
+      "name": "F1 2.4 L V8 时代示例：Red Bull RB9（Renault RS27 V8）",
+      "year": "2013",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Red_Bull_RB9_%282013%29_%2848190897961%29.jpg/960px-Red_Bull_RB9_%282013%29_%2848190897961%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Red_Bull_RB9_(2013)_(48190897961).jpg",
+        "author": "Peter Wright from United Kingdom",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "file": "File:Red Bull RB9 (2013) (48190897961).jpg"
+      },
+      "note": "Wikipedia「Red Bull RB9」：2013 赛季，V8 自然吸气时代最后一辆冠军车"
+    }
+  ],
+  "EA-015": [
+    {
+      "match": "Cadillac（1931）",
+      "kind": "car",
+      "name": "Cadillac V-12 (Series 370)",
+      "year": "1931",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Cadillac_V-12_Series_370A_%281931%29_%2853767004107%29.jpg/960px-Cadillac_V-12_Series_370A_%281931%29_%2853767004107%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Cadillac_V-12_Series_370A_(1931)_(53767004107).jpg",
+        "author": "Charles from Port Chester, New York",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:Cadillac V-12 Series 370A (1931) (53767004107).jpg"
+      }
+    },
+    {
+      "match": "Ferrari Colombo",
+      "kind": "engine",
+      "name": "Ferrari Colombo V12 · 装车示例：Ferrari 250 GT Berlinetta",
+      "year": "1950 年代末",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Ferrari_250_GT_Berlinetta_Tour_Auto_2014_Circuit_de_Dijon_Prenois_06.jpg/960px-Ferrari_250_GT_Berlinetta_Tour_Auto_2014_Circuit_de_Dijon_Prenois_06.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Ferrari_250_GT_Berlinetta_Tour_Auto_2014_Circuit_de_Dijon_Prenois_06.jpg",
+        "author": "François de Dijon",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file": "File:Ferrari 250 GT Berlinetta Tour Auto 2014 Circuit de Dijon Prenois 06.jpg"
+      },
+      "note": "Wikipedia「Ferrari Colombo engine」：250 系列公路车搭载 Colombo V12"
+    },
+    {
+      "match": "Jaguar",
+      "kind": "engine",
+      "name": "Jaguar V12 · 装车示例：Jaguar E-Type Series 3",
+      "year": "1971–1974",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Jaguar_E-Type_Series_3_V12_Open_Two-Seater-_6302737.jpg/960px-Jaguar_E-Type_Series_3_V12_Open_Two-Seater-_6302737.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Jaguar_E-Type_Series_3_V12_Open_Two-Seater-_6302737.jpg",
+        "author": "Ermell",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Jaguar E-Type Series 3 V12 Open Two-Seater- 6302737.jpg"
+      },
+      "note": "Wikipedia「Jaguar V12 engine」：V12 于 1971 年在 Series III E-Type 上量产"
+    },
+    {
+      "match": "BMW M70",
+      "kind": "engine",
+      "name": "BMW M70 · 装车示例：BMW 750iL（E32）",
+      "year": "1987–1994",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/BMW_750iL_E32_%2812529133183%29.jpg/960px-BMW_750iL_E32_%2812529133183%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:BMW_750iL_E32_(12529133183).jpg",
+        "author": "nakhon100",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:BMW 750iL E32 (12529133183).jpg"
+      },
+      "note": "Wikipedia「BMW M70」：M70 装于 E32 750i/750iL"
+    },
+    {
+      "match": "BMW Hydrogen 7",
+      "kind": "car",
+      "name": "BMW Hydrogen 7",
+      "year": "2005–2007",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/BMW_Hydrogen_7.jpg/960px-BMW_Hydrogen_7.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:BMW_Hydrogen_7.jpg",
+        "author": "Mike Babcock from Peterborough, Ontario, Canada",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:BMW Hydrogen 7.jpg"
+      }
+    },
+    {
+      "match": "F1 1989–1995",
+      "kind": "f1",
+      "name": "F1 V12 示例：Ferrari 412 T2（3.0 L V12）",
+      "year": "1995",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Ferrari_412T2_2008_Goodwood.jpg/960px-Ferrari_412T2_2008_Goodwood.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Ferrari_412T2_2008_Goodwood.jpg",
+        "author": "Brian Snelson from Hockley, Essex, England",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:Ferrari 412T2 2008 Goodwood.jpg"
+      },
+      "note": "Wikipedia「Ferrari 412 T2」：1995 赛季 Ferrari 3.0 L V12 赛车"
+    }
+  ],
+  "EA-016": [
+    {
+      "match": "North-Lucas",
+      "kind": "car",
+      "name": "North-Lucas",
+      "year": "1922",
+      "image": null,
+      "note": "Commons 无该车图片"
+    },
+    {
+      "match": "Julian Coupe",
+      "kind": "car",
+      "name": "Julian Coupe",
+      "year": "1925",
+      "image": null,
+      "note": "Commons 无该车图片"
+    },
+    {
+      "match": "改装车 Zombug",
+      "kind": "other",
+      "name": "改装车 Zombug（装航空星型机的改装车）",
+      "year": "—",
+      "image": null,
+      "note": "非量产车型，Commons 无图"
+    }
+  ],
+  "EA-017": [
+    {
+      "match": "Duesenberg J",
+      "kind": "car",
+      "name": "Duesenberg Model J",
+      "year": "1928–1937",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Stahls_Automotive_Collection_December_2021_059_%281934_Duesenberg_Model_J%29.jpg/960px-Stahls_Automotive_Collection_December_2021_059_%281934_Duesenberg_Model_J%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Stahls_Automotive_Collection_December_2021_059_(1934_Duesenberg_Model_J).jpg",
+        "author": "Michael Barera",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Stahls Automotive Collection December 2021 059 (1934 Duesenberg Model J).jpg"
+      }
+    },
+    {
+      "match": "Bugatti Type 35/57",
+      "kind": "car",
+      "name": "Bugatti Type 35",
+      "year": "1924–1930",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Bugatti_Type_35.jpg/960px-Bugatti_Type_35.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Bugatti_Type_35.jpg",
+        "author": "Dontpanic (Dogcow on de.wikipedia)",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "file": "File:Bugatti Type 35.jpg"
+      }
+    },
+    {
+      "match": "Mercedes W125",
+      "kind": "car",
+      "name": "Mercedes-Benz W125",
+      "year": "1937",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Mercedes-Benz_W_125_Donington.jpg/960px-Mercedes-Benz_W_125_Donington.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_W_125_Donington.jpg",
+        "author": "John Chapman (Pyrope)",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file": "File:Mercedes-Benz W 125 Donington.jpg"
+      }
+    },
+    {
+      "match": "Alfa Romeo 158",
+      "kind": "car",
+      "name": "Alfa Romeo 158",
+      "year": "1938–1950",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Alfa_Romeo_158_%27Alfetta%27_%2855060292101%29.jpg/960px-Alfa_Romeo_158_%27Alfetta%27_%2855060292101%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_158_%27Alfetta%27_(55060292101).jpg",
+        "author": "Neil",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "file": "File:Alfa Romeo 158 'Alfetta' (55060292101).jpg"
+      }
+    }
+  ],
+  "EA-018": [
+    {
+      "match": "Mercedes Kompressor",
+      "kind": "car",
+      "name": "Mercedes 10/40/65 PS Kompressor（首批量产增压车之一）",
+      "year": "1921 发布 / 1923–1924 生产",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Mercedes_10-40-65_HP_-jns001_%284%29.jpg/960px-Mercedes_10-40-65_HP_-jns001_%284%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Mercedes_10-40-65_HP_-jns001_(4).jpg",
+        "author": "János Tamás",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:Mercedes 10-40-65 HP -jns001 (4).jpg"
+      },
+      "note": "1921 年柏林车展发布的 6/25/40 PS 与 10/40/65 PS 是首批量产机械增压汽车；图为 10/40/65 PS"
+    },
+    {
+      "match": "Bentley Blower",
+      "kind": "car",
+      "name": "Bentley Blower",
+      "year": "1929–30",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Bentley_4%C2%BD_Litre_1929.jpg/960px-Bentley_4%C2%BD_Litre_1929.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Bentley_4%C2%BD_Litre_1929.jpg",
+        "author": "DeFacto",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Bentley 4½ Litre 1929.jpg"
+      }
+    },
+    {
+      "match": "Alfa Romeo 158 F1",
+      "kind": "f1",
+      "name": "Alfa Romeo 158",
+      "year": "1950",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Alfa_Romeo_158_%27Alfetta%27_%2855060292101%29.jpg/960px-Alfa_Romeo_158_%27Alfetta%27_%2855060292101%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_158_%27Alfetta%27_(55060292101).jpg",
+        "author": "Neil",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "file": "File:Alfa Romeo 158 'Alfetta' (55060292101).jpg"
+      }
+    }
+  ],
+  "EA-019": [
+    {
+      "match": "BRM H16",
+      "kind": "engine",
+      "name": "BRM H16 · 装车示例：Lotus 43",
+      "year": "1966",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Lotus_43_%2820004186945%29.jpg/960px-Lotus_43_%2820004186945%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Lotus_43_(20004186945).jpg",
+        "author": "Neil",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:Lotus 43 (20004186945).jpg"
+      },
+      "note": "Wikipedia「Lotus 43」：Lotus 43 使用 BRM P75 H16 发动机，赢得 1966 年美国大奖赛"
+    },
+    {
+      "match": "Bugatti Type 45/47",
+      "kind": "car",
+      "name": "Bugatti Type 45",
+      "year": "1929",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Bugatti_type_45%2C_three-quarter_view%2C_Mulhouse.jpg/960px-Bugatti_type_45%2C_three-quarter_view%2C_Mulhouse.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Bugatti_type_45,_three-quarter_view,_Mulhouse.jpg",
+        "author": "Andy Dingley",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Bugatti type 45, three-quarter view, Mulhouse.jpg"
+      }
+    }
+  ],
+  "EA-020": [
+    {
+      "match": "Cadillac Series 452",
+      "kind": "car",
+      "name": "Cadillac V-16 Series 452",
+      "year": "1930",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/1930_Cadillac_452_V-16_Fleetwood_Roadster_-_fvl_%284610278415%29.jpg/960px-1930_Cadillac_452_V-16_Fleetwood_Roadster_-_fvl_%284610278415%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1930_Cadillac_452_V-16_Fleetwood_Roadster_-_fvl_(4610278415).jpg",
+        "author": "Rex Gray",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:1930 Cadillac 452 V-16 Fleetwood Roadster - fvl (4610278415).jpg"
+      }
+    },
+    {
+      "match": "Marmon Sixteen",
+      "kind": "car",
+      "name": "Marmon Sixteen",
+      "year": "1931",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/1932_Marmon_Series_16_Sixteen_Sedan_-_Nethercutt_Collection_-_Los_Angeles%2C_CA_-_DSC02625.jpg/960px-1932_Marmon_Series_16_Sixteen_Sedan_-_Nethercutt_Collection_-_Los_Angeles%2C_CA_-_DSC02625.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1932_Marmon_Series_16_Sixteen_Sedan_-_Nethercutt_Collection_-_Los_Angeles,_CA_-_DSC02625.jpg",
+        "author": "Daderot",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file": "File:1932 Marmon Series 16 Sixteen Sedan - Nethercutt Collection - Los Angeles, CA - DSC02625.jpg"
+      }
+    },
+    {
+      "match": "Cizeta V16T",
+      "kind": "car",
+      "name": "Cizeta-Moroder V16T",
+      "year": "1991",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/1989_Cizeta-Moroder_V_16_T.jpg/960px-1989_Cizeta-Moroder_V_16_T.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1989_Cizeta-Moroder_V_16_T.jpg",
+        "author": "Alden Jewell",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:1989 Cizeta-Moroder V 16 T.jpg"
+      }
+    },
+    {
+      "match": "Bugatti Tourbillon",
+      "kind": "car",
+      "name": "Bugatti Tourbillon",
+      "year": "2024",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Bugatti_Tourbillon.jpg/960px-Bugatti_Tourbillon.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Bugatti_Tourbillon.jpg",
+        "author": "MrWalkr",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Bugatti Tourbillon.jpg"
+      }
+    }
+  ],
+  "EA-021": [
+    {
+      "match": "Junkers Jumo 204/205 航空柴油机",
+      "kind": "other",
+      "name": "Junkers Jumo 204/205（航空柴油机）",
+      "year": "1930 年代",
+      "image": null,
+      "note": "航空发动机，非整车"
+    },
+    {
+      "match": "Commer TS3",
+      "kind": "car",
+      "name": "Commer TS3 truck",
+      "year": "1954–1972",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/1963_Commer_Cadye_TS3_715_truck_%2831367168088%29.jpg/960px-1963_Commer_Cadye_TS3_715_truck_%2831367168088%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1963_Commer_Cadye_TS3_715_truck_(31367168088).jpg",
+        "author": "Sicnag",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:1963 Commer Cadye TS3 715 truck (31367168088).jpg"
+      }
+    },
+    {
+      "match": "Leyland L60",
+      "kind": "other",
+      "name": "Leyland L60（Chieftain 坦克用对置活塞柴油机）",
+      "year": "1960 年代",
+      "image": null,
+      "note": "坦克发动机，非汽车"
+    },
+    {
+      "match": "Achates Power",
+      "kind": "other",
+      "name": "Achates Power（对置活塞发动机研发公司）",
+      "year": "2004 起",
+      "image": null,
+      "note": "公司/台架项目，非整车"
+    }
+  ],
+  "EA-022": [
+    {
+      "match": "DLR 2012–2013 台架演示",
+      "kind": "other",
+      "name": "DLR 自由活塞线性发电机台架演示",
+      "year": "2012–2013",
+      "image": null,
+      "note": "台架试验，非整车"
+    },
+    {
+      "match": "Toyota 中央研究所 2014 年 FPEG 原型",
+      "kind": "other",
+      "name": "Toyota 中央研究所 FPEG 原型",
+      "year": "2014",
+      "image": null,
+      "note": "台架原型，非整车"
+    }
+  ],
+  "EA-023": [
+    {
+      "match": "VW Beetle",
+      "kind": "car",
+      "name": "Volkswagen Beetle",
+      "year": "1938–2003",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/1957_Volkswagen_Beetle%2C_export_model%2C_in_front_of_Porta_Nigra_in_Trier_2023-05-01.jpg/960px-1957_Volkswagen_Beetle%2C_export_model%2C_in_front_of_Porta_Nigra_in_Trier_2023-05-01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1957_Volkswagen_Beetle,_export_model,_in_front_of_Porta_Nigra_in_Trier_2023-05-01.jpg",
+        "author": "Palauenc05",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:1957 Volkswagen Beetle, export model, in front of Porta Nigra in Trier 2023-05-01.jpg"
+      }
+    },
+    {
+      "match": "Porsche 356 与 911",
+      "kind": "car",
+      "name": "Porsche 356",
+      "year": "1948–1965",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Porsche_356_B_Classic-Gala_2021_1X7A0119.jpg/960px-Porsche_356_B_Classic-Gala_2021_1X7A0119.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Porsche_356_B_Classic-Gala_2021_1X7A0119.jpg",
+        "author": "Alexander Migl",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Porsche 356 B Classic-Gala 2021 1X7A0119.jpg"
+      }
+    },
+    {
+      "match": "Subaru（1970 FF-1 起）",
+      "kind": "car",
+      "name": "Subaru FF-1",
+      "year": "1970",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/1971_Subaru_ff-1.jpg/960px-1971_Subaru_ff-1.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1971_Subaru_ff-1.jpg",
+        "author": "TTTNIS",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file": "File:1971 Subaru ff-1.jpg"
+      }
+    },
+    {
+      "match": "Citroën 2CV",
+      "kind": "car",
+      "name": "Citroën 2CV",
+      "year": "1948–1990",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Citroen_2CV_AZ.jpg/960px-Citroen_2CV_AZ.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Citroen_2CV_AZ.jpg",
+        "author": "Krzysztof Golik",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Citroen 2CV AZ.jpg"
+      }
+    }
+  ],
+  "EA-024": [
+    {
+      "match": "Honda Civic GX",
+      "kind": "car",
+      "name": "Honda Civic GX",
+      "year": "1998–2015",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/1999_Honda_Civic_GX_front_quarter.jpg/960px-1999_Honda_Civic_GX_front_quarter.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1999_Honda_Civic_GX_front_quarter.jpg",
+        "author": "LoLface82",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:1999 Honda Civic GX front quarter.jpg"
+      }
+    },
+    {
+      "match": "Fiat Panda Natural Power",
+      "kind": "car",
+      "name": "Fiat Panda Natural Power",
+      "year": "2007",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Fiat_Panda_natural_power_-_Flickr_-_Joost_J._Bakker_IJmuiden.jpg/960px-Fiat_Panda_natural_power_-_Flickr_-_Joost_J._Bakker_IJmuiden.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Fiat_Panda_natural_power_-_Flickr_-_Joost_J._Bakker_IJmuiden.jpg",
+        "author": "Joost J. Bakker",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:Fiat Panda natural power - Flickr - Joost J. Bakker IJmuiden.jpg"
+      }
+    }
+  ],
+  "EA-025": [
+    {
+      "match": "Lancia Aurelia",
+      "kind": "car",
+      "name": "Lancia Aurelia",
+      "year": "1950",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Lancia_Aurelia_B20_GT_1953.jpg/960px-Lancia_Aurelia_B20_GT_1953.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Lancia_Aurelia_B20_GT_1953.jpg",
+        "author": "Calreyn88",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Lancia Aurelia B20 GT 1953.jpg"
+      }
+    },
+    {
+      "match": "Nissan VQ",
+      "kind": "engine",
+      "name": "Nissan VQ · 装车示例：Nissan 350Z / Fairlady Z（Z33，VQ35DE）",
+      "year": "2002–2008",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/The_frontview_of_Nissan_FAIRLADY_Z_%28Z33%29.jpg/960px-The_frontview_of_Nissan_FAIRLADY_Z_%28Z33%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:The_frontview_of_Nissan_FAIRLADY_Z_(Z33).jpg",
+        "author": "Tokumeigakarinoaoshima",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file": "File:The frontview of Nissan FAIRLADY Z (Z33).jpg"
+      },
+      "note": "Wikipedia「Nissan VQ engine」：VQ35DE/VQ35HR 用于 Z33 Fairlady Z（350Z）"
+    },
+    {
+      "match": "Honda J",
+      "kind": "engine",
+      "name": "Honda J · 装车示例：Acura TL（UA6，J32A3）",
+      "year": "2004–2008",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/ACURA_TL_%28UA6-7%29_China.jpg/960px-ACURA_TL_%28UA6-7%29_China.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:ACURA_TL_(UA6-7)_China.jpg",
+        "author": "Dinkun Chen",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:ACURA TL (UA6-7) China.jpg"
+      },
+      "note": "Wikipedia「Honda J engine」：J32A3 装于 2004/2005 Acura TL"
+    },
+    {
+      "match": "F1 1.6 L V6 涡轮混动",
+      "kind": "f1",
+      "name": "F1 1.6 L V6 涡轮混动示例：Mercedes F1 W05 Hybrid",
+      "year": "2014",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Mercedes_F1_W05_Hybrid.jpg/960px-Mercedes_F1_W05_Hybrid.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Mercedes_F1_W05_Hybrid.jpg",
+        "author": "Mclarensenna",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "file": "File:Mercedes F1 W05 Hybrid.jpg"
+      },
+      "note": "Wikipedia「Mercedes F1 W05 Hybrid」：首代 1.6 L V6 涡轮混动动力单元 PU106A"
+    }
+  ],
+  "EA-026": [
+    {
+      "match": "Rover JET1",
+      "kind": "car",
+      "name": "Rover JET1",
+      "year": "1950",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Rover_JET1_%281950-52%29_-_Science_Museum%2C_London_2026-03-30.jpg/960px-Rover_JET1_%281950-52%29_-_Science_Museum%2C_London_2026-03-30.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Rover_JET1_(1950-52)_-_Science_Museum,_London_2026-03-30.jpg",
+        "author": "Andrea Boano",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "file": "File:Rover JET1 (1950-52) - Science Museum, London 2026-03-30.jpg"
+      }
+    },
+    {
+      "match": "Chrysler Turbine Car",
+      "kind": "car",
+      "name": "Chrysler Turbine Car",
+      "year": "1963–64",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/1963_Chrysler_Turbine_Ghia_Coupe_at_PB_2022.jpg/960px-1963_Chrysler_Turbine_Ghia_Coupe_at_PB_2022.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1963_Chrysler_Turbine_Ghia_Coupe_at_PB_2022.jpg",
+        "author": "Prova MO",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:1963 Chrysler Turbine Ghia Coupe at PB 2022.jpg"
+      }
+    },
+    {
+      "match": "Jaguar C-X75",
+      "kind": "car",
+      "name": "Jaguar C-X75",
+      "year": "2010",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Silver_jaguar_c-x75.jpg/960px-Silver_jaguar_c-x75.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Silver_jaguar_c-x75.jpg",
+        "author": "SbastienRondet  (Flickr User)",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:Silver jaguar c-x75.jpg"
+      }
+    }
+  ],
+  "EA-027": [
+    {
+      "match": "Mazda Cosmo Sport",
+      "kind": "car",
+      "name": "Mazda Cosmo Sport 110S",
+      "year": "1967",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mazda_Cosmo_Sport_%28front_three-quarter_view%29_at_Mazda_Museum.jpg/960px-Mazda_Cosmo_Sport_%28front_three-quarter_view%29_at_Mazda_Museum.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Mazda_Cosmo_Sport_(front_three-quarter_view)_at_Mazda_Museum.jpg",
+        "author": "Aos.1905",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "file": "File:Mazda Cosmo Sport (front three-quarter view) at Mazda Museum.jpg"
+      }
+    },
+    {
+      "match": "RX-7",
+      "kind": "car",
+      "name": "Mazda RX-7",
+      "year": "1978–2002",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/1978_Mazda_Savanna_RX-7.jpg/960px-1978_Mazda_Savanna_RX-7.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1978_Mazda_Savanna_RX-7.jpg",
+        "author": "TTTNIS",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file": "File:1978 Mazda Savanna RX-7.jpg"
+      }
+    },
+    {
+      "match": "RX-8",
+      "kind": "car",
+      "name": "Mazda RX-8",
+      "year": "2003–2012",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2003_Mazda_RX-8_Type_S.jpg/960px-2003_Mazda_RX-8_Type_S.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:2003_Mazda_RX-8_Type_S.jpg",
+        "author": "TTTNIS",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file": "File:2003 Mazda RX-8 Type S.jpg"
+      }
+    },
+    {
+      "match": "MX-30 R-EV",
+      "kind": "car",
+      "name": "Mazda MX-30 R-EV",
+      "year": "2023",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/PIMS_2024_-_Mazda_MX-30_R-EV.jpg/960px-PIMS_2024_-_Mazda_MX-30_R-EV.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:PIMS_2024_-_Mazda_MX-30_R-EV.jpg",
+        "author": "Ethan Llamas",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:PIMS 2024 - Mazda MX-30 R-EV.jpg"
+      }
+    }
+  ],
+  "EA-028": [
+    {
+      "match": "Ford 1.0 EcoBoost",
+      "kind": "engine",
+      "name": "Ford 1.0 EcoBoost · 装车示例：Ford Fiesta 1.0 EcoBoost",
+      "year": "2012 起",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Ford_Fiesta_1.0_EcoBoost_%282018%29_%2852716005689%29.jpg/960px-Ford_Fiesta_1.0_EcoBoost_%282018%29_%2852716005689%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Ford_Fiesta_1.0_EcoBoost_(2018)_(52716005689).jpg",
+        "author": "Charles from Port Chester, New York",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:Ford Fiesta 1.0 EcoBoost (2018) (52716005689).jpg"
+      },
+      "note": "Wikipedia「Ford EcoBoost engine」：1.0 L Fox 三缸广泛用于 Fiesta"
+    },
+    {
+      "match": "BMW B38",
+      "kind": "engine",
+      "name": "BMW B38 · 装车示例：BMW i8",
+      "year": "2014–2020",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Berlin%2C_Flughafen_Tempelhof%2C_BMW_i8_--_2019_--_4349.jpg/960px-Berlin%2C_Flughafen_Tempelhof%2C_BMW_i8_--_2019_--_4349.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Berlin,_Flughafen_Tempelhof,_BMW_i8_--_2019_--_4349.jpg",
+        "author": "Dietmar Rabich",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Berlin, Flughafen Tempelhof, BMW i8 -- 2019 -- 4349.jpg"
+      },
+      "note": "Wikipedia「BMW B38 engine」：B38 首款装车为 BMW i8"
+    },
+    {
+      "match": "Toyota G16E-GTS",
+      "kind": "engine",
+      "name": "Toyota G16E-GTS · 装车示例：Toyota GR Yaris",
+      "year": "2020–",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Toyota_GR_Yaris_RZ_1X7A0252.jpg/960px-Toyota_GR_Yaris_RZ_1X7A0252.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Toyota_GR_Yaris_RZ_1X7A0252.jpg",
+        "author": "Alexander Migl",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Toyota GR Yaris RZ 1X7A0252.jpg"
+      }
+    },
+    {
+      "match": "Koenigsegg TFG",
+      "kind": "engine",
+      "name": "Koenigsegg TFG · 装车示例：Koenigsegg Gemera",
+      "year": "2020 发布",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Koenigsegg_Gemera.jpg/960px-Koenigsegg_Gemera.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Koenigsegg_Gemera.jpg",
+        "author": "MrWalkr",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Koenigsegg Gemera.jpg"
+      },
+      "note": "Wikipedia「Koenigsegg Gemera」：Gemera 发布时采用双涡轮 TFG 2.0 三缸混动"
+    }
+  ],
+  "EA-029": [
+    {
+      "match": "Oldsmobile Jetfire",
+      "kind": "car",
+      "name": "Oldsmobile Jetfire",
+      "year": "1962",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/1962_Oldsmobile_Jetfire_%28Excelsior%2C_Minnesota%29_%2826891715934%29.jpg/960px-1962_Oldsmobile_Jetfire_%28Excelsior%2C_Minnesota%29_%2826891715934%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1962_Oldsmobile_Jetfire_(Excelsior,_Minnesota)_(26891715934).jpg",
+        "author": "Greg Gjerdingen from Willmar, USA",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:1962 Oldsmobile Jetfire (Excelsior, Minnesota) (26891715934).jpg"
+      }
+    },
+    {
+      "match": "Corvair Monza Spyder",
+      "kind": "car",
+      "name": "Chevrolet Corvair Monza Spyder",
+      "year": "1962–1964",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/1962_Corvair_Monza_Spyder_%2810499155214%29.jpg/960px-1962_Corvair_Monza_Spyder_%2810499155214%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1962_Corvair_Monza_Spyder_(10499155214).jpg",
+        "author": "JOHN LLOYD from Concrete, Washington, United States",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:1962 Corvair Monza Spyder (10499155214).jpg"
+      }
+    },
+    {
+      "match": "BMW 2002 turbo",
+      "kind": "car",
+      "name": "BMW 2002 turbo",
+      "year": "1973",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/BMW_2002_Turbo-_P5190663.jpg/960px-BMW_2002_Turbo-_P5190663.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:BMW_2002_Turbo-_P5190663.jpg",
+        "author": "Ermell",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:BMW 2002 Turbo- P5190663.jpg"
+      }
+    },
+    {
+      "match": "Saab 99 Turbo",
+      "kind": "car",
+      "name": "Saab 99 Turbo",
+      "year": "1978",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Saab_99_Turbo_CombiCoupe_%281978%29.jpg/960px-Saab_99_Turbo_CombiCoupe_%281978%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Saab_99_Turbo_CombiCoupe_(1978).jpg",
+        "author": "Jelger Groeneveld",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:Saab 99 Turbo CombiCoupe (1978).jpg"
+      }
+    }
+  ],
+  "EA-030": [
+    {
+      "match": "Bendix Electrojector",
+      "kind": "engine",
+      "name": "Bendix Electrojector · 装车示例：1957 Rambler Rebel",
+      "year": "1957",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/1957_Rambler_Rebel_at_2025_meet_03of15.jpg/960px-1957_Rambler_Rebel_at_2025_meet_03of15.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1957_Rambler_Rebel_at_2025_meet_03of15.jpg",
+        "author": "CZmarlin — Christopher Ziemnowicz, a photo credit would be appreciated if this image is used anywhere other than Wikipedia.",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "file": "File:1957 Rambler Rebel at 2025 meet 03of15.jpg"
+      },
+      "note": "Wikipedia「Bendix Electrojector」：1957 年 AMC 在 Rambler Rebel 上提供 Electrojector 选装"
+    },
+    {
+      "match": "Bosch D-Jetronic",
+      "kind": "engine",
+      "name": "Bosch D-Jetronic · 装车示例：Volkswagen 1600（Type 3）",
+      "year": "1967",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/1970_Volkswagen_1600_%28Type_3%29_TL_fastback_sedan_%282015-12-07%29_01.jpg/960px-1970_Volkswagen_1600_%28Type_3%29_TL_fastback_sedan_%282015-12-07%29_01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1970_Volkswagen_1600_(Type_3)_TL_fastback_sedan_(2015-12-07)_01.jpg",
+        "author": "OSX",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "file": "File:1970 Volkswagen 1600 (Type 3) TL fastback sedan (2015-12-07) 01.jpg"
+      }
+    }
+  ],
+  "EA-031": [
+    {
+      "match": "Mercedes OM617",
+      "kind": "engine",
+      "name": "Mercedes-Benz OM617 · 装车示例：Mercedes-Benz 300 D（W123）",
+      "year": "1976–1985",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/1980_Mercedes-Benz_300_D_%28W123%29_sedan_%2820980100691%29.jpg/960px-1980_Mercedes-Benz_300_D_%28W123%29_sedan_%2820980100691%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1980_Mercedes-Benz_300_D_(W123)_sedan_(20980100691).jpg",
+        "author": "Jeremy from Sydney, Australia",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:1980 Mercedes-Benz 300 D (W123) sedan (20980100691).jpg"
+      },
+      "note": "Wikipedia「Mercedes-Benz W123」：W123 300 D 搭载 3.0 L 五缸 OM617"
+    },
+    {
+      "match": "Audi Quattro 2.1 涡轮",
+      "kind": "car",
+      "name": "Audi Quattro",
+      "year": "1980",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Audi_Quattro_20V_Classic-Days_2022_DSC_0270.jpg/960px-Audi_Quattro_20V_Classic-Days_2022_DSC_0270.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Audi_Quattro_20V_Classic-Days_2022_DSC_0270.jpg",
+        "author": "Alexander Migl",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Audi Quattro 20V Classic-Days 2022 DSC 0270.jpg"
+      }
+    },
+    {
+      "match": "Volvo 850",
+      "kind": "car",
+      "name": "Volvo 850",
+      "year": "1991–1996",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/1993_Volvo_850_GLT.jpg/960px-1993_Volvo_850_GLT.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1993_Volvo_850_GLT.jpg",
+        "author": "Toquehusk",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "file": "File:1993 Volvo 850 GLT.jpg"
+      }
+    },
+    {
+      "match": "Audi RS3 2.5 TFSI",
+      "kind": "car",
+      "name": "Audi RS3",
+      "year": "2011–",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Audi_RS_3_Sportback_%282017%29_%2854809433996%29.jpg/960px-Audi_RS_3_Sportback_%282017%29_%2854809433996%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Audi_RS_3_Sportback_(2017)_(54809433996).jpg",
+        "author": "Charles from Port Chester, New York",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file": "File:Audi RS 3 Sportback (2017) (54809433996).jpg"
+      }
+    }
+  ],
+  "EA-032": [
+    {
+      "match": "Alfa Romeo Spider",
+      "kind": "car",
+      "name": "Alfa Romeo Spider",
+      "year": "1980",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/W6668_AlfaRomeo_2000_SpiderVeloce_1980_Italiennes2025_27434XA2.jpg/960px-W6668_AlfaRomeo_2000_SpiderVeloce_1980_Italiennes2025_27434XA2.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:W6668_AlfaRomeo_2000_SpiderVeloce_1980_Italiennes2025_27434XA2.jpg",
+        "author": "Llann Wé²",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:W6668 AlfaRomeo 2000 SpiderVeloce 1980 Italiennes2025 27434XA2.jpg"
+      }
+    },
+    {
+      "match": "Nissan 300ZX Z31",
+      "kind": "car",
+      "name": "Nissan 300ZX Z31",
+      "year": "1987",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Nissan-300ZX-Z31.jpg/960px-Nissan-300ZX-Z31.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Nissan-300ZX-Z31.jpg",
+        "author": "IFCAR",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "file": "File:Nissan-300ZX-Z31.jpg"
+      }
+    },
+    {
+      "match": "BMW VANOS",
+      "kind": "engine",
+      "name": "BMW VANOS（M50TU）· 装车示例：BMW 325i（E36）",
+      "year": "1992–1995",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/1995_BMW_325i_Sedan%2C_front_left%2C_08-10-2022.jpg/960px-1995_BMW_325i_Sedan%2C_front_left%2C_08-10-2022.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1995_BMW_325i_Sedan,_front_left,_08-10-2022.jpg",
+        "author": "MercurySable99",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:1995 BMW 325i Sedan, front left, 08-10-2022.jpg"
+      },
+      "note": "Wikipedia「VANOS」：1992 年首次用于 3 系/5 系的 M50 发动机"
+    }
+  ],
+  "EA-033": [
+    {
+      "match": "Lancia Delta S4",
+      "kind": "car",
+      "name": "Lancia Delta S4",
+      "year": "1985",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/R%C3%A9tromobile_2017_-_Lancia_Delta_S4_-_circa_1986_-_001.jpg/960px-R%C3%A9tromobile_2017_-_Lancia_Delta_S4_-_circa_1986_-_001.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:R%C3%A9tromobile_2017_-_Lancia_Delta_S4_-_circa_1986_-_001.jpg",
+        "author": "Thesupermat",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Rétromobile 2017 - Lancia Delta S4 - circa 1986 - 001.jpg"
+      }
+    },
+    {
+      "match": "Nissan March Super Turbo",
+      "kind": "car",
+      "name": "Nissan March Super Turbo",
+      "year": "1988",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Nissan_E-EK10_March_SUPER_TURBO_%2823110313070%29.jpg/960px-Nissan_E-EK10_March_SUPER_TURBO_%2823110313070%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Nissan_E-EK10_March_SUPER_TURBO_(23110313070).jpg",
+        "author": "先従隗始",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file": "File:Nissan E-EK10 March SUPER TURBO (23110313070).jpg"
+      }
+    },
+    {
+      "match": "VW 1.4 TSI",
+      "kind": "engine",
+      "name": "VW 1.4 TSI 双增压 · 装车示例：Volkswagen Golf Mk5 GT 1.4 TSI",
+      "year": "2005–2008",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/2008_Volkswagen_Golf_%281K_MY08%29_GT_Sport_1.4_TSI_5-door_hatchback_%282010-07-05%29.jpg/960px-2008_Volkswagen_Golf_%281K_MY08%29_GT_Sport_1.4_TSI_5-door_hatchback_%282010-07-05%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:2008_Volkswagen_Golf_(1K_MY08)_GT_Sport_1.4_TSI_5-door_hatchback_(2010-07-05).jpg",
+        "author": "OSX",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "file": "File:2008 Volkswagen Golf (1K MY08) GT Sport 1.4 TSI 5-door hatchback (2010-07-05).jpg"
+      },
+      "note": "Wikipedia「Volkswagen Golf Mk5」：2005 年 Golf GT 提供 1.4 L twincharger（TSI）"
+    },
+    {
+      "match": "Volvo T6",
+      "kind": "engine",
+      "name": "Volvo T6 双增压 · 装车示例：Volvo XC90 II",
+      "year": "2015 起",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Volvo_XC90_-_2016_%28cropped%29.jpg/960px-Volvo_XC90_-_2016_%28cropped%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Volvo_XC90_-_2016_(cropped).jpg",
+        "author": "Staticvent",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Volvo XC90 - 2016 (cropped).jpg"
+      },
+      "note": "Wikipedia「Volvo Engine Architecture」：VEA T6（机械+涡轮）用于 XC90 II 等；图为 XC90 II（具体动力版本未标）"
+    }
+  ],
+  "EA-034": [
+    {
+      "match": "Honda RA109E",
+      "kind": "f1",
+      "name": "Honda RA109E V10 · 装车示例：McLaren MP4/5",
+      "year": "1989",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/McLaren_MP4-5.jpg/960px-McLaren_MP4-5.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:McLaren_MP4-5.jpg",
+        "author": "John Chapman (Pyrope)",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file": "File:McLaren MP4-5.jpg"
+      },
+      "note": "Wikipedia「McLaren MP4/5」：1989 赛季搭载 Honda RA109E 3.5 L V10"
+    },
+    {
+      "match": "Renault V10",
+      "kind": "f1",
+      "name": "Renault RS V10 · 装车示例：Williams FW14",
+      "year": "1991",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Williams_FW14_1.jpg/960px-Williams_FW14_1.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Williams_FW14_1.jpg",
+        "author": "Calreyn88",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "file": "File:Williams FW14 1.jpg"
+      },
+      "note": "Wikipedia「Renault RS engine」：Williams FW14 搭载 Renault RS V10"
+    },
+    {
+      "match": "Ferrari V12",
+      "kind": "f1",
+      "name": "Ferrari 3.5 L V12（Tipo 036）· 装车示例：Ferrari 641",
+      "year": "1990",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Ferrari_641_%2835721371395%29.jpg/960px-Ferrari_641_%2835721371395%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Ferrari_641_(35721371395).jpg",
+        "author": "Neil",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:Ferrari 641 (35721371395).jpg"
+      },
+      "note": "Wikipedia「Ferrari 641」：3.5 L V12（type 036/037）"
+    }
+  ],
+  "EA-035": [
+    {
+      "match": "Honda B16A",
+      "kind": "engine",
+      "name": "Honda B16A · 装车示例：Honda Integra XSi（DA6）",
+      "year": "1989–1991",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Honda_Integra_XSi_%282469944698%29.jpg/960px-Honda_Integra_XSi_%282469944698%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Honda_Integra_XSi_(2469944698).jpg",
+        "author": "dave_7 from Lethbridge, Canada",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "file": "File:Honda Integra XSi (2469944698).jpg"
+      },
+      "note": "Wikipedia「Honda Integra」：1989 年二代 Integra 首搭 B16A（首台 VTEC）；XSi 为其高配"
+    }
+  ],
+  "EA-036": [
+    {
+      "match": "VW Passat",
+      "kind": "car",
+      "name": "Volkswagen Passat VR6",
+      "year": "1990s",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Volkswagen_Passat_Variant_VR6_%28B3%2C_1993%29_%2852343102094%29.jpg/960px-Volkswagen_Passat_Variant_VR6_%28B3%2C_1993%29_%2852343102094%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Volkswagen_Passat_Variant_VR6_(B3,_1993)_(52343102094).jpg",
+        "author": "Charles from Port Chester, New York",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:Volkswagen Passat Variant VR6 (B3, 1993) (52343102094).jpg"
+      }
+    },
+    {
+      "match": "Corrado",
+      "kind": "car",
+      "name": "Volkswagen Corrado VR6",
+      "year": "1992–1995",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/1992_Volkswagen_Corrado_VR6.jpg/960px-1992_Volkswagen_Corrado_VR6.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1992_Volkswagen_Corrado_VR6.jpg",
+        "author": "Calreyn88",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:1992 Volkswagen Corrado VR6.jpg"
+      }
+    },
+    {
+      "match": "Golf VR6",
+      "kind": "car",
+      "name": "Volkswagen Golf VR6",
+      "year": "1992–1997",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/1995_Volkswagen_Golf_%281H%29_VR6_5-door_hatchback_%2827221866220%29.jpg/960px-1995_Volkswagen_Golf_%281H%29_VR6_5-door_hatchback_%2827221866220%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1995_Volkswagen_Golf_(1H)_VR6_5-door_hatchback_(27221866220).jpg",
+        "author": "Jeremy from Sydney, Australia",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:1995 Volkswagen Golf (1H) VR6 5-door hatchback (27221866220).jpg"
+      }
+    },
+    {
+      "match": "VR5",
+      "kind": "engine",
+      "name": "VW VR5 · 装车示例：Volkswagen Bora V5（1J）",
+      "year": "1997–2005",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/2000_Volkswagen_Bora_%281J%29_V5_sedan_%2823785932370%29.jpg/960px-2000_Volkswagen_Bora_%281J%29_V5_sedan_%2823785932370%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:2000_Volkswagen_Bora_(1J)_V5_sedan_(23785932370).jpg",
+        "author": "Jeremy from Sydney, Australia",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:2000 Volkswagen Bora (1J) V5 sedan (23785932370).jpg"
+      },
+      "note": "Wikipedia「VR5 engine」：VR5 用于 Golf Mk4、Bora、New Beetle、Passat B5"
+    }
+  ],
+  "EA-037": [
+    {
+      "match": "Dodge Viper 8.0",
+      "kind": "car",
+      "name": "Dodge Viper",
+      "year": "1992–",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/1994_Dodge_Viper.jpg/960px-1994_Dodge_Viper.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1994_Dodge_Viper.jpg",
+        "author": "ArildV",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:1994 Dodge Viper.jpg"
+      }
+    },
+    {
+      "match": "Lamborghini/Audi 5.2",
+      "kind": "engine",
+      "name": "Lamborghini/Audi 5.2 FSI V10 · 装车示例：Audi R8 5.2 FSI quattro（Type 42）",
+      "year": "2009–2015",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Audi_R8_Spyder_5.2_FSI_quattro_%282009%29.jpg/960px-Audi_R8_Spyder_5.2_FSI_quattro_%282009%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Audi_R8_Spyder_5.2_FSI_quattro_(2009).jpg",
+        "author": "Rutger van der Maar",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:Audi R8 Spyder 5.2 FSI quattro (2009).jpg"
+      },
+      "note": "Wikipedia「Audi R8 (Type 42)」：R8 5.2 FSI quattro 搭载 5.2 L V10"
+    },
+    {
+      "match": "BMW S85",
+      "kind": "engine",
+      "name": "BMW S85 · 装车示例：BMW M5（E60）",
+      "year": "2005–2010",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/2007_BMW_M5_%28E60_MY07%29_sedan_%282015-06-27%29_01.jpg/960px-2007_BMW_M5_%28E60_MY07%29_sedan_%282015-06-27%29_01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:2007_BMW_M5_(E60_MY07)_sedan_(2015-06-27)_01.jpg",
+        "author": "OSX",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "file": "File:2007 BMW M5 (E60 MY07) sedan (2015-06-27) 01.jpg"
+      },
+      "note": "Wikipedia「BMW S85」：S85B50 V10 用于 E60 M5"
+    },
+    {
+      "match": "F1 1989–2005",
+      "kind": "f1",
+      "name": "F1 3.0 L V10 示例：Ferrari F2004",
+      "year": "2004",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Ferrari_F2004_%288925204549%29.jpg/960px-Ferrari_F2004_%288925204549%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Ferrari_F2004_(8925204549).jpg",
+        "author": "emperornie",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "file": "File:Ferrari F2004 (8925204549).jpg"
+      },
+      "note": "Wikipedia「Ferrari F2004」：2004 赛季 3.0 L V10 赛车"
+    }
+  ],
+  "EA-038": [
+    {
+      "match": "Goliath GP700",
+      "kind": "car",
+      "name": "Goliath GP700",
+      "year": "1951",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/2007-07-15_Goliath_GP700%2C_Baujahr_1955_IMG_2998.jpg/960px-2007-07-15_Goliath_GP700%2C_Baujahr_1955_IMG_2998.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:2007-07-15_Goliath_GP700,_Baujahr_1955_IMG_2998.jpg",
+        "author": "Eckhard Henkel",
+        "license": "CC BY-SA 3.0 de",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+        "file": "File:2007-07-15 Goliath GP700, Baujahr 1955 IMG 2998.jpg"
+      }
+    },
+    {
+      "match": "Mercedes 300 SL",
+      "kind": "car",
+      "name": "Mercedes-Benz 300 SL",
+      "year": "1954",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Mercedes-Benz_W198_300_SL_Gullwing_Genf_2019_1Y7A5007.jpg/960px-Mercedes-Benz_W198_300_SL_Gullwing_Genf_2019_1Y7A5007.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_W198_300_SL_Gullwing_Genf_2019_1Y7A5007.jpg",
+        "author": "Alexander Migl",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Mercedes-Benz W198 300 SL Gullwing Genf 2019 1Y7A5007.jpg"
+      }
+    },
+    {
+      "match": "Mitsubishi 4G93",
+      "kind": "engine",
+      "name": "Mitsubishi 4G93 GDI · 装车示例：Mitsubishi Galant（八代，1996）",
+      "year": "1996",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Mitsubishi_Galant_1.8_Super_Saloon_1996_%2817776835534%29.jpg/960px-Mitsubishi_Galant_1.8_Super_Saloon_1996_%2817776835534%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Galant_1.8_Super_Saloon_1996_(17776835534).jpg",
+        "author": "order_242 from Chile",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "file": "File:Mitsubishi Galant 1.8 Super Saloon 1996 (17776835534).jpg"
+      },
+      "note": "Wikipedia「Mitsubishi 4G9 engine」：1996 年中 4G93 GDI 首装 Galant；图为 1996 款 Galant 1.8（日本市场 1.8 为 GDI 版本）"
+    },
+    {
+      "match": "VW FSI/TSI",
+      "kind": "engine",
+      "name": "VW FSI/TSI · 装车示例：Volkswagen Golf Mk5 GT 1.4 TSI",
+      "year": "2005–2008",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/2008_Volkswagen_Golf_%281K_MY08%29_GT_Sport_1.4_TSI_5-door_hatchback_%282010-07-05%29.jpg/960px-2008_Volkswagen_Golf_%281K_MY08%29_GT_Sport_1.4_TSI_5-door_hatchback_%282010-07-05%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:2008_Volkswagen_Golf_(1K_MY08)_GT_Sport_1.4_TSI_5-door_hatchback_(2010-07-05).jpg",
+        "author": "OSX",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "file": "File:2008 Volkswagen Golf (1K MY08) GT Sport 1.4 TSI 5-door hatchback (2010-07-05).jpg"
+      },
+      "note": "Wikipedia「Volkswagen Golf Mk5」：Golf GT 1.4 TSI 为缸内直喷双增压"
+    }
+  ],
+  "EA-039": [
+    {
+      "match": "Alfa Romeo 156 JTD",
+      "kind": "car",
+      "name": "Alfa Romeo 156 JTD",
+      "year": "1997",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/1999_Alfa_Romeo_156_1.9_JTD.jpg/960px-1999_Alfa_Romeo_156_1.9_JTD.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:1999_Alfa_Romeo_156_1.9_JTD.jpg",
+        "author": "Corvettec6r",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "file": "File:1999 Alfa Romeo 156 1.9 JTD.jpg"
+      }
+    },
+    {
+      "match": "Fiat MultiJet",
+      "kind": "engine",
+      "name": "Fiat 1.3 MultiJet · 装车示例：Fiat Punto（188）1.3 Multijet",
+      "year": "2003 起",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Fiat_Punto_Classic_1.3_Multijet.JPG/960px-Fiat_Punto_Classic_1.3_Multijet.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:Fiat_Punto_Classic_1.3_Multijet.JPG",
+        "author": "Corvettec6r",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file": "File:Fiat Punto Classic 1.3 Multijet.JPG"
+      },
+      "note": "Wikipedia「Fiat JTD engine」：1.3 Multijet 2003 年推出，用于 Punto 等"
+    }
+  ],
+  "EA-040": [
+    {
+      "match": "Toyota Prius NHW10",
+      "kind": "car",
+      "name": "Toyota Prius NHW10",
+      "year": "1997",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Toyota_HK-NHW10_Prius_%2822022010354%29.jpg/960px-Toyota_HK-NHW10_Prius_%2822022010354%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Toyota_HK-NHW10_Prius_(22022010354).jpg",
+        "author": "先従隗始",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file": "File:Toyota HK-NHW10 Prius (22022010354).jpg"
+      }
+    },
+    {
+      "match": "Honda Insight",
+      "kind": "car",
+      "name": "Honda Insight",
+      "year": "1999",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Honda_AAA-ZE1_Insight_%2824091413391%29.jpg/960px-Honda_AAA-ZE1_Insight_%2824091413391%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Honda_AAA-ZE1_Insight_(24091413391).jpg",
+        "author": "先従隗始",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file": "File:Honda AAA-ZE1 Insight (24091413391).jpg"
+      }
+    }
+  ],
+  "EA-041": [
+    {
+      "match": "BMW Valvetronic",
+      "kind": "engine",
+      "name": "BMW Valvetronic · 装车示例：BMW 316ti Compact（E46）",
+      "year": "2001",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/2001-2003_BMW_316ti_%28E46%29_hatchback_%282009-07-15%29.jpg/960px-2001-2003_BMW_316ti_%28E46%29_hatchback_%282009-07-15%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:2001-2003_BMW_316ti_(E46)_hatchback_(2009-07-15).jpg",
+        "author": "OSX",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "file": "File:2001-2003 BMW 316ti (E46) hatchback (2009-07-15).jpg"
+      },
+      "note": "Wikipedia「Valvetronic」：2001 年首次用于 316ti Compact"
+    }
+  ],
+  "EA-042": [
+    {
+      "match": "VW Passat W8",
+      "kind": "car",
+      "name": "Volkswagen Passat W8",
+      "year": "2001–2004",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/2003_Volkswagen_Passat_W8_4.0_%2839647062423%29.jpg/960px-2003_Volkswagen_Passat_W8_4.0_%2839647062423%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:2003_Volkswagen_Passat_W8_4.0_(39647062423).jpg",
+        "author": "Rutger van der Maar",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:2003 Volkswagen Passat W8 4.0 (39647062423).jpg"
+      }
+    },
+    {
+      "match": "Phaeton",
+      "kind": "car",
+      "name": "Volkswagen Phaeton",
+      "year": "2002–2016",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/VOLKSWAGEN_PHAETON_%28GP3%29_China.jpg/960px-VOLKSWAGEN_PHAETON_%28GP3%29_China.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:VOLKSWAGEN_PHAETON_(GP3)_China.jpg",
+        "author": "Dinkun Chen",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:VOLKSWAGEN PHAETON (GP3) China.jpg"
+      }
+    },
+    {
+      "match": "Audi A8",
+      "kind": "car",
+      "name": "Audi A8",
+      "year": "2000s",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Audi_A8_W12_%28D2%29_%28By-AV%29.jpg/960px-Audi_A8_W12_%28D2%29_%28By-AV%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Audi_A8_W12_(D2)_(By-AV).jpg",
+        "author": "Anton V.",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Audi A8 W12 (D2) (By-AV).jpg"
+      }
+    },
+    {
+      "match": "Bentley",
+      "kind": "car",
+      "name": "Bentley Continental GT（6.0 W12）",
+      "year": "2003–2011",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/2005_Bentley_Continental_GT_%286238387241%29.jpg/960px-2005_Bentley_Continental_GT_%286238387241%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:2005_Bentley_Continental_GT_(6238387241).jpg",
+        "author": "Spanish Coches",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:2005 Bentley Continental GT (6238387241).jpg"
+      },
+      "note": "Wikipedia「Bentley Continental GT」：6.0 L 双涡轮 W12"
+    },
+    {
+      "match": "Bugatti Veyron/Chiron W16",
+      "kind": "car",
+      "name": "Bugatti Veyron",
+      "year": "2005–2015",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/2009_Bugatti_Veyron_16.4.jpg/960px-2009_Bugatti_Veyron_16.4.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:2009_Bugatti_Veyron_16.4.jpg",
+        "author": "Calreyn88",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:2009 Bugatti Veyron 16.4.jpg"
+      }
+    }
+  ],
+  "EA-043": [
+    {
+      "match": "2006–2013 赛季 F1 赛车",
+      "kind": "f1",
+      "name": "2.4 L V8 时代示例：Red Bull RB9",
+      "year": "2013",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Red_Bull_RB9_%282013%29_%2848190897961%29.jpg/960px-Red_Bull_RB9_%282013%29_%2848190897961%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Red_Bull_RB9_(2013)_(48190897961).jpg",
+        "author": "Peter Wright from United Kingdom",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "file": "File:Red Bull RB9 (2013) (48190897961).jpg"
+      },
+      "note": "Wikipedia「Red Bull RB9」：V8 自然吸气时代（2006–2013）最后一辆冠军车"
+    },
+    {
+      "match": "2006 年 Toro Rosso 使用限转 V10",
+      "kind": "f1",
+      "name": "Toro Rosso STR1",
+      "year": "2006",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Vitantonio_Liuzzi_2006_Indianapolis.jpg/960px-Vitantonio_Liuzzi_2006_Indianapolis.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Vitantonio_Liuzzi_2006_Indianapolis.jpg",
+        "author": "Ryosuke Yagi",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:Vitantonio Liuzzi 2006 Indianapolis.jpg"
+      }
+    }
+  ],
+  "EA-044": [
+    {
+      "match": "BMW Hydrogen 7",
+      "kind": "car",
+      "name": "BMW Hydrogen 7",
+      "year": "2005–2007",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/BMW_Hydrogen_7.jpg/960px-BMW_Hydrogen_7.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:BMW_Hydrogen_7.jpg",
+        "author": "Mike Babcock from Peterborough, Ontario, Canada",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:BMW Hydrogen 7.jpg"
+      }
+    },
+    {
+      "match": "Mazda RX-8 Hydrogen RE",
+      "kind": "car",
+      "name": "Mazda RX-8 Hydrogen RE",
+      "year": "2006",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Mazda_2010_RX-8_Hydrogen_RE_Right.jpg/960px-Mazda_2010_RX-8_Hydrogen_RE_Right.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Mazda_2010_RX-8_Hydrogen_RE_Right.jpg",
+        "author": "Tabercil from Canadian",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "file": "File:Mazda 2010 RX-8 Hydrogen RE Right.jpg"
+      }
+    },
+    {
+      "match": "Toyota GR Corolla H2",
+      "kind": "car",
+      "name": "Toyota GR Corolla H2",
+      "year": "2022",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/No.32_ORC_ROOKIE_GR_Corolla_H2_concept_at_2022_SUZUKA_5_Hours_Endurance_Race_%2838%29.jpg/960px-No.32_ORC_ROOKIE_GR_Corolla_H2_concept_at_2022_SUZUKA_5_Hours_Endurance_Race_%2838%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:No.32_ORC_ROOKIE_GR_Corolla_H2_concept_at_2022_SUZUKA_5_Hours_Endurance_Race_(38).jpg",
+        "author": "Tokumeigakarinoaoshima",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file": "File:No.32 ORC ROOKIE GR Corolla H2 concept at 2022 SUZUKA 5 Hours Endurance Race (38).jpg"
+      }
+    }
+  ],
+  "EA-045": [
+    {
+      "match": "2009 年与 2011–2013 年的 F1 赛车",
+      "kind": "f1",
+      "name": "KERS 时代示例：Red Bull RB7（首辆装 KERS 夺冠的车）",
+      "year": "2011",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Red_Bull_RB7_Mark_Webber.jpg/960px-Red_Bull_RB7_Mark_Webber.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Red_Bull_RB7_Mark_Webber.jpg",
+        "author": "Rob Oo",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "file": "File:Red Bull RB7 Mark Webber.jpg"
+      },
+      "note": "Wikipedia「Red Bull RB7」：首辆装备 KERS 赢得车队冠军的 F1 赛车"
+    }
+  ],
+  "EA-046": [
+    {
+      "match": "Chevrolet Volt",
+      "kind": "car",
+      "name": "Chevrolet Volt",
+      "year": "2011–2019",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Chevrolet_Volt_%28first_generation%29_DSC_8229.jpg/960px-Chevrolet_Volt_%28first_generation%29_DSC_8229.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Chevrolet_Volt_(first_generation)_DSC_8229.jpg",
+        "author": "Alexander Migl",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Chevrolet Volt (first generation) DSC 8229.jpg"
+      }
+    },
+    {
+      "match": "BMW i3 REx",
+      "kind": "car",
+      "name": "BMW i3 REx",
+      "year": "2013–2022",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/D%C3%BClmen%2C_Kirchspiel%2C_Visbeck%2C_BMW_i3_--_2016_--_1581-7.jpg/960px-D%C3%BClmen%2C_Kirchspiel%2C_Visbeck%2C_BMW_i3_--_2016_--_1581-7.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Kirchspiel,_Visbeck,_BMW_i3_--_2016_--_1581-7.jpg",
+        "author": "Dietmar Rabich",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Dülmen, Kirchspiel, Visbeck, BMW i3 -- 2016 -- 1581-7.jpg"
+      }
+    },
+    {
+      "match": "Mazda MX-30 R-EV",
+      "kind": "car",
+      "name": "Mazda MX-30 R-EV",
+      "year": "2023",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/PIMS_2024_-_Mazda_MX-30_R-EV.jpg/960px-PIMS_2024_-_Mazda_MX-30_R-EV.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:PIMS_2024_-_Mazda_MX-30_R-EV.jpg",
+        "author": "Ethan Llamas",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:PIMS 2024 - Mazda MX-30 R-EV.jpg"
+      }
+    },
+    {
+      "match": "理想 L 系列",
+      "kind": "car",
+      "name": "Li Auto L9",
+      "year": "2022–",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Li_L9%2C_Almaty_%28P1180247%29.jpg/960px-Li_L9%2C_Almaty_%28P1180247%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Li_L9,_Almaty_(P1180247).jpg",
+        "author": "Matti Blume",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "file": "File:Li L9, Almaty (P1180247).jpg"
+      }
+    }
+  ],
+  "EA-047": [
+    {
+      "match": "2014–2025 赛季 F1 动力单元",
+      "kind": "f1",
+      "name": "V6 混动时代示例：Mercedes F1 W05 Hybrid",
+      "year": "2014",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Mercedes_F1_W05_Hybrid.jpg/960px-Mercedes_F1_W05_Hybrid.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Mercedes_F1_W05_Hybrid.jpg",
+        "author": "Mclarensenna",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "file": "File:Mercedes F1 W05 Hybrid.jpg"
+      },
+      "note": "Wikipedia「Mercedes F1 W05 Hybrid」：首代 1.6 L V6 涡轮混动 PU106A"
+    },
+    {
+      "match": "如 Honda V6 混动",
+      "kind": "f1",
+      "name": "Honda V6 混动示例：Red Bull RB16B（Honda RA621H）",
+      "year": "2021",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Red_Bull_RB16B_at_Formula_1_Exhibition%2C_London_01.jpg/960px-Red_Bull_RB16B_at_Formula_1_Exhibition%2C_London_01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Red_Bull_RB16B_at_Formula_1_Exhibition,_London_01.jpg",
+        "author": "Hullian111",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Red Bull RB16B at Formula 1 Exhibition, London 01.jpg"
+      },
+      "note": "Wikipedia「Red Bull Racing RB16」：RB16B 搭载 Honda RA621H 动力单元"
+    }
+  ],
+  "EA-048": [
+    {
+      "match": "Audi SQ7 4.0 TDI",
+      "kind": "car",
+      "name": "Audi SQ7 4.0 TDI",
+      "year": "2016",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Audi_SQ7_TDI%2C_GIMS_2018%2C_Le_Grand-Saconnex_%281X7A1497%29.jpg/960px-Audi_SQ7_TDI%2C_GIMS_2018%2C_Le_Grand-Saconnex_%281X7A1497%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Audi_SQ7_TDI,_GIMS_2018,_Le_Grand-Saconnex_(1X7A1497).jpg",
+        "author": "Matti Blume",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Audi SQ7 TDI, GIMS 2018, Le Grand-Saconnex (1X7A1497).jpg"
+      }
+    },
+    {
+      "match": "Mercedes-AMG M139/M256 e-turbo",
+      "kind": "engine",
+      "name": "Mercedes-AMG M139 e-turbo · 装车示例：Mercedes-AMG SL 43（R232）",
+      "year": "2022 起",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Mercedes-AMG_SL43_R232.jpg/960px-Mercedes-AMG_SL43_R232.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Mercedes-AMG_SL43_R232.jpg",
+        "author": "TTTNIS",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file": "File:Mercedes-AMG SL43 R232.jpg"
+      },
+      "note": "SL 43 为首款搭载 M139 电动废气涡轮（e-turbo）的量产车"
+    }
+  ],
+  "EA-049": [
+    {
+      "match": "Infiniti QX50",
+      "kind": "car",
+      "name": "Infiniti QX50",
+      "year": "2018",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/2019_Infiniti_QX50_%28SIAM_2018%29.JPG/960px-2019_Infiniti_QX50_%28SIAM_2018%29.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:2019_Infiniti_QX50_(SIAM_2018).JPG",
+        "author": "Bull-Doser",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "file": "File:2019 Infiniti QX50 (SIAM 2018).JPG"
+      }
+    },
+    {
+      "match": "KR15DDT",
+      "kind": "engine",
+      "name": "Nissan KR15DDT · 装车示例：Nissan X-Trail e-Power（T33）",
+      "year": "2022",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Nissan_X-Trail_e-Power_1X7A7056.jpg/960px-Nissan_X-Trail_e-Power_1X7A7056.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Nissan_X-Trail_e-Power_1X7A7056.jpg",
+        "author": "Alexander-93",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Nissan X-Trail e-Power 1X7A7056.jpg"
+      },
+      "note": "Wikipedia「Nissan KR engine」：KR15DDT 三缸 VC-Turbo 首装第四代 X-Trail"
+    }
+  ],
+  "EA-050": [
+    {
+      "match": "Mazda Skyactiv-X",
+      "kind": "engine",
+      "name": "Mazda Skyactiv-X · 装车示例：Mazda3（BP）e-Skyactiv-X",
+      "year": "2019",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Mazda3_%28BP%29_X_e-Skyactiv-X_IMG_9020.jpg/960px-Mazda3_%28BP%29_X_e-Skyactiv-X_IMG_9020.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Mazda3_(BP)_X_e-Skyactiv-X_IMG_9020.jpg",
+        "author": "Alexander Migl",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Mazda3 (BP) X e-Skyactiv-X IMG 9020.jpg"
+      }
+    },
+    {
+      "match": "Mazda3",
+      "kind": "car",
+      "name": "Mazda3 Skyactiv-X",
+      "year": "2019",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Mazda3_%28BP%29_X_e-Skyactiv-X_IMG_9020.jpg/960px-Mazda3_%28BP%29_X_e-Skyactiv-X_IMG_9020.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Mazda3_(BP)_X_e-Skyactiv-X_IMG_9020.jpg",
+        "author": "Alexander Migl",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Mazda3 (BP) X e-Skyactiv-X IMG 9020.jpg"
+      }
+    },
+    {
+      "match": "CX-30",
+      "kind": "car",
+      "name": "Mazda CX-30",
+      "year": "2019",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Mazda_CX-30_IMG_3760.jpg/960px-Mazda_CX-30_IMG_3760.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Mazda_CX-30_IMG_3760.jpg",
+        "author": "Alexander Migl",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file": "File:Mazda CX-30 IMG 3760.jpg"
+      }
+    }
+  ],
+  "EA-051": [
+    {
+      "match": "Porsche 等在智利的 Haru Oni 示范厂",
+      "kind": "other",
+      "name": "Haru Oni e-fuel 示范厂（智利）",
+      "year": "2022",
+      "image": null,
+      "note": "工厂设施，非整车"
+    },
+    {
+      "match": "F1 2026 起用 100% 可持续燃料",
+      "kind": "f1",
+      "name": "2026 规则示例：Aston Martin AMR26",
+      "year": "2026",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/F1_2026%2C_Aston_Martin_F1_Team%2C_Aston_Martin_AMR26%2C_Fernando_Alonso%2C_Spa_Francorchamps_%2855425688703%29.jpg/960px-F1_2026%2C_Aston_Martin_F1_Team%2C_Aston_Martin_AMR26%2C_Fernando_Alonso%2C_Spa_Francorchamps_%2855425688703%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:F1_2026,_Aston_Martin_F1_Team,_Aston_Martin_AMR26,_Fernando_Alonso,_Spa_Francorchamps_(55425688703).jpg",
+        "author": "Der Alf",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "file": "File:F1 2026, Aston Martin F1 Team, Aston Martin AMR26, Fernando Alonso, Spa Francorchamps (55425688703).jpg"
+      },
+      "note": "2026 赛季比利时大奖赛照片（CC BY 4.0），Honda 动力单元"
+    }
+  ],
+  "EA-052": [
+    {
+      "match": "2026 赛季起全部 F1 动力单元",
+      "kind": "f1",
+      "name": "2026 规则 F1 赛车示例：Aston Martin AMR26",
+      "year": "2026",
+      "image": {
+        "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/F1_2026%2C_Aston_Martin_F1_Team%2C_Aston_Martin_AMR26%2C_Fernando_Alonso%2C_Spa_Francorchamps_%2855425688703%29.jpg/960px-F1_2026%2C_Aston_Martin_F1_Team%2C_Aston_Martin_AMR26%2C_Fernando_Alonso%2C_Spa_Francorchamps_%2855425688703%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:F1_2026,_Aston_Martin_F1_Team,_Aston_Martin_AMR26,_Fernando_Alonso,_Spa_Francorchamps_(55425688703).jpg",
+        "author": "Der Alf",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "file": "File:F1 2026, Aston Martin F1 Team, Aston Martin AMR26, Fernando Alonso, Spa Francorchamps (55425688703).jpg"
+      },
+      "note": "2026 赛季比利时大奖赛照片（CC BY 4.0），Honda 动力单元"
+    }
+  ]
+}

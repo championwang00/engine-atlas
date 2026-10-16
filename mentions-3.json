@@ -1,0 +1,1368 @@
+{
+  "EA-027": {
+    "intro": [
+      {
+        "match": "DKM 54",
+        "kind": "engine",
+        "name": "NSU DKM 54",
+        "year": "1957",
+        "brief": "NSU 第一台能运转的汪克尔转子样机，1957 年 2 月点火，输出 21 PS。",
+        "image": null
+      },
+      {
+        "match": "NSU Spider",
+        "kind": "car",
+        "name": "NSU Spider",
+        "year": "1964–1967",
+        "brief": "世界第一款量产转子发动机轿车，单转子约 50 PS，约产 2000 辆。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/NSU_Spider_%281964%29_Classic-Gala_2022_1X7A0088_%28cropped%29.jpg/960px-NSU_Spider_%281964%29_Classic-Gala_2022_1X7A0088_%28cropped%29.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:NSU_Spider_(1964)_Classic-Gala_2022_1X7A0088_(cropped).jpg",
+          "author": "Alexander Migl",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      },
+      {
+        "match": "马自达 Cosmo 110S",
+        "kind": "car",
+        "name": "Mazda Cosmo Sport 110S",
+        "year": "1967",
+        "brief": "马自达首款转子车，也是第一款双转子跑车，982 cc 双转子约 110 hp。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/1967_Mazda_Cosmo_110S_%2839596543274%29.jpg/960px-1967_Mazda_Cosmo_110S_%2839596543274%29.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:1967_Mazda_Cosmo_110S_(39596543274).jpg",
+          "author": "Joe deSousa",
+          "license": "CC0",
+          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+        }
+      },
+      {
+        "match": "RX-7",
+        "kind": "car",
+        "name": "Mazda RX-7",
+        "year": "1978–2002",
+        "brief": "马自达转子跑车代表，延续 Cosmo 的转子血脉，图为第三代 FD。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/FD_Mazda_RX-7.jpg/960px-FD_Mazda_RX-7.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:FD_Mazda_RX-7.jpg",
+          "author": "Aaron Lai",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+        }
+      },
+      {
+        "match": "RX-8",
+        "kind": "car",
+        "name": "Mazda RX-8",
+        "year": "2003–2012",
+        "brief": "最后一款量产转子跑车，2012 年停产后转子机一度退出市场。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/2003_Mazda_RX-8_Type_S.jpg/960px-2003_Mazda_RX-8_Type_S.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:2003_Mazda_RX-8_Type_S.jpg",
+          "author": "TTTNIS",
+          "license": "CC0",
+          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+        }
+      },
+      {
+        "match": "马自达 MX-30 R-EV",
+        "kind": "car",
+        "name": "Mazda MX-30 R-EV",
+        "year": "2023",
+        "brief": "插电增程车，830 cc 单转子只发电不驱动车轮，输出 55 kW，让转子机回归。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Mazda_MX-30_Rotary-EV_Edition_R_%283LA-DR8V3P%29_front-left.jpg/960px-Mazda_MX-30_Rotary-EV_Edition_R_%283LA-DR8V3P%29_front-left.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:Mazda_MX-30_Rotary-EV_Edition_R_(3LA-DR8V3P)_front-left.jpg",
+          "author": "Tokumeigakarinoaoshima",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "match": "Mazda Cosmo Sport",
+        "kind": "car",
+        "name": "Mazda Cosmo Sport 110S",
+        "year": "1967",
+        "brief": "马自达第一款转子车，也是第一款双转子量产跑车。"
+      },
+      {
+        "match": "RX-7",
+        "kind": "car",
+        "name": "Mazda RX-7",
+        "year": "1978–2002",
+        "brief": "三代转子跑车，是马自达转子技术最有名的载体。"
+      },
+      {
+        "match": "RX-8",
+        "kind": "car",
+        "name": "Mazda RX-8",
+        "year": "2003–2012",
+        "brief": "四门转子跑车，2012 年停产，转子量产车就此中断。"
+      },
+      {
+        "match": "MX-30 R-EV",
+        "kind": "car",
+        "name": "Mazda MX-30 R-EV",
+        "year": "2023",
+        "brief": "以 0.8 L 单转子增程器的形式让转子发动机重回量产车。"
+      }
+    ]
+  },
+  "EA-028": {
+    "intro": [
+      {
+        "match": "DKW F9",
+        "kind": "car",
+        "name": "DKW F9",
+        "year": "1938–1940",
+        "brief": "二战前 DKW 的流线型小车原型，早在 1938 年就用三缸二冲程机。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/DKW_F9_Prototyp.jpg/960px-DKW_F9_Prototyp.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:DKW_F9_Prototyp.jpg",
+          "author": "Přispívatel",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      },
+      {
+        "match": "福特 1.0 EcoBoost",
+        "kind": "engine",
+        "name": "Ford 1.0 EcoBoost · 装车示例：Ford Fiesta 1.0 EcoBoost",
+        "year": "2012–",
+        "brief": "999 cc 涡轮直三，缸体约一张 A4 纸大，靠飞轮配重求平顺，多年获年度发动机奖。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/2023_Ford_Fiesta_Titanium_EcoBoost_-_999cc_1.0_%28100PS%29_Petrol_-_Agate_Black_-_02-2025%2C_Front.jpg/960px-2023_Ford_Fiesta_Titanium_EcoBoost_-_999cc_1.0_%28100PS%29_Petrol_-_Agate_Black_-_02-2025%2C_Front.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:2023_Ford_Fiesta_Titanium_EcoBoost_-_999cc_1.0_(100PS)_Petrol_-_Agate_Black_-_02-2025,_Front.jpg",
+          "author": "Harvey Bold",
+          "license": "CC0",
+          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+        }
+      },
+      {
+        "match": "宝马 B38",
+        "kind": "engine",
+        "name": "BMW B38 · 装车示例：BMW i8",
+        "year": "2010 年代–",
+        "brief": "宝马模块化直列三缸，用于 Mini 和 i8 等车型。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/BMW_i8_Seitenansicht_17RM0777.jpg/960px-BMW_i8_Seitenansicht_17RM0777.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:BMW_i8_Seitenansicht_17RM0777.jpg",
+          "author": "Ermell",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      },
+      {
+        "match": "丰田 G16E",
+        "kind": "engine",
+        "name": "Toyota G16E-GTS · 装车示例：Toyota GR Yaris",
+        "year": "2020–",
+        "brief": "丰田为 GR Yaris 开发的高性能涡轮直三。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Toyota_GR_Yaris_RZ_1X7A0252.jpg/960px-Toyota_GR_Yaris_RZ_1X7A0252.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:Toyota_GR_Yaris_RZ_1X7A0252.jpg",
+          "author": "Alexander Migl",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      },
+      {
+        "match": "柯尼塞格 TFG",
+        "kind": "engine",
+        "name": "Koenigsegg TFG",
+        "year": "2020 年代",
+        "brief": "柯尼塞格的直列三缸，证明三缸布局也能用于超跑。",
+        "image": null
+      }
+    ],
+    "examples": [
+      {
+        "match": "Ford 1.0 EcoBoost",
+        "kind": "engine",
+        "name": "Ford 1.0 EcoBoost",
+        "year": "2012–",
+        "brief": "2012 年投产的 999 cc 涡轮直三，现代三缸的代表。"
+      },
+      {
+        "match": "BMW B38（Mini、i8）",
+        "kind": "engine",
+        "name": "BMW B38",
+        "year": "2010 年代–",
+        "brief": "宝马模块化三缸，装于 Mini 与 i8。"
+      },
+      {
+        "match": "Toyota G16E-GTS（GR Yaris）",
+        "kind": "engine",
+        "name": "Toyota G16E-GTS",
+        "year": "2020–",
+        "brief": "GR Yaris 的涡轮三缸，高性能三缸样本。"
+      },
+      {
+        "match": "Koenigsegg TFG",
+        "kind": "engine",
+        "name": "Koenigsegg TFG",
+        "year": "2020 年代",
+        "brief": "柯尼塞格的三缸发动机，把三缸布局带入超跑。"
+      }
+    ]
+  },
+  "EA-029": {
+    "intro": [
+      {
+        "match": "奥兹莫比尔 F-85 Jetfire",
+        "kind": "car",
+        "name": "Oldsmobile F-85 Jetfire",
+        "year": "1962–1963",
+        "brief": "首款量产涡轮乘用车，V8 配 Garrett 涡轮 215 bhp，仅售 3765 辆。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/1962_Oldsmobile_Jetfire_%2827225536930%29.jpg/960px-1962_Oldsmobile_Jetfire_%2827225536930%29.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:1962_Oldsmobile_Jetfire_(27225536930).jpg",
+          "author": "Greg Gjerdingen from Willmar, USA",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+        }
+      },
+      {
+        "match": "雪佛兰 Corvair Monza Spyder",
+        "kind": "car",
+        "name": "Chevrolet Corvair Monza Spyder",
+        "year": "1962–1964",
+        "brief": "1962 年春跟进的第二款厂装涡轮量产车，风冷后置发动机输出 150 hp。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/1963_Chevrolet_Corvair_Monza_900_Spyder_%2853935975238%29.jpg/960px-1963_Chevrolet_Corvair_Monza_900_Spyder_%2853935975238%29.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:1963_Chevrolet_Corvair_Monza_900_Spyder_(53935975238).jpg",
+          "author": "Mustang Joe",
+          "license": "CC0",
+          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "match": "Oldsmobile Jetfire",
+        "kind": "car",
+        "name": "Oldsmobile F-85 Jetfire",
+        "year": "1962",
+        "brief": "第一款量产涡轮增压轿车，需加注水甲醇混合液抑制爆震。"
+      },
+      {
+        "match": "Corvair Monza Spyder",
+        "kind": "car",
+        "name": "Chevrolet Corvair Monza Spyder",
+        "year": "1962",
+        "brief": "第二款厂装涡轮量产车，输出 150 hp。"
+      },
+      {
+        "match": "BMW 2002 turbo",
+        "kind": "car",
+        "name": "BMW 2002 turbo",
+        "year": "1973",
+        "brief": "宝马的涡轮增压量产轿车，早期欧洲涡轮车代表。"
+      },
+      {
+        "match": "Saab 99 Turbo",
+        "kind": "car",
+        "name": "Saab 99 Turbo",
+        "year": "1978",
+        "brief": "萨博的涡轮增压家用轿车，涡轮普及期的代表车型。"
+      }
+    ]
+  },
+  "EA-030": {
+    "intro": [
+      {
+        "match": "Electrojector",
+        "kind": "engine",
+        "name": "Bendix Electrojector · 装车示例：Chrysler 300D",
+        "year": "1957–1958",
+        "brief": "美国 Bendix 的第一个电子喷射系统，因可靠性问题未能真正普及。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/1958_Chrysler_300D_Hardtop_%2815701505403%29_%28cropped%29.jpg/960px-1958_Chrysler_300D_Hardtop_%2815701505403%29_%28cropped%29.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:1958_Chrysler_300D_Hardtop_(15701505403)_(cropped).jpg",
+          "author": "Sicnag",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+        }
+      },
+      {
+        "match": "AMC Rambler Rebel",
+        "kind": "car",
+        "name": "AMC Rambler Rebel",
+        "year": "1957",
+        "brief": "Electrojector 原本为它设计，但电喷版最终没有向客户提供。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/1957_Rambler_Rebel_at_2025_meet_03of15.jpg/960px-1957_Rambler_Rebel_at_2025_meet_03of15.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:1957_Rambler_Rebel_at_2025_meet_03of15.jpg",
+          "author": "CZmarlin — Christopher Ziemnowicz, a photo credit would be appreciated if this image is used anywhere other than Wikipedia.",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+        }
+      },
+      {
+        "match": "Chrysler 300D",
+        "kind": "car",
+        "name": "Chrysler 300D",
+        "year": "1958",
+        "brief": "1958 年搭载 Electrojector 的高性能轿车之一，是已知最早的电喷汽车。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/1958_Chrysler_300D_Hardtop_%2815701505403%29_%28cropped%29.jpg/960px-1958_Chrysler_300D_Hardtop_%2815701505403%29_%28cropped%29.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:1958_Chrysler_300D_Hardtop_(15701505403)_(cropped).jpg",
+          "author": "Sicnag",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+        }
+      },
+      {
+        "match": "DeSoto Adventurer",
+        "kind": "car",
+        "name": "DeSoto Adventurer",
+        "year": "1958",
+        "brief": "克莱斯勒旗下 DeSoto 旗舰，1958 年可选 Electrojector 电喷。",
+        "image": null
+      },
+      {
+        "match": "D-Jetronic",
+        "kind": "engine",
+        "name": "Bosch D-Jetronic · 装车示例：Volkswagen 1600 TL/E",
+        "year": "1967",
+        "brief": "博世首个电喷系统，用进气歧管压力判负荷，约 25 个晶体管组成控制单元。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/1970_Volkswagen_1600_%28Type_3%29_TL_fastback_sedan_%282015-12-07%29_01.jpg/960px-1970_Volkswagen_1600_%28Type_3%29_TL_fastback_sedan_%282015-12-07%29_01.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:1970_Volkswagen_1600_(Type_3)_TL_fastback_sedan_(2015-12-07)_01.jpg",
+          "author": "OSX",
+          "license": "Public domain",
+          "licenseUrl": ""
+        }
+      },
+      {
+        "match": "大众 1600 TL/E",
+        "kind": "car",
+        "name": "Volkswagen 1600 TL/E（Type 3）",
+        "year": "1967",
+        "brief": "第一款搭载博世 D-Jetronic 电喷的量产车。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/1970_Volkswagen_1600_%28Type_3%29_TL_fastback_sedan_%282015-12-07%29_01.jpg/960px-1970_Volkswagen_1600_%28Type_3%29_TL_fastback_sedan_%282015-12-07%29_01.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:1970_Volkswagen_1600_(Type_3)_TL_fastback_sedan_(2015-12-07)_01.jpg",
+          "author": "OSX",
+          "license": "Public domain",
+          "licenseUrl": ""
+        }
+      },
+      {
+        "match": "K-Jetronic",
+        "kind": "engine",
+        "name": "Bosch K-Jetronic",
+        "year": "1973",
+        "brief": "博世的机械式连续喷射系统，是电子式之外的另一条路线。",
+        "image": null
+      },
+      {
+        "match": "L-Jetronic",
+        "kind": "engine",
+        "name": "Bosch L-Jetronic",
+        "year": "1974",
+        "brief": "博世改用空气流量计测负荷的电喷系统，比 D 型更精确。",
+        "image": null
+      }
+    ],
+    "examples": [
+      {
+        "match": "Bendix Electrojector（1957）",
+        "kind": "engine",
+        "name": "Bendix Electrojector",
+        "year": "1957",
+        "brief": "最早的电子燃油喷射系统，装于 1958 年克莱斯勒等车型。"
+      },
+      {
+        "match": "Bosch D-Jetronic（VW 1600，1967）",
+        "kind": "engine",
+        "name": "Bosch D-Jetronic",
+        "year": "1967",
+        "brief": "博世第一代电喷，首先装在大众 1600 TL/E 上。"
+      }
+    ]
+  },
+  "EA-031": {
+    "intro": [
+      {
+        "match": "奔驰 300D",
+        "kind": "car",
+        "name": "Mercedes-Benz 300D（W115）",
+        "year": "1974",
+        "brief": "第一款量产直列五缸轿车，搭载 3.0 L OM617 柴油机。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Mercedes-Benz_300D_W115.jpg/960px-Mercedes-Benz_300D_W115.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_300D_W115.jpg",
+          "author": "Bene Riobó",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      },
+      {
+        "match": "OM617",
+        "kind": "engine",
+        "name": "Mercedes-Benz OM617 · 装车示例：Mercedes-Benz 300D",
+        "year": "1974",
+        "brief": "3.0 L 直五柴油机，是第一台量产直列五缸发动机。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Mercedes-Benz_300D_W115.jpg/960px-Mercedes-Benz_300D_W115.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_300D_W115.jpg",
+          "author": "Bene Riobó",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      },
+      {
+        "match": "奥迪 100",
+        "kind": "car",
+        "name": "Audi 100（C2）",
+        "year": "1976–1977",
+        "brief": "搭载第一台直五汽油机：2.1 L、136 PS 喷射发动机。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Audi_100_C2_Avant_IMG_5639.jpg/960px-Audi_100_C2_Avant_IMG_5639.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:Audi_100_C2_Avant_IMG_5639.jpg",
+          "author": "Alexander Migl",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      },
+      {
+        "match": "奥迪 Quattro",
+        "kind": "car",
+        "name": "Audi Quattro",
+        "year": "1980",
+        "brief": "用 2.1 涡轮直五加四驱把直列五缸带进拉力赛的传奇车型。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Audi_Quattro_20V_Classic-Days_2022_DSC_0270.jpg/960px-Audi_Quattro_20V_Classic-Days_2022_DSC_0270.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:Audi_Quattro_20V_Classic-Days_2022_DSC_0270.jpg",
+          "author": "Alexander Migl",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      },
+      {
+        "match": "沃尔沃 850",
+        "kind": "car",
+        "name": "Volvo 850",
+        "year": "1991",
+        "brief": "沃尔沃 1991 年推出的前驱轿车，横置模块化直五。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/1993_Volvo_850_GLT.jpg/960px-1993_Volvo_850_GLT.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:1993_Volvo_850_GLT.jpg",
+          "author": "Toquehusk",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+        }
+      },
+      {
+        "match": "奥迪 RS3",
+        "kind": "car",
+        "name": "Audi RS3",
+        "year": "2011–",
+        "brief": "仍在生产的少数直五车型之一，搭载 2.5 TFSI。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Audi_RS3_8Y_1X7A6091.jpg/960px-Audi_RS3_8Y_1X7A6091.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:Audi_RS3_8Y_1X7A6091.jpg",
+          "author": "Alexander Migl",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      },
+      {
+        "match": "2.5 TFSI",
+        "kind": "engine",
+        "name": "Audi 2.5 TFSI · 装车示例：Audi RS3",
+        "year": "2009–",
+        "brief": "奥迪 2.5 L 涡轮直五，是今天仍在量产的直列五缸代表。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Audi_RS3_8Y_1X7A6091.jpg/960px-Audi_RS3_8Y_1X7A6091.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:Audi_RS3_8Y_1X7A6091.jpg",
+          "author": "Alexander Migl",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "match": "Mercedes OM617（1974）",
+        "kind": "engine",
+        "name": "Mercedes-Benz OM617",
+        "year": "1974",
+        "brief": "3.0 L 柴油直五，装在奔驰 300D 上，首台量产直五。"
+      },
+      {
+        "match": "Audi Quattro 2.1 涡轮（1980）",
+        "kind": "car",
+        "name": "Audi Quattro 2.1 Turbo",
+        "year": "1980",
+        "brief": "2.1 涡轮直五四驱，让直五在拉力赛场成名。"
+      },
+      {
+        "match": "Volvo 850",
+        "kind": "car",
+        "name": "Volvo 850",
+        "year": "1991",
+        "brief": "采用横置模块化直五的沃尔沃前驱轿车。"
+      },
+      {
+        "match": "Audi RS3 2.5 TFSI",
+        "kind": "car",
+        "name": "Audi RS3 2.5 TFSI",
+        "year": "2011–",
+        "brief": "仍在产的 2.5 L 涡轮直五高性能车。"
+      }
+    ]
+  },
+  "EA-032": {
+    "intro": [
+      {
+        "match": "Runabout",
+        "kind": "car",
+        "name": "Cadillac Model A Runabout",
+        "year": "1903",
+        "brief": "凯迪拉克最早的车型之一，已采用 Alanson Brush 的可变气门正时专利方案。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/1903_Cadillac_Model_A_Runabout_%2821296901658%29.jpg/960px-1903_Cadillac_Model_A_Runabout_%2821296901658%29.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:1903_Cadillac_Model_A_Runabout_(21296901658).jpg",
+          "author": "Sicnag",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+        }
+      },
+      {
+        "match": "Spider 2000",
+        "kind": "car",
+        "name": "Alfa Romeo Spider 2000",
+        "year": "1980",
+        "brief": "1980 年喷射版装 Garcea 的机械式 VVT，被认为是首款量产 VVT 轿车。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/1980_Alfa_Romeo_Spider_2000_Veloce_%288948789829%29.jpg/960px-1980_Alfa_Romeo_Spider_2000_Veloce_%288948789829%29.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:1980_Alfa_Romeo_Spider_2000_Veloce_(8948789829).jpg",
+          "author": "Niels de Wit from Lunteren, The Netherlands",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+        }
+      },
+      {
+        "match": "本田 VTEC",
+        "kind": "engine",
+        "name": "Honda VTEC",
+        "year": "1989",
+        "brief": "本田 1989 年推出，在两套凸轮型线间切换，比单纯调正时更进一步。",
+        "image": null
+      },
+      {
+        "match": "保时捷 968",
+        "kind": "car",
+        "name": "Porsche 968",
+        "year": "1992–1995",
+        "brief": "1992 年以 VarioCam 实现连续可变气门正时的保时捷跑车。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/1995_Porsche_968.jpg/960px-1995_Porsche_968.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:1995_Porsche_968.jpg",
+          "author": "Calreyn88",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      },
+      {
+        "match": "VarioCam",
+        "kind": "engine",
+        "name": "Porsche VarioCam · 装车示例：Porsche 968",
+        "year": "1992",
+        "brief": "保时捷的连续可变正时系统，1992 年首用于 968。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/1995_Porsche_968.jpg/960px-1995_Porsche_968.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:1995_Porsche_968.jpg",
+          "author": "Calreyn88",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "match": "Alfa Romeo Spider（1980，机械式）",
+        "kind": "car",
+        "name": "Alfa Romeo Spider 2000",
+        "year": "1980",
+        "brief": "首款量产 VVT 轿车，采用机械式正时调节。"
+      },
+      {
+        "match": "Nissan 300ZX Z31（1987，首个电控 VVT）",
+        "kind": "car",
+        "name": "Nissan 300ZX（Z31）",
+        "year": "1987",
+        "brief": "首个电控可变气门正时的量产应用。"
+      },
+      {
+        "match": "BMW VANOS（1992）",
+        "kind": "engine",
+        "name": "BMW VANOS",
+        "year": "1992",
+        "brief": "宝马 1992 年推出的可变凸轮轴正时系统。"
+      }
+    ]
+  },
+  "EA-033": {
+    "intro": [
+      {
+        "match": "Lancia Delta S4",
+        "kind": "car",
+        "name": "Lancia Delta S4",
+        "year": "1985–1986",
+        "brief": "双增压先驱：1759 cc 直四配机械增压与涡轮，赛车版约 490 PS，B 组拉力赛车。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/1985_Lancia_Delta_S4_Group_B.jpg/960px-1985_Lancia_Delta_S4_Group_B.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:1985_Lancia_Delta_S4_Group_B.jpg",
+          "author": "Calreyn88",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      },
+      {
+        "match": "Stradale",
+        "kind": "car",
+        "name": "Lancia Delta S4 Stradale",
+        "year": "1985–1986",
+        "brief": "Delta S4 的公路认证版，250 PS，为满足 B 组规则而生产。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Lancia_Delta_S4_Stradale_%281985%29_%2852867553349%29.jpg/960px-Lancia_Delta_S4_Stradale_%281985%29_%2852867553349%29.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:Lancia_Delta_S4_Stradale_(1985)_(52867553349).jpg",
+          "author": "Charles from Port Chester, New York",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+        }
+      },
+      {
+        "match": "日产 March Super Turbo",
+        "kind": "car",
+        "name": "Nissan March Super Turbo",
+        "year": "1988",
+        "brief": "量产双增压小车，机械增压加涡轮输出 110 PS。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Nissan_E-EK10_March_SUPER_TURBO_%2823110313070%29.jpg/960px-Nissan_E-EK10_March_SUPER_TURBO_%2823110313070%29.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:Nissan_E-EK10_March_SUPER_TURBO_(23110313070).jpg",
+          "author": "先従隗始",
+          "license": "CC0",
+          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+        }
+      },
+      {
+        "match": "大众 1.4 TSI",
+        "kind": "engine",
+        "name": "VW 1.4 TSI 双增压 · 装车示例：Volkswagen Golf GT 1.4 TSI",
+        "year": "2005–",
+        "brief": "大众量产双增压四缸，有 140 到 185 PS 多个版本。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/2008_Volkswagen_Golf_%281K_MY08%29_GT_Sport_1.4_TSI_5-door_hatchback_%282010-07-05%29.jpg/960px-2008_Volkswagen_Golf_%281K_MY08%29_GT_Sport_1.4_TSI_5-door_hatchback_%282010-07-05%29.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:2008_Volkswagen_Golf_(1K_MY08)_GT_Sport_1.4_TSI_5-door_hatchback_(2010-07-05).jpg",
+          "author": "OSX",
+          "license": "Public domain",
+          "licenseUrl": ""
+        }
+      },
+      {
+        "match": "沃尔沃 1969 cc 四缸 T6",
+        "kind": "engine",
+        "name": "Volvo T6 双增压 · 装车示例：Volvo S90 T6",
+        "year": "2010 年代–",
+        "brief": "沃尔沃 1969 cc 四缸双增压，输出达 320 PS。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/17_Volvo_S90_T6_Momentum.jpg/960px-17_Volvo_S90_T6_Momentum.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:17_Volvo_S90_T6_Momentum.jpg",
+          "author": "HJUdall",
+          "license": "CC0",
+          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "match": "Lancia Delta S4（1985）",
+        "kind": "car",
+        "name": "Lancia Delta S4",
+        "year": "1985",
+        "brief": "首款双增压赛车，1985 年 RAC 拉力赛首战夺冠。"
+      },
+      {
+        "match": "Nissan March Super Turbo（1988）",
+        "kind": "car",
+        "name": "Nissan March Super Turbo",
+        "year": "1988",
+        "brief": "量产双增压小车，输出 110 PS。"
+      },
+      {
+        "match": "VW 1.4 TSI（2005）",
+        "kind": "engine",
+        "name": "VW 1.4 TSI 双增压",
+        "year": "2005",
+        "brief": "大众双增压四缸，140–185 PS 多个版本。"
+      },
+      {
+        "match": "Volvo T6",
+        "kind": "engine",
+        "name": "Volvo T6 双增压",
+        "year": "2010 年代–",
+        "brief": "1969 cc 四缸机械加涡轮双增压，320 PS。"
+      }
+    ]
+  },
+  "EA-034": {
+    "intro": [
+      {
+        "match": "本田 RA109E 72° V10",
+        "kind": "f1",
+        "name": "Honda RA109E · 装车示例：McLaren MP4/5",
+        "year": "1989",
+        "brief": "McLaren 1989 年使用的 72° V10，13500 rpm 约 685 hp。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/McLaren_MP4-5_%28Senna%29_front-left_Honda_Collection_Hall.jpg/960px-McLaren_MP4-5_%28Senna%29_front-left_Honda_Collection_Hall.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:McLaren_MP4-5_(Senna)_front-left_Honda_Collection_Hall.jpg",
+          "author": "Morio",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+        }
+      },
+      {
+        "match": "雷诺 RS1 V10",
+        "kind": "f1",
+        "name": "Renault RS1 · 装车示例：Williams FW12C",
+        "year": "1989",
+        "brief": "威廉姆斯 1989 年使用的雷诺 V10，约 650 hp。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/WilliamsFW12PatreseExhSinsheim.JPG/960px-WilliamsFW12PatreseExhSinsheim.JPG",
+          "page": "https://commons.wikimedia.org/wiki/File:WilliamsFW12PatreseExhSinsheim.JPG",
+          "author": "Siegfried Wessler",
+          "license": "CC BY-SA 2.5",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+        }
+      },
+      {
+        "match": "法拉利 65° V12",
+        "kind": "f1",
+        "name": "Ferrari 65° V12 · 装车示例：Ferrari 640",
+        "year": "1989",
+        "brief": "法拉利 1989 年的 3.5 L V12，约 660 hp。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/1989_Ferrari_640_F1-89.jpg/960px-1989_Ferrari_640_F1-89.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:1989_Ferrari_640_F1-89.jpg",
+          "author": "MrWalkr",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      },
+      {
+        "match": "Ford Cosworth DFR V8",
+        "kind": "f1",
+        "name": "Ford Cosworth DFR",
+        "year": "1988–1991",
+        "brief": "多数车队使用的客户 V8，约 620 hp，轻但功率最低。",
+        "image": null
+      },
+      {
+        "match": "法拉利 Tipo 043 V12",
+        "kind": "f1",
+        "name": "Ferrari Tipo 043 · 装车示例：Ferrari 412 T1B",
+        "year": "1994",
+        "brief": "3.5 L 时代功率最高的发动机，约 850 hp、15800 rpm。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Ferrari_412T1_2010_Retro_Classics_Stuttgart.jpg/960px-Ferrari_412T1_2010_Retro_Classics_Stuttgart.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:Ferrari_412T1_2010_Retro_Classics_Stuttgart.jpg",
+          "author": "Klaus Nahr",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "match": "Honda RA109E（约 685 hp）",
+        "kind": "f1",
+        "name": "Honda RA109E",
+        "year": "1989",
+        "brief": "72° V10，McLaren 1989 年用机，约 685 hp。"
+      },
+      {
+        "match": "Renault V10（约 750–820 hp）",
+        "kind": "f1",
+        "name": "Renault RS 系列 V10",
+        "year": "1989–1994",
+        "brief": "威廉姆斯使用的雷诺 V10，后期约 750–820 hp。"
+      },
+      {
+        "match": "Ferrari V12（约 850 hp）",
+        "kind": "f1",
+        "name": "Ferrari 3.5 L V12",
+        "year": "1989–1994",
+        "brief": "法拉利 V12，Tipo 043 达约 850 hp，为该规格最高。"
+      }
+    ]
+  },
+  "EA-035": {
+    "intro": [
+      {
+        "match": "CBR400",
+        "kind": "car",
+        "name": "Honda CBR400F",
+        "year": "1983",
+        "brief": "本田摩托车，其 REV 系统是 VTEC 的技术源头。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Honda_CBR400F_1983.jpg/960px-Honda_CBR400F_1983.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:Honda_CBR400F_1983.jpg",
+          "author": "Rikita",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      },
+      {
+        "match": "Integra XSi",
+        "kind": "car",
+        "name": "Honda Integra XSi",
+        "year": "1989",
+        "brief": "日本市场车型，VTEC 在汽车上的首次应用，搭载 160 bhp B16A。",
+        "image": null
+      },
+      {
+        "match": "B16A",
+        "kind": "engine",
+        "name": "Honda B16A · 装车示例：Honda Integra XSi",
+        "year": "1989",
+        "brief": "第一台 VTEC 汽车发动机，1.6 L 双顶置凸轮轴，160 bhp。",
+        "image": null
+      },
+      {
+        "match": "VTEC-E",
+        "kind": "engine",
+        "name": "Honda VTEC-E",
+        "year": "1990 年代",
+        "brief": "偏重经济性的 VTEC 变种。",
+        "image": null
+      },
+      {
+        "match": "i-VTEC",
+        "kind": "engine",
+        "name": "Honda i-VTEC",
+        "year": "2001",
+        "brief": "2001 年起在 VTEC 基础上加入连续可变进气相位。",
+        "image": null
+      },
+      {
+        "match": "VTEC TURBO",
+        "kind": "engine",
+        "name": "Honda VTEC TURBO",
+        "year": "2013",
+        "brief": "2013 年把 VTEC 用于排气门并配涡轮的新一代发动机。",
+        "image": null
+      }
+    ],
+    "examples": [
+      {
+        "match": "Honda B16A（1989，第一台 VTEC）",
+        "kind": "engine",
+        "name": "Honda B16A",
+        "year": "1989",
+        "brief": "首台 VTEC 机，1.6 L DOHC 160 bhp，装于 Integra XSi。"
+      }
+    ]
+  },
+  "EA-036": {
+    "intro": [
+      {
+        "match": "Passat B3",
+        "kind": "car",
+        "name": "Volkswagen Passat B3",
+        "year": "1991",
+        "brief": "1991 年首批搭载 VR6 的车型之一，2.8 L 版 172 hp。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Volkswagen_Passat_Variant_VR6_%28B3%2C_1993%29_%2852343102094%29.jpg/960px-Volkswagen_Passat_Variant_VR6_%28B3%2C_1993%29_%2852343102094%29.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:Volkswagen_Passat_Variant_VR6_(B3,_1993)_(52343102094).jpg",
+          "author": "Charles from Port Chester, New York",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+        }
+      },
+      {
+        "match": "Corrado",
+        "kind": "car",
+        "name": "Volkswagen Corrado VR6",
+        "year": "1991",
+        "brief": "大众跑车，与 Passat 同期装上 VR6，2.9 L 版 188 hp。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/1993_Volkswagen_Corrado_VR6.jpg/960px-1993_Volkswagen_Corrado_VR6.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:1993_Volkswagen_Corrado_VR6.jpg",
+          "author": "Calreyn88",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      },
+      {
+        "match": "Lancia V4",
+        "kind": "engine",
+        "name": "Lancia 窄角 V4 · 装车示例：Lancia Lambda",
+        "year": "1922",
+        "brief": "Lambda 所用的窄夹角铝制 V4，VR6 的思路可追溯至此。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Lancia_%22Lambda%22_-_1929.jpg/960px-Lancia_%22Lambda%22_-_1929.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:Lancia_%22Lambda%22_-_1929.jpg",
+          "author": "Loudumo",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      },
+      {
+        "match": "3.6 L FSI",
+        "kind": "engine",
+        "name": "VW 3.6 L VR6 FSI · 装车示例：Volkswagen Passat B6",
+        "year": "2005",
+        "brief": "直喷版 VR6，2005 年在 Passat B6 上 206 kW，夹角 10.6°。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Volkswagen_Passat_Wagon_3.6_4Motion_B6_%28Front%29.JPG/960px-Volkswagen_Passat_Wagon_3.6_4Motion_B6_%28Front%29.JPG",
+          "page": "https://commons.wikimedia.org/wiki/File:Volkswagen_Passat_Wagon_3.6_4Motion_B6_(Front).JPG",
+          "author": "Bull-Doser",
+          "license": "Public domain",
+          "licenseUrl": ""
+        }
+      },
+      {
+        "match": "Passat B6",
+        "kind": "car",
+        "name": "Volkswagen Passat B6",
+        "year": "2005",
+        "brief": "搭载 3.6 L VR6 FSI 的车型，输出 206 kW。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Volkswagen_Passat_Wagon_3.6_4Motion_B6_%28Front%29.JPG/960px-Volkswagen_Passat_Wagon_3.6_4Motion_B6_%28Front%29.JPG",
+          "page": "https://commons.wikimedia.org/wiki/File:Volkswagen_Passat_Wagon_3.6_4Motion_B6_(Front).JPG",
+          "author": "Bull-Doser",
+          "license": "Public domain",
+          "licenseUrl": ""
+        }
+      },
+      {
+        "match": "W8",
+        "kind": "engine",
+        "name": "VW W8 · 装车示例：Volkswagen Passat W8",
+        "year": "2002–2005",
+        "brief": "两个 VR4 模块拼成的 W8，装在 Passat 上。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/2003_Volkswagen_Passat_W8_4.0_%2839647062423%29_%28cropped%29.jpg/960px-2003_Volkswagen_Passat_W8_4.0_%2839647062423%29_%28cropped%29.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:2003_Volkswagen_Passat_W8_4.0_(39647062423)_(cropped).jpg",
+          "author": "Rutger van der Maar",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+        }
+      },
+      {
+        "match": "W12",
+        "kind": "engine",
+        "name": "VW W12 · 装车示例：Volkswagen Phaeton W12",
+        "year": "2002–",
+        "brief": "两个 VR6 模块共用一根曲轴得到的 W12。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Volkswagen_Phaeton_W12_%282002%29_%2852874881389%29.jpg/960px-Volkswagen_Phaeton_W12_%282002%29_%2852874881389%29.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:Volkswagen_Phaeton_W12_(2002)_(52874881389).jpg",
+          "author": "Charles from Port Chester, New York",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+        }
+      },
+      {
+        "match": "W16",
+        "kind": "engine",
+        "name": "VW W16 · 装车示例：Bugatti Veyron",
+        "year": "2000 年代–",
+        "brief": "两个 VR8 模块组成的四涡轮 W16，布加迪的发动机即由此而来。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/2009_Bugatti_Veyron_16.4.jpg/960px-2009_Bugatti_Veyron_16.4.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:2009_Bugatti_Veyron_16.4.jpg",
+          "author": "Calreyn88",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "match": "VW Passat",
+        "kind": "car",
+        "name": "Volkswagen Passat B3 VR6",
+        "year": "1991",
+        "brief": "首批搭载 VR6 的车型之一，横置六缸塞进四缸舱。"
+      },
+      {
+        "match": "Corrado",
+        "kind": "car",
+        "name": "Volkswagen Corrado VR6",
+        "year": "1991",
+        "brief": "大众跑车，1991 年起装 VR6。"
+      },
+      {
+        "match": "Golf VR6（2.8/2.9 L）",
+        "kind": "car",
+        "name": "Volkswagen Golf VR6",
+        "year": "1991–",
+        "brief": "把 2.8/2.9 L VR6 装进高尔夫的紧凑车身。"
+      },
+      {
+        "match": "VR5",
+        "kind": "engine",
+        "name": "VW VR5",
+        "year": "1990 年代末",
+        "brief": "VR6 去掉一缸的五缸衍生机。"
+      },
+      {
+        "match": "W8/W12/W16",
+        "kind": "engine",
+        "name": "VW W8 / W12 / W16",
+        "year": "2000 年代–",
+        "brief": "把两个 VR 模块拼在一根曲轴上得到的 W 型发动机。"
+      }
+    ]
+  },
+  "EA-037": {
+    "intro": [
+      {
+        "match": "道奇 Viper",
+        "kind": "car",
+        "name": "Dodge Viper",
+        "year": "1992–2017",
+        "brief": "公路车 V10 起点：8.0 L、400 hp，兰博基尼协助设计，终版 645 hp。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/1995_Dodge_Viper_RT_10%2C_front_left%2C_09-30-2023.jpg/960px-1995_Dodge_Viper_RT_10%2C_front_left%2C_09-30-2023.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:1995_Dodge_Viper_RT_10,_front_left,_09-30-2023.jpg",
+          "author": "MercurySable99",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      },
+      {
+        "match": "McLaren MP4/5",
+        "kind": "f1",
+        "name": "McLaren MP4/5",
+        "year": "1989",
+        "brief": "F1 第一批 V10 赛车之一，搭载本田 RA109E V10。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/McLaren_MP4-5_%28Senna%29_front-left_Honda_Collection_Hall.jpg/960px-McLaren_MP4-5_%28Senna%29_front-left_Honda_Collection_Hall.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:McLaren_MP4-5_(Senna)_front-left_Honda_Collection_Hall.jpg",
+          "author": "Morio",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+        }
+      },
+      {
+        "match": "Williams FW12",
+        "kind": "f1",
+        "name": "Williams FW12",
+        "year": "1988–1989",
+        "brief": "与 MP4/5 同为 1989 年首批 V10 赛车，使用雷诺 V10。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/WilliamsFW12PatreseExhSinsheim.JPG/960px-WilliamsFW12PatreseExhSinsheim.JPG",
+          "page": "https://commons.wikimedia.org/wiki/File:WilliamsFW12PatreseExhSinsheim.JPG",
+          "author": "Siegfried Wessler",
+          "license": "CC BY-SA 2.5",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+        }
+      },
+      {
+        "match": "宝马 P82",
+        "kind": "f1",
+        "name": "BMW P82 · 装车示例：Williams FW24",
+        "year": "2002",
+        "brief": "2002 年的 3.0 L F1 V10，转速达到 19050 rpm。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Williams_FW24_front-left_2017_Williams_Conference_Centre.jpg/960px-Williams_FW24_front-left_2017_Williams_Conference_Centre.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:Williams_FW24_front-left_2017_Williams_Conference_Centre.jpg",
+          "author": "Morio",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      },
+      {
+        "match": "奥迪 R8",
+        "kind": "car",
+        "name": "Audi R8 V10",
+        "year": "2009–",
+        "brief": "与兰博基尼同源的 5.2 L V10 超跑，今天少数仍用 V10 的车型。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/2018_Audi_R8_Coupe_V10_plus_Front.jpg/960px-2018_Audi_R8_Coupe_V10_plus_Front.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:2018_Audi_R8_Coupe_V10_plus_Front.jpg",
+          "author": "Vauxford",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      },
+      {
+        "match": "宝马 S85",
+        "kind": "engine",
+        "name": "BMW S85 · 装车示例：BMW M5（E60）",
+        "year": "2005–2010",
+        "brief": "宝马 5.0 L V10，装在 E60 M5 上，如今已是历史车型。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/2007_BMW_M5_E60.jpg/960px-2007_BMW_M5_E60.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:2007_BMW_M5_E60.jpg",
+          "author": "MrWalkr",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      },
+      {
+        "match": "福特 Triton",
+        "kind": "engine",
+        "name": "Ford Triton 6.8 L V10 · 装车示例：Ford F-550（2019）",
+        "year": "–2019",
+        "brief": "福特卡车用 V10，只供应到 2019 年款。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/2019_Ford_F-550_4WD%2C_front_right_%28NY%29.jpg/960px-2019_Ford_F-550_4WD%2C_front_right_%28NY%29.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:2019_Ford_F-550_4WD,_front_right_(NY).jpg",
+          "author": "Mr.choppers",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "match": "Dodge Viper 8.0",
+        "kind": "car",
+        "name": "Dodge Viper 8.0 L V10",
+        "year": "1992",
+        "brief": "首款量产 V10 公路车，400 hp、630 N·m。"
+      },
+      {
+        "match": "Lamborghini/Audi 5.2",
+        "kind": "engine",
+        "name": "Lamborghini/Audi 5.2 L V10",
+        "year": "2008–",
+        "brief": "兰博基尼与奥迪 R8 共用的 5.2 L 自然吸气 V10。"
+      },
+      {
+        "match": "BMW S85",
+        "kind": "engine",
+        "name": "BMW S85",
+        "year": "2005–2010",
+        "brief": "E60 M5 的 5.0 L V10。"
+      },
+      {
+        "match": "F1 1989–2005（2000–2005 强制 V10）",
+        "kind": "f1",
+        "name": "F1 V10 时代",
+        "year": "1989–2005",
+        "brief": "1989 年起出现，1998 年全场 V10，2000–2005 年规则强制。"
+      }
+    ]
+  },
+  "EA-038": {
+    "intro": [
+      {
+        "match": "DB 601",
+        "kind": "engine",
+        "name": "Daimler-Benz DB 601 · 装车示例：Messerschmitt Bf 109 E",
+        "year": "1936",
+        "brief": "1936 年量产的直喷航空发动机，直喷技术的早期应用。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Messerschmitt_Bf_109_E-3_%22Emil%22_%288095547733%29.jpg/960px-Messerschmitt_Bf_109_E-3_%22Emil%22_%288095547733%29.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:Messerschmitt_Bf_109_E-3_%22Emil%22_(8095547733).jpg",
+          "author": "Gillfoto from Juneau, Alaska, United States",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+        }
+      },
+      {
+        "match": "Goliath GP700",
+        "kind": "car",
+        "name": "Goliath GP700",
+        "year": "1952",
+        "brief": "用博世机械直喷二冲程机的小车，油耗比化油器版最多低 30%。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/1956_Goliath_GP_700_688cc_25hp_108kmh_pic2.JPG/960px-1956_Goliath_GP_700_688cc_25hp_108kmh_pic2.JPG",
+          "page": "https://commons.wikimedia.org/wiki/File:1956_Goliath_GP_700_688cc_25hp_108kmh_pic2.JPG",
+          "author": "Alf van Beem",
+          "license": "CC0",
+          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+        }
+      },
+      {
+        "match": "Gutbrod Superior",
+        "kind": "car",
+        "name": "Gutbrod Superior",
+        "year": "1952",
+        "brief": "与 Goliath GP700 同期采用博世机械直喷二冲程机的小车。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Gutbrod_Superior_700E_at_Autostadt_01.JPG/960px-Gutbrod_Superior_700E_at_Autostadt_01.JPG",
+          "page": "https://commons.wikimedia.org/wiki/File:Gutbrod_Superior_700E_at_Autostadt_01.JPG",
+          "author": "Charles01",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      },
+      {
+        "match": "奔驰 300 SL",
+        "kind": "car",
+        "name": "Mercedes-Benz 300 SL（W198）",
+        "year": "1954",
+        "brief": "第一款四冲程缸内直喷汽车，鸥翼门跑车。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Mercedes-Benz_W198_300_SL_Gullwing_Genf_2019_1Y7A4987.jpg/960px-Mercedes-Benz_W198_300_SL_Gullwing_Genf_2019_1Y7A4987.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_W198_300_SL_Gullwing_Genf_2019_1Y7A4987.jpg",
+          "author": "Alexander Migl",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      },
+      {
+        "match": "Galant",
+        "kind": "car",
+        "name": "Mitsubishi Galant",
+        "year": "1996",
+        "brief": "1996 年日本市场车型，首发搭载 4G93 GDI 现代电控直喷。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Mitsubishi_Galant_front_20080320.jpg/960px-Mitsubishi_Galant_front_20080320.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Galant_front_20080320.jpg",
+          "author": "Rudolf Stricker",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+        }
+      },
+      {
+        "match": "4G93 GDI",
+        "kind": "engine",
+        "name": "Mitsubishi 4G93 GDI · 装车示例：Mitsubishi Galant",
+        "year": "1996",
+        "brief": "现代电控直喷的起点，采用分层稀燃，2001 年累计超 100 万台。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Mitsubishi_Galant_front_20080320.jpg/960px-Mitsubishi_Galant_front_20080320.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Galant_front_20080320.jpg",
+          "author": "Rudolf Stricker",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+        }
+      },
+      {
+        "match": "D-4S",
+        "kind": "engine",
+        "name": "Toyota D-4S",
+        "year": "2005",
+        "brief": "丰田每缸同时布置进气道与缸内喷油器的双喷射系统。",
+        "image": null
+      }
+    ],
+    "examples": [
+      {
+        "match": "Goliath GP700（1951）",
+        "kind": "car",
+        "name": "Goliath GP700",
+        "year": "1951–1952",
+        "brief": "最早采用机械直喷二冲程机的量产小车。"
+      },
+      {
+        "match": "Mercedes 300 SL（1954）",
+        "kind": "car",
+        "name": "Mercedes-Benz 300 SL",
+        "year": "1954",
+        "brief": "第一款四冲程直喷汽车。"
+      },
+      {
+        "match": "Mitsubishi 4G93（1996）",
+        "kind": "engine",
+        "name": "Mitsubishi 4G93 GDI",
+        "year": "1996",
+        "brief": "现代电控汽油直喷的起点，分层稀燃。"
+      },
+      {
+        "match": "VW FSI/TSI",
+        "kind": "engine",
+        "name": "VW FSI / TSI",
+        "year": "2000s–",
+        "brief": "大众直喷与直喷涡轮系列，直喷普及的代表。"
+      }
+    ]
+  },
+  "EA-039": {
+    "intro": [
+      {
+        "match": "日野 Ranger",
+        "kind": "car",
+        "name": "Hino Ranger",
+        "year": "1995",
+        "brief": "1995 年率先搭载电装共轨系统的日本卡车。",
+        "image": null
+      },
+      {
+        "match": "阿尔法·罗密欧 156",
+        "kind": "car",
+        "name": "Alfa Romeo 156",
+        "year": "1997",
+        "brief": "第一款使用共轨柴油机的乘用车，搭载 2.4 JTD。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Alfa_Romeo_156_2.4_JTD_Type_932_Grigio_Chiaro_Metallizzato_%281%29.jpg/960px-Alfa_Romeo_156_2.4_JTD_Type_932_Grigio_Chiaro_Metallizzato_%281%29.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_156_2.4_JTD_Type_932_Grigio_Chiaro_Metallizzato_(1).jpg",
+          "author": "Damian B Oh",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      },
+      {
+        "match": "2.4 JTD",
+        "kind": "engine",
+        "name": "Alfa Romeo 2.4 JTD · 装车示例：Alfa Romeo 156",
+        "year": "1997",
+        "brief": "五缸共轨柴油机，乘用车共轨的首例。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Alfa_Romeo_156_2.4_JTD_Type_932_Grigio_Chiaro_Metallizzato_%281%29.jpg/960px-Alfa_Romeo_156_2.4_JTD_Type_932_Grigio_Chiaro_Metallizzato_%281%29.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_156_2.4_JTD_Type_932_Grigio_Chiaro_Metallizzato_(1).jpg",
+          "author": "Damian B Oh",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      },
+      {
+        "match": "1.9 JTD",
+        "kind": "engine",
+        "name": "Alfa Romeo 1.9 JTD · 装车示例：Alfa Romeo 156 1.9 JTD",
+        "year": "1997",
+        "brief": "同期的 105 PS 四缸共轨柴油机。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/1999_Alfa_Romeo_156_1.9_JTD.jpg/960px-1999_Alfa_Romeo_156_1.9_JTD.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:1999_Alfa_Romeo_156_1.9_JTD.jpg",
+          "author": "Corvettec6r",
+          "license": "Public domain",
+          "licenseUrl": ""
+        }
+      },
+      {
+        "match": "奔驰 W202",
+        "kind": "car",
+        "name": "Mercedes-Benz C-Class（W202）",
+        "year": "1997",
+        "brief": "同年跟进共轨柴油机的奔驰 C 级。",
+        "image": {
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Mercedes-Benz_W202_C_220_Elegance_Brilliant_Silver_Metallic_diplomatic.jpg/960px-Mercedes-Benz_W202_C_220_Elegance_Brilliant_Silver_Metallic_diplomatic.jpg",
+          "page": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_W202_C_220_Elegance_Brilliant_Silver_Metallic_diplomatic.jpg",
+          "author": "Ethan Llamas",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "match": "Alfa Romeo 156 JTD（1997，1.9 四缸 / 2.4 五缸）",
+        "kind": "car",
+        "name": "Alfa Romeo 156 JTD",
+        "year": "1997",
+        "brief": "首款共轨柴油乘用车，有 1.9 四缸与 2.4 五缸。"
+      },
+      {
+        "match": "Fiat MultiJet（2003）",
+        "kind": "engine",
+        "name": "Fiat MultiJet",
+        "year": "2003",
+        "brief": "菲亚特第二代共轨，每循环多次喷射。"
+      }
+    ]
+  }
+}

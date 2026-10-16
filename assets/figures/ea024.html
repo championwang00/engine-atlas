@@ -1,0 +1,302 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>CNG / LPG 供气</title><style>html,body{margin:0;background:#d9d9d6}#fig{display:block;width:100%;max-width:720px;margin:0 auto;touch-action:none;cursor:grab;background:#d9d9d6}</style></head><body><svg id="fig" viewBox="0 0 720 440" role="img" aria-label="CNG / LPG 供气等轴测图，可拖动旋转"></svg><script>
+// minimal iso solid engine: convex solids, back-face cull, painter by solid depth, hull outline
+const W=720,H=440;
+const sub=(a,b)=>[a[0]-b[0],a[1]-b[1],a[2]-b[2]],add=(a,b)=>[a[0]+b[0],a[1]+b[1],a[2]+b[2]],mul=(a,s)=>[a[0]*s,a[1]*s,a[2]*s];
+const dot=(a,b)=>a[0]*b[0]+a[1]*b[1]+a[2]*b[2],cross=(a,b)=>[a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]];
+const nrm=v=>{const l=Math.hypot(v[0],v[1],v[2])||1;return [v[0]/l,v[1]/l,v[2]/l]};
+const lerp3=(a,b,t)=>[a[0]+(b[0]-a[0])*t,a[1]+(b[1]-a[1])*t,a[2]+(b[2]-a[2])*t];
+const TONE={lo:[150,150,145],mid:[184,184,178],hi:[214,214,209],paper:[236,236,233],dark:[96,96,92],ink:[60,60,57]};
+const hex=c=>Array.isArray(c)?c:TONE[c]||[parseInt(c.slice(1,3),16),parseInt(c.slice(3,5),16),parseInt(c.slice(5,7),16)];
+function basis(ax){const t=Math.abs(ax[2])<.9?[0,0,1]:[1,0,0];const u=nrm(cross(ax,t));return [u,cross(ax,u)];}
+function solid(faces,o={}){return {faces,c:hex(o.c||'mid'),bias:o.bias||0,deco:o.deco||[],hull:o.hull!==false,smooth:o.smooth}}
+function box(x0,y0,z0,x1,y1,z1,o={}){
+  const p=(i,j,k)=>[[x0,x1][i],[y0,y1][j],[z0,z1][k]];
+  const f=[[p(0,0,0),p(0,1,0),p(0,1,1),p(0,0,1)],[p(1,0,0),p(1,0,1),p(1,1,1),p(1,1,0)],[p(0,0,0),p(0,0,1),p(1,0,1),p(1,0,0)],[p(0,1,0),p(1,1,0),p(1,1,1),p(0,1,1)],[p(0,0,0),p(1,0,0),p(1,1,0),p(0,1,0)],[p(0,0,1),p(0,1,1),p(1,1,1),p(1,0,1)]];
+  return solid(f.map(q=>({p:q})),o);
+}
+// faces order of box: 0 x0,1 x1,2 y0,3 y1,4 z0,5 z1
+function cyl(p0,p1,r0,r1,o={}){
+  const n=o.n||22,ax=nrm(sub(p1,p0)),[u,v]=basis(ax),a0=o.a0??0,a1=o.a1??Math.PI*2,full=a1-a0>6.2;
+  const ring=(c,r)=>{const out=[];const m=full?n:n+1;for(let i=0;i<m;i++){const a=a0+(a1-a0)*i/(full?n:n);out.push(add(c,add(mul(u,Math.cos(a)*r),mul(v,Math.sin(a)*r))));}return out;};
+  const A=ring(p0,r0),B=ring(p1,r1),F=[];const m=A.length;
+  for(let i=0;i<(full?m:m-1);i++){const j=(i+1)%m;F.push({p:[A[i],A[j],B[j],B[i]],s:1});}
+  F.push({p:A.slice().reverse()});F.push({p:B.slice()});
+  if(!full)F.push({p:[A[0],B[0],B[m-1],A[m-1]],cut:1});
+  return solid(F,o);
+}
+function ball(c,r,o={}){const F=[],la=8,lo=16,pt=(i,j)=>{const t=Math.PI*i/la,f=2*Math.PI*j/lo;return add(c,[r*Math.sin(t)*Math.cos(f),r*Math.sin(t)*Math.sin(f),r*Math.cos(t)])};
+  for(let i=0;i<la;i++)for(let j=0;j<lo;j++){const q=[pt(i,j),pt(i+1,j),pt(i+1,j+1),pt(i,j+1)];F.push({p:i==0?[q[0],q[1],q[2]]:i==la-1?[q[0],q[1],q[3]]:q,s:1});}return solid(F,o);}
+// pipe through waypoints: cylinder segments + joint balls
+function pipe(pts,r,o={}){const out=[];for(let i=0;i<pts.length-1;i++){const L=Math.hypot(...sub(pts[i+1],pts[i])),m=Math.max(1,Math.ceil(L/24));for(let j=0;j<m;j++)out.push(cyl(lerp3(pts[i],pts[i+1],j/m),lerp3(pts[i],pts[i+1],(j+1)/m),r,r,{n:14,...o}));}for(let i=1;i<pts.length-1;i++)out.push(ball(pts[i],r,o));return out;}
+function polyLen(pts){let L=0;for(let i=1;i<pts.length;i++)L+=Math.hypot(...sub(pts[i],pts[i-1]));return L;}
+function along(pts,s){for(let i=1;i<pts.length;i++){const l=Math.hypot(...sub(pts[i],pts[i-1]));if(s<=l)return lerp3(pts[i-1],pts[i],s/l);s-=l;}return pts[pts.length-1];}
+// flow dots along polyline; color fn(u) with u 0..1
+function flow(pts,count,speed,t,r,col,o={}){const L=polyLen(pts),out=[];for(let i=0;i<count;i++){const u=((i/count)+t*speed/L)%1;out.push({dot:along(pts,u*L),r:typeof r=='function'?r(u):r,c:typeof col=='function'?col(u):col,bias:o.bias??6});}return out;}
+function wire(pts,c='#55554f',w=1.1){const out=[];for(let i=0;i<pts.length-1;i++){const L=Math.hypot(...sub(pts[i+1],pts[i])),m=Math.max(1,Math.ceil(L/20));for(let j=0;j<m;j++)out.push({line:[lerp3(pts[i],pts[i+1],j/m),lerp3(pts[i],pts[i+1],(j+1)/m)],c,w});}return out;}
+function label(p,text,dx=0,dy=-14){return {label:p,text,dx,dy};}
+function shade(c,k){return `rgb(${Math.min(255,c[0]*k)|0},${Math.min(255,c[1]*k)|0},${Math.min(255,c[2]*k)|0})`;}
+const LIGHT=nrm([-0.45,-0.35,0.82]);
+function hull(pts){pts=pts.slice().sort((a,b)=>a[0]-b[0]||a[1]-b[1]);const cr=(o,a,b)=>(a[0]-o[0])*(b[1]-o[1])-(a[1]-o[1])*(b[0]-o[0]);const lo=[],up=[];for(const p of pts){while(lo.length>=2&&cr(lo[lo.length-2],lo[lo.length-1],p)<=0)lo.pop();lo.push(p);}for(let i=pts.length-1;i>=0;i--){const p=pts[i];while(up.length>=2&&cr(up[up.length-2],up[up.length-1],p)<=0)up.pop();up.push(p);}up.pop();lo.pop();return lo.concat(up);}
+function makeView(az,el){const a=az*Math.PI/180,e=el*Math.PI/180,ca=Math.cos(a),sa=Math.sin(a),ce=Math.cos(e),se=Math.sin(e);
+  const rot=p=>{const xr=p[0]*ca-p[1]*sa,yr=p[0]*sa+p[1]*ca;return [xr,-(p[2]*ce+yr*se),-yr*ce+p[2]*se];};
+  const view=[sa*ce*-1,-ca*ce,se];// world vector toward viewer
+  return {rot,view:nrm([-sa*ce,-ca*ce,se].map((x,i)=>x))};}
+function itemsPts(items){const P=[];for(const it of items){if(it.faces)for(const f of it.faces)P.push(...f.p);else if(it.dot)P.push(it.dot);else if(it.line)P.push(...it.line);}return P;}
+function fitter(items,el,pad=22){let smin=1e9;const P=itemsPts(items);for(let az=0;az<360;az+=15){const v=makeView(az,el);let x0=1e9,x1=-1e9,y0=1e9,y1=-1e9;for(const p of P){const q=v.rot(p);x0=Math.min(x0,q[0]);x1=Math.max(x1,q[0]);y0=Math.min(y0,q[1]);y1=Math.max(y1,q[1]);}smin=Math.min(smin,(W-2*pad)/(x1-x0),(H-2*pad-40)/(y1-y0));}return {scale:smin,P};}
+function render(items,az,el,fit,extra){
+  const v=makeView(az,el),S=fit.scale;let x0=1e9,x1=-1e9,y0=1e9,y1=-1e9;for(const p of fit.P){const q=v.rot(p);x0=Math.min(x0,q[0]);x1=Math.max(x1,q[0]);y0=Math.min(y0,q[1]);y1=Math.max(y1,q[1]);}
+  const ox=W/2-S*(x0+x1)/2,oy=H/2+8-S*(y0+y1)/2;
+  const pj=p=>{const q=v.rot(p);return [ox+S*q[0],oy+S*q[1],q[2]];};
+  const VW=v.view,list=[],labels=[];
+  for(const it of items){
+    if(it.label){labels.push(it);continue;}
+    if(it.dot){const q=pj(it.dot);list.push({d:q[2]+it.bias,svg:`<circle cx="${q[0].toFixed(1)}" cy="${q[1].toFixed(1)}" r="${(it.r*S).toFixed(2)}" fill="${it.c}"/>`});continue;}
+    if(it.line){const a=pj(it.line[0]),b=pj(it.line[1]);list.push({d:(a[2]+b[2])/2+(it.bias||0),svg:`<path d="M${a[0].toFixed(1)} ${a[1].toFixed(1)}L${b[0].toFixed(1)} ${b[1].toFixed(1)}" stroke="${it.c}" stroke-width="${it.w}" stroke-linecap="round" fill="none"/>`});continue;}
+    // solid
+    let cen=[0,0,0],cnt=0;for(const f of it.faces)for(const p of f.p){cen=add(cen,p);cnt++;}cen=mul(cen,1/cnt);
+    let s='';const vis=[];const all2=[];
+    it.faces.forEach((f,i)=>{const p=f.p;let n=nrm(cross(sub(p[1],p[0]),sub(p[2],p[0])));if(Math.hypot(...n)<.5&&p.length>3)n=nrm(cross(sub(p[2],p[1]),sub(p[3],p[1])));
+      let fc=[0,0,0];for(const q of p)fc=add(fc,q);fc=mul(fc,1/p.length);if(dot(n,sub(fc,cen))<0)n=mul(n,-1);
+      const q2=p.map(pj);for(const q of q2)all2.push(q);
+      if(dot(n,VW)<=1e-4)return;vis[i]=1;
+      const k=0.66+0.34*Math.max(0,dot(n,LIGHT))+(n[2]>.9?.04:0);const col=shade(f.c?hex(f.c):it.c,k);
+      const d='M'+q2.map(q=>q[0].toFixed(1)+' '+q[1].toFixed(1)).join('L')+'Z';
+      s+=f.s||it.smooth?`<path d="${d}" fill="${col}" stroke="${col}" stroke-width=".7" stroke-linejoin="round"/>`:`<path d="${d}" fill="${col}" stroke="#55554f" stroke-width=".5" stroke-linejoin="round"/>`;});
+    for(const dc of it.deco){if(dc.face!=null&&!vis[dc.face])continue;for(const L of dc.lines){const a=pj(L[0]),b=pj(L[1]);s+=`<path d="M${a[0].toFixed(1)} ${a[1].toFixed(1)}L${b[0].toFixed(1)} ${b[1].toFixed(1)}" stroke="${dc.c||'#6a6a64'}" stroke-width="${dc.w||.5}" fill="none"/>`;}
+      if(dc.dots)for(const D of dc.dots){const a=pj(D.p);s+=`<circle cx="${a[0].toFixed(1)}" cy="${a[1].toFixed(1)}" r="${(D.r*S).toFixed(2)}" fill="${D.c}"/>`;}}
+    if(it.hull){const h=hull(all2);s+=`<path d="M${h.map(q=>q[0].toFixed(1)+' '+q[1].toFixed(1)).join('L')}Z" fill="none" stroke="#3a3a37" stroke-width=".8" stroke-linejoin="round"/>`;}
+    list.push({d:pj(cen)[2]+it.bias,svg:s});
+  }
+  list.sort((a,b)=>a.d-b.d);
+  let out=list.map(x=>x.svg).join('');
+  for(const L of labels){const a=pj(L.label);const x=a[0]+L.dx,y=a[1]+L.dy;const w=L.text.length*10.5+8;out+=`<circle cx="${a[0].toFixed(1)}" cy="${a[1].toFixed(1)}" r="1.6" fill="#2a2a27"/><rect x="${(x-w/2).toFixed(1)}" y="${(y-9).toFixed(1)}" width="${w.toFixed(1)}" height="15" rx="2" fill="#f1f1ee" stroke="#2a2a27" stroke-width=".5" opacity=".95"/><text x="${x.toFixed(1)}" y="${(y+2.5).toFixed(1)}" text-anchor="middle" font-size="10.5" font-family="ui-monospace,Menlo,monospace" fill="#2a2a27">${L.text}</text>`;}
+  return out+(extra||'');
+}
+// honeycomb grid on a half-cylinder cut face (plane y=yc), channels along x
+function combDeco(x0,x1,yc,r,zc,o={}){const lines=[],rows=o.rows||9,cols=o.cols||14;for(let i=1;i<rows;i++){const z=-r+2*r*i/rows,h=Math.sqrt(Math.max(0,r*r-z*z));lines.push([[x0,yc,zc+z],[x1,yc,zc+z]]);}
+  for(let j=1;j<cols;j++){const x=x0+(x1-x0)*j/cols;lines.push([[x,yc,zc-r],[x,yc,zc+r]]);}return lines;}
+// runtime
+function mount(SC){
+  const svg=document.getElementById('fig');const Q=new URLSearchParams(location.search);
+  const AZ0=Q.has('az')?+Q.get('az'):SC.az,EL0=SC.el||28;let az=AZ0,el=EL0,t=0,on=false,last=0,raf=0;
+  const fit=fitter(SC.build(0),EL0,SC.pad||20);
+  function draw(){const items=SC.build(t);const rd=SC.readout?SC.readout(t):'';
+    const extra=`<text x="18" y="26" font-size="12" font-family="ui-monospace,Menlo,monospace" fill="#2a2a27" letter-spacing=".06em">${SC.fig}</text><text x="702" y="26" text-anchor="end" font-size="12.5" font-family="-apple-system,PingFang SC,sans-serif" fill="#2a2a27" font-weight="600">${SC.title}</text><text x="702" y="428" text-anchor="end" font-size="11" font-family="ui-monospace,Menlo,monospace" fill="#3a3a36">${rd}</text>`;
+    svg.innerHTML=render(items,az,el,fit,extra);}
+  function loop(ts){if(!on)return;if(last)t+=Math.min(.05,(ts-last)/1000);last=ts;draw();raf=requestAnimationFrame(loop);}
+  let drag=null;svg.addEventListener('pointerdown',e=>{drag=[e.clientX,e.clientY,az,el];svg.setPointerCapture(e.pointerId);});
+  svg.addEventListener('pointermove',e=>{if(!drag)return;az=drag[2]-(e.clientX-drag[0])*.45;el=Math.max(12,Math.min(60,drag[3]+(e.clientY-drag[1])*.2));if(!on)draw();});
+  const up=()=>drag=null;svg.addEventListener('pointerup',up);svg.addEventListener('pointercancel',up);
+  window.FIG={play(v){on=!!v;last=0;cancelAnimationFrame(raf);if(on)raf=requestAnimationFrame(loop);else draw();},reset(){az=AZ0;el=EL0;t=0;draw();},playing(){return on;},view(a,e){az=a;if(e)el=e;draw();},setT(x){t=x;draw();}};
+  draw();
+}
+
+const PI=Math.PI,HB=[PI/2,3*PI/2];// back half (y>0) for x-axis cylinders
+const EXH='#4a4540',CLEAN='#8fbf96',AIR='#7fa0bf',COOL='#3f7fb0',HOT='#c0573d',FUEL='#c99a2e',H2='#5a8fcf',ELEC='#d8892a',SOOT='#262422',UREA='#6fb0c8';
+function base(x0,y0,x1,y1){return [box(x0,y0,-6,x1,y1,0,{c:'paper',bias:-1e5,deco:[{face:5,lines:[[[x0+6,y1-8,0.1],[x1-6,y1-8,0.1]]],c:'#a8a8a2'}]})];}
+function feet(x0,y0,x1,y1){const o=[];for(const x of [x0+10,x1-10])for(const y of [y0+10,y1-10])o.push(cyl([x,y,-10],[x,y,-6],5,5,{c:'lo',bias:-2e5,n:14}));return o;}
+function stand(x,y,z,h=0){return [cyl([x,y,0],[x,y,z],2.2,2.2,{c:'lo',n:10}),box(x-6,y-6,0,x+6,y+6,2,{c:'mid',bias:-500})];}
+// half-cut canister along x at y=0 axis z=zc: inlet cone, shell back half, core half with comb
+function can(xa,xb,R,zc,coreC,o={}){const out=[],r=R-3;
+  out.push(cyl([xa-18,0,zc],[xa,0,zc],o.rin||8,R,{c:'mid'}));
+  out.push(cyl([xb,0,zc],[xb+18,0,zc],R,o.rout||8,{c:'mid'}));
+  out.push(cyl([xa,0,zc],[xb,0,zc],R,R,{c:'hi',a0:HB[0],a1:HB[1],n:22}));
+  out.push(cyl([xa+2,0,zc],[xb-2,0,zc],r,r,{c:coreC,a0:HB[0],a1:HB[1],n:22,bias:3,deco:[{face:24,lines:combDeco(xa+2,xb-2,-0.2,r,zc,{rows:o.rows||8,cols:o.cols||12}),c:o.gc||'#9a8f72',dots:o.dots||[]}]}));
+  for(const x of [xa+1,xb-1])out.push(cyl([x-1.5,0,zc],[x+1.5,0,zc],R+1.6,R+1.6,{c:'lo',a0:HB[0],a1:HB[1],n:22,bias:1}));
+  return out;}
+const SCENES={};
+// ---------------- EA-056 ----------------
+SCENES.ea056={fig:'EA-056',title:'三元催化与氧传感器',az:-28,el:30,build(t){
+  const I=[...base(-30,-75,420,60),...feet(-30,-75,420,60)],Z=44;
+  I.push(box(-10,-42,10,40,42,62,{c:'mid'}),box(-14,-46,62,44,46,74,{c:'hi'}),box(-6,-38,74,36,38,92,{c:'mid'}));
+  for(const y of [-30,-10,10,30])I.push(cyl([10,y,92],[10,y,100],3,3,{c:'lo',n:10}),cyl([22,y,92],[22,y,106],2.4,2.4,{c:'dark',n:10}));
+  I.push(cyl([22,-40,108],[22,40,108],4,4,{c:FUEL,n:14}));
+  const run=[];for(const y of [-30,-10,10,30]){const p=[[44,y,Z+20],[72,y,Z+20],[100,y*0.3,Z+10]];run.push(p);I.push(box(44,y-8,Z+12,48,y+8,Z+28,{c:'lo'}));I.push(...pipe([[48,y,Z+20],[72,y,Z+20],[100,y*0.3,Z+10]],5.5,{c:'mid'}));}
+  I.push(ball([108,0,Z+6],11,{c:'mid'}));I.push(...pipe([[108,0,Z+6],[136,0,Z],[172,0,Z]],8,{c:'mid'}));
+  I.push(...stand(150,0,Z-8),...stand(360,0,Z-8));
+  const sensor=(x,c)=>[cyl([x,0,Z+7.5],[x,0,Z+11],5.4,5.4,{c:'lo',n:6}),cyl([x,0,Z+11],[x,0,Z+24],3.4,3.4,{c}),cyl([x,0,Z+24],[x,0,Z+28],2,2,{c:'dark',n:10})];
+  I.push(...sensor(150,'hi'),...sensor(330,'hi'));
+  const u=(t*0.5)%1,dots=[];
+  for(let i=0;i<3;i++)for(let j=0;j<10;j++){const f=((j/10)+t*0.12)%1;const x=192+f*92,z=Z-14+i*12+3;const k=Math.min(1,Math.max(0,(f-0.15)/0.6));dots.push({p:[x,-0.6,z],r:1.5,c:k<.5?EXH:CLEAN});}
+  I.push(...can(190,286,26,Z,'#e3d8bb',{dots,rin:8,rout:8}));
+  I.push(...pipe([[304,0,Z],[410,0,Z]],8,{c:'mid'}),cyl([410,0,Z],[414,0,Z],10,10,{c:'lo'}));
+  // ECU
+  I.push(box(190,-70,0,250,-44,16,{c:'hi'}),box(196,-46,4,214,-42,12,{c:'dark'}));
+  I.push(...wire([[150,0,Z+28],[150,0,Z+33],[150,-30,Z+33],[150,-30,1],[200,-30,1],[200,-44,8]],'#3d3d3a'),...wire([[330,0,Z+28],[330,0,Z+33],[330,-30,Z+33],[330,-30,1],[244,-30,1],[244,-44,8]],'#3d3d3a'),...wire([[190,-62,8],[60,-62,1],[60,-52,1],[60,-52,112],[22,-52,112],[22,-41,109]],'#a0472f'));
+  for(const p of run)I.push(...flow([...p,[136,0,Z],[172,0,Z]],6,40,t,2,EXH,{bias:12}));
+  I.push(...flow([[304,0,Z],[410,0,Z]],7,40,t,2,CLEAN,{bias:12}));
+  I.push(label([150,0,Z+40],'前氧',0,-14),label([330,0,Z+40],'后氧',0,-14),label([238,0,Z+26],'蜂窝载体',0,-16),label([220,-57,16],'ECU',0,-14));
+  return I;},
+  readout(t){const l=1+0.025*Math.sin(t*2*PI*0.7-1.1);return `λ ${l.toFixed(3)} · 前氧 ${(l<1?0.8:0.15).toFixed(2)} V · 后氧 0.62 V · ${l<1?'偏浓→减油':'偏稀→加油'}`;}};
+// ---------------- EA-062 ----------------
+SCENES.ea062={fig:'EA-062',title:'柴油排气后处理',az:-26,el:30,build(t){
+  const I=[...base(-20,-70,560,55),...feet(-20,-70,560,55)],Z=40;
+  I.push(...pipe([[-10,0,Z],[20,0,Z]],8,{c:'mid'}),cyl([-14,0,Z],[-10,0,Z],11,11,{c:'lo'}));
+  // DOC
+  const d1=[];for(let i=0;i<3;i++)for(let j=0;j<6;j++){const f=((j/6)+t*0.15)%1;d1.push({p:[40+f*56,-0.6,Z-12+i*12],r:1.4,c:EXH});}
+  I.push(...can(40,98,22,Z,'#e0d6c0',{dots:d1,cols:8,rows:7}));
+  I.push(...pipe([[116,0,Z],[134,0,Z]],8,{c:'mid'}));
+  // DPF with plugs and trapped soot
+  const plug=[],x0=156,x1=246,r=25-3;for(let i=0;i<9;i++){const z=Z-r+2*r*(i+0.5)/9;plug.push({p:[(i%2?x0+4:x1-4),-0.6,z],r:2.1,c:'#6f6656'});}
+  const load=Math.min(1,(t%12)/9);for(let i=0;i<9;i++)if(i%2==0){const z=Z-r+2*r*(i+0.5)/9;const n=Math.round(load*8);for(let k=0;k<n;k++)plug.push({p:[x0+10+k*9,-0.6,z+2.6],r:1.1,c:SOOT});}
+  for(let i=0;i<9;i+=2)for(let j=0;j<3;j++){const f=((j/3)+t*0.2)%1;const z=Z-r+2*r*(i+0.5)/9;plug.push({p:[x0+6+f*72,-0.6,z],r:1.5,c:EXH});}
+  for(let i=1;i<9;i+=2)for(let j=0;j<3;j++){const f=((j/3)+t*0.2)%1;const z=Z-r+2*r*(i+0.5)/9;plug.push({p:[x0+14+f*72,-0.6,z],r:1.4,c:'#a59d90'});}
+  I.push(...can(x0,x1,25,Z,'#d9cdb4',{dots:plug,rows:9,cols:1,gc:'#8a7f66'}));
+  // urea doser + mixer pipe
+  I.push(...pipe([[264,0,Z],[300,0,Z]],8,{c:'mid'}));
+  I.push(cyl([282,0,Z+7],[282,0,Z+14],4.5,4.5,{c:'lo',n:6}),cyl([282,0,Z+14],[282,0,Z+26],3,3,{c:'hi'}));
+  I.push(box(250,-66,0,300,-40,32,{c:'#dfe7ea'}),cyl([290,-53,32],[290,-53,38],5,5,{c:'#5f8ea3',n:12}));
+  I.push(...pipe([[262,-40,30],[262,-20,30],[282,-6,34],[282,-1,30]],1.8,{c:UREA}));
+  const spray=[];for(let k=0;k<8;k++){const f=((k/8)+t*1.3)%1;spray.push({dot:[282+f*10,0,Z+5-f*9],r:1.2,c:UREA,bias:14});}I.push(...spray);
+  // SCR + ASC
+  const d3=[];for(let i=0;i<3;i++)for(let j=0;j<7;j++){const f=((j/7)+t*0.13)%1;d3.push({p:[322+f*80,-0.6,Z-12+i*12],r:1.4,c:f<.5?'#6e7f8a':CLEAN});}
+  I.push(...can(320,404,24,Z,'#e3dcc8',{dots:d3,cols:10,rows:8}));
+  I.push(...pipe([[422,0,Z],[436,0,Z]],8,{c:'mid'}));
+  const d4=[];for(let j=0;j<4;j++){const f=((j/4)+t*0.2)%1;d4.push({p:[456+f*40,-0.6,Z],r:1.4,c:CLEAN});}
+  I.push(...can(454,498,22,Z,'#d6d9c8',{dots:d4,cols:5,rows:6}));
+  I.push(...pipe([[516,0,Z],[548,0,Z]],8,{c:'mid'}));
+  for(const x of [20,125,290,430,530])I.push(...stand(x,0,Z-8));
+  I.push(...flow([[-10,0,Z],[20,0,Z]],3,40,t,2,EXH,{bias:12}),...flow([[116,0,Z],[134,0,Z]],2,40,t,2,EXH,{bias:12}),...flow([[264,0,Z],[300,0,Z]],3,40,t,2,'#7d7266',{bias:12}),...flow([[516,0,Z],[548,0,Z]],3,40,t,2,CLEAN,{bias:12}));
+  I.push(label([70,0,Z+26],'DOC',0,-12),label([200,0,Z+29],'DPF 壁流',0,-12),label([275,-53,38],'尿素',0,-14),label([362,0,Z+28],'SCR',0,-12),label([476,0,Z+26],'ASC',0,-12));
+  return I;},
+  readout(t){const l=Math.min(1,(t%12)/9);return `DPF 碳载量 ${(l*100|0)}% · ${l>=1?'待再生':'捕集中'} · NOx→N₂+H₂O`;}};
+// ---------------- EA-074 ----------------
+SCENES.ea074={fig:'EA-074',title:'风冷与液冷',az:-30,el:30,build(t){
+  const I=[...base(-110,-80,330,80),...feet(-110,-80,330,80)];
+  // air cooled: crankcase, finned cylinder, shroud, fan
+  I.push(box(-70,-30,0,-10,30,40,{c:'mid'}));
+  for(let i=0;i<9;i++){const z=46+i*7;I.push(cyl([-40,0,z],[-40,0,z+2.4],26-((i==0||i==8)?2:0),26,{c:'hi',n:20}));}
+  for(let i=0;i<9;i++)I.push(cyl([-40,0,i==0?40:46+i*7-4.6],[-40,0,46+i*7],15,15,{c:'mid',bias:-0.5}));I.push(cyl([-40,0,104.4],[-40,0,108],15,15,{c:'mid'}));
+  for(let i=0;i<4;i++)I.push(box(-62+i*12+3,-28,111,-62+i*12+9,28,113.5,{c:'hi'}));
+  I.push(box(-62,-24,108,-18,24,111,{c:'mid'}));
+  I.push(cyl([-40,-10,124],[-40,-10,128],3,3,{c:'dark',n:10}),cyl([-40,-10,113],[-40,-10,124],2.4,2.4,{c:'#e8e8e4',n:10}));
+  // fan on crank axis at -y side
+  I.push(cyl([-40,-34,20],[-40,-38,20],7,7,{c:'lo'}),cyl([-40,-38,20],[-40,-40,20],34,34,{c:'paper',n:28,bias:-30}));
+  const ang=t*6;for(let b=0;b<6;b++){const a=ang+b*PI/3;const c=Math.cos(a),s=Math.sin(a);I.push(box(-40+c*6-2.5,-44,20+s*6-2.5,-40+c*6+2.5,-41,20+s*6+2.5,{c:'lo'}));
+    const p0=[-40+c*8,-42,20+s*8],p1=[-40+c*30,-42,20+s*30];I.push(cyl(p0,p1,3.2,4.5,{c:'mid',n:8}));}
+  I.push(cyl([-40,-44,20],[-40,-46,20],6,6,{c:'dark',n:12}));
+  for(let j=0;j<4;j++)I.push(...flow([[-40+(j-1.5)*14,-60,50+j*14],[-40+(j-1.5)*14,-20,50+j*14],[-40+(j-1.5)*14,20,58+j*14],[-40+(j-1.5)*14,60,70+j*14]],5,40,t,2,f=>f<.45?AIR:'#c97a5c',{bias:40}));
+  // liquid cooled: block with jacket cutaway, head, pump, thermostat, radiator
+  I.push(box(90,-30,0,170,30,30,{c:'mid'}));
+  const jd=[];for(let k=0;k<14;k++){const f=((k/14)+t*0.12)%1;const s=f*4;let p;if(s<1)p=[96+s*68,-30.6,36];else if(s<2)p=[164,-30.6,36+(s-1)*48];else if(s<3)p=[164-(s-2)*68,-30.6,84];else p=[96,-30.6,84-(s-3)*48];jd.push({p,r:1.7,c:COOL});}
+  I.push(box(90,-30,30,170,0,90,{c:'mid',deco:[{face:2,dots:jd,lines:[[[96,-30.2,36],[164,-30.2,36]],[[96,-30.2,84],[164,-30.2,84]],[[96,-30.2,36],[96,-30.2,84]],[[164,-30.2,36],[164,-30.2,84]]],c:'#3f6f96',w:1}]}));
+  I.push(box(90,0,30,170,30,90,{c:'mid'}));
+  I.push(box(86,-34,90,174,34,104,{c:'hi'}),box(96,-26,104,164,26,114,{c:'mid'}));
+  I.push(cyl([80,-12,22],[90,-12,22],12,12,{c:'lo'}),cyl([72,-12,22],[80,-12,22],8,8,{c:'mid'}),cyl([70,-12,22],[72,-12,22],14,14,{c:'paper',n:20}));
+  I.push(cyl([174,0,98],[184,0,98],8,8,{c:'lo'}),ball([190,0,98],8,{c:'hi'}));
+  // radiator
+  const rx=270;I.push(box(rx,-50,10,rx+12,50,100,{c:'hi',deco:[{face:0,lines:Array.from({length:15},(_,i)=>[[rx-0.2,-46+i*6.5,14],[rx-0.2,-46+i*6.5,96]]),c:'#8c8c86'}]}));
+  I.push(box(rx-2,-54,100,rx+14,54,110,{c:'mid'}),box(rx-2,-54,0,rx+14,54,10,{c:'mid'}));
+  I.push(cyl([rx+12,0,55],[rx+18,0,55],28,28,{c:'lo',n:24}));
+  const hot=[[198,0,98],[230,0,98],[230,0,104],[rx-2,0,104]],cold=[[rx-2,-30,5],[200,-30,5],[200,-12,5],[66,-40,5],[60,-40,22],[70,-12,22]];
+  I.push(...pipe([[198,0,98],[230,0,98],[230,0,105],[rx-2,0,105]],5,{c:'#3a3a37'}));
+  I.push(...pipe([[rx-2,-30,5],[200,-30,5],[200,-46,5],[64,-46,5],[64,-46,22],[70,-12,22]],5,{c:'#3a3a37'}));
+  I.push(...flow([[198,0,98],[230,0,98],[230,0,105],[rx-2,0,105]],6,30,t,2.1,HOT,{bias:8}),...flow([[rx-2,-30,5],[200,-30,5],[200,-46,5],[64,-46,5],[64,-46,22],[70,-12,22]],12,30,t,2.1,COOL,{bias:8}));
+  I.push(label([-40,0,120],'风冷 散热片',0,-30),label([130,0,114],'液冷 水套',0,-20),label([190,0,106],'节温器',0,-14),label([rx+6,0,110],'散热器',0,-14),label([66,-12,36],'水泵',-8,-10));
+  return I;},
+  readout(t){return `风冷：风扇吹过散热片 · 液冷：水泵→水套→节温器→散热器`;}};
+// ---------------- EA-024 ----------------
+SCENES.ea024={fig:'EA-024',title:'CNG / LPG 供气',az:-34,el:30,build(t){
+  const I=[...base(-40,-90,460,80),...feet(-40,-90,460,80)];
+  // chassis rails
+  for(let x=-30;x<450;x+=40)I.push(box(x,-56,10,x+40,-46,20,{c:'lo',hull:false}),box(x,46,10,x+40,56,20,{c:'lo',hull:false}));
+  for(const x of [20,180,330,430])I.push(box(x,-46,12,x+8,46,18,{c:'lo'}));
+  // two CNG cylinders at rear (x 0..150) transverse along y
+  for(const x of [30,90]){I.push(cyl([x,-44,44],[x,40,44],22,22,{c:'hi',n:24}),ball([x,-44,44],22,{c:'hi'}),ball([x,40,44],22,{c:'hi'}));
+    I.push(box(x-26,-30,18,x+26,-24,22,{c:'mid'}),box(x-26,24,18,x+26,30,22,{c:'mid'}));
+    I.push(cyl([x,-66,44],[x,-72,44],5,5,{c:'lo',n:6}),cyl([x,-72,44],[x,-78,44],7,7,{c:'dark',n:12}));}
+  // manifold line along rail to regulator
+  I.push(...pipe([[30,-80,44],[30,-80,30],[90,-80,30]],2.2,{c:'#7f7f78'}),...pipe([[90,-80,30],[90,-80,44]],2.2,{c:'#7f7f78'}));
+  I.push(...pipe([[60,-80,30],[60,-64,24],[290,-64,24],[296,-64,40]],2.2,{c:'#7f7f78'}));
+  // regulator
+  I.push(cyl([296,-64,40],[296,-64,50],12,12,{c:'mid'}),cyl([296,-64,50],[296,-64,58],9,9,{c:'hi'}));
+  // engine block + intake plenum + injectors
+  I.push(box(330,-40,20,440,40,90,{c:'mid'}),box(326,-44,90,444,44,104,{c:'hi'}));
+  I.push(cyl([320,-40,120],[320,40,120],10,10,{c:'mid'}));
+  for(const y of [-28,-10,8,26]){I.push(...pipe([[320,y+2,110],[330,y+2,100]],5,{c:'mid'}));I.push(cyl([312,y+2,128],[318,y+2,124],2.4,2.4,{c:'dark',n:8}));}
+  I.push(cyl([304,-40,132],[304,36,132],3,3,{c:'#7f7f78'}));
+  I.push(...pipe([[296,-64,58],[296,-64,132],[304,-40,132]],2,{c:'#7f7f78'}));
+  const hp=[[30,-80,44],[30,-80,30],[60,-80,30],[60,-64,24],[290,-64,24],[296,-64,40]];
+  I.push(...flow(hp,14,50,t,1.9,'#8b6ac2',{bias:5}));
+  I.push(...flow([[296,-64,58],[296,-64,132],[304,-40,132],[304,30,132]],8,30,t,1.6,'#b7a0dc',{bias:5}));
+  I.push(label([60,-30,70],'储气瓶 20 MPa',0,-12),label([296,-64,58],'减压器',0,-14),label([310,0,134],'喷气轨',0,-14),label([385,0,104],'发动机',0,-12));
+  return I;},
+  readout(t){return `CNG 20 MPa → 减压器约 0.8 MPa → 进气喷射（LPG 为液态 0.8–1 MPa，示意）`;}};
+// ---------------- EA-044 ----------------
+SCENES.ea044={fig:'EA-044',title:'氢内燃机',az:-32,el:30,build(t){
+  const I=[...base(-40,-80,510,70),...feet(-40,-80,510,70)];
+  I.push(cyl([0,0,48],[150,0,48],36,36,{c:'hi',n:28}),ball([0,0,48],36,{c:'hi'}),ball([150,0,48],36,{c:'hi'}));
+  for(const x of [30,120])I.push(box(x-6,-40,0,x+6,40,14,{c:'mid'}),cyl([x-3,0,48],[x+3,0,48],37.5,37.5,{c:'lo',n:28}));
+  I.push(cyl([186,0,48],[196,0,48],6,6,{c:'lo',n:6}),cyl([196,0,48],[210,0,48],9,9,{c:'dark',n:14}));
+  I.push(...pipe([[210,0,48],[240,0,48]],2.4,{c:'#8a8a84'}));
+  I.push(cyl([240,0,40],[240,0,58],13,13,{c:'mid'}),cyl([240,0,58],[240,0,64],9,9,{c:'hi'}));
+  I.push(...pipe([[240,0,64],[240,0,140],[300,-36,140]],2.2,{c:'#8a8a84'}));
+  // engine
+  I.push(box(310,-46,10,440,46,90,{c:'mid'}),box(306,-50,90,444,50,104,{c:'hi'}),box(316,-40,104,434,40,118,{c:'mid'}));
+  I.push(cyl([300,-36,140],[300,36,140],3.2,3.2,{c:H2}));
+  for(const y of [-27,-9,9,27]){I.push(...pipe([[296,y,124],[310,y,98]],5,{c:'mid'}));I.push(cyl([300,y,137],[300,y,128],2.2,2.2,{c:'dark',n:8}));
+    I.push(cyl([375,y,118],[375,y,128],2.4,2.4,{c:'#e8e8e4',n:8}));}
+  I.push(cyl([290,-40,120],[290,40,120],9,9,{c:'mid'}));
+  I.push(...pipe([[444,-20,60],[496,-20,60],[496,-62,60]],7,{c:'mid'}));
+  I.push(...flow([[210,0,48],[240,0,48]],3,40,t,1.8,H2,{bias:5}),...flow([[240,0,64],[240,0,140],[300,-36,140],[300,30,140]],10,40,t,1.6,H2,{bias:5}));
+  I.push(...flow([[444,-20,60],[496,-20,60],[496,-62,60]],7,40,t,2.2,u=>((u*7|0)%4==0)?'#b8572e':'#9fc4e4',{bias:10}));
+  I.push(label([75,0,84],'H₂ 储罐 70 MPa',0,-12),label([240,0,64],'减压阀',0,-14),label([300,0,142],'低压喷射',0,-16),label([496,-62,60],'H₂O + NOx',34,16));
+  return I;},
+  readout(t){return `无碳燃料：排气主要为 H₂O · 高温仍生成 NOx，需稀燃/EGR/SCR（示意）`;}};
+// ---------------- EA-046 ----------------
+SCENES.ea046={fig:'EA-046',title:'增程式动力',az:-30,el:30,build(t){
+  const I=[...base(-40,-100,440,80),...feet(-40,-100,440,80)];
+  // engine + generator coaxial along x
+  I.push(box(0,-30,8,70,30,70,{c:'mid'}),box(-4,-34,70,74,34,84,{c:'hi'}));
+  for(const x of [12,30,48])I.push(cyl([x+5,0,84],[x+5,0,90],3,3,{c:'lo',n:10}));
+  const a=t*4,fd=[];for(let k=0;k<4;k++){const c=Math.cos(a+k*PI/2),s=Math.sin(a+k*PI/2);fd.push({p:[69.8,c*18,38+s*18],r:2.2,c:'#2a2a27'});}
+  I.push(cyl([70,0,38],[78,0,38],26,26,{c:'lo',deco:[{face:22,dots:fd,lines:[]}]}));
+  I.push(cyl([78,0,38],[140,0,38],24,24,{c:'hi',n:26,deco:[]}),cyl([140,0,38],[148,0,38],18,18,{c:'mid'}));
+  for(let i=0;i<6;i++)I.push(cyl([86+i*9,0,38],[88+i*9,0,38],25,25,{c:'mid',n:26}));
+  I.push(box(80,-24,0,140,24,14,{c:'lo'}));
+  // inverter + battery
+  I.push(box(170,-20,0,220,20,30,{c:'hi'}),box(176,-20.5,8,214,-20,24,{c:'dark',hull:false}));
+  I.push(box(90,-96,0,320,-50,16,{c:'mid',deco:[{face:5,lines:Array.from({length:11},(_,i)=>[[100+i*20,-92,16.2],[100+i*20,-54,16.2]]),c:'#77776f'}]}));
+  // motor + axle + wheels (separate, no mechanical link to engine)
+  I.push(cyl([330,-14,30],[330,14,30],22,22,{c:'hi'}),box(316,-20,0,344,20,10,{c:'lo'}));
+  I.push(cyl([330,14,30],[330,60,30],5,5,{c:'lo'}),cyl([330,-14,30],[330,-60,30],5,5,{c:'lo'}));
+  for(const y of [-72,60])I.push(cyl([330,y,30],[330,y+12,30],30,30,{c:'#55554f',n:28}),cyl([330,y+(y<0?-0.5:12.5),30],[330,y+(y<0?0:12),30],18,18,{c:'mid',n:24,bias:2}));
+  // cables
+  const c1=[[148,0,38],[160,0,38],[160,0,20],[170,0,20]],c2=[[195,-20,6],[195,-40,6],[205,-40,16],[205,-50,16]],c3=[[220,0,20],[300,0,20],[310,0,30],[312,0,30]];
+  for(const c of [c1,c2,c3])I.push(...pipe(c,2.4,{c:'#c46f22'}));
+  I.push(...flow(c1,4,40,t,2.1,ELEC,{bias:6}),...flow(c2,3,30,t,2.1,ELEC,{bias:6}),...flow(c3,8,40,t,2.1,ELEC,{bias:6}));
+  I.push(label([35,0,90],'发动机',0,-14),label([110,0,62],'发电机',0,-12),label([195,0,30],'逆变器',0,-12),label([205,-73,16],'电池',0,-12),label([330,0,52],'驱动电机',0,-12));
+  return I;},
+  readout(t){return `发动机→发电机→电池/电机→车轮 · 发动机与车轮无机械连接`;}};
+// ---------------- EA-063 ----------------
+SCENES.ea063={fig:'EA-063',title:'乙醇与灵活燃料',az:-30,el:30,build(t){
+  const I=[...base(-40,-90,440,70),...feet(-40,-90,440,70)];
+  const E=Math.round(10+75*(0.5-0.5*Math.cos(t*0.5)));
+  // tank with sight cut window
+  I.push(box(-20,-50,6,90,40,60,{c:'hi'}),cyl([10,-40,60],[10,-40,72],8,8,{c:'mid'}),cyl([10,-40,72],[10,-40,76],10,10,{c:'dark'}));
+  I.push(box(20,-50.5,14,80,-50,52,{c:'#e9e3cf',hull:false,deco:[{face:2,lines:[[[20,-50.7,14+38*0.6],[80,-50.7,14+38*0.6]]],c:'#8c7a3c',w:1}]}));
+  I.push(box(20,-51,14,80,-50.6,14+38*0.6,{c:E>50?'#d9c27a':'#c99a2e',hull:false}));
+  I.push(cyl([60,0,60],[60,0,70],7,7,{c:'lo'}));
+  const line=[[60,0,70],[60,0,80],[140,0,80],[140,-30,80],[170,-30,80]];
+  I.push(...pipe(line,2.4,{c:'#7f7f78'}));
+  // flex fuel sensor
+  I.push(box(170,-40,70,200,-20,90,{c:'mid'}),box(178,-44,74,192,-40,86,{c:'dark'}),cyl([185,-30,90],[185,-30,96],4,4,{c:'lo'}));
+  const line2=[[200,-30,80],[240,-30,80],[240,-30,130],[270,-30,130]];
+  I.push(...pipe(line2,2.4,{c:'#7f7f78'}));
+  // engine + rail + injectors + coils
+  I.push(box(280,-46,10,420,46,90,{c:'mid'}),box(276,-50,90,424,50,104,{c:'hi'}),box(286,-40,104,414,40,116,{c:'mid'}));
+  I.push(cyl([270,-36,130],[270,40,130],4,4,{c:FUEL}));
+  const pw=1+E/100*0.35;
+  for(const y of [-27,-9,9,27]){I.push(cyl([270,y,126],[278,y,112],2.4,2.4,{c:'dark',n:8}));I.push(box(340,y-6,116,356,y+6,132,{c:'#505049'}));}
+  // ECU
+  I.push(box(160,30,0,230,62,16,{c:'hi'}),box(160,29.5,4,176,30,12,{c:'dark',hull:false}));
+  I.push(...wire([[200,-25,84],[208,-25,84],[208,-25,1],[208,30,1]],'#3d3d3a'),...wire([[222,62,8],[266,62,1],[266,54,1],[266,54,130],[266,41,130]],'#a0472f'),...wire([[228,62,8],[272,66,1],[272,58,1],[272,58,120],[348,58,120],[348,33,124]],'#355f8a'));
+  const col=E>50?'#dcc77f':FUEL;
+  I.push(...flow(line,8,30,t,1.8,col,{bias:5}),...flow(line2,6,30,t,1.8,col,{bias:5}));
+  for(const y of [-27,-9,9,27]){const ph=(t*2+y/18)%1;if(ph<0.25*pw)for(let k=0;k<4;k++)I.push({dot:[279+k*1.6,y,110-k*2],r:1.1+k*.3,c:col,bias:40});}
+  I.push(label([35,-50,60],'混合燃料箱',0,-14),label([185,-30,96],'成分传感器',0,-14),label([195,46,16],'ECU',0,-14),label([270,0,132],'喷油器',0,-14));
+  return I;},
+  readout(t){const E=Math.round(10+75*(0.5-0.5*Math.cos(t*0.5)));const fuel=(1+(E-10)/75*0.38);return `E${E} · 喷油量 ×${fuel.toFixed(2)} · 点火提前 +${((E-10)/75*6).toFixed(1)}°（示意）`;}};
+
+mount(SCENES.ea024);
+</script><script src="_embed-lite.js"></script></body></html>

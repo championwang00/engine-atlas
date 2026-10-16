@@ -1,0 +1,698 @@
+{
+  "EA-001": {
+    "description": "An externally heated boiler supplies steam to drive the wheels.",
+    "principle": "Steam from a separate boiler expands in cylinders and drives the wheels through a mechanical linkage.",
+    "examples": "Cugnot experimental vehicle, 1769; full-size vehicle, 1770.",
+    "tradeoffs": "Useful low-speed torque, but a boiler, water supply and warm-up impose substantial practical costs.",
+    "status": "A historical road-vehicle powertrain.",
+    "intro": "A steam car burns fuel outside its power cylinders. Steam generated in a boiler then pushes pistons to turn the wheels.\n\nCugnot tested a small vehicle in 1769 and built a full-size version in 1770. These were experimental machines whose boiler performance and weight distribution limited their usefulness.\n\nSteam cars also reached commercial production. The Stanley Museum traces the first Stanley Steamer to 1897, while the Science Museum Group preserves a vehicle built in 1899. In the 1920s, the Doble Model E used an electrically ignited burner to reduce warm-up and a condenser to recover water from exhaust steam. The Henry Ford’s 1924 car illustrates this later development, which did not make steam the dominant automotive powertrain.\n\nEmissions research prompted further experiments in the 1970s. Lear Motors installed a steam Rankine-cycle system with a monotube steam generator and turbine expander in a city bus. An EPA report published in 1974 describes tests conducted in October 1973, recording promising emissions results alongside fuel-economy and reliability limitations. This was a demonstration programme, not a return to mass production."
+  },
+  "EA-002": {
+    "description": "An early hydrogen-fuelled engine patented in 1807.",
+    "principle": "A manually admitted hydrogen mixture is spark-ignited in a cylinder to move a piston, without a modern compression stroke.",
+    "examples": "François Isaac de Rivaz’s experimental vehicle, 1807.",
+    "tradeoffs": "It demonstrated internal combustion propulsion, but manual control and rudimentary transmission limited practical use.",
+    "status": "An experimental historical design.",
+    "intro": "De Rivaz used combustion inside a cylinder to move a piston. His manually controlled engine was installed in an experimental vehicle.\n\nThe date here marks the 1807 patent and vehicle experiment; 1806 refers to an earlier stage of development."
+  },
+  "EA-003": {
+    "description": "A closed gas circuit converts externally supplied heat into motion.",
+    "principle": "A sealed working gas moves between hot and cold spaces, with a regenerator recovering heat between strokes.",
+    "examples": "NASA/DOE Mod I and Mod II projects; Chevrolet Celebrity demonstrator.",
+    "tradeoffs": "Flexible external heat input and smooth operation, offset by heat-exchanger size and transient-response challenges.",
+    "status": "An experimental route in passenger cars.",
+    "intro": "Robert Stirling patented his hot-air engine in 1816. A sealed gas charge repeatedly absorbs and rejects heat, while a regenerator reduces heat lost between cycles.\n\nNASA and the US Department of Energy later investigated automotive Stirling engines, including the Mod II Chevrolet Celebrity demonstrator. Packaging and response remained important barriers."
+  },
+  "EA-004": {
+    "description": "An early commercially used gas engine, patented in 1860.",
+    "principle": "A gas-and-air charge is spark-ignited without prior compression; the double-acting design works on both sides of the piston.",
+    "examples": "Lenoir gas engine; Hippomobile experimental vehicle, 1863.",
+    "tradeoffs": "No separate steam boiler, but poor fuel efficiency without charge compression.",
+    "status": "A historical predecessor to compression engines.",
+    "intro": "Lenoir adapted a double-acting arrangement to burn gas inside the cylinder. Patented in 1860, the design reached commercial use.\n\nThe Hippomobile demonstrated a vehicle application in 1863. Conflicting journey distances are omitted here; the absence of compression is the more important engineering distinction."
+  },
+  "EA-005": {
+    "description": "A piston engine that separated compression from expansion.",
+    "principle": "A compressor cylinder supplies air through a receiver to a separate power cylinder; heat addition is idealised as constant-pressure.",
+    "examples": "Brayton Ready Motor; Selden’s related automotive design.",
+    "tradeoffs": "Separated processes, but additional cylinders and combustion-control hardware.",
+    "status": "The piston design is historical; the cycle remains central to gas-turbine analysis.",
+    "intro": "George Brayton patented his Ready Motor in 1872. It used separate compression and expansion cylinders, rather than one cylinder performing the entire sequence.\n\nIts architecture differs from a modern gas turbine, although both are associated with the constant-pressure Brayton cycle."
+  },
+  "EA-006": {
+    "description": "The successful 1876 engine established a practical four-stroke sequence.",
+    "principle": "Intake, compression, expansion and exhaust occupy two crankshaft revolutions; a spark ignites the compressed charge.",
+    "examples": "Otto’s 1876 engine; the four-stroke Benz Patent-Motorwagen.",
+    "tradeoffs": "Compression improves efficiency, while pumping, friction and heat losses remain.",
+    "status": "A foundational operating sequence for automotive engines.",
+    "intro": "A four-stroke engine separates intake, compression, power and exhaust. Compressing the mixture before ignition improves the conversion of heat into useful work.\n\nThe milestone is Otto’s successful engine of 1876. The associated US patent dates to 1877."
+  },
+  "EA-007": {
+    "description": "One crankshaft revolution completes the cycle.",
+    "principle": "Compression, combustion and gas exchange occur within one crankshaft revolution, with overlapping intake and exhaust processes.",
+    "examples": "Dugald Clerk’s 1881 patent; DKW, Saab and Trabant cars.",
+    "tradeoffs": "Frequent power strokes and potentially simple construction; conventional petrol versions can lose fresh charge and burn lubricating oil.",
+    "status": "Historical in passenger cars, with other applications in marine diesels and small engines.",
+    "intro": "Two-stroke engines complete a cycle in one revolution. Scavenging replaces exhaust gas around the end of the piston stroke.\n\nThe 1881 date marks Dugald Clerk’s patent. Crankcase-scavenged petrol engines are only one form of the principle, so their emissions problems should not be generalised to every two-stroke engine.\n\nTwo-stroke engines also powered cars. The DKW F1 entered production in 1931, and Audi documents a two-cylinder two-stroke engine in its motorsport version. This illustrates how one operating cycle can serve different vehicle types, with performance and emissions depending on the design and application.\n\nTwo-stroke engines served several car markets. Bosch documents 1951 Gutbrod and Goliath direct-injection applications; Trabant P50 production began in 1958, and the Horch museum records the brand’s two-stroke road and rally history. Saab Car Museum also documents a two-stroke Saab 96.\n\nIn a premixed two-stroke, scavenging can carry unburned fuel into the exhaust. Direct injection can separate fuel delivery from that gas exchange. Not all two-strokes share the same fueling, and Trabant’s final vehicle-production year does not prove every late model remained two-stroke.\n\nAutomotive two-stroke research continued beyond conventional carburetted small cars. A 2000 paper abstract by Orbital Engine Co. describes an Australian fleet of 100 vehicles using OCP air-assisted direct-injection two-stroke engines. It documents vehicle durability testing rather than widespread series production. A different application is the Detroit Diesel Series 71, introduced in 1938 as a two-stroke diesel family with inline and V configurations and later used in heavy trucks. Two-stroke defines the operating cycle, not the fuel, crankcase-scavenging method or opposed-piston layout."
+  },
+  "EA-008": {
+    "description": "Expansion is made greater than effective compression to improve efficiency.",
+    "principle": "The original Atkinson mechanism used unequal strokes; modern versions commonly alter intake-valve closing to reduce effective compression.",
+    "examples": "Atkinson’s 1882 design; Toyota Prius; Mazda Miller-cycle engines.",
+    "tradeoffs": "Better expansion efficiency at the expense of charge capacity, often compensated by boost or electric assistance.",
+    "status": "Used in hybrid and some boosted combustion engines.",
+    "intro": "The original Atkinson engine of 1882 used a mechanical arrangement to produce different compression and expansion strokes. Modern engines often achieve a related effect with intake-valve timing.\n\nMiller-cycle implementations commonly combine this strategy with boost. Terminology overlaps, so the actual valve timing and hardware matter more than the label."
+  },
+  "EA-009": {
+    "description": "One cylinder provides all of the engine’s power strokes.",
+    "principle": "A single piston drives a crankshaft through a connecting rod.",
+    "examples": "Benz Patent-Motorwagen; De Dion-Bouton.",
+    "tradeoffs": "Few parts and compact construction, with pronounced vibration and torque pulses.",
+    "status": "Historical in cars and widespread in other small-engine applications.",
+    "intro": "A single-cylinder engine minimises the number of cylinders and associated parts. Its piston inertia and widely spaced combustion events make smoothness harder to achieve.\n\nBenz’s early car was completed in 1885 and patented in 1886. The date marks that vehicle, rather than the invention of the single-cylinder arrangement."
+  },
+  "EA-010": {
+    "description": "Fuel ignites in hot compressed air rather than from a spark.",
+    "principle": "Air is compressed before fuel is injected; injection and mixing govern combustion.",
+    "examples": "Diesel’s successful 1897 test engine; Mercedes-Benz 260 D, 1936; OM617.",
+    "tradeoffs": "Strong efficiency and load capability, with high cylinder pressure and challenging NOx and particulate emissions.",
+    "status": "An established power source across road transport and heavy-duty uses.",
+    "intro": "A diesel engine compresses air until it is hot enough to ignite injected fuel. This makes injection quality and timing central to combustion.\n\nThe 1897 successful test is a key development milestone. The Mercedes-Benz 260 D of 1936 represents the early series-production diesel passenger car.\n\nDiesel’s 1897 engineering milestone and passenger-car adoption are separate events. The Mercedes-Benz 260 D appeared at the 1936 Berlin IAMA, providing a production passenger-car milestone. Later links lead to turbocharging, direct injection and common rail.\n\nThe Hornsby-Akroyd hot-bulb engine belongs in the prehistory of diesel power. Akroyd-Stuart patented an oil engine in 1890; a later published patent describes heating the vaporizing and ignition chamber with a lamp before starting, then maintaining its temperature through combustion. This reliance on a hot surface differs from diesel ignition driven primarily by the heat of compressed air. The 1890 date does not mark the start of production diesel cars."
+  },
+  "EA-011": {
+    "description": "Two cylinders in one row, with early automotive examples in 1895.",
+    "principle": "Two cylinders share a crankshaft; crankpin phasing determines piston motion, firing intervals and vibration.",
+    "examples": "Daimler Phoenix variant, 1895; Fiat 500, 1957; Fiat TwinAir.",
+    "tradeoffs": "Short and relatively simple, but vibration control depends strongly on crankshaft design.",
+    "status": "A layout used in small production cars.",
+    "intro": "An inline twin places two cylinders along one crankshaft. Different crankpin angles produce different firing patterns and balance characteristics.\n\nA Daimler Phoenix variant used in 1895 is an early automotive example. Later Fiat engines show how the layout can serve both basic transport and compact turbocharged applications."
+  },
+  "EA-012": {
+    "description": "Good inherent reciprocating balance, at the cost of engine length.",
+    "principle": "Six cylinders in line with appropriate crankshaft phasing cancel primary and secondary reciprocating forces and moments.",
+    "examples": "Spyker 60 HP racer, 1903; BMW sixes; Mercedes M256.",
+    "tradeoffs": "Smooth and relatively narrow, but long and still subject to torsional vibration.",
+    "status": "A long-established six-cylinder layout.",
+    "intro": "A conventional inline six balances its primary and secondary reciprocating forces and moments. That does not eliminate combustion torque pulses or crankshaft torsion.\n\nThe Spyker 60 HP of 1903 is a significant early six-cylinder racing car. It is not presented here as the first mass-produced inline-six passenger car.\n\nThe Toyota 2JZ-GTE is a representative 1990s sports-car inline six. The A80 Supra launched in Japan in 1993 offered a 3.0-litre DOHC 24-valve straight six as the naturally aspirated 2JZ-GE or twin-turbocharged 2JZ-GTE. Suffixes and markets matter: the whole 2JZ family should not be described as a single twin-turbo specification."
+  },
+  "EA-013": {
+    "description": "A compact four-cylinder layout, widely demonstrated by the Model T.",
+    "principle": "Paired piston motion balances primary forces; secondary reciprocating forces remain.",
+    "examples": "Ford Model T; Honda B16A; Toyota Prius four-cylinder engines.",
+    "tradeoffs": "Compact with one cylinder head, but secondary vibration can require additional measures.",
+    "status": "A widely used automotive layout.",
+    "intro": "The conventional inline four balances primary piston forces but retains a secondary imbalance. Balance shafts are one way to reduce its effect.\n\nThe 1908 Ford Model T is a mass-production milestone for this layout, not its invention date."
+  },
+  "EA-014": {
+    "description": "Two banks of four cylinders, with a major Cadillac production milestone in 1914.",
+    "principle": "Two four-cylinder banks share a crankshaft; cross-plane and flat-plane designs have different balance and exhaust characteristics.",
+    "examples": "Cadillac Type 51, introduced in 1914 for model year 1915; Ford Flathead; Chevrolet small-block.",
+    "tradeoffs": "Shorter than an inline eight, with greater width and duplicated bank hardware.",
+    "status": "A long-established road and racing configuration.",
+    "intro": "A V8 reduces length by placing eight cylinders in two banks. Crankshaft geometry strongly affects vibration and exhaust timing.\n\nCadillac introduced the Type 51 in September 1914 for the 1915 model year. It was an important mass-production milestone, rather than the invention of the V8."
+  },
+  "EA-015": {
+    "description": "Two banks of six, exemplified by the 1915 Packard Twin Six.",
+    "principle": "A conventional 60-degree V12 combines good primary and secondary reciprocating balance with even firing intervals.",
+    "examples": "Packard Twin Six; Ferrari Colombo V12; Jaguar V12; BMW M70.",
+    "tradeoffs": "Frequent power strokes and smoothness, with more parts, friction, mass and cost.",
+    "status": "A historical high-end road-car and racing configuration.",
+    "intro": "A conventional V12 combines two six-cylinder banks on one crankshaft. A 60-degree angle supports even firing, although torque fluctuations and other vibration sources remain.\n\nThe 1915 Packard Twin Six was an early production example. Later Ferrari, Jaguar and BMW designs illustrate its appeal where smoothness and output justify its cost."
+  },
+  "EA-016": {
+    "description": "Cylinders surround the crankshaft; automotive use was unusual.",
+    "principle": "Radially arranged cylinders typically transmit force through a master-and-articulating-rod arrangement.",
+    "examples": "North-Lucas, 1922; Julian Sport Coupe, 1925.",
+    "tradeoffs": "Short along the crankshaft and suited to airflow cooling, but bulky across its face.",
+    "status": "An unusual historical automotive experiment.",
+    "intro": "A radial engine arranges its cylinders around the crankshaft. Its short axial length and exposed cylinders suited many aircraft installations.\n\nAutomotive examples include the North-Lucas and Julian Sport Coupe. Their packaging illustrates why the layout remained unusual in road vehicles."
+  },
+  "EA-017": {
+    "description": "Eight cylinders in line favour smoothness but require a long engine bay.",
+    "principle": "Appropriate crankshaft phasing can balance primary and secondary reciprocating forces and moments.",
+    "examples": "Isotta Fraschini Tipo 8, shown in 1919; Duesenberg J; Bugatti Type 35; Alfa Romeo 158.",
+    "tradeoffs": "Good balance and a single row of cylinders, offset by length and crankshaft torsion.",
+    "status": "An important early luxury-car and racing layout.",
+    "intro": "An inline eight can offer excellent reciprocating balance, but its long crankshaft and engine block create packaging and vibration problems.\n\nThe Isotta Fraschini Tipo 8 was presented in 1919. The layout later powered notable luxury cars and racing engines before more compact V engines took over many applications."
+  },
+  "EA-018": {
+    "description": "A crankshaft-driven compressor increases the air charge.",
+    "principle": "Belts or gears take mechanical power from the engine to drive an intake compressor.",
+    "examples": "Mercedes 6/25 hp and 10/40 hp, shown in 1921 and marketed in 1923; Bentley Blower.",
+    "tradeoffs": "Prompt boost is possible, but compressor drive consumes shaft power and behaviour varies by design.",
+    "status": "An established method used in selected performance applications.",
+    "intro": "Mechanical supercharging increases cylinder charge using a compressor driven by the engine itself. Response and efficiency vary among Roots, screw and centrifugal types.\n\nMercedes presented its early supercharged passenger cars in 1921. The manufacturer dates their market introduction to 1923, so the two milestones should not be conflated."
+  },
+  "EA-019": {
+    "description": "Two crankshafts combine their output through gearing.",
+    "principle": "An H engine stacks two flat cylinder groups; a U engine places two inline groups side by side, retaining separate crankshafts.",
+    "examples": "Bugatti Type 45 U16; BRM P75 H16; Lotus 43.",
+    "tradeoffs": "High cylinder count within limited length, but complex gearing, mass and vibration control.",
+    "status": "Historical specialist layouts; the BRM H16 remained in F1 use through 1968.",
+    "intro": "H and U layouts couple two crankshafts. They differ fundamentally from a conventional V engine with a single crankshaft.\n\nBRM’s P75 H16 powered the Lotus 43 to victory at the 1966 United States Grand Prix. Weight and complexity were major drawbacks, and its competition use extended into 1968."
+  },
+  "EA-020": {
+    "description": "Sixteen cylinders provide frequent power strokes at substantial cost.",
+    "principle": "Two banks of eight cylinders share a crankshaft; bank angle and crank geometry govern firing and balance.",
+    "examples": "Cadillac V-16, 1930; Marmon Sixteen; Bugatti Tourbillon, unveiled in 2024.",
+    "tradeoffs": "Smoothness potential and frequent power strokes, offset by size, friction, mass and cost.",
+    "status": "A rare configuration used in historical luxury cars and modern flagship projects.",
+    "intro": "A V16 adds four cylinders to the V12 formula. More frequent combustion events can smooth delivery, but add mechanical parts and heat-transfer surfaces.\n\nCadillac introduced its V-16 in 1930. Bugatti unveiled a new 8.3-litre naturally aspirated V16 for the Tourbillon in 2024."
+  },
+  "EA-021": {
+    "description": "Two opposing pistons share one cylinder and combustion chamber.",
+    "principle": "The combustion space lies between two pistons, eliminating a conventional cylinder head; many designs use ported two-stroke scavenging.",
+    "examples": "Junkers Jumo 204/205; Commer TS3 truck engine; Achates Power research.",
+    "tradeoffs": "Potentially lower heat loss, with demanding piston synchronisation, lubrication and scavenging.",
+    "status": "Historical commercial applications and later research programmes.",
+    "intro": "Opposed-piston engines place two pistons in one cylinder. This differs from a boxer engine, whose opposing cylinders remain separate.\n\nThe Jumo 204 entered service in 1932, while the Commer TS3 applied the principle to trucks in the 1950s. Reduced cylinder-head heat loss does not automatically mean a simpler complete engine."
+  },
+  "EA-022": {
+    "description": "A piston moves without a crankshaft fixing its path.",
+    "principle": "Combustion, a return device and the load determine piston motion; a linear generator can convert it directly into electricity.",
+    "examples": "1934 free-piston generator patent milestone; DLR demonstrator; Toyota FPEG prototype.",
+    "tradeoffs": "Potentially fewer rotating parts, but demanding combustion and motion control.",
+    "status": "A research route for vehicle generation, with older compressor and gas-generator uses.",
+    "intro": "A free-piston engine has no crankshaft to impose a fixed piston trajectory. The load and return mechanism become part of its motion control.\n\nThe 1934 date refers to a generator patent. Later DLR and Toyota prototypes explored direct electrical generation, without proving mass-production readiness."
+  },
+  "EA-023": {
+    "description": "Opposing cylinder banks reduce height; Benz’s contra engine dates to 1897.",
+    "principle": "A boxer uses separate crankpins so opposing pistons move inward or outward together; a 180-degree V engine differs.",
+    "examples": "Benz contra, 1897; Volkswagen Beetle; Porsche 356/911; Subaru 1000, 1966.",
+    "tradeoffs": "Low height and good reciprocating balance, with substantial width and service-access demands.",
+    "status": "A long-established flat-engine configuration.",
+    "intro": "Boxer engines have opposing pistons moving towards or away from each other. Not every flat engine is a boxer: crankpin arrangement matters.\n\nBenz’s contra twin dates to 1897. Subaru introduced the front-wheel-drive 1000 in 1966, displayed a four-wheel-drive prototype in 1971 and launched the production Leone 4WD estate in 1972.\n\nFlat-12 describes a horizontally arranged twelve-cylinder engine; it does not automatically mean boxer. Porsche identifies the 1973 917/30 engine as a 180-degree V12. The crankshaft makes the distinction: opposing boxer pistons use separate crankpins, whereas corresponding rods in a 180-degree V engine share a crankpin. Their piston motions therefore differ despite a similarly low external profile."
+  },
+  "EA-024": {
+    "description": "Gas fuels require dedicated storage and fuel-delivery equipment.",
+    "principle": "CNG is mainly methane stored under pressure; LPG is mainly propane and butane stored as a pressurised liquid.",
+    "examples": "Honda Civic GX; Fiat Panda Natural Power; LPG conversions and taxis.",
+    "tradeoffs": "Potential fuel-cost and emissions benefits, with tank packaging and refuelling infrastructure constraints.",
+    "status": "Production and conversion applications vary by region.",
+    "intro": "CNG and LPG differ in composition and storage requirements. Spark-ignition engines can be designed for either, or combined with a petrol system.\n\nThe 1950s label refers to a period of LPG adoption in Italy, not the invention of gas-fuelled vehicles. Benefits depend on the local fuel and infrastructure context."
+  },
+  "EA-025": {
+    "description": "Two banks of three; the Lancia Aurelia brought the V6 into production in 1950.",
+    "principle": "Bank angle and crankpin geometry set firing intervals and balance characteristics.",
+    "examples": "Lancia Aurelia, 1950; 90-degree F1 V6 engines.",
+    "tradeoffs": "Shorter than an inline six, with two cylinder heads and more demanding balance design.",
+    "status": "A long-established road and racing layout.",
+    "intro": "A V6 fits six cylinders into a shorter package than an inline six. Achieving smooth firing and controlling rocking moments requires deliberate geometry.\n\nThe 1950 Lancia Aurelia used a 60-degree V6. Other applications, including F1, use different bank angles and should not be assumed to share its mechanical behaviour.\n\nThe V layout is not limited to six cylinders. The 1889 Daimler Stahlradwagen used a V-twin, while the Lancia Fulvia introduced in 1963 combined a narrow-angle V4 with front-wheel drive. V2, V4 and V6 identify the total cylinder count across two banks; the letter V alone does not specify the bank angle, crankshaft design or driven wheels."
+  },
+  "EA-026": {
+    "description": "Continuous compression, combustion and expansion replace piston strokes.",
+    "principle": "A compressor feeds a combustion chamber; hot gas drives turbine stages and the output shaft.",
+    "examples": "Rover JET1, 1950; Chrysler Turbine Car, built in 1963–1964.",
+    "tradeoffs": "Smooth rotation and fuel flexibility, with part-load consumption, response, heat and cost challenges.",
+    "status": "A historical passenger-car experiment.",
+    "intro": "Gas turbines carry out compression, combustion and expansion continuously in separate components. Their strengths do not automatically translate into efficient stop-start road use.\n\nRover demonstrated JET1 in 1950. Chrysler built 55 Turbine Cars, of which 50 entered a public user trial; these are different production and trial counts."
+  },
+  "EA-027": {
+    "description": "A rotor creates changing combustion volumes inside a shaped housing.",
+    "principle": "A triangular rotor forms moving chambers that pass through intake, compression, expansion and exhaust.",
+    "examples": "NSU Spider; Mazda Cosmo; RX-7/RX-8; Mazda MX-30 R-EV, 2023.",
+    "tradeoffs": "Compact and smooth, with demanding sealing, lubrication and emissions control.",
+    "status": "Production sports-car history, followed by Mazda’s 2023 generator application.",
+    "intro": "The Wankel engine uses a rotor and shaped housing to form changing working chambers. Seals separate those chambers during the gas cycle.\n\nA working NSU prototype ran in 1957. Mazda later developed production sports cars and, in 2023, returned the rotary to a vehicle as the generator engine in the MX-30 R-EV.\n\nRotary engines followed several road and racing paths. The four-rotor Mazda 787B won Le Mans in 1991; the 2003 RX-8 RENESIS used side intake and exhaust ports; and the MX-30 e-SKYACTIV R-EV entered production in 2023 with a rotary generator and exclusively motor-driven wheels. These illustrate racing use, road-engine development and generator duty in a series hybrid."
+  },
+  "EA-028": {
+    "description": "Compact packaging with balanced reciprocating forces but a rocking couple.",
+    "principle": "A conventional 120-degree crankshaft balances primary and secondary reciprocating force sums, while spatially separated cylinders create rocking moments.",
+    "examples": "DKW two-stroke cars; Suzuki small cars; Ford 1.0 EcoBoost.",
+    "tradeoffs": "Few cylinders and a short block, with rocking vibration and separated combustion pulses to manage.",
+    "status": "Used in small and turbocharged road-car engines.",
+    "intro": "The conventional inline three has a rocking-couple problem rather than simply an unbalanced primary force. Counterweights, mounts and balance shafts can reduce its effects.\n\nThe approximate 1960 placement refers to post-war small-car use, not the invention of the layout.\n\nFord’s 1.0-litre EcoBoost reached the European Focus in 2012, a representative downsizing milestone. Reduced displacement is combined with boost, fueling and valve control to meet performance targets; fewer cylinders alone do not guarantee lower consumption, especially at high load."
+  },
+  "EA-029": {
+    "description": "Exhaust energy drives the compressor; the Jetfire preceded the turbo Corvair in 1962.",
+    "principle": "An exhaust turbine drives a compressor on the same shaft to increase intake charge.",
+    "examples": "Oldsmobile F-85 Jetfire, 1962; Chevrolet Corvair Monza Spyder, 1962.",
+    "tradeoffs": "Higher specific output, with response, heat and lubrication challenges.",
+    "status": "A widely used method of forced induction.",
+    "intro": "Turbocharging converts part of the exhaust flow’s energy into intake compression. Back-pressure and heating remain part of the trade-off.\n\nOldsmobile introduced the F-85 Jetfire before the turbocharged Corvair in 1962. Its water-and-methanol system helped control knock, illustrating the supporting systems early turbo engines required.\n\nTwin-scroll separates exhaust pulses inside one turbine housing; twin-turbo means two turbochargers. Two turbos may run in parallel or enter sequentially, as on the Porsche 959. Two-stage serial systems instead pass air through low- and high-pressure compressors with bypass control. Variable geometry adapts inlet vanes to exhaust flow; the 2006 Porsche 997 Turbo is a petrol-car example.\n\nAnti-lag coordinates air, fuel and ignition to sustain turbo speed during transients, with system-specific thermal demands. Water injection addresses knock: the BMW M4 GTS, revealed in 2015 for the 2016 model year, evaporates sprayed water in the intake to cool the charge. It requires a tank, pump and control; water is not the fuel energy source.\n\nRacing provides different turbocharged applications. IndyCar introduced 2.2-litre turbo V6 engines in 2012, while the 2022 Toyota GR YARIS Rally1 paired a 1.6-litre direct-injection turbo engine with a hybrid unit. These are dated examples: displacement, hybrid architecture and permitted boost conditions depend on the championship and season."
+  },
+  "EA-030": {
+    "description": "Electronic control meters fuel to suit engine conditions.",
+    "principle": "Sensors report speed and load; an electronic controller sets injector duration. Port injection delivers fuel upstream of the intake valves.",
+    "examples": "Bendix Electrojector experiments; Bosch Jetronic on the VW 1600 from 1967.",
+    "tradeoffs": "Flexible metering, with dependence on sensors, electrical supply and control hardware.",
+    "status": "An established system, sometimes combined with direct injection.",
+    "intro": "Electronic fuel injection controls fuel quantity using sensor inputs and electrically operated injectors. Injection location is a separate question from electronic control.\n\nBendix tried the Electrojector in the 1950s. Bosch’s Jetronic entered volume use in 1967, initially on US-market Volkswagen 1600 models.\n\nElectronic fuel injection describes the control method, whereas port injection describes injector location. Bosch Jetronic introduced electronic injection in 1967; Motronic integrated fuel and ignition management in 1979.\n\nAutomotive petrol injection predates electronic control. Bosch supplied direct injection for Gutbrod and Goliath two-stroke cars in 1951, allowing fuel delivery after scavenging and reducing fuel escape into the exhaust. The 1954 Mercedes-Benz 300 SL used mechanical petrol direct injection.\n\nD-Jetronic brought electronic control in 1967. Mechanical continuous K-Jetronic and electronic L-Jetronic followed in parallel in 1973; Motronic integrated fuel and ignition management in 1979. Injection location, metering and control should be distinguished."
+  },
+  "EA-031": {
+    "description": "An intermediate package between inline fours and sixes.",
+    "principle": "Five cylinders share a crankshaft; a conventional four-stroke design fires every 144 degrees, with rocking moments still present.",
+    "examples": "Mercedes OM617, 1974; Audi 100 five-cylinder, unveiled in 1976 and delivered from March 1977; Audi Quattro.",
+    "tradeoffs": "Shorter than an inline six, with more frequent power strokes than a four but non-zero rocking moments.",
+    "status": "A less common layout with both petrol and diesel production examples.",
+    "intro": "An inline five offers five cylinders without the length of a six. Even firing is possible, so its distinctive sound should not be described as inherently uneven ignition timing.\n\nAudi announced its petrol five in 1976 and began customer deliveries in March 1977.\n\nThe 1980 Audi quattro combined a petrol inline-five, turbocharging, intercooling and permanent all-wheel drive. The 1983 Sport quattro added four valves per cylinder; road and Group B racing outputs must be kept separate. In 1989, the Audi 100 TDI combined the layout with diesel direct injection, electronic management and turbocharging."
+  },
+  "EA-032": {
+    "description": "Varying valve timing, duration or lift adapts gas exchange to the operating condition; VTEC, Valvetronic and MultiAir implement different approaches.",
+    "principle": "Changing valve timing, opening duration or lift adapts gas exchange and load control to operating conditions. Different systems control different parameters.",
+    "examples": "Alfa Romeo Spider 2000, 1980; BMW VANOS, 1992.",
+    "tradeoffs": "Improved torque, efficiency and emissions trade-offs, with added actuation and calibration complexity.",
+    "status": "A widely used valvetrain-control technology.",
+    "intro": "Variable valve timing broadens the operating range of an engine by changing when its valves open and close. Cam phasing alone does not alter valve lift.\n\nAlfa Romeo applied VVT to the Spider 2000 in 1980. BMW dates VANOS to 1992. The scope of timing control differs between systems.\n\nVariable valve operation is more than cam phasing. The 2009 Alfa Romeo MiTo MultiAir places a solenoid-controlled oil chamber between the camshaft and intake valves, altering the transmitted lift and opening events. It retains a cam-driven energy source, unlike a fully independent camless actuator.\n\nA variable intake manifold changes runner length or connectivity to exploit pressure-wave and inertia effects. Manifold geometry, cam phasing and valve lift can work together while remaining distinct mechanisms."
+  },
+  "EA-033": {
+    "description": "A supercharger and turbocharger work together across the operating range.",
+    "principle": "The mechanically driven compressor can support low-speed charge while the turbo contributes more as exhaust energy rises.",
+    "examples": "Lancia Delta S4, 1985; Nissan March Super Turbo; Volkswagen 1.4 TSI Twincharger.",
+    "tradeoffs": "Broad response, with extra plumbing, bypasses, clutches and calibration requirements.",
+    "status": "A specialist arrangement with racing and road-car applications.",
+    "intro": "Twincharging here means combining a mechanically driven supercharger with an exhaust turbocharger, not using two turbos. Their operating ranges may overlap.\n\nThe 1985 Lancia Delta S4 is a prominent example. Later road cars showed the same response benefits and integration costs."
+  },
+  "EA-034": {
+    "description": "F1’s 1989–1994 naturally aspirated era allowed V8, V10 and V12 competition.",
+    "principle": "Turbocharging was banned and naturally aspirated capacity was limited to 3.5 litres.",
+    "examples": "Honda RA109E V10; Renault V10; Ferrari V12; Ford Cosworth V8.",
+    "tradeoffs": "Direct throttle response, with layout choices trading size, friction, mass and high-speed breathing.",
+    "status": "A historical era, followed by a 3.0-litre limit from 1995.",
+    "intro": "From 1989, F1 prohibited turbocharging and used a 3.5-litre naturally aspirated formula. Multiple layouts competed within the rules; this did not mean cylinder count was entirely unrestricted.\n\nThe era ended with the reduction to 3.0 litres in 1995. Different layouts made different compromises in mass, friction and high-speed breathing."
+  },
+  "EA-035": {
+    "description": "Cam-profile switching changes valve lift and duration.",
+    "principle": "Oil pressure moves locking pins that couple rocker arms, selecting the cam profile that drives the valves.",
+    "examples": "Honda Integra XSi B16A, 1989; later i-VTEC engines.",
+    "tradeoffs": "A broader operating range, with additional mechanism and oil-pressure control.",
+    "status": "One family of variable-valve systems; implementations differ.",
+    "intro": "Classic DOHC VTEC switches between cam profiles, changing lift and duration rather than merely rotating a camshaft’s phase.\n\nThe B16A in the 1989 Integra XSi was a key automotive debut. Later VTEC-branded systems use differing combinations of lift, duration and timing control."
+  },
+  "EA-036": {
+    "description": "A narrow V angle allows six cylinders to share one cylinder head.",
+    "principle": "Staggered cylinders sit in a very narrow V; early VR6 engines used a 15-degree bank angle.",
+    "examples": "Volkswagen Passat and Corrado, 1991; Golf VR6; later 3.6 FSI variants.",
+    "tradeoffs": "Shorter than an inline six and narrower than a conventional V6, with complex port and cooling arrangements.",
+    "status": "A Volkswagen Group engine family that informed later W layouts.",
+    "intro": "The VR6 combines two narrowly spaced cylinder rows under one head. Its purpose was to fit six cylinders into limited engine-bay space.\n\nVolkswagen introduced it in 1991. Later versions varied in geometry, and the narrow-angle concept contributed to subsequent W-engine designs."
+  },
+  "EA-037": {
+    "description": "Two banks of five cylinders, with very different road and racing designs.",
+    "principle": "Bank angle, crankpins and counterweights determine firing intervals and rocking behaviour.",
+    "examples": "Dodge Viper, 1992; BMW S85; Lamborghini/Audi V10; F1 V10 engines from 1989.",
+    "tradeoffs": "Potentially shorter than a V12, but not inherently balanced in the same way.",
+    "status": "A less common layout with historical road and racing applications.",
+    "intro": "A V10 is not simply a shorter V12. Each five-cylinder bank contributes rocking behaviour that must be addressed by the overall design.\n\nThe 1992 Dodge Viper was an early production petrol V10 road car, while F1 had already adopted V10s in 1989. Their operating targets were very different."
+  },
+  "EA-038": {
+    "description": "Petrol is injected into the cylinder; Mitsubishi’s 1996 GDI marked modern electronic adoption.",
+    "principle": "High-pressure injectors deliver fuel directly into the combustion chamber, allowing timed injection and charge cooling.",
+    "examples": "Early Goliath/Gutbrod cars; Mercedes-Benz 300 SL; Mitsubishi 4G93 GDI, 1996.",
+    "tradeoffs": "Knock and mixture-control benefits, with high-pressure hardware, particulates and intake-valve deposits to manage.",
+    "status": "An established system, sometimes paired with port injection.",
+    "intro": "Direct injection describes where fuel enters the engine. Injection timing and spray formation then determine how it mixes with air.\n\nMechanical petrol direct injection existed in 1950s cars. Mitsubishi’s electronic GDI in 1996 was a later milestone; direct injection does not necessarily mean stratified lean combustion."
+  },
+  "EA-039": {
+    "description": "A shared high-pressure rail separates pressure generation from injection.",
+    "principle": "A pump maintains pressure in a common rail while electronically controlled injectors meter fuel to each cylinder.",
+    "examples": "Alfa Romeo 156 2.4 JTD, 1997; contemporary 1.9 JTD; later MultiJet.",
+    "tradeoffs": "Flexible multiple injections and reduced combustion noise, with precision and fuel-cleanliness demands.",
+    "status": "An established diesel-injection technology.",
+    "intro": "Common rail allows pressure generation and injection timing to be controlled separately. Small preliminary injections can soften the main combustion event.\n\nThe 1997 Alfa Romeo 156 2.4 JTD is identified as the passenger-car debut. This claim does not mean that common rail itself was invented in 1997.\n\nCommon rail separates pressure generation from injection events, while rail pressure remains controlled for operating conditions. Unit injection instead integrates a pump and nozzle at each cylinder. The 1997 Alfa Romeo 156 JTD is a significant passenger-car application of common-rail diesel injection."
+  },
+  "EA-040": {
+    "description": "The combustion engine is optimised for cooperation with electric drive.",
+    "principle": "Efficiency-oriented valve timing and calibration can be combined with electric support for transient and low-speed demand.",
+    "examples": "Toyota Prius NHW10 with 1NZ-FXE, 1997; later dedicated hybrid engines.",
+    "tradeoffs": "More opportunity to operate efficiently, with added system hardware and energy-flow control.",
+    "status": "Used in production hybrids with differing cycles and transmissions.",
+    "intro": "A hybrid-specific engine is defined by its role in the powertrain, not a single cylinder layout or thermodynamic cycle. Electric assistance permits different compromises in combustion-engine design.\n\nThe first Prius used late intake-valve closing for an Atkinson-like effective cycle. Other hybrids need not use the same approach.\n\nDedicated hybrid engines are developed with motors, storage and transmission. BYD’s 1.5-litre Xiaoyun, announced in November 2020, combines Atkinson-style operation, EGR and split cooling; the original release quotes 43% engine bench efficiency. Geely’s November 2021 Leishen DHE1.5 uses Miller operation and low-pressure EGR, with a manufacturer claim of 43.32%. These peak figures are not average vehicle efficiency and cannot be ranked without comparable test conditions.\n\nA 48-volt mild hybrid uses a smaller motor for restart, recuperation and assistance. Mercedes-Benz introduced integrated ISG in the 2017 S-Class M256 inline-six, while M264 uses a belt-driven RSG. Voltage alone does not guarantee sustained electric driving."
+  },
+  "EA-041": {
+    "description": "BMW controls load through continuously variable intake-valve lift.",
+    "principle": "An electric motor turns an eccentric shaft, changing intermediate-lever geometry and therefore valve lift.",
+    "examples": "BMW 316ti Compact, 2001; later engines combining Valvetronic with VANOS.",
+    "tradeoffs": "Reduced throttling losses, with additional levers, actuators and calibration demands.",
+    "status": "A production variable-lift system.",
+    "intro": "Valvetronic varies intake-valve lift to control the air charge, reducing the need for conventional throttling in normal operation. It does not imply that no throttle valve is fitted.\n\nBMW introduced the system on the 316ti Compact in 2001. VANOS complements it by changing camshaft timing."
+  },
+  "EA-042": {
+    "description": "Narrow-angle cylinder groups form Volkswagen Group’s compact multi-bank engines.",
+    "principle": "Two narrow-angle cylinder groups share a crankshaft, producing four rows of cylinders.",
+    "examples": "Audi A8 W12; Bentley Continental GT W12; Bugatti Veyron/Chiron W16.",
+    "tradeoffs": "Short for the cylinder count, but wide, mechanically dense and demanding to cool and service.",
+    "status": "A historical production family; Bentley W12 production ended in 2024.",
+    "intro": "This entry covers Volkswagen Group’s four-row W engines, rather than every historical design called a W engine. Narrow-angle cylinder groups reduce overall length.\n\nThe Audi A8 W12 entered production in 2001. Bentley ended W12 engine production in 2024, which should not be confused with the final delivery date of every W12-powered car."
+  },
+  "EA-043": {
+    "description": "F1’s 2006–2013 V8 formula constrained capacity, bore and engine speed.",
+    "principle": "A 2.4-litre naturally aspirated 90-degree V8 used four valves per cylinder and a maximum 98 mm bore.",
+    "examples": "F1 V8s from 2006–2013; Toro Rosso’s restricted V10 exception in 2006.",
+    "tradeoffs": "Common design limits constrained performance development, while speed, durability and packaging remained trade-offs.",
+    "status": "Replaced by the 1.6-litre turbo-hybrid formula in 2014.",
+    "intro": "F1 adopted 2.4-litre naturally aspirated V8s in 2006, with a restricted V10 exception. A 19,000 rpm limit followed in 2007 and 18,000 rpm in 2009.\n\nKERS was used in 2009 and 2011–2013, so hybrid assistance was not a feature of every season in this era."
+  },
+  "EA-044": {
+    "description": "Hydrogen burns inside the engine, with NOx and storage challenges remaining.",
+    "principle": "Fuel delivery, mixture strength and ignition control govern hydrogen combustion and its output.",
+    "examples": "BMW Hydrogen 7; Mazda RX-8 Hydrogen RE; Toyota hydrogen racing cars.",
+    "tradeoffs": "The fuel contains no carbon, but combustion can form NOx and requires careful storage and abnormal-combustion control.",
+    "status": "Demonstration, racing and development applications; distinct from fuel cells.",
+    "intro": "A hydrogen combustion engine produces mechanical work by burning hydrogen. It is different from a fuel-cell powertrain, and combustion in air can still produce NOx.\n\nBMW rated the Hydrogen 7 at 191 kW on either fuel. A universal claim that hydrogen halves engine power is therefore inappropriate.\n\nHydrogen combustion also reached rotary engines. The Mazda RX-8 Hydrogen RE used a 13B/RENESIS-based dual-fuel system, allowing the driver to select hydrogen or petrol. After a 2003 development-car presentation and 2004 road testing, Mazda signed limited lease contracts in February 2006. The first two corporate deliveries followed in March, with Hiroshima government deliveries in April. This was an operating demonstration fleet, rather than large-scale retail production."
+  },
+  "EA-045": {
+    "description": "F1 introduced KERS in 2009 to recover and reuse braking energy.",
+    "principle": "Part of the car’s kinetic energy is stored during deceleration and returned as drive assistance.",
+    "examples": "F1 cars using KERS in 2009 and 2011–2013.",
+    "tradeoffs": "Reuses braking energy, but adds storage, cooling and packaging demands.",
+    "status": "A historical stage preceding the expanded 2014 energy-recovery system.",
+    "intro": "The 2009 F1 KERS allowance was 60 kW with up to 400 kJ released per lap, equivalent to about 6.7 seconds at full power.\n\nTeams did not use it in 2010 and returned to it in 2011. KERS is supporting powertrain technology rather than an internal-combustion engine itself.\n\nEnergy recovery also reached LMP1 endurance racing. The 2012 Audi R18 e-tron quattro drove its rear wheels with a V6 TDI, while front-axle motor-generators recovered braking energy into a flywheel system and later assisted the front wheels. The 2016 Toyota TS050 HYBRID combined a 2.4-litre twin-turbo V6 with front and rear motor-generators, storing recovered energy in a lithium-ion battery. These dated examples show different storage choices; their limits cannot be inferred from F1 KERS rules."
+  },
+  "EA-046": {
+    "description": "A combustion engine extends electrically driven range; architectures differ.",
+    "principle": "In a series layout the engine drives a generator and the traction motor drives the wheels. Some vehicles marketed as range-extended use mechanical coupling too.",
+    "examples": "BMW i3 REx; Mazda MX-30 R-EV; Chevrolet Volt as a related multi-mode example.",
+    "tradeoffs": "Liquid fuel extends range, with added hardware and energy-conversion losses.",
+    "status": "Production applications use different mechanical layouts and control strategies.",
+    "intro": "A series range extender generates electricity without mechanically driving the wheels. This can help choose efficient engine operating points, but does not guarantee constant-speed operation.\n\nVolt deliveries began in December 2010 for model year 2011; model years ran through 2019. Its engine can also contribute mechanically in some operating modes."
+  },
+  "EA-047": {
+    "description": "F1’s 2014–2025 power unit paired a turbo V6 with two motor-generators.",
+    "principle": "A 1.6-litre 90-degree V6 works with crankshaft-linked MGU-K and turbo-shaft MGU-H systems.",
+    "examples": "F1 power units from 2014–2025, including Honda’s V6 hybrid.",
+    "tradeoffs": "Brake and exhaust-energy recovery improve utilisation, at the cost of considerable electrical and control complexity.",
+    "status": "A historical formula; the 2026 system removes the MGU-H.",
+    "intro": "MGU-K exchanged energy with the drivetrain, while MGU-H exchanged energy with the turbocharger shaft. The latter could generate electricity or help accelerate the compressor.\n\nMGU-K was limited to 120 kW. The 2014–2025 architecture was replaced by a formula without MGU-H for 2026."
+  },
+  "EA-048": {
+    "description": "Separate electric compressors and electrically assisted turbochargers are different systems.",
+    "principle": "An electric compressor has its own motor; an e-turbo places a motor on the exhaust-turbine/compressor shaft.",
+    "examples": "Audi SQ7 TDI, 2016; Mercedes-AMG M139l in SL43/C43, 2022.",
+    "tradeoffs": "Faster boost response, with electrical and cooling demands; regeneration depends on the particular design.",
+    "status": "Both approaches have production applications.",
+    "intro": "The SQ7’s separate electric compressor and AMG’s shaft-mounted electric turbo motor solve related response problems using different hardware.\n\nAudi introduced its system in 2016. Mercedes-AMG documented the M139l road-car application in 2022. Neither label alone guarantees energy-recovery capability.\n\nThe Mercedes-Benz M256 combines a 48V integrated starter-generator, electric auxiliaries and an electrically driven auxiliary compressor. The compressor uses electricity for boost, while the starter-generator exchanges energy with the drivetrain; they are separate components sharing an electrical system."
+  },
+  "EA-049": {
+    "description": "A multi-link mechanism changes piston geometry and compression ratio.",
+    "principle": "An actuator changes linkage geometry and piston top position; the QX50 system varies geometric compression from 8:1 to 14:1.",
+    "examples": "Infiniti QX50 2.0-litre VC-Turbo; later Nissan applications.",
+    "tradeoffs": "Load-dependent efficiency and knock control, with added linkage and actuator complexity.",
+    "status": "A production technology with applications that vary by model and market.",
+    "intro": "VC-Turbo changes geometric compression ratio by moving a multi-link mechanism. It can use a lower ratio under high load and a higher one where efficiency permits.\n\nThis differs from reducing effective compression through valve timing. The QX50’s published range is 8:1 to 14:1.\n\nVC-Turbo is a multi-link implementation of variable geometric compression ratio. Its control shaft changes piston top-dead-centre position; the 8:1–14:1 range is specific to this system."
+  },
+  "EA-050": {
+    "description": "SPCCI uses a spark to help control compression ignition in a petrol engine.",
+    "principle": "HCCI relies on charge conditions for autoignition; SPCCI uses local spark combustion and the resulting pressure rise to control wider charge ignition.",
+    "examples": "Mazda3 and CX-30 Skyactiv-X; Japanese Mazda3 launch in 2019.",
+    "tradeoffs": "Efficient combustion over a wider range, with demanding mixture, temperature and mode-transition control.",
+    "status": "A production combustion approach; availability must be dated by market.",
+    "intro": "Homogeneous-charge compression ignition is difficult to control across an engine’s full operating range. Mazda’s SPCCI uses a spark to influence when compression ignition occurs.\n\nSkyactiv-X reached production cars in 2019, including a documented Japanese Mazda3 launch. Later Skyactiv-Z plans do not establish a universal Skyactiv-X discontinuation.\n\nHCCI is the concept of compression-igniting a largely premixed fuel–air charge. SPCCI is Mazda’s specific method of controlling compression ignition with a spark, while SKYACTIV-X is the engine technology family using it. The concept, control method and product family are distinct.\n\nSPCCI is Mazda’s spark-controlled approach related to HCCI. It should not be described as homogeneous auto-ignition without spark plugs under every operating condition; control of ignition timing and mode transitions is central."
+  },
+  "EA-051": {
+    "description": "Electricity is converted into synthetic fuel through hydrogen and carbon chemistry.",
+    "principle": "Renewable electricity can produce hydrogen, which reacts with captured CO2 to make fuel intermediates and specification-compliant products.",
+    "examples": "Haru Oni pilot plant, production announced in December 2022.",
+    "tradeoffs": "Potential compatibility with existing engines and logistics, with substantial production-energy and lifecycle-carbon considerations.",
+    "status": "Demonstration production exists; announced expansion is not proven output.",
+    "intro": "Haru Oni converts hydrogen and captured carbon dioxide through methanol into synthetic petrol. Compatibility depends on the resulting fuel specification.\n\nProduction was announced in December 2022. Combustion still emits CO2; any climate benefit depends on the complete supply chain rather than the tailpipe alone."
+  },
+  "EA-052": {
+    "description": "The 2026 formula retains the turbo V6, removes MGU-H and expands kinetic recovery.",
+    "principle": "A 1.6-litre 90-degree turbo V6 works with ERS-K, whose DC electrical limit is 350 kW; fuel energy flow is capped at 3000 MJ/h.",
+    "examples": "FIA 2026 Technical Regulations, Section C, Issue 20, 5 August 2026.",
+    "tradeoffs": "Less MGU-H hardware, with greater demands on storage, recovery and lap energy management.",
+    "status": "The 2026 formula, described against a dated regulation issue.",
+    "intro": "The 2026 rules remove MGU-H while retaining a turbocharged V6. The ERS-K electrical limit and fuel-energy-flow limit are different quantities from combustion-engine output.\n\nAdvanced sustainable fuel requirements include a limited allowance for specified non-sustainable additives and denaturants. This description follows Issue 20 rather than treating promotional power estimates as regulatory limits."
+  },
+  "EA-053": {
+    "description": "Valves sit beside the cylinder in the block, simplifying the head but making the gas path less direct.",
+    "principle": "In an L-head side-valve engine, a camshaft in the block operates valves alongside the bore. The combustion chamber extends over the bore and valve pockets.",
+    "examples": "The 1904 Packard Model L is a documented L-head example. The 1932 Ford V8 combined side valves with a casting designed for economical mass production.",
+    "tradeoffs": "A simple, low cylinder head is inexpensive to build, but the chamber and gas path constrain breathing and compression-ratio development. Valve location alone does not determine output.",
+    "status": "A useful reference for early car engines; overhead-valve layouts later became widespread in passenger cars.",
+    "intro": "In an L-head side-valve engine, a camshaft in the block operates valves alongside the bore. The combustion chamber extends over the bore and valve pockets.\n\nThe 1904 Packard Model L is a documented L-head example. The 1932 Ford V8 combined side valves with a casting designed for economical mass production. A simple, low cylinder head is inexpensive to build, but the chamber and gas path constrain breathing and compression-ratio development. Valve location alone does not determine output."
+  },
+  "EA-054": {
+    "description": "Valves move into the head while the camshaft remains in the block, usually acting through pushrods and rockers.",
+    "principle": "In a typical pushrod OHV engine, tappets, pushrods and rocker arms transmit cam motion to valves in the head. OHC also has overhead valves; camshaft location is the useful distinction.",
+    "examples": "Buick used production OHV engines in 1904. The Chevrolet small-block, introduced for 1955, is a long-lived V8 example.",
+    "tradeoffs": "Compact heads can help package a V-engine. The longer motion path adds moving mass and stiffness challenges at high speed; OHV does not inherently mean obsolete or two valves per cylinder.",
+    "status": "The layout remains useful in selected large petrol and commercial engines, reflecting packaging and operating priorities.",
+    "intro": "In a typical pushrod OHV engine, tappets, pushrods and rocker arms transmit cam motion to valves in the head. OHC also has overhead valves; camshaft location is the useful distinction.\n\nBuick used production OHV engines in 1904. The Chevrolet small-block, introduced for 1955, is a long-lived V8 example. Compact heads can help package a V-engine. The longer motion path adds moving mass and stiffness challenges at high speed; OHV does not inherently mean obsolete or two valves per cylinder."
+  },
+  "EA-055": {
+    "description": "Moving the camshaft into the head shortens the valve actuation path; DOHC separates intake and exhaust camshafts.",
+    "principle": "OHC locates cams in the head. SOHC normally has one camshaft per head and DOHC two. Valve count is a separate choice. A belt, chain or gear drive synchronizes cam and crank; a conventional four-stroke cam turns at half crankshaft speed.",
+    "examples": "The 1912 Peugeot L76 combined DOHC with four valves per cylinder in a racing engine. Honda small OHC engines provide a different example using a timing belt.",
+    "tradeoffs": "Fewer intermediate moving parts aid high-speed valve control, at the cost of head packaging and timing-drive complexity. Service requirements depend on the particular engine.",
+    "status": "OHC and DOHC are widespread in passenger cars. Variable timing and lift add further control choices.",
+    "intro": "OHC locates cams in the head. SOHC normally has one camshaft per head and DOHC two. Valve count is a separate choice. A belt, chain or gear drive synchronizes cam and crank; a conventional four-stroke cam turns at half crankshaft speed.\n\nThe 1912 Peugeot L76 combined DOHC with four valves per cylinder in a racing engine. Honda small OHC engines provide a different example using a timing belt. Fewer intermediate moving parts aid high-speed valve control, at the cost of head packaging and timing-drive complexity. Service requirements depend on the particular engine.\n\nFour valves per cylinder do not automatically mean DOHC. Mercedes-Benz documents a 1910 four-valve arrangement driven from low-mounted cams through pushrods and rockers; the 1912 Peugeot L76 combined DOHC with four valves in racing. Valve count, cam location and drive method are separate descriptors."
+  },
+  "EA-056": {
+    "description": "The catalyst treats exhaust while oxygen-sensor feedback helps keep a petrol engine near the required mixture.",
+    "principle": "At suitable temperature and near stoichiometry, a three-way catalyst oxidizes CO and hydrocarbons while reducing NOx. An upstream oxygen sensor supports closed-loop fueling; downstream sensors can monitor catalyst operation.",
+    "examples": "Volvo introduced the Lambda Sond and three-way-catalyst combination in autumn 1976 on US-market model-year 1977 cars. Calendar year and model year must stay distinct.",
+    "tradeoffs": "Conversion depends on temperature, mixture and catalyst condition. It does not remove combustion CO₂ and is not a direct substitute for lean-diesel NOx treatment.",
+    "status": "A central emissions-control system for stoichiometric petrol engines.",
+    "intro": "At suitable temperature and near stoichiometry, a three-way catalyst oxidizes CO and hydrocarbons while reducing NOx. An upstream oxygen sensor supports closed-loop fueling; downstream sensors can monitor catalyst operation.\n\nVolvo introduced the Lambda Sond and three-way-catalyst combination in autumn 1976 on US-market model-year 1977 cars. Calendar year and model year must stay distinct. Conversion depends on temperature, mixture and catalyst condition. It does not remove combustion CO₂ and is not a direct substitute for lean-diesel NOx treatment."
+  },
+  "EA-057": {
+    "description": "Sensors, software and actuators coordinate fueling, ignition and other functions as operating conditions change.",
+    "principle": "The ECU reads speed, load, temperature and other signals, then uses calibration and feedback to command fuel, spark and available actuators. It is a control layer, not a combustion cycle; functions vary by generation.",
+    "examples": "Bosch introduced Jetronic electronic injection in 1967. Motronic integrated fuel and ignition management in 1979.",
+    "tradeoffs": "Control improves startability, response, efficiency and emissions, but needs reliable hardware and extensive calibration. Software remains constrained by mechanical and combustion limits.",
+    "status": "The coordinating layer linking modern engine air, fuel, ignition and emissions systems.",
+    "intro": "The ECU reads speed, load, temperature and other signals, then uses calibration and feedback to command fuel, spark and available actuators. It is a control layer, not a combustion cycle; functions vary by generation.\n\nBosch introduced Jetronic electronic injection in 1967. Motronic integrated fuel and ignition management in 1979. Control improves startability, response, efficiency and emissions, but needs reliable hardware and extensive calibration. Software remains constrained by mechanical and combustion limits."
+  },
+  "EA-058": {
+    "description": "A carburetor meters and atomizes fuel using pressure differences created by the intake airflow.",
+    "principle": "In a typical carburetor, airflow through a restriction creates the pressure difference that draws fuel from a jet. A float chamber maintains fuel level and the throttle controls flow. Additional circuits handle starting and acceleration.",
+    "examples": "The Science Museum Group holds a diagram of a Maybach spray-carburetor design dated 1893. This is a documented milestone rather than a claim to the invention of every carburetor.",
+    "tradeoffs": "Mechanically straightforward, but precise compensation for weather, altitude and transients is difficult; mixture distribution depends on the intake system.",
+    "status": "Largely superseded by injection in cars, while remaining a useful introduction to early mixture formation.",
+    "intro": "In a typical carburetor, airflow through a restriction creates the pressure difference that draws fuel from a jet. A float chamber maintains fuel level and the throttle controls flow. Additional circuits handle starting and acceleration.\n\nThe Science Museum Group holds a diagram of a Maybach spray-carburetor design dated 1893. This is a documented milestone rather than a claim to the invention of every carburetor. Mechanically straightforward, but precise compensation for weather, altitude and transients is difficult; mixture distribution depends on the intake system."
+  },
+  "EA-059": {
+    "description": "An ignition system produces a high-voltage spark at the required time, evolving from magnetos and distributors to electronic coil control.",
+    "principle": "A magneto generates its own electrical energy; battery ignition uses a coil to raise voltage. A traditional distributor routes high voltage between cylinders, whereas modern systems can use individually controlled coils. Spark timing varies with operating conditions.",
+    "examples": "Bosch applied magneto ignition to cars in 1897 and introduced a high-voltage system in 1902. The 1997 Chevrolet LS1 used coil-near-plug ignition.",
+    "tradeoffs": "Accurate timing aids stable, efficient combustion, but coils, insulation, plugs and calibration face thermal and electrical limits. Spark ignition differs from diesel compression ignition.",
+    "status": "Electronic ignition and individual coils are widespread in petrol engines; magnetos and distributors explain earlier stages.",
+    "intro": "A magneto generates its own electrical energy; battery ignition uses a coil to raise voltage. A traditional distributor routes high voltage between cylinders, whereas modern systems can use individually controlled coils. Spark timing varies with operating conditions.\n\nBosch applied magneto ignition to cars in 1897 and introduced a high-voltage system in 1902. The 1997 Chevrolet LS1 used coil-near-plug ignition. Accurate timing aids stable, efficient combustion, but coils, insulation, plugs and calibration face thermal and electrical limits. Spark ignition differs from diesel compression ignition."
+  },
+  "EA-060": {
+    "description": "Fuel enters the main combustion chamber directly; direct injection is a different classification from common rail.",
+    "principle": "A direct-injection diesel sprays fuel into hot compressed air in the main chamber, often using a shaped piston bowl. Direct injection describes location; common rail, distributor pumps and unit injectors describe fuel-system architecture.",
+    "examples": "Fiat histories date the Croma milestone to 1986, 1987 or 1988, so the display retains “late 1980s.” Audi documents the 1989 IAA debut of the Audi 100 TDI, combining direct injection, turbocharging and electronic management.",
+    "tradeoffs": "Avoiding a separate prechamber can reduce losses, but spray formation, noise, soot and NOx need careful control. Injection pressure alone does not ensure clean exhaust.",
+    "status": "A foundation for later common-rail diesels; these passenger-car milestones are not the invention dates of direct injection.",
+    "intro": "A direct-injection diesel sprays fuel into hot compressed air in the main chamber, often using a shaped piston bowl. Direct injection describes location; common rail, distributor pumps and unit injectors describe fuel-system architecture.\n\nFiat histories date the Croma milestone to 1986, 1987 or 1988, so the display retains “late 1980s.” Audi documents the 1989 IAA debut of the Audi 100 TDI, combining direct injection, turbocharging and electronic management. Avoiding a separate prechamber can reduce losses, but spray formation, noise, soot and NOx need careful control. Injection pressure alone does not ensure clean exhaust.\n\nIn 2006 the V12-powered Audi R10 TDI became the first diesel car to win the Le Mans 24 Hours overall. Its programme brought diesel injection, combustion and reliability development into top-level endurance racing; Audi’s contemporary report also described links between racing and production research. The result belongs to its regulations, vehicle design and race conditions, rather than proving a universal advantage for every diesel engine."
+  },
+  "EA-061": {
+    "description": "Exhaust drives a compressor, supplying more air so a diesel can burn additional fuel within its thermal and emissions limits.",
+    "principle": "A turbine extracts exhaust energy to drive the intake compressor. Charge cooling and later variable-geometry turbines extend useful operation. Turbocharging, direct injection and common rail are distinct features that can be combined.",
+    "examples": "The Mercedes-Benz 300 SD arrived in May 1978 with a 3.0-litre five-cylinder turbodiesel for the US and Canada. The 1989 Audi 100 TDI combined turbocharging, direct injection and electronic control.",
+    "tradeoffs": "Higher specific output and useful torque come with response, back-pressure, temperature and emissions tradeoffs. A turbo alone does not establish efficiency.",
+    "status": "A major element of vehicle diesel systems, coordinated with fuel injection, cooling and aftertreatment.",
+    "intro": "A turbine extracts exhaust energy to drive the intake compressor. Charge cooling and later variable-geometry turbines extend useful operation. Turbocharging, direct injection and common rail are distinct features that can be combined.\n\nThe Mercedes-Benz 300 SD arrived in May 1978 with a 3.0-litre five-cylinder turbodiesel for the US and Canada. The 1989 Audi 100 TDI combined turbocharging, direct injection and electronic control. Higher specific output and useful torque come with response, back-pressure, temperature and emissions tradeoffs. A turbo alone does not establish efficiency."
+  },
+  "EA-062": {
+    "description": "Different devices address soot and nitrogen oxides; the engine and exhaust system work together.",
+    "principle": "A DPF traps particles and regenerates by oxidizing accumulated soot. SCR uses ammonia derived from aqueous urea to reduce NOx. Oxidation catalysts treat CO and hydrocarbons. EGR recirculates exhaust to reduce NOx formation inside the engine, rather than filtering exhaust.",
+    "examples": "The Peugeot 607 adopted an additive-assisted DPF in May 2000. Cummins illustrates the distinct roles of DPF, DEF/AdBlue dosing and SCR; combinations vary by application.",
+    "tradeoffs": "Temperature control, sensors, regeneration and maintenance are essential. Low-temperature operation can be difficult, and controlling soot does not automatically establish NOx compliance.",
+    "status": "Diesel engines must be understood together with their control and exhaust-treatment systems.",
+    "intro": "A DPF traps particles and regenerates by oxidizing accumulated soot. SCR uses ammonia derived from aqueous urea to reduce NOx. Oxidation catalysts treat CO and hydrocarbons. EGR recirculates exhaust to reduce NOx formation inside the engine, rather than filtering exhaust.\n\nThe Peugeot 607 adopted an additive-assisted DPF in May 2000. Cummins illustrates the distinct roles of DPF, DEF/AdBlue dosing and SCR; combinations vary by application. Temperature control, sensors, regeneration and maintenance are essential. Low-temperature operation can be difficult, and controlling soot does not automatically establish NOx compliance."
+  },
+  "EA-063": {
+    "description": "The progression from dedicated ethanol engines to flex-fuel vehicles requires compatible hardware and control, not just a different fuel in the tank.",
+    "principle": "Ethanol differs from petrol in energy content, vaporization and required mixture. Dedicated engines target one fuel; flex-fuel systems adapt within an approved blend range. Regional E85 and hydrous-ethanol specifications are not interchangeable.",
+    "examples": "Brazil’s ethanol-powered Fiat 147 was introduced on 5 July 1979. The Volkswagen Gol Total Flex became a Brazilian production milestone in 2003.",
+    "tradeoffs": "High knock resistance creates design opportunities, while lower volumetric energy content, cold starting and materials compatibility need attention. Climate benefits depend on the fuel lifecycle.",
+    "status": "An important route in selected markets. Ordinary petrol cars should not be assumed compatible with every ethanol concentration.",
+    "intro": "Ethanol differs from petrol in energy content, vaporization and required mixture. Dedicated engines target one fuel; flex-fuel systems adapt within an approved blend range. Regional E85 and hydrous-ethanol specifications are not interchangeable.\n\nBrazil’s ethanol-powered Fiat 147 was introduced on 5 July 1979. The Volkswagen Gol Total Flex became a Brazilian production milestone in 2003. High knock resistance creates design opportunities, while lower volumetric energy content, cold starting and materials compatibility need attention. Climate benefits depend on the fuel lifecycle."
+  },
+  "EA-064": {
+    "description": "A 3.0-litre naturally aspirated V8 whose availability to multiple teams reshaped Formula 1.",
+    "principle": "The DFV is a specific 90-degree V8 with natural aspiration, DOHC and four valves per cylinder. Distinguish the model from the general V8 layout and the 3.0-litre rules introduced in 1966.",
+    "examples": "Jim Clark won the 1967 Dutch Grand Prix on the engine’s debut in the Lotus 49. Cosworth records 155 Grand Prix wins for the DFV; derivative models and final race dates require separate scope.",
+    "tradeoffs": "Supplying a competitive engine widened independent teams’ options. Success still depended on rules, chassis integration and continuing development, and turbo engines later presented a major challenge.",
+    "status": "A landmark historical engine, classified here as a specific model under the V8 concept.",
+    "intro": "The DFV is a specific 90-degree V8 with natural aspiration, DOHC and four valves per cylinder. Distinguish the model from the general V8 layout and the 3.0-litre rules introduced in 1966.\n\nJim Clark won the 1967 Dutch Grand Prix on the engine’s debut in the Lotus 49. Cosworth records 155 Grand Prix wins for the DFV; derivative models and final race dates require separate scope. Supplying a competitive engine widened independent teams’ options. Success still depended on rules, chassis integration and continuing development, and turbo engines later presented a major challenge."
+  },
+  "EA-065": {
+    "description": "A compact, fast-running petrol single helped move combustion power from stationary machines to vehicles.",
+    "principle": "Daimler and Maybach developed the upright “Grandfather Clock” single around the goal of a compact, faster-running mobile power source. High speed is relative to contemporary nineteenth-century engines.",
+    "examples": "It powered the 1885 Reitwagen experimental two-wheeler; the motor carriage followed in 1886. These are distinct vehicle applications.",
+    "tradeoffs": "Its significance lies in packaging fuel supply, ignition and cooling into mobile machinery, alongside the established four-stroke principle.",
+    "status": "A historical model linked to single-cylinder and four-stroke concepts.",
+    "intro": "Daimler and Maybach developed the upright “Grandfather Clock” single around the goal of a compact, faster-running mobile power source. High speed is relative to contemporary nineteenth-century engines.\n\nIt powered the 1885 Reitwagen experimental two-wheeler; the motor carriage followed in 1886. These are distinct vehicle applications. Its significance lies in packaging fuel supply, ignition and cooling into mobile machinery, alongside the established four-stroke principle."
+  },
+  "EA-066": {
+    "description": "At light load, some cylinders stop firing so the remaining cylinders operate at a higher load.",
+    "principle": "A typical system stops fuel delivery and holds the selected cylinders’ valves closed. The working cylinders then carry more load, reducing throttling losses in suitable petrol-engine conditions.",
+    "examples": "GM’s 1981-model-year V8-6-4 is an early production milestone. Improved electronics and valvetrain actuation later supported renewed adoption, including modern Chevrolet small-block systems.",
+    "tradeoffs": "Torque transitions, vibration, acoustics and catalyst temperature constrain operation. More deactivated cylinders do not guarantee greater savings.",
+    "status": "A production control strategy whose cylinder selection and operating envelope vary.",
+    "intro": "A typical system stops fuel delivery and holds the selected cylinders’ valves closed. The working cylinders then carry more load, reducing throttling losses in suitable petrol-engine conditions.\n\nGM’s 1981-model-year V8-6-4 is an early production milestone. Improved electronics and valvetrain actuation later supported renewed adoption, including modern Chevrolet small-block systems. Torque transitions, vibration, acoustics and catalyst temperature constrain operation. More deactivated cylinders do not guarantee greater savings."
+  },
+  "EA-067": {
+    "description": "Independent actuators release valve events from a fixed cam profile.",
+    "principle": "Camless systems command valve timing, duration and lift through actuators. Freevalve’s demonstrated approach combines pneumatic, hydraulic and electronic systems; it still has intake and exhaust valves.",
+    "examples": "Rolling Qoros3 demonstrators were shown in 2016. This is an engineering-demonstration milestone, not evidence of mass production.",
+    "tradeoffs": "Additional freedom comes with actuator energy demand, pressure supply, precision, durability and cost requirements. Test-specific gains are not universal.",
+    "status": "Demonstrated in vehicles; production status needs product-specific evidence.",
+    "intro": "Camless systems command valve timing, duration and lift through actuators. Freevalve’s demonstrated approach combines pneumatic, hydraulic and electronic systems; it still has intake and exhaust valves.\n\nRolling Qoros3 demonstrators were shown in 2016. This is an engineering-demonstration milestone, not evidence of mass production. Additional freedom comes with actuator energy demand, pressure supply, precision, durability and cost requirements. Test-specific gains are not universal."
+  },
+  "EA-068": {
+    "description": "Hemispherical, wedge and pent-roof describe chamber geometry, not the number of camshafts.",
+    "principle": "Near top dead centre, the head and piston crown define the combustion space. Valve angles, spark-plug location, squish regions and flame travel interact with charge motion and knock resistance.",
+    "examples": "Chrysler’s FirePower was announced in 1950 for the 1951 model year. Honda’s 1989 B16A combines a pent-roof chamber with DOHC and four valves per cylinder.",
+    "tradeoffs": "Chamber shape alone cannot predict output or efficiency. Trade-offs include surface area, compression, airflow and emissions, and a brand name does not fully specify the geometry.",
+    "status": "A foundational design topic linking valvetrain and combustion.",
+    "intro": "Near top dead centre, the head and piston crown define the combustion space. Valve angles, spark-plug location, squish regions and flame travel interact with charge motion and knock resistance.\n\nChrysler’s FirePower was announced in 1950 for the 1951 model year. Honda’s 1989 B16A combines a pent-roof chamber with DOHC and four valves per cylinder. Chamber shape alone cannot predict output or efficiency. Trade-offs include surface area, compression, airflow and emissions, and a brand name does not fully specify the geometry."
+  },
+  "EA-069": {
+    "description": "A rich auxiliary chamber provides stable ignition for a leaner main chamber.",
+    "principle": "CVCC feeds a richer mixture to an auxiliary chamber. Spark ignition there sends flame into the main chamber, supporting lean combustion through stratification. It is Honda’s specific implementation.",
+    "examples": "EPA testing took place in December 1972; Japanese Civic CVCC sales began on 13 December 1973. US cars belong to the 1975 model year.",
+    "tradeoffs": "The extra chamber, valve and mixture paths add complexity. Its historical emissions achievement should not be treated as a substitute for all later aftertreatment requirements.",
+    "status": "A historical production implementation of stratified combustion.",
+    "intro": "CVCC feeds a richer mixture to an auxiliary chamber. Spark ignition there sends flame into the main chamber, supporting lean combustion through stratification. It is Honda’s specific implementation.\n\nEPA testing took place in December 1972; Japanese Civic CVCC sales began on 13 December 1973. US cars belong to the 1975 model year. The extra chamber, valve and mixture paths add complexity. Its historical emissions achievement should not be treated as a substitute for all later aftertreatment requirements."
+  },
+  "EA-070": {
+    "description": "A small ignition chamber sends combustion jets through orifices into the main chamber.",
+    "principle": "Pre-chamber ignition creates an initial burn in a small connected volume. The jets provide distributed ignition in the main chamber. Fuel supply arrangements differ, and this petrol strategy should be distinguished from diesel indirect injection.",
+    "examples": "Honda CVCC is an earlier divided-chamber example. Maserati’s 2020 Nettuno combines a pre-chamber, a lateral main-chamber spark plug and both direct and port injection.",
+    "tradeoffs": "Orifice design, residual gases, deposits and light-load stability require control. Nettuno is a modern example, not the invention of all pre-chamber combustion.",
+    "status": "A concept with both historical and current production implementations.",
+    "intro": "Pre-chamber ignition creates an initial burn in a small connected volume. The jets provide distributed ignition in the main chamber. Fuel supply arrangements differ, and this petrol strategy should be distinguished from diesel indirect injection.\n\nHonda CVCC is an earlier divided-chamber example. Maserati’s 2020 Nettuno combines a pre-chamber, a lateral main-chamber spark plug and both direct and port injection. Orifice design, residual gases, deposits and light-load stability require control. Nettuno is a modern example, not the invention of all pre-chamber combustion."
+  },
+  "EA-071": {
+    "description": "A premixed charge auto-ignites under compression; timing and operating range are the central challenges.",
+    "principle": "HCCI uses temperature and pressure to ignite a premixed charge. It differs from conventional diesel mixing-controlled combustion and from a flame propagating solely from one spark.",
+    "examples": "The 1979 ATAC paper is an early two-stroke auto-ignition research milestone. Mazda’s SPCCI, announced in 2017, adds spark control and is a related implementation.",
+    "tradeoffs": "Cold starts, unstable light-load combustion, rapid pressure rise and mode transitions constrain use. It is not simply a petrol engine with its spark plugs removed.",
+    "status": "A research concept with related controlled production approaches.",
+    "intro": "HCCI uses temperature and pressure to ignite a premixed charge. It differs from conventional diesel mixing-controlled combustion and from a flame propagating solely from one spark.\n\nThe 1979 ATAC paper is an early two-stroke auto-ignition research milestone. Mazda’s SPCCI, announced in 2017, adds spark control and is a related implementation. Cold starts, unstable light-load combustion, rapid pressure rise and mode transitions constrain use. It is not simply a petrol engine with its spark plugs removed."
+  },
+  "EA-072": {
+    "description": "Crankpin phasing affects V8 balance, bank-to-bank exhaust pulses and the rest of the engine design.",
+    "principle": "In a typical 90-degree V8, cross-plane throws occupy planes 90 degrees apart; flat-plane throws lie in two opposing directions. Cylinder layout and crankshaft form are separate design choices.",
+    "examples": "The 2020 AMG GT Black Series M178 LS2 uses a flat-plane crank. Its alternating-bank firing requires matching changes to cams, ignition and exhaust routing.",
+    "tradeoffs": "Cross-plane designs favour smoothness with counterweights, while flat-plane designs offer regular same-bank pulses with different vibration trade-offs. Sound depends on the complete engine and exhaust.",
+    "status": "Both remain valid V8 architectures.",
+    "intro": "In a typical 90-degree V8, cross-plane throws occupy planes 90 degrees apart; flat-plane throws lie in two opposing directions. Cylinder layout and crankshaft form are separate design choices.\n\nThe 2020 AMG GT Black Series M178 LS2 uses a flat-plane crank. Its alternating-bank firing requires matching changes to cams, ignition and exhaust routing. Cross-plane designs favour smoothness with counterweights, while flat-plane designs offer regular same-bank pulses with different vibration trade-offs. Sound depends on the complete engine and exhaust."
+  },
+  "EA-073": {
+    "description": "Eccentric rotating masses counter selected inertia forces or rocking moments.",
+    "principle": "Reciprocating piston and rod masses generate forces that do not always cancel across cylinders. Shaft speed, phase, direction and position must match the particular engine imbalance.",
+    "examples": "Mitsubishi’s February 1975 Galant GTO 4G52 Astron80 used two counter-rotating shafts at twice crankshaft speed. A three-cylinder primary rocking couple can instead require a crank-speed balancing arrangement.",
+    "tradeoffs": "Shafts add mass, friction and drive requirements. They are not crankshaft torsional dampers, and equal cylinder counts do not imply identical balancing systems.",
+    "status": "A layout-specific vibration-control tool.",
+    "intro": "Reciprocating piston and rod masses generate forces that do not always cancel across cylinders. Shaft speed, phase, direction and position must match the particular engine imbalance.\n\nMitsubishi’s February 1975 Galant GTO 4G52 Astron80 used two counter-rotating shafts at twice crankshaft speed. A three-cylinder primary rocking couple can instead require a crank-speed balancing arrangement. Shafts add mass, friction and drive requirements. They are not crankshaft torsional dampers, and equal cylinder counts do not imply identical balancing systems."
+  },
+  "EA-074": {
+    "description": "Heat leaves the engine through air or circulating coolant, with different temperature-control trade-offs.",
+    "principle": "Air cooling transfers heat from fins to airflow. Liquid cooling carries heat through jackets to a radiator, which also rejects it to air. Oil may contribute to cooling in either approach.",
+    "examples": "The original Volkswagen Beetle used an air-cooled flat-four, and the 2CV appeared in 1948 and entered production in 1949 with an air-cooled flat twin. The Porsche 993 continued through 1998 while the water-cooled 996 arrived in 1997.",
+    "tradeoffs": "Air cooling reduces coolant hardware; liquid cooling offers more flexible temperature control but adds pumps, plumbing and radiators.",
+    "status": "Liquid cooling dominates modern passenger-car use; air cooling remains historically significant.",
+    "intro": "Air cooling transfers heat from fins to airflow. Liquid cooling carries heat through jackets to a radiator, which also rejects it to air. Oil may contribute to cooling in either approach.\n\nThe original Volkswagen Beetle used an air-cooled flat-four, and the 2CV appeared in 1948 and entered production in 1949 with an air-cooled flat twin. The Porsche 993 continued through 1998 while the water-cooled 996 arrived in 1997. Air cooling reduces coolant hardware; liquid cooling offers more flexible temperature control but adds pumps, plumbing and radiators."
+  },
+  "EA-075": {
+    "description": "A liquid oxygenated fuel distinct from ethanol, used in racing and dedicated road vehicles.",
+    "principle": "Methanol requires suitable fueling, ignition, materials and cold-start engineering. Compatibility cannot be inferred from a vehicle’s ability to run on petrol or ethanol.",
+    "examples": "The 1965 Indianapolis 500 used pure methanol and was won by Jim Clark. Geely recorded the launch of the Emgrand Methanol Hybrid in 2022.",
+    "tradeoffs": "Lifecycle emissions depend on feedstock, production energy and supply chains. Racing experience alone does not establish road-fleet economics or carbon benefits.",
+    "status": "A fuel with racing history and selected dedicated road applications.",
+    "intro": "Methanol requires suitable fueling, ignition, materials and cold-start engineering. Compatibility cannot be inferred from a vehicle’s ability to run on petrol or ethanol.\n\nThe 1965 Indianapolis 500 used pure methanol and was won by Jim Clark. Geely recorded the launch of the Emgrand Methanol Hybrid in 2022. Lifecycle emissions depend on feedstock, production energy and supply chains. Racing experience alone does not establish road-fleet economics or carbon benefits."
+  },
+  "EA-076": {
+    "description": "A shift from lead-based antiknock additives toward fuels compatible with health and catalyst requirements.",
+    "principle": "Octane rating measures resistance to knock. Tetraethyl lead improved antiknock behaviour, but lead pollution and incompatibility with catalytic cleanup drove its removal.",
+    "examples": "UNEP dates lead’s use in petrol to 1922. Algeria ended road-vehicle leaded petrol supply in July 2021, completing the global phase-out of that road fuel.",
+    "tradeoffs": "This does not mean all aviation leaded fuels disappeared. Unleaded petrol can still be high-octane, and vehicle compatibility requires the specified fuel grade.",
+    "status": "A central fuel-history transition linked to catalysts and knock control.",
+    "intro": "Octane rating measures resistance to knock. Tetraethyl lead improved antiknock behaviour, but lead pollution and incompatibility with catalytic cleanup drove its removal.\n\nUNEP dates lead’s use in petrol to 1922. Algeria ended road-vehicle leaded petrol supply in July 2021, completing the global phase-out of that road fuel. This does not mean all aviation leaded fuels disappeared. Unleaded petrol can still be high-octane, and vehicle compatibility requires the specified fuel grade."
+  },
+  "EA-077": {
+    "description": "FAME is an ester; HVO-type renewable diesel is a hydrocarbon. Their names and compatibility claims are not interchangeable.",
+    "principle": "Biodiesel commonly consists of fatty-acid esters, including fatty-acid methyl esters. Hydrotreated renewable diesel instead produces hydrocarbon fuel with different chemical and handling properties.",
+    "examples": "Neste inaugurated the Porvoo NExBTL plant in 2007 ahead of planned summer production. B5 and B20 describe biodiesel volume fractions, not HVO content.",
+    "tradeoffs": "Feedstock and process determine lifecycle performance. Fuel standards, engine approvals and operating conditions govern compatibility.",
+    "status": "Parallel renewable-fuel routes with product-specific requirements.",
+    "intro": "Biodiesel commonly consists of fatty-acid esters, including fatty-acid methyl esters. Hydrotreated renewable diesel instead produces hydrocarbon fuel with different chemical and handling properties.\n\nNeste inaugurated the Porvoo NExBTL plant in 2007 ahead of planned summer production. B5 and B20 describe biodiesel volume fractions, not HVO content. Feedstock and process determine lifecycle performance. Fuel standards, engine approvals and operating conditions govern compatibility.\n\nDimethyl ether (DME) is another alternative fuel, distinct from both FAME and HVO. It is gaseous at ambient conditions, can be liquefied under pressure, and requires a suitable compression-ignition engine and fuel system. Its feedstock may be renewable or fossil-based. Volvo’s BioDME project covered fuel production, distribution and vehicle trials; its 2010 report records two demonstrators being handed to customers in early 2011. Renewable origin and vehicle compatibility are separate questions."
+  },
+  "EA-078": {
+    "description": "A mass-production milestone that broadened access to V8-powered cars.",
+    "principle": "The Ford side-valve V8 placed its valves in the block. Economical casting of the block and crankcase helped make the architecture affordable at scale.",
+    "examples": "Introduced in 1932, it remained part of US Ford production through 1953. Its distinction is mass-market accessibility, not the invention of the V8.",
+    "tradeoffs": "The simple head came with restrictions in chamber geometry and gas flow. It provides a useful contrast with later overhead-valve V8s.",
+    "status": "A historical family linking V8 layout, side valves and manufacturing.",
+    "intro": "The Ford side-valve V8 placed its valves in the block. Economical casting of the block and crankcase helped make the architecture affordable at scale.\n\nIntroduced in 1932, it remained part of US Ford production through 1953. Its distinction is mass-market accessibility, not the invention of the V8. The simple head came with restrictions in chamber geometry and gas flow. It provides a useful contrast with later overhead-valve V8s."
+  },
+  "EA-079": {
+    "description": "A long-running compact pushrod V8 family illustrates continued development of OHV architecture.",
+    "principle": "A block-mounted camshaft operates overhead valves through pushrods and rockers. Small-block identifies a family and packaging tradition, not one displacement, material or injection system.",
+    "examples": "The original 265-cubic-inch version arrived for the 1955 model year. Later generations changed substantially; the 1997 LS1 used coil-near-plug ignition.",
+    "tradeoffs": "Compact heads come with valvetrain and breathing trade-offs. OHV or DOHC labels alone cannot rank an engine’s performance or sophistication.",
+    "status": "An evolving production family whose generations require separate specifications.",
+    "intro": "A block-mounted camshaft operates overhead valves through pushrods and rockers. Small-block identifies a family and packaging tradition, not one displacement, material or injection system.\n\nThe original 265-cubic-inch version arrived for the 1955 model year. Later generations changed substantially; the 1997 LS1 used coil-near-plug ignition. Compact heads come with valvetrain and breathing trade-offs. OHV or DOHC labels alone cannot rank an engine’s performance or sophistication."
+  },
+  "EA-080": {
+    "description": "A bridge between naturally aspirated inline-five diesels and turbo-diesel passenger cars.",
+    "principle": "The OM617 is a Mercedes-Benz inline-five diesel family. Five-cylinder packaging and firing characteristics offer a compromise, not inherently perfect balance; not every version is turbocharged.",
+    "examples": "The 240 D 3.0 introduced the three-litre OM617 in July 1974, followed by W123 300 D applications. The 1978 300 SD is a later turbo-diesel-car milestone.",
+    "tradeoffs": "Boost requires matching fuel delivery, thermal management and mechanical loading. A durability reputation is not a universal service-life guarantee.",
+    "status": "A historical production family linking inline-fives and turbo diesels.",
+    "intro": "The OM617 is a Mercedes-Benz inline-five diesel family. Five-cylinder packaging and firing characteristics offer a compromise, not inherently perfect balance; not every version is turbocharged.\n\nThe 240 D 3.0 introduced the three-litre OM617 in July 1974, followed by W123 300 D applications. The 1978 300 SD is a later turbo-diesel-car milestone. Boost requires matching fuel delivery, thermal management and mechanical loading. A durability reputation is not a universal service-life guarantee."
+  },
+  "EA-081": {
+    "description": "A long-lived American racing inline-four family developed from Miller experience.",
+    "principle": "The “Offy” links Miller-era design knowledge with DOHC, multi-valve racing development. It is a specific family within the wider inline-four category.",
+    "examples": "After Miller’s 1933 bankruptcy, Fred Offenhauser and Leo Goossen continued development from a Miller four-cylinder marine design. IMS records 27 Indianapolis 500 victories, the last in 1976.",
+    "tradeoffs": "Displacements, boost systems and racing specifications varied. One version’s output or fuel cannot describe the entire family.",
+    "status": "A historical racing family spanning several decades of competition.",
+    "intro": "The “Offy” links Miller-era design knowledge with DOHC, multi-valve racing development. It is a specific family within the wider inline-four category.\n\nAfter Miller’s 1933 bankruptcy, Fred Offenhauser and Leo Goossen continued development from a Miller four-cylinder marine design. IMS records 27 Indianapolis 500 victories, the last in 1976. Displacements, boost systems and racing specifications varied. One version’s output or fuel cannot describe the entire family."
+  },
+  "EA-082": {
+    "description": "A turbocharged direct-injection inline-four family whose specifications change across generations.",
+    "principle": "EA888 includes chain-driven 1.8- and 2.0-litre petrol engine lines. The family name does not replace an engine code, market or model year.",
+    "examples": "Audi training material dates BYT start of production to January 2007. Volkswagen’s 2020 Golf GTI material describes EA888 evo4 with revised injection and particulate-control equipment.",
+    "tradeoffs": "Downsized turbo engines must manage thermal loads, particles and control complexity. Neither advantages nor problems of one generation should be assigned to every EA888.",
+    "status": "A multi-generation production family requiring version-specific descriptions.",
+    "intro": "EA888 includes chain-driven 1.8- and 2.0-litre petrol engine lines. The family name does not replace an engine code, market or model year.\n\nAudi training material dates BYT start of production to January 2007. Volkswagen’s 2020 Golf GTI material describes EA888 evo4 with revised injection and particulate-control equipment. Downsized turbo engines must manage thermal loads, particles and control complexity. Neither advantages nor problems of one generation should be assigned to every EA888."
+  },
+  "EA-083": {
+    "description": "A 1.5-litre turbocharged inline-four connects production-block origins with 1980s Formula 1 development.",
+    "principle": "The M12/13 used a production-block foundation but required a racing-specific combustion, boost, cooling and durability programme.",
+    "examples": "BMW won in F1 in 1982; Nelson Piquet won the 1983 drivers’ championship in the Brabham BT52. The engine illustrates the turbo route alongside naturally aspirated competitors.",
+    "tradeoffs": "Famous qualifying-power figures include estimates that BMW itself says were not measured. They are omitted rather than presented as test results.",
+    "status": "A historical F1 engine linked to the turbo-era timeline.",
+    "intro": "The M12/13 used a production-block foundation but required a racing-specific combustion, boost, cooling and durability programme.\n\nBMW won in F1 in 1982; Nelson Piquet won the 1983 drivers’ championship in the Brabham BT52. The engine illustrates the turbo route alongside naturally aspirated competitors. Famous qualifying-power figures include estimates that BMW itself says were not measured. They are omitted rather than presented as test results."
+  },
+  "EA-084": {
+    "description": "A production performance inline-four associated with the arrival of DOHC VTEC.",
+    "principle": "The naturally aspirated 1.6-litre B16A combines DOHC, four valves per cylinder and hydraulic locking pins that select different cam profiles through its rocker system.",
+    "examples": "The Integra announced on 19 April 1989 introduced this application. Its pent-roof chamber and valvetrain were engineered as a complete high-speed breathing system.",
+    "tradeoffs": "Market and transmission specifications differ, and the VTEC name can describe different mechanisms in other engines.",
+    "status": "A historical production model linked to the VTEC concept.",
+    "intro": "The naturally aspirated 1.6-litre B16A combines DOHC, four valves per cylinder and hydraulic locking pins that select different cam profiles through its rocker system.\n\nThe Integra announced on 19 April 1989 introduced this application. Its pent-roof chamber and valvetrain were engineered as a complete high-speed breathing system. Market and transmission specifications differ, and the VTEC name can describe different mechanisms in other engines."
+  },
+  "EA-085": {
+    "description": "The original Prius engine exemplifies joint optimisation of combustion-engine efficiency and electric assistance.",
+    "principle": "The water-cooled DOHC inline-four 1NZ-FXE uses Atkinson-style operation through valve timing, rather than the original nineteenth-century linkage.",
+    "examples": "Toyota presented the Prius in October 1997 and began Japanese sales on 10 December. The engine was developed alongside the hybrid system’s motor, storage and power management.",
+    "tradeoffs": "Peak engine efficiency is not continuous whole-vehicle efficiency; electrical, transmission and accessory losses and operating conditions still matter.",
+    "status": "A historical production hybrid engine linked to Atkinson-style operation.",
+    "intro": "The water-cooled DOHC inline-four 1NZ-FXE uses Atkinson-style operation through valve timing, rather than the original nineteenth-century linkage.\n\nToyota presented the Prius in October 1997 and began Japanese sales on 10 December. The engine was developed alongside the hybrid system’s motor, storage and power management. Peak engine efficiency is not continuous whole-vehicle efficiency; electrical, transmission and accessory losses and operating conditions still matter."
+  },
+  "EA-086": {
+    "description": "A multi-generation twin-rotor road-engine family, distinct from both one RENESIS version and the R26B racer.",
+    "principle": "Mazda describes the 13B as two 654 cc rotors. Rotary displacement conventions should not be silently substituted for piston-engine competition equivalence.",
+    "examples": "The 13B appeared in the 1973 Luce. The RX-8 launched in Japan in 2003 with 13B-MSP RENESIS, which continued through 2012; the R26B is a separate four-rotor racing engine.",
+    "tradeoffs": "Porting, boost and emissions systems differ by version. Later rotary range-extender applications do not mean the same 13B specification remains in production.",
+    "status": "A historical road-engine family within the Wankel concept.",
+    "intro": "Mazda describes the 13B as two 654 cc rotors. Rotary displacement conventions should not be silently substituted for piston-engine competition equivalence.\n\nThe 13B appeared in the 1973 Luce. The RX-8 launched in Japan in 2003 with 13B-MSP RENESIS, which continued through 2012; the R26B is a separate four-rotor racing engine. Porting, boost and emissions systems differ by version. Later rotary range-extender applications do not mean the same 13B specification remains in production."
+  },
+  "EA-087": {
+    "description": "The engine changes its maximum-to-minimum cylinder-volume ratio while running.",
+    "principle": "Variable geometric compression ratio changes chamber or piston-motion geometry. It differs from changing the effective compression process through intake-valve timing.",
+    "examples": "Infiniti presented its multi-link VC-Turbo in 2016. A control shaft changes linkage posture and piston top-dead-centre position; its quoted 8:1–14:1 range is implementation-specific.",
+    "tradeoffs": "Higher compression can support efficiency and lower compression can provide high-load knock margin, with extra linkage, bearing and actuator requirements.",
+    "status": "A concept with production implementations, including the separately listed VC-Turbo.",
+    "intro": "Variable geometric compression ratio changes chamber or piston-motion geometry. It differs from changing the effective compression process through intake-valve timing.\n\nInfiniti presented its multi-link VC-Turbo in 2016. A control shaft changes linkage posture and piston top-dead-centre position; its quoted 8:1–14:1 range is implementation-specific. Higher compression can support efficiency and lower compression can provide high-load knock margin, with extra linkage, bearing and actuator requirements."
+  }
+}

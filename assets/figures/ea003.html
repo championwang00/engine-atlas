@@ -1,0 +1,138 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>斯特林发动机</title>
+<style>html,body{margin:0;background:#d9d9d6}#fig{display:block;width:100%;max-width:960px;height:auto;margin:0 auto;touch-action:none;cursor:grab;user-select:none}</style></head><body>
+<svg id="fig" viewBox="0 0 720 440" role="img" aria-label="斯特林发动机剖视等轴测动画"></svg>
+<script>
+const TITLE="斯特林发动机",AZ0=-30,EL0=22,SPEED=1.2,T0=0.6;
+function MODEL(S,t){
+const M1='#c7c7c2',M2='#b0b0ab',M3='#9a9a95',DK='#6d6d69',CUT='#e6e1d7',HOT='#e0703a',AIR='#a9b8c6',EXH='#9b958d',COP='#c4a27f';
+
+function blades(S,x,r0,r1,n,ang,th,col,tw){for(let k=0;k<n;k++){const a=ang+k*2*Math.PI/n,ca=Math.cos(a),sa=Math.sin(a);
+ S.ext([[x,0,0],[0,ca,sa],[1,0,0],[0,-sa,ca]],[[r0,-th/2],[r1,-th/2+tw],[r1,th/2+tw],[r0,th/2]],-1.6,1.6,col,{})}}
+const FY=(x)=>[[x,0,0],[0,1,0],[0,0,1],[1,0,0]];const shell=(r0,r1,x0,x1,col)=>S.ext(FY(0),S.ring(r0,r1,-90,90,18),x0,x1,col,{side:(i)=>(i==18||i==37)?CUT:col});
+
+ const th=t,c=25,ZC=-130;const zp=ZC+c*Math.cos(th)+Math.sqrt(150*150-(c*Math.sin(th))**2);
+ const zx=ZC+c*Math.cos(th+Math.PI/2)+Math.sqrt(60*60-(c*Math.sin(th+Math.PI/2))**2),zd=zx+190;
+ const vd=-Math.sin(th+Math.PI/2);
+ const FZ=[[0,0,0],[1,0,0],[0,1,0],[0,0,1]];const cut=(col)=>(i)=>(i==18||i==37)?CUT:col;
+ S.ext(FZ,S.ring(40,48,0,180,18),-40,150,M2,{side:cut(M2)});
+ S.ext(FZ,S.ring(40,50,0,180,18),150,205,'#d6b9a4',{side:cut('#d6b9a4')});S.ext(FZ,S.ring(.1,50,0,180,18),205,214,'#d6b9a4',{side:cut('#d6b9a4')});
+ for(let k=0;k<6;k++)S.ext(FZ,S.ring(48,74,0,180,18),40+k*14,46+k*14,M3,{side:cut(M3)});
+ // gas spaces: hot above displacer, cold below
+ S.ext(FZ,S.ring(.1,39.5,0,180,18),zd+35,205,'#e8a27e',{noSides:0,bias:-20});S.ext(FZ,S.ring(.1,39.5,0,180,18),zp+13,zd-35,AIR,{bias:-20});
+ // displacer, piston
+ S.cylZ([0,0,0],35,zd-35,zd+35,'#d4d2cc',{});S.cylZ([0,0,0],4,zx,zd-35,M1,{});
+ S.cylZ([0,0,0],39,zp-13,zp+13,M1,{});for(const z of[zp+6,zp+1])S.cylZ([0,0,0],39.6,z-1,z+1,DK,{});
+ // crankcase (cut) + crank + rods
+ S.ext([[0,0,0],[1,0,0],[0,0,1],[0,1,0]],[[-80,-40],[80,-40],[80,-170],[-80,-170]],0,40,M3,{frontCol:CUT,holes:[[[-70,-45],[70,-45],[70,-165],[-70,-165]]]});
+ const p1=[c*Math.sin(th),ZC+c*Math.cos(th)],p2=[c*Math.sin(th+Math.PI/2),ZC+c*Math.cos(th+Math.PI/2)];
+ S.cylY([0,0,ZC],12,-50,60,M1,{});S.bar([0,ZC],p1,26,-22,-14,M2,{});S.bar([0,ZC],p2,26,14,22,M2,{});
+ S.ext([[0,0,0],[1,0,0],[0,0,1],[0,1,0]],[[-5,zp-30],[5,zp-30]].concat([[5,zp],[-5,zp]]),-4,4,DK,{});
+ S.bar([0,zp-14],p1,10,-12,-6,M3,{});S.cylY([p1[0],0,p1[1]],6,-22,-6,DK,{});
+ S.box([0,10,zx],[18,16,10],M3,{});S.bar([0,zx],p2,10,8,14,M3,{});S.cylY([p2[0],0,p2[1]],6,6,22,DK,{});
+ S.ext([[0,-50,ZC],[1,0,0],[0,0,1],[0,1,0]],S.circ(70,40),-14,0,M2,{holes:[S.circ(56,32)]});
+ for(let k=0;k<6;k++){const a=th+k*Math.PI/3;S.bar([0,ZC],[60*Math.sin(a),ZC+60*Math.cos(a)],6,-60,-54,M3,{})}
+ // regenerator duct (hot top -> cooler zone) with wire mesh
+ S.cylX([0,20,192],7,0,95,'#d6b9a4',{});S.cylZ([95,20,0],12,70,192,M2,{});for(let k=0;k<7;k++)S.cylZ([95,20,0],12.6,92+k*12,96+k*12,DK,{});S.cylX([0,20,70],7,48,95,M2,{});
+ S.line(vd<0?[[60,20,70],[95,20,76],[95,20,186],[30,20,192]]:[[30,20,192],[95,20,186],[95,20,76],[60,20,70]],vd<0?'#a4482a':'#4f6b86',1.6,{dash:'5 6',flow:1,bias:120,op:.4+.6*Math.abs(vd)});
+ for(const x of[-22,0,22])S.ext([[x,10,214],[1,0,0],[0,0,1],[0,1,0]],[[-7,0],[7,0],[0,16+6*Math.sin(t*8+x)]],0,6,HOT,{});
+ S.label([0,0,zd+30],'置换活塞',-90,-60);S.label([0,0,zp+13],'工作活塞',-110,10);S.label([95,20,130],'再生器',60,-30);S.label([-74,30,80],'冷端',-40,20);S.label([-50,40,200],'热端',-110,15);}
+function READOUT(t){const a=Math.round(((t*180/Math.PI)%360+360)%360);return '曲轴 '+a+'° · 置换活塞超前工作活塞 90° · β 型（示意）'}
+// shared runtime: tiny orthographic iso renderer with painter sort, four-tone shading
+(()=>{
+const svg=document.getElementById('fig');
+const D=Math.PI/180;
+let az=AZ0*D,el=EL0*D,t=0,on=false,last=0,SC=1,CX=360,CY=240,C0=[0,0,0];
+const H2=c=>{c=c.replace('#','');return[parseInt(c.slice(0,2),16),parseInt(c.slice(2,4),16),parseInt(c.slice(4,6),16)]};
+const mixc=(a,b,f)=>{a=H2(a);b=H2(b);return'#'+a.map((v,i)=>Math.round(v+(b[i]-v)*f).toString(16).padStart(2,'0')).join('')};
+const add=(a,b)=>[a[0]+b[0],a[1]+b[1],a[2]+b[2]],mul=(a,s)=>[a[0]*s,a[1]*s,a[2]*s];
+function cam(p){const ca=Math.cos(az),sa=Math.sin(az),ce=Math.cos(el),se=Math.sin(el);
+ const x=p[0]-C0[0],y0=p[1]-C0[1],z=p[2]-C0[2];const X=x*ca-y0*sa,Y=x*sa+y0*ca;
+ return[CX+X*SC,CY-(z*ce+Y*se)*SC,Y*ce-z*se]}
+function camN(n){const ca=Math.cos(az),sa=Math.sin(az),ce=Math.cos(el),se=Math.sin(el);
+ const X=n[0]*ca-n[1]*sa,Y=n[0]*sa+n[1]*ca;return[X,n[2]*ce+Y*se,Y*ce-n[2]*se]}
+const L=(()=>{const v=[-.45,.8,-.4],m=Math.hypot(...v);return v.map(a=>a/m)})();
+function tone(col,n){if(!n)return col;let c=camN(n);if(c[2]>0)c=c.map(a=>-a);
+ const k=c[0]*L[0]+c[1]*L[1]+c[2]*L[2];const q=k>.75?0:k>.4?1:k>.05?2:3;
+ return q==0?mixc(col,'#ffffff',.18):mixc(col,'#1b1b1d',[0,.1,.22,.34][q])}
+let items=[];
+const S={
+ D,
+ poly(pts,col,n,o={}){items.push({k:'p',pts,col,n,o})},
+ line(pts,col,w=1.2,o={}){items.push({k:'l',pts,col,w,o})},
+ label(p,text,dx=0,dy=0){items.push({k:'t',p,text,dx,dy})},
+ // extrude 2D outline (u,v) along W from w0..w1 in frame O,U,V,W
+ ext(F,pts,w0,w1,col,o={}){const[O,U,V,W]=F;const m=(u,v,w)=>add(add(add(O,mul(U,u)),mul(V,v)),mul(W,w));
+  const ar=a=>{let s=0;for(let i=0;i<a.length;i++){const p=a[i],q=a[(i+1)%a.length];s+=p[0]*q[1]-q[0]*p[1]}return s};
+  const caps=[pts,...(o.holes||[])];
+  const capCol=o.cap||col;
+  if(!o.noBack)S.poly(caps.map(r=>r.map(p=>m(p[0],p[1],w1))),o.backCol||capCol,W,{...o,sub:1});
+  const sides=(r,hole)=>{const sg=Math.sign(ar(r))*(hole?-1:1);for(let i=0;i<r.length;i++){const p=r[i],q=r[(i+1)%r.length];
+   const du=q[0]-p[0],dv=q[1]-p[1];const n=add(mul(U,dv*sg),mul(V,-du*sg));
+   const c=o.side?o.side(i,hole):col;if(c===null)continue;
+   S.poly([m(p[0],p[1],w0),m(q[0],q[1],w0),m(q[0],q[1],w1),m(p[0],p[1],w1)],c,n,{smooth:o.smooth,bias:o.bias})}};
+  if(!o.noSides){sides(pts,false);(o.holes||[]).forEach(h=>sides(h,true))}
+  if(!o.noFront)S.poly(caps.map(r=>r.map(p=>m(p[0],p[1],w0))),o.frontCol||capCol,mul(W,-1),{...o,sub:1,bias:(o.bias||0)+(o.frontBias||0)});
+ },
+ circ(r,n=28,a0=0,a1=360,cx=0,cy=0){const o=[];const full=a1-a0>=360;const N=full?n:n+1;for(let i=0;i<N;i++){const a=(a0+(a1-a0)*i/(full?n:n))*D;o.push([cx+r*Math.cos(a),cy+r*Math.sin(a)])}return o},
+ ring(r0,r1,a0,a1,n=24){const a=S.circ(r1,n,a0,a1),b=S.circ(r0,n,a0,a1).reverse();return a.concat(b)},
+ gear(r,teeth,h,rot=0){const o=[];for(let i=0;i<teeth*4;i++){const a=rot+i/(teeth*4)*2*Math.PI;const rr=(i%4<2)?r+h/2:r-h/2;o.push([rr*Math.cos(a+(i%4==1||i%4==3?0:0)),rr*Math.sin(a)])}return o},
+ rot2(pts,a,cx=0,cy=0){const c=Math.cos(a),s=Math.sin(a);return pts.map(p=>[cx+p[0]*c-p[1]*s,cy+p[0]*s+p[1]*c])},
+ // frames
+ FXZ:(y=0)=>[[0,y,0],[1,0,0],[0,0,1],[0,1,0]], // mechanism plane x-z, depth +y
+ FYZ:(x=0)=>[[x,0,0],[0,1,0],[0,0,1],[1,0,0]], // axis along x
+ FXY:(z=0)=>[[0,0,z],[1,0,0],[0,1,0],[0,0,1]], // axis along z
+ // cylinder along an axis through point c
+ cylX(c,r,x0,x1,col,o={}){S.ext([[0,c[1],c[2]],[0,1,0],[0,0,1],[1,0,0]],S.circ(r,o.n||24),x0,x1,col,{smooth:1,...o})},
+ cylY(c,r,y0,y1,col,o={}){S.ext([[c[0],0,c[2]],[1,0,0],[0,0,1],[0,1,0]],S.circ(r,o.n||24),y0,y1,col,{smooth:1,...o})},
+ cylZ(c,r,z0,z1,col,o={}){S.ext([[c[0],c[1],0],[1,0,0],[0,1,0],[0,0,1]],S.circ(r,o.n||24),z0,z1,col,{smooth:1,...o})},
+ box(c,s,col,o={}){const[x,y,z]=c,[a,b,h]=s;S.ext([[x,y,z-h/2],[1,0,0],[0,1,0],[0,0,1]],[[-a/2,-b/2],[a/2,-b/2],[a/2,b/2],[-a/2,b/2]],0,h,col,o)},
+ // bar between two points in the x-z plane at depth y0..y1 (conrod)
+ bar(p,q,wd,y0,y1,col,o={}){const du=q[0]-p[0],dv=q[1]-p[1],l=Math.hypot(du,dv),nu=-dv/l*wd/2,nv=du/l*wd/2;
+  S.ext(S.FXZ(),[[p[0]+nu,p[1]+nv],[q[0]+nu,q[1]+nv],[q[0]-nu,q[1]-nv],[p[0]-nu,p[1]-nv]],y0,y1,col,o)},
+ mixc
+};
+function frame(){items=[];MODEL(S,t);return items}
+function fit(){const sv=[az,el,SC,CX,CY];SC=1;CX=0;CY=0;let mnx=1e9,mxx=-1e9,mny=1e9,mxy=-1e9;
+ // world bbox centre
+ frame();let lo=[1e9,1e9,1e9],hi=[-1e9,-1e9,-1e9];C0=[0,0,0];
+ for(const it of items)if(it.k=='p')for(const r of(it.o.sub?it.pts:[it.pts]))for(const p of r)for(let i=0;i<3;i++){lo[i]=Math.min(lo[i],p[i]);hi[i]=Math.max(hi[i],p[i])}
+ C0=lo.map((v,i)=>(v+hi[i])/2);let sc=9;
+ for(const A of[-70,-40,-10,20,50,70])for(const E of[8,30,58]){az=A*D;el=E*D;mnx=1e9;mxx=-1e9;mny=1e9;mxy=-1e9;
+  for(const it of items){if(it.k!='p')continue;for(const r of(it.o.sub?it.pts:[it.pts]))for(const p of r){const c=cam(p);mnx=Math.min(mnx,c[0]);mxx=Math.max(mxx,c[0]);mny=Math.min(mny,c[1]);mxy=Math.max(mxy,c[1])}}
+  sc=Math.min(sc,680/(2*Math.max(-mnx,mxx)),360/(2*Math.max(-mny,mxy)))}
+ [az,el]=sv;SC=sc;CX=360;CY=246}
+const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
+function draw(){frame();const out=[];
+ for(const it of items){
+  if(it.k=='p'){const rings=it.o.sub?it.pts:[it.pts];const pr=rings.map(r=>r.map(cam));let d=0,n=0;for(const r of pr)for(const c of r){d+=c[2];n++}
+   it.d=d/n-(it.o.bias||0);it.pr=pr}
+  else if(it.k=='l'){it.pr=it.pts.map(cam);it.d=it.pr.reduce((a,c)=>a+c[2],0)/it.pr.length-(it.o.bias||0)}
+  else{it.pr=[cam(it.p)];it.d=-1e9}}
+ items.sort((a,b)=>b.d-a.d);
+ for(const it of items){
+  if(it.k=='p'){const f=tone(it.col,it.n);const dd=it.pr.map(r=>'M'+r.map(c=>c[0].toFixed(1)+' '+c[1].toFixed(1)).join('L')+'Z').join('');
+   const st=it.o.smooth?f:mixc(it.col,'#1b1b1d',.5);
+   out.push(`<path d="${dd}" fill="${f}" fill-rule="evenodd" stroke="${st}" stroke-width="${it.o.smooth?.5:.6}" stroke-linejoin="round"${it.o.op?` fill-opacity="${it.o.op}"`:''}/>`)}
+  else if(it.k=='l'){const dd='M'+it.pr.map(c=>c[0].toFixed(1)+' '+c[1].toFixed(1)).join('L');
+   out.push(`<path d="${dd}" fill="none" stroke="${it.col}" stroke-width="${it.w}" stroke-linecap="round" stroke-linejoin="round"${it.o.dash?` stroke-dasharray="${it.o.dash}" stroke-dashoffset="${(-(it.o.flow||0)*t*60).toFixed(1)}"`:''}${it.o.op?` opacity="${it.o.op}"`:''}/>`)}
+  else if(!it.dx&&!it.dy){out.push(`<text x="${it.pr[0][0].toFixed(1)}" y="${(it.pr[0][1]+4).toFixed(1)}" text-anchor="middle" font-size="10.5" font-weight="600" fill="#1d1d1b" font-family="ui-monospace,Menlo,monospace">${esc(it.text)}</text>`)}
+  else{let[x,y]=[it.pr[0][0],it.pr[0][1]];const lx=Math.max(8,Math.min(712,x+it.dx)),ly=Math.max(52,Math.min(420,y+it.dy));
+   out.push(`<path d="M${x.toFixed(1)} ${y.toFixed(1)}L${lx.toFixed(1)} ${ly.toFixed(1)}" stroke="#55554f" stroke-width=".6" fill="none"/><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="1.6" fill="#343432"/><text x="${lx.toFixed(1)}" y="${(ly+(it.dy<0?-3:10)).toFixed(1)}" text-anchor="${it.dx<0?'end':it.dx>0?'start':'middle'}" font-size="10.5" fill="#2a2a28" font-family="ui-monospace,Menlo,monospace">${esc(it.text)}</text>`)}}
+ const ro=READOUT(t);
+ svg.innerHTML=`<rect width="720" height="440" fill="#d9d9d6"/><text x="16" y="24" font-size="13" font-weight="600" fill="#1d1d1b" font-family="ui-sans-serif,-apple-system,system-ui,sans-serif">${esc(TITLE)}</text><text x="16" y="42" font-size="10.5" fill="#4a4a46" font-family="ui-monospace,Menlo,monospace">${esc(ro)}</text>`+out.join('');}
+function loop(ts){if(!on)return;const dt=Math.min(.05,(ts-(last||ts))/1000);last=ts;t+=dt*SPEED;draw();requestAnimationFrame(loop)}
+function reset(){az=AZ0*D;el=EL0*D;t=T0;draw()}
+window.FIG={play(v){on=!!v;last=0;if(on)requestAnimationFrame(loop)},reset,playing:()=>on,
+ _set(o){if('az'in o)az=o.az*D;if('el'in o)el=o.el*D;if('t'in o)t=o.t;draw()},_count:()=>{frame();return items.length}};
+let drag=null;
+svg.addEventListener('pointerdown',e=>{drag=[e.clientX,e.clientY,az,el];svg.setPointerCapture(e.pointerId)});
+svg.addEventListener('pointermove',e=>{if(!drag)return;const r=svg.getBoundingClientRect(),k=720/r.width;
+ az=Math.max(-75*D,Math.min(75*D,drag[2]+(e.clientX-drag[0])*k*.006));el=Math.max(6*D,Math.min(60*D,drag[3]+(e.clientY-drag[1])*k*.005));if(!on)draw()});
+svg.addEventListener('pointerup',()=>drag=null);svg.addEventListener('pointercancel',()=>drag=null);
+svg.tabIndex=0;svg.addEventListener('keydown',e=>{if(e.key=='ArrowLeft')az=Math.max(-75*D,az-5*D);else if(e.key=='ArrowRight')az=Math.min(75*D,az+5*D);else return;e.preventDefault();if(!on)draw()});
+t=T0;fit();draw();
+})();
+
+</script>
+<script src="_embed-lite.js"></script>
+</body></html>

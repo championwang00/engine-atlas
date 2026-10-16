@@ -1,0 +1,1033 @@
+{
+ "EA-014": {
+  "intro": [
+   {
+    "match": "De Dion-Bouton",
+    "kind": "car",
+    "name": "De Dion-Bouton V8",
+    "year": "1910",
+    "brief": "1910 年的法国 V8 汽车，被视为第一款有一定产量的 V8 车。",
+    "image": null
+   },
+   {
+    "match": "Type 51",
+    "kind": "car",
+    "name": "Cadillac Type 51",
+    "year": "1914",
+    "brief": "1914 年推出的首款量产 V8 车，5.1 L L 头 V8，首年卖 13,000 辆。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/1915_Cadillac_51_%2810793180364%29.jpg/960px-1915_Cadillac_51_%2810793180364%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:1915_Cadillac_51_(10793180364).jpg",
+     "author": "Walter from Tampa/St Petersburg, Florida",
+     "license": "CC BY 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+   },
+   {
+    "match": "Flathead V8",
+    "kind": "engine",
+    "name": "Ford Flathead V8 · 装车示例：1932 Ford V8",
+    "year": "1932–1954",
+    "brief": "Ford 1932 年推出的整体铸造缸体 V8，把 V8 成本压到平民车也能用。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/1932_Ford_Model_18_%28V8%29_%2854813849607%29.jpg/960px-1932_Ford_Model_18_%28V8%29_%2854813849607%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:1932_Ford_Model_18_(V8)_(54813849607).jpg",
+     "author": "Tomás Del Coro from Fabulous Las Vegas, Nevada, USA",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   },
+   {
+    "match": "Chevrolet small-block",
+    "kind": "engine",
+    "name": "Chevrolet small-block V8",
+    "year": "1955–",
+    "brief": "GM 的小缸体 V8 家族，2011 年造出第一亿台，是产量最高的 V8。",
+    "image": null
+   }
+  ],
+  "examples": [
+   {
+    "match": "Cadillac L-Head（1914）",
+    "kind": "engine",
+    "name": "Cadillac L 头 V8",
+    "year": "1914",
+    "brief": "Cadillac Type 51 的 5.1 L L 头 V8，首款量产 V8 发动机。"
+   },
+   {
+    "match": "Ford Flathead（1932）",
+    "kind": "engine",
+    "name": "Ford Flathead V8",
+    "year": "1932–1954",
+    "brief": "整体铸造缸体的平民 V8，1932 年推出，一直生产到 1954 年。"
+   },
+   {
+    "match": "Chevrolet small-block",
+    "kind": "engine",
+    "name": "Chevrolet small-block V8",
+    "year": "1955–",
+    "brief": "GM 小缸体 V8，2011 年累计产量突破一亿台。"
+   },
+   {
+    "match": "F1 2.4 L V8",
+    "kind": "f1",
+    "name": "F1 2.4 L V8",
+    "year": "—",
+    "brief": "F1 规则时期使用的 2.4 L 自然吸气 V8 发动机。"
+   }
+  ]
+ },
+ "EA-015": {
+  "intro": [
+   {
+    "match": "Toodles V",
+    "kind": "car",
+    "name": "Toodles V",
+    "year": "1913",
+    "brief": "1913 年在 Brooklands 跑的赛车，9.0 L V12，汽车最早的 V12。",
+    "image": null
+   },
+   {
+    "match": "Packard Twin Six",
+    "kind": "car",
+    "name": "Packard Twin Six",
+    "year": "1916–1923",
+    "brief": "首款量产 V12 轿车，6.9 L 60° L 头，88 hp，共造 30,941 辆。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/1916_Packard_Twin_Six_1-25_%28538014644%29.jpg/960px-1916_Packard_Twin_Six_1-25_%28538014644%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:1916_Packard_Twin_Six_1-25_(538014644).jpg",
+     "author": "Bill Burris from Edmonton, Alberta, Canada",
+     "license": "CC BY-SA 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    }
+   },
+   {
+    "match": "166 Inter",
+    "kind": "car",
+    "name": "Ferrari 166 Inter",
+    "year": "1948",
+    "brief": "Ferrari 1948 年的公路车，搭载 2.0 L Colombo V12。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Ferrari_166_Inter_Coup%C3%A9_Touring_1949.jpg/960px-Ferrari_166_Inter_Coup%C3%A9_Touring_1949.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Ferrari_166_Inter_Coup%C3%A9_Touring_1949.jpg",
+     "author": "",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    }
+   },
+   {
+    "match": "Colombo V12",
+    "kind": "engine",
+    "name": "Ferrari Colombo V12 · 装车示例：Ferrari 166 Inter",
+    "year": "1948–",
+    "brief": "Colombo 设计的 Ferrari V12，2.0 L 版装 166 Inter。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Ferrari_166_Inter_Coup%C3%A9_Touring_1949.jpg/960px-Ferrari_166_Inter_Coup%C3%A9_Touring_1949.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Ferrari_166_Inter_Coup%C3%A9_Touring_1949.jpg",
+     "author": "",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    }
+   },
+   {
+    "match": "E-Type",
+    "kind": "car",
+    "name": "Jaguar E-Type Series 3",
+    "year": "1971–1975",
+    "brief": "Jaguar 跑车，1971 年起第三代改用 5.3 L 全铝 V12。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Jaguar-E_Type_1972.jpg/960px-Jaguar-E_Type_1972.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Jaguar-E_Type_1972.jpg",
+     "author": "Palauenc05",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   },
+   {
+    "match": "XJS",
+    "kind": "car",
+    "name": "Jaguar XJ-S",
+    "year": "1975–1996",
+    "brief": "Jaguar 大型 GT 跑车，长期搭载 5.3 到 6.0 L V12。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/1989_Jaguar_XJS_V12_%2829196643322%29.jpg/960px-1989_Jaguar_XJS_V12_%2829196643322%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:1989_Jaguar_XJS_V12_(29196643322).jpg",
+     "author": "GPS 56 from New Zealand",
+     "license": "CC BY 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+   },
+   {
+    "match": "M70",
+    "kind": "engine",
+    "name": "BMW M70 · 装车示例：BMW 750iL（E32）",
+    "year": "1987",
+    "brief": "BMW 首款 V12，5.0 L，1987 年装上 E32 7 系。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/BMW_750iL_E32_%2812529132783%29.jpg/960px-BMW_750iL_E32_%2812529132783%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:BMW_750iL_E32_(12529132783).jpg",
+     "author": "nakhon100",
+     "license": "CC BY 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+   },
+   {
+    "match": "E32 7 系",
+    "kind": "car",
+    "name": "BMW 7 系（E32）",
+    "year": "1986–1994",
+    "brief": "第二代 BMW 7 系，1987 年推出搭载 M70 V12 的 750i。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/BMW_750iL_E32_%2812529132783%29.jpg/960px-BMW_750iL_E32_%2812529132783%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:BMW_750iL_E32_(12529132783).jpg",
+     "author": "nakhon100",
+     "license": "CC BY 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "match": "Cadillac（1931）",
+    "kind": "car",
+    "name": "Cadillac V-12",
+    "year": "1930–1937",
+    "brief": "Cadillac 唯一的量产 V12 轿车，位列 V-16 之下，共造 10,903 辆。"
+   },
+   {
+    "match": "Ferrari Colombo",
+    "kind": "engine",
+    "name": "Ferrari Colombo V12",
+    "year": "1948–",
+    "brief": "Ferrari 经典 V12 系列，首装 1948 年 166 Inter。"
+   },
+   {
+    "match": "Jaguar",
+    "kind": "engine",
+    "name": "Jaguar V12",
+    "year": "1971–1997",
+    "brief": "Jaguar 为 E-Type、XJS、XJ 造的 5.3–6.0 L 全铝 V12。"
+   },
+   {
+    "match": "BMW M70",
+    "kind": "engine",
+    "name": "BMW M70",
+    "year": "1987",
+    "brief": "BMW 1987 年装上 E32 7 系的 5.0 L V12。"
+   },
+   {
+    "match": "BMW Hydrogen 7",
+    "kind": "car",
+    "name": "BMW Hydrogen 7",
+    "year": "2005–2007",
+    "brief": "基于 E65 760Li 的限量氢/汽油双燃料 V12 轿车。"
+   },
+   {
+    "match": "F1 1989–1995",
+    "kind": "f1",
+    "name": "F1 V12 时代",
+    "year": "1989–1995",
+    "brief": "1989 到 1995 年 F1 使用 V12 发动机的时期。"
+   }
+  ]
+ },
+ "EA-016": {
+  "intro": [
+   {
+    "match": "Wright J-5 Whirlwind",
+    "kind": "engine",
+    "name": "Wright J-5 Whirlwind",
+    "year": "1925",
+    "brief": "1925 年航空星型机，225 hp，驱动林白的 Spirit of St. Louis。",
+    "image": null
+   },
+   {
+    "match": "R-1830",
+    "kind": "engine",
+    "name": "Pratt & Whitney R-1830 Twin Wasp",
+    "year": "1932–",
+    "brief": "普惠双排星型机，造了近 175,000 台，产量最高的航空活塞机。",
+    "image": null
+   },
+   {
+    "match": "North-Lucas",
+    "kind": "car",
+    "name": "North-Lucas",
+    "year": "1922",
+    "brief": "英国试验车，车尾装 1,460 cc 五缸风冷星型机，极速 55 mph，从未出售。",
+    "image": null
+   },
+   {
+    "match": "Monaco-Trossi",
+    "kind": "car",
+    "name": "Monaco-Trossi",
+    "year": "1935",
+    "brief": "1935 年 GP 赛车，两排十六缸星型机 250 hp，转向不足，一场未跑。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Monaco-Trossi_Grand_Prix_1935_MAUTO_n01.jpg/960px-Monaco-Trossi_Grand_Prix_1935_MAUTO_n01.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Monaco-Trossi_Grand_Prix_1935_MAUTO_n01.jpg",
+     "author": "Marie-Lan Taÿ Pamart",
+     "license": "CC BY 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "match": "North-Lucas（1922，1,460 cc 五缸风冷）",
+    "kind": "car",
+    "name": "North-Lucas",
+    "year": "1922",
+    "brief": "英国试验车，后置五缸风冷星型机，极速 55 mph，从未出售。"
+   },
+   {
+    "match": "Julian Coupe（1925，六缸）",
+    "kind": "car",
+    "name": "Julian Coupe",
+    "year": "1925",
+    "brief": "1925 年用六缸星型机的试验轿跑，汽车星型机的零星尝试之一。"
+   },
+   {
+    "match": "改装车 Zombug",
+    "kind": "car",
+    "name": "Zombug",
+    "year": "—",
+    "brief": "以星型发动机改装的特种车，星型机在汽车上的个例。"
+   }
+  ]
+ },
+ "EA-017": {
+  "intro": [
+   {
+    "match": "Isotta Fraschini Tipo 8",
+    "kind": "car",
+    "name": "Isotta Fraschini Tipo 8",
+    "year": "1919–1924",
+    "brief": "1919 年巴黎车展上亮相的意大利豪华车，第一款量产直列八缸汽车。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Isotta-Fraschini_Tipo_8.jpg/960px-Isotta-Fraschini_Tipo_8.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Isotta-Fraschini_Tipo_8.jpg",
+     "author": "Barbariandeagle",
+     "license": "CC0",
+     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+   },
+   {
+    "match": "Type 35",
+    "kind": "car",
+    "name": "Bugatti Type 35",
+    "year": "1924",
+    "brief": "Bugatti 1924 年推出的 2 L 直八赛车，造了近 400 辆。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Bugatti_Type_35%2C_Pau_2015.jpg/960px-Bugatti_Type_35%2C_Pau_2015.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Bugatti_Type_35,_Pau_2015.jpg",
+     "author": "Handelsgeselschaft",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   },
+   {
+    "match": "Alfa Romeo 158",
+    "kind": "f1",
+    "name": "Alfa Romeo 158 Alfetta",
+    "year": "1938–1950",
+    "brief": "1.5 L 机械增压直八赛车，拿下 1950 年首届 F1 世界冠军。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Alfa_Romeo_158_Alfetta.jpg/960px-Alfa_Romeo_158_Alfetta.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_158_Alfetta.jpg",
+     "author": "Milan Tošnar",
+     "license": "CC BY 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+    }
+   },
+   {
+    "match": "Rocket V8",
+    "kind": "engine",
+    "name": "Oldsmobile Rocket V8 · 装车示例：Oldsmobile 88",
+    "year": "1949",
+    "brief": "Oldsmobile 1949 年取代直八的顶置气门高压缩比 V8，装 88 系列。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/1949_Oldsmobile_88.jpg/960px-1949_Oldsmobile_88.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:1949_Oldsmobile_88.jpg",
+     "author": "Regushee (original)\nTony Patt (edited)",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+   },
+   {
+    "match": "Hemi",
+    "kind": "engine",
+    "name": "Chrysler Hemi V8",
+    "year": "1951",
+    "brief": "Chrysler 1951 年取代直八的半球形燃烧室 V8。",
+    "image": null
+   }
+  ],
+  "examples": [
+   {
+    "match": "Duesenberg J",
+    "kind": "car",
+    "name": "Duesenberg Model J",
+    "year": "1928–1937",
+    "brief": "Duesenberg 的直列八缸豪华旗舰。"
+   },
+   {
+    "match": "Bugatti Type 35/57",
+    "kind": "car",
+    "name": "Bugatti Type 35 / Type 57",
+    "year": "1924–1940",
+    "brief": "Bugatti 直列八缸的赛车与豪华车代表。"
+   },
+   {
+    "match": "Mercedes W125",
+    "kind": "car",
+    "name": "Mercedes-Benz W125",
+    "year": "1937",
+    "brief": "1937 年 GP 赛车，机械增压直列八缸。"
+   },
+   {
+    "match": "Alfa Romeo 158（1950 首届 F1 冠军）",
+    "kind": "f1",
+    "name": "Alfa Romeo 158 Alfetta",
+    "year": "1938–1950",
+    "brief": "1.5 L 机械增压直八赛车，1950 年首届 F1 世界冠军。"
+   }
+  ]
+ },
+ "EA-018": {
+  "intro": [
+   {
+    "match": "6/25 PS",
+    "kind": "car",
+    "name": "Mercedes 6/25 PS Kompressor",
+    "year": "1921–1923",
+    "brief": "1921 年柏林车展展出，罗茨增压把输出从 20 hp 提到 40 hp，首批量产增压车。",
+    "image": null
+   },
+   {
+    "match": "10/40 PS",
+    "kind": "car",
+    "name": "Mercedes 10/40 PS Kompressor",
+    "year": "1921–1923",
+    "brief": "与 6/25 同期的增压车型，输出从 35 hp 提到 65 hp。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Mercedes-Benz_10-40_PS_1923_Sport-Zweisitzer_LSide_MBMuse_9June2013_%2814983634775%29.jpg/960px-Mercedes-Benz_10-40_PS_1923_Sport-Zweisitzer_LSide_MBMuse_9June2013_%2814983634775%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_10-40_PS_1923_Sport-Zweisitzer_LSide_MBMuse_9June2013_(14983634775).jpg",
+     "author": "Valder137",
+     "license": "CC BY 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+   },
+   {
+    "match": "Bentley 4½ Litre「Blower」",
+    "kind": "car",
+    "name": "Bentley 4½ Litre Blower",
+    "year": "1929–1930",
+    "brief": "装机械增压器的 Bentley 4½ Litre，机械增压最著名的例子之一。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/1929_Bentley_4.5_Litre_Blower_HCC25.jpg/960px-1929_Bentley_4.5_Litre_Blower_HCC25.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:1929_Bentley_4.5_Litre_Blower_HCC25.jpg",
+     "author": "MrWalkr",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "match": "Mercedes Kompressor（1921 首批量产）",
+    "kind": "car",
+    "name": "Mercedes Kompressor 6/25 与 10/40 PS",
+    "year": "1921–1923",
+    "brief": "1921 年柏林车展亮相的首批量产机械增压汽车。"
+   },
+   {
+    "match": "Bentley Blower（1929–30）",
+    "kind": "car",
+    "name": "Bentley 4½ Litre Blower",
+    "year": "1929–1930",
+    "brief": "装罗茨增压器的 Bentley 4½ Litre，著名机械增压赛车。"
+   },
+   {
+    "match": "Alfa Romeo 158 F1",
+    "kind": "f1",
+    "name": "Alfa Romeo 158 Alfetta",
+    "year": "1938–1950",
+    "brief": "1.5 L 机械增压直八，1950 年首届 F1 冠军。"
+   }
+  ]
+ },
+ "EA-019": {
+  "intro": [
+   {
+    "match": "P75 H16",
+    "kind": "engine",
+    "name": "BRM P75 H16 · 装车示例：Lotus 43",
+    "year": "1966–1968",
+    "brief": "BRM 为 1966 年 3.0 L 规则造的 H16，两台平八叠合，420 bhp。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Lotus_43_%2820004186945%29.jpg/960px-Lotus_43_%2820004186945%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Lotus_43_(20004186945).jpg",
+     "author": "Neil",
+     "license": "CC BY 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+   },
+   {
+    "match": "Lotus 43",
+    "kind": "f1",
+    "name": "Lotus 43",
+    "year": "1966",
+    "brief": "装 BRM H16 的 F1 赛车，Jim Clark 驾驶赢下 1966 年美国大奖赛。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Lotus_43_%2820004186945%29.jpg/960px-Lotus_43_%2820004186945%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Lotus_43_(20004186945).jpg",
+     "author": "Neil",
+     "license": "CC BY 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+   },
+   {
+    "match": "Brough Superior Golden Dream",
+    "kind": "car",
+    "name": "Brough Superior Golden Dream（摩托车）",
+    "year": "1938",
+    "brief": "1938 年发布的摩托车，1,000 cc H4 发动机，因二战只做了几台。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Brough_Superior_Golden_Dream_NMM.jpg/960px-Brough_Superior_Golden_Dream_NMM.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Brough_Superior_Golden_Dream_NMM.jpg",
+     "author": "Nimbus227",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "match": "BRM H16（1966 F1，约 420 hp，Lotus 43 赢 1966 美国大奖赛）",
+    "kind": "f1",
+    "name": "BRM P75 H16",
+    "year": "1966–1968",
+    "brief": "两台平八上下叠合的 F1 发动机，唯一胜绩是 1966 年美国大奖赛。"
+   },
+   {
+    "match": "Bugatti Type 45/47 U16（1929）",
+    "kind": "car",
+    "name": "Bugatti Type 45 / 47",
+    "year": "1929",
+    "brief": "Bugatti 1929 年的 U16 原型赛车，两台直八并排共用输出。"
+   }
+  ]
+ },
+ "EA-020": {
+  "intro": [
+   {
+    "match": "Series 452 V-16",
+    "kind": "car",
+    "name": "Cadillac Series 452 V-16",
+    "year": "1930–1940",
+    "brief": "1930 年纽约车展发布，7.4 L 45° V16，11 年共造 4,076 辆。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/1930_Cadillac_V-16_Dual_Cowl_Sports_Phaeton_%288700145197%29.jpg/960px-1930_Cadillac_V-16_Dual_Cowl_Sports_Phaeton_%288700145197%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:1930_Cadillac_V-16_Dual_Cowl_Sports_Phaeton_(8700145197).jpg",
+     "author": "sv1ambo",
+     "license": "CC BY 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+   },
+   {
+    "match": "Marmon Sixteen",
+    "kind": "car",
+    "name": "Marmon Sixteen",
+    "year": "1931–1934",
+    "brief": "8.0 L 全铝 V16，200 hp，产量仅约 390 辆。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/1933_Marmon_Sixteen_%284164799097%29.jpg/960px-1933_Marmon_Sixteen_%284164799097%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:1933_Marmon_Sixteen_(4164799097).jpg",
+     "author": "JOHN LLOYD from Concrete, Washington, United States",
+     "license": "CC BY 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+   },
+   {
+    "match": "Cizeta-Moroder V16T",
+    "kind": "car",
+    "name": "Cizeta-Moroder V16T",
+    "year": "1991",
+    "brief": "两套横置 V8 共用缸体的 V16 超跑，只造了 9 到 11 辆。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Cizeta-Moroder_V16T.jpg/960px-Cizeta-Moroder_V16T.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Cizeta-Moroder_V16T.jpg",
+     "author": "Pat Durkin",
+     "license": "CC BY-SA 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    }
+   },
+   {
+    "match": "Tourbillon",
+    "kind": "car",
+    "name": "Bugatti Tourbillon",
+    "year": "2024",
+    "brief": "2024 年发布，8.3 L 自然吸气 V16 配三电机，总输出 1,800 PS。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Bugatti_Tourbillon.jpg/960px-Bugatti_Tourbillon.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Bugatti_Tourbillon.jpg",
+     "author": "MrWalkr",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "match": "Cadillac Series 452（1930）",
+    "kind": "car",
+    "name": "Cadillac Series 452 V-16",
+    "year": "1930–1940",
+    "brief": "7.4 L 顶置气门 V16 豪华车，共造 4,076 辆。"
+   },
+   {
+    "match": "Marmon Sixteen（1931）",
+    "kind": "car",
+    "name": "Marmon Sixteen",
+    "year": "1931–1934",
+    "brief": "8.0 L 全铝 V16，200 hp，产量约 390 辆。"
+   },
+   {
+    "match": "Cizeta V16T",
+    "kind": "car",
+    "name": "Cizeta-Moroder V16T",
+    "year": "1991",
+    "brief": "两套横置 V8 共用缸体的 V16 超跑，产量 9 到 11 辆。"
+   },
+   {
+    "match": "Bugatti Tourbillon",
+    "kind": "car",
+    "name": "Bugatti Tourbillon",
+    "year": "2024",
+    "brief": "8.3 L 自然吸气 V16 混动超跑，1,800 PS。"
+   }
+  ]
+ },
+ "EA-021": {
+  "intro": [
+   {
+    "match": "Gobron-Brillié",
+    "kind": "car",
+    "name": "Gobron-Brillié 赛车",
+    "year": "1904",
+    "brief": "对置活塞赛车，1904 年 7 月 17 日成为首辆飞行一公里超 100 mph 的汽车。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Louis_Rigolly_vainqueur_de_la_troisi%C3%A8me_Coupe_de_Rothschild_du_kilom%C3%A8tres_lanc%C3%A9_%C3%A0_la_semaine_de_Nice_1904_%28Godron-Brilli%C3%A9_110_hp_-_RM%29.jpg/960px-Louis_Rigolly_vainqueur_de_la_troisi%C3%A8me_Coupe_de_Rothschild_du_kilom%C3%A8tres_lanc%C3%A9_%C3%A0_la_semaine_de_Nice_1904_%28Godron-Brilli%C3%A9_110_hp_-_RM%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Louis_Rigolly_vainqueur_de_la_troisi%C3%A8me_Coupe_de_Rothschild_du_kilom%C3%A8tres_lanc%C3%A9_%C3%A0_la_semaine_de_Nice_1904_(Godron-Brilli%C3%A9_110_hp_-_RM).jpg",
+     "author": "Jules Beau",
+     "license": "Public domain",
+     "licenseUrl": ""
+    }
+   },
+   {
+    "match": "Jumo 204",
+    "kind": "engine",
+    "name": "Junkers Jumo 204",
+    "year": "1932",
+    "brief": "Junkers 对置活塞航空柴油机，1932 年服役。",
+    "image": null
+   },
+   {
+    "match": "Jumo 205",
+    "kind": "engine",
+    "name": "Junkers Jumo 205",
+    "year": "1930s",
+    "brief": "六缸 12 活塞双曲轴，16.62 L，700 PS，装 Do 18 等水上飞机。",
+    "image": null
+   },
+   {
+    "match": "Commer TS3",
+    "kind": "engine",
+    "name": "Commer TS3 · 装车示例：Commer 卡车",
+    "year": "1954–1972",
+    "brief": "1954 年起的三缸对置活塞两冲程卡车柴油机。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/1963_Commer_Cadye_TS3_715_truck_%2831367168088%29.jpg/960px-1963_Commer_Cadye_TS3_715_truck_%2831367168088%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:1963_Commer_Cadye_TS3_715_truck_(31367168088).jpg",
+     "author": "Sicnag",
+     "license": "CC BY 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+   },
+   {
+    "match": "Leyland L60",
+    "kind": "engine",
+    "name": "Leyland L60",
+    "year": "1959",
+    "brief": "19 L 对置活塞柴油机，1959 年用于 Chieftain 坦克。",
+    "image": null
+   }
+  ],
+  "examples": [
+   {
+    "match": "Junkers Jumo 204/205 航空柴油机",
+    "kind": "engine",
+    "name": "Junkers Jumo 204 / 205",
+    "year": "1932–",
+    "brief": "德国对置活塞航空柴油机，省油，装巡逻飞艇和水上飞机。"
+   },
+   {
+    "match": "Commer TS3 卡车（1954–1972）",
+    "kind": "engine",
+    "name": "Commer TS3",
+    "year": "1954–1972",
+    "brief": "三缸六活塞两冲程卡车柴油机。"
+   },
+   {
+    "match": "Leyland L60",
+    "kind": "engine",
+    "name": "Leyland L60",
+    "year": "1959",
+    "brief": "Chieftain 坦克用 19 L 对置活塞柴油机。"
+   },
+   {
+    "match": "Achates Power",
+    "kind": "engine",
+    "name": "Achates Power 对置活塞柴油机",
+    "year": "2004–",
+    "brief": "圣迭戈公司开发的两冲程对置活塞机，称省油 30%。"
+   }
+  ]
+ },
+ "EA-022": {
+  "intro": [
+   {
+    "match": "自由活塞线性发电机",
+    "kind": "engine",
+    "name": "DLR 自由活塞线性发电机",
+    "year": "2013",
+    "brief": "德国 DLR 2013 年在台架上跑通的自由活塞线性发电机。",
+    "image": null
+   },
+   {
+    "match": "FPEG",
+    "kind": "engine",
+    "name": "Toyota FPEG 原型",
+    "year": "2014",
+    "brief": "Toyota 2014 年公布的自由活塞线性发电机，约 15 hp，热效率 42%。",
+    "image": null
+   }
+  ],
+  "examples": [
+   {
+    "match": "DLR 2012–2013 台架演示",
+    "kind": "engine",
+    "name": "DLR 自由活塞线性发电机",
+    "year": "2012–2013",
+    "brief": "德国航空航天中心的台架演示机，2013 年跑通。"
+   },
+   {
+    "match": "Toyota 中央研究所 2014 年 FPEG 原型",
+    "kind": "engine",
+    "name": "Toyota FPEG",
+    "year": "2014",
+    "brief": "约 15 hp 的自由活塞线性发电机原型，宣称热效率 42%。"
+   }
+  ]
+ },
+ "EA-023": {
+  "intro": [
+   {
+    "match": "「contra」发动机",
+    "kind": "engine",
+    "name": "Benz Contra 发动机",
+    "year": "1897",
+    "brief": "Karl Benz 1897 年做的双缸水平对置机，第一台 boxer。",
+    "image": null
+   },
+   {
+    "match": "Volkswagen 甲壳虫",
+    "kind": "car",
+    "name": "Volkswagen Beetle",
+    "year": "1938–2003",
+    "brief": "1938 年投产，后置风冷平四，让水平对置机走进千家万户。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/1957_Volkswagen_Beetle%2C_export_model%2C_in_front_of_Porta_Nigra_in_Trier_2023-05-01.jpg/960px-1957_Volkswagen_Beetle%2C_export_model%2C_in_front_of_Porta_Nigra_in_Trier_2023-05-01.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:1957_Volkswagen_Beetle,_export_model,_in_front_of_Porta_Nigra_in_Trier_2023-05-01.jpg",
+     "author": "Palauenc05",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   },
+   {
+    "match": "356",
+    "kind": "car",
+    "name": "Porsche 356",
+    "year": "1948–",
+    "brief": "Porsche 首款量产车型，后置发动机跑车，自此 Porsche 只用水平对置机。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Porsche_356_1950.jpg/960px-Porsche_356_1950.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Porsche_356_1950.jpg",
+     "author": "らっそ",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   },
+   {
+    "match": "911",
+    "kind": "car",
+    "name": "Porsche 911",
+    "year": "1964–",
+    "brief": "1964 年起全部使用平六，1997 年改为水冷。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Porsche_911%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS0974%29.jpg/960px-Porsche_911%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS0974%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Porsche_911,_GIMS_2019,_Le_Grand-Saconnex_(GIMS0974).jpg",
+     "author": "Matti Blume",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   },
+   {
+    "match": "EA 系列",
+    "kind": "engine",
+    "name": "Subaru EA 系列 · 装车示例：Subaru ff-1",
+    "year": "1966–",
+    "brief": "Subaru 1966 年推出的平四，1971 年起与前置四驱固定搭配。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/1971_Subaru_ff-1.jpg/960px-1971_Subaru_ff-1.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:1971_Subaru_ff-1.jpg",
+     "author": "TTTNIS",
+     "license": "CC0",
+     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+   },
+   {
+    "match": "Citroën 2CV",
+    "kind": "car",
+    "name": "Citroën 2CV",
+    "year": "1948–1990",
+    "brief": "用风冷平二从 1948 年卖到 1990 年的法国国民车。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Citroen_2CV_AZ.jpg/960px-Citroen_2CV_AZ.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Citroen_2CV_AZ.jpg",
+     "author": "Krzysztof Golik",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "match": "VW Beetle 风冷平四（1938）",
+    "kind": "car",
+    "name": "Volkswagen Beetle",
+    "year": "1938–2003",
+    "brief": "后置风冷平四国民车，发动机系列生产到 2006 年。"
+   },
+   {
+    "match": "Porsche 356 与 911",
+    "kind": "car",
+    "name": "Porsche 356 / 911",
+    "year": "1948–",
+    "brief": "Porsche 自 356 起只用水平对置机，911 全部平六。"
+   },
+   {
+    "match": "Subaru（1970 FF-1 起）",
+    "kind": "car",
+    "name": "Subaru ff-1",
+    "year": "1970",
+    "brief": "Subaru 前置平四轿车，开启其水平对置传统。"
+   },
+   {
+    "match": "Citroën 2CV 平二",
+    "kind": "car",
+    "name": "Citroën 2CV",
+    "year": "1948–1990",
+    "brief": "风冷平二的法国国民车。"
+   }
+  ]
+ },
+ "EA-024": {
+  "intro": [
+   {
+    "match": "Honda Civic GX",
+    "kind": "car",
+    "name": "Honda Civic GX",
+    "year": "1998–2015",
+    "brief": "Honda 的 CNG 版 Civic，在美国卖了约 16,000 辆，2015 年停产。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/1999_Honda_Civic_GX_front_quarter.jpg/960px-1999_Honda_Civic_GX_front_quarter.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:1999_Honda_Civic_GX_front_quarter.jpg",
+     "author": "LoLface82",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "match": "Honda Civic GX（1998–2015）",
+    "kind": "car",
+    "name": "Honda Civic GX",
+    "year": "1998–2015",
+    "brief": "美国市售 CNG 轿车，约 16,000 辆，2015 年停产。"
+   },
+   {
+    "match": "Fiat Panda Natural Power（2007 起）",
+    "kind": "car",
+    "name": "Fiat Panda Natural Power",
+    "year": "2007–",
+    "brief": "Fiat 城市小车 Panda 的 CNG 版本，2007 年起。"
+   }
+  ]
+ },
+ "EA-025": {
+  "intro": [
+   {
+    "match": "Lancia Aurelia",
+    "kind": "car",
+    "name": "Lancia Aurelia",
+    "year": "1950–",
+    "brief": "1950 年推出，第一款量产乘用车 V6：1,754 cc 60° 夹角 56 PS。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/1952_Lancia_Aurelia_B20_GT_SP25.jpg/960px-1952_Lancia_Aurelia_B20_GT_SP25.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:1952_Lancia_Aurelia_B20_GT_SP25.jpg",
+     "author": "MrWalkr",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   },
+   {
+    "match": "215 V8",
+    "kind": "engine",
+    "name": "Buick 215 V8",
+    "year": "1961–1963",
+    "brief": "Buick 全铝 V8，1962 年切掉两个缸做出 90° V6。",
+    "image": null
+   },
+   {
+    "match": "VR6",
+    "kind": "engine",
+    "name": "Volkswagen VR6 · 装车示例：Volkswagen Corrado VR6",
+    "year": "1991–",
+    "brief": "VW 1991 年起的窄角 15° V6，两排气缸共用一个缸盖。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/1992_Volkswagen_Corrado_VR6.jpg/960px-1992_Volkswagen_Corrado_VR6.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:1992_Volkswagen_Corrado_VR6.jpg",
+     "author": "Calreyn88",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "match": "Lancia Aurelia（1950）",
+    "kind": "car",
+    "name": "Lancia Aurelia",
+    "year": "1950–",
+    "brief": "第一款量产乘用车 V6，De Virgilio 设计。"
+   },
+   {
+    "match": "Nissan VQ",
+    "kind": "engine",
+    "name": "Nissan VQ",
+    "year": "—",
+    "brief": "Nissan 取代 VG 的全铝 DOHC V6 家族，2.0 到 4.0 L。"
+   },
+   {
+    "match": "Honda J",
+    "kind": "engine",
+    "name": "Honda J 系列",
+    "year": "1996–",
+    "brief": "Honda 第四代量产 V6 家族，1996 年推出。"
+   },
+   {
+    "match": "F1 1.6 L V6 涡轮混动（2014 起）",
+    "kind": "f1",
+    "name": "F1 1.6 L V6 涡轮混动",
+    "year": "2014–",
+    "brief": "F1 自 2014 年起使用的 1.6 L 涡轮增压混动 V6 动力单元。"
+   }
+  ]
+ },
+ "EA-026": {
+  "intro": [
+   {
+    "match": "JET1",
+    "kind": "car",
+    "name": "Rover JET1",
+    "year": "1950",
+    "brief": "第一辆燃气轮机汽车，1950 年公开，1952 年跑出 152 mph 世界纪录。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Rover_Jet1_a.jpg/960px-Rover_Jet1_a.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Rover_Jet1_a.jpg",
+     "author": "Oxyman",
+     "license": "CC BY 2.5",
+     "licenseUrl": "https://creativecommons.org/licenses/by/2.5"
+    }
+   },
+   {
+    "match": "Rover 75",
+    "kind": "car",
+    "name": "Rover 75（P4）",
+    "year": "1949–",
+    "brief": "JET1 的基础车型，涡轮装在座椅后方。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Rover_75_P4_%281950%29.jpg/960px-Rover_75_P4_%281950%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Rover_75_P4_(1950).jpg",
+     "author": "andreboeni",
+     "license": "CC BY 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+   },
+   {
+    "match": "Turbine Car",
+    "kind": "car",
+    "name": "Chrysler Turbine Car",
+    "year": "1963–1964",
+    "brief": "Chrysler 造了 50 辆交 203 位用户试驾，130 bhp，可烧多种燃料。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/1963_Chrysler_Turbine_Ghia_Coupe_at_PB_2022.jpg/960px-1963_Chrysler_Turbine_Ghia_Coupe_at_PB_2022.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:1963_Chrysler_Turbine_Ghia_Coupe_at_PB_2022.jpg",
+     "author": "Prova MO",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+   },
+   {
+    "match": "Jaguar C-X75",
+    "kind": "car",
+    "name": "Jaguar C-X75",
+    "year": "2010",
+    "brief": "2010 年巴黎车展亮相的混动概念车，用两台微型燃气轮机作增程器。",
+    "image": {
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Silver_jaguar_c-x75.jpg/960px-Silver_jaguar_c-x75.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Silver_jaguar_c-x75.jpg",
+     "author": "SbastienRondet  (Flickr User)",
+     "license": "CC BY 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "match": "Rover JET1（1950）",
+    "kind": "car",
+    "name": "Rover JET1",
+    "year": "1950",
+    "brief": "第一辆燃气轮机汽车，1952 年创 152 mph 纪录。"
+   },
+   {
+    "match": "Chrysler Turbine Car（1963–64，130 hp）",
+    "kind": "car",
+    "name": "Chrysler Turbine Car",
+    "year": "1963–1964",
+    "brief": "50 辆试驾车，130 bhp，可烧多种燃料。"
+   },
+   {
+    "match": "Jaguar C-X75 概念（2010）",
+    "kind": "car",
+    "name": "Jaguar C-X75",
+    "year": "2010",
+    "brief": "燃气轮机增程混动概念超跑。"
+   }
+  ]
+ }
+}
